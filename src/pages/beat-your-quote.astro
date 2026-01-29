@@ -52,25 +52,100 @@ const phone = '(480) 536-4465';
           </div>
         </div>
 
-        <!-- Right: Form - iframe src deferred until after first paint -->
+        <!-- Right: Form -->
         <div id="form">
-          <iframe
-            id="ghl-iframe"
-            data-src="https://api.leadconnectorhq.com/widget/form/o3JbkdmOMRhvBVexub2k"
-            style="width:100%;height:813px;border:none;background:#fff;"
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="LP - Beat a Quote Form"
-            data-height="813"
-            data-layout-iframe-id="inline-o3JbkdmOMRhvBVexub2k"
-            data-form-id="o3JbkdmOMRhvBVexub2k"
-            title="LP - Beat a Quote Form"
-          ></iframe>
+          <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+            <h2 style="font-size:1.75rem;color:#1a1a1a;text-align:center;margin-bottom:0.5rem;">SEND US YOUR QUOTE</h2>
+            <p style="color:#666;text-align:center;margin-bottom:1.5rem;font-size:1rem;">We'll beat it in 24 hours</p>
+
+            <form id="quote-form" style="display:flex;flex-direction:column;gap:1rem;">
+              <div>
+                <input
+                  type="text"
+                  name="full_name"
+                  placeholder="Full Name *"
+                  required
+                  style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;transition:border-color 0.2s;"
+                />
+              </div>
+
+              <div>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Your Phone Number *"
+                  required
+                  style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;transition:border-color 0.2s;"
+                />
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="contact.baq_home_address"
+                  placeholder="Your Address *"
+                  required
+                  style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;transition:border-color 0.2s;"
+                />
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="postal_code"
+                  placeholder="Zip Code *"
+                  required
+                  pattern="[0-9]{5}"
+                  maxlength="5"
+                  style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;transition:border-color 0.2s;"
+                />
+              </div>
+
+              <div>
+                <select
+                  name="contact.who_gave_you_the_quote"
+                  required
+                  style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;cursor:pointer;color:#666;transition:border-color 0.2s;"
+                >
+                  <option value="" disabled selected>Who Gave You Your Quote? *</option>
+                  <option value="One of the big companies">One of the big companies</option>
+                  <option value="I'm not sure">I'm not sure</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div style="display:flex;align-items:flex-start;gap:0.75rem;margin-top:0.5rem;">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="terms_and_conditions"
+                  value="I Agree"
+                  required
+                  style="width:18px;height:18px;margin-top:2px;cursor:pointer;accent-color:#E42F3A;"
+                />
+                <label for="terms" style="font-size:0.875rem;color:#666;line-height:1.5;cursor:pointer;">
+                  I agree to <a href="/terms" target="_blank" style="color:#E42F3A;text-decoration:underline;">terms & conditions</a> provided by the company. By providing my phone number, I agree to receive text messages from the business.
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                id="submit-btn"
+                style="width:100%;background:#E42F3A;color:#fff;padding:1.125rem;border:none;border-radius:8px;font-size:1.125rem;font-weight:700;cursor:pointer;margin-top:0.5rem;transition:all 0.2s;font-family:inherit;"
+              >
+                GET MY BETTER PRICE →
+              </button>
+            </form>
+
+            <!-- Success Message (hidden by default) -->
+            <div id="form-success" style="display:none;text-align:center;padding:2rem 1rem;">
+              <div style="width:60px;height:60px;background:#22c55e;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+                <svg style="width:30px;height:30px;color:#fff;" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              </div>
+              <h3 style="font-size:1.5rem;color:#1a1a1a;margin-bottom:0.5rem;">Quote Received!</h3>
+              <p style="color:#666;font-size:1rem;">We'll review your quote and get back to you within 24 hours with a better price.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -597,30 +672,6 @@ const phone = '(480) 536-4465';
 
   <Footer phone={phone} />
 
-  <!-- GHL Form - Load after first paint for better FCP/LCP -->
-  <script>
-    // Defer iframe loading until after first paint
-    function loadGHLForm() {
-      const iframe = document.getElementById('ghl-iframe');
-      if (iframe && iframe.dataset.src) {
-        iframe.src = iframe.dataset.src;
-      }
-      // Load form embed script
-      const script = document.createElement('script');
-      script.src = 'https://link.msgsndr.com/js/form_embed.js';
-      document.body.appendChild(script);
-    }
-
-    // Use requestIdleCallback if available, otherwise requestAnimationFrame
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(loadGHLForm, { timeout: 1000 });
-    } else {
-      // Double RAF ensures we're past first paint
-      requestAnimationFrame(() => {
-        requestAnimationFrame(loadGHLForm);
-      });
-    }
-  </script>
 
   <!-- Floating CTA Button -->
   <a
@@ -666,6 +717,82 @@ const phone = '(480) 536-4465';
 
     window.addEventListener('scroll', checkScroll);
     checkScroll();
+  </script>
+
+  <!-- Form Submission -->
+  <script>
+    const form = document.getElementById('quote-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const formSuccess = document.getElementById('form-success');
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Disable button and show loading state
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
+      submitBtn.style.opacity = '0.7';
+
+      // Gather form data
+      const formData = new FormData(form);
+      const data = {};
+
+      formData.forEach((value, key) => {
+        // Skip the terms checkbox if not checked (won't be in FormData anyway if unchecked)
+        if (key === 'terms_and_conditions') {
+          data[key] = 'I Agree';
+        } else {
+          data[key] = value;
+        }
+      });
+
+      // Add attribution data if available
+      if (window.ashAttribution) {
+        const attr = window.ashAttribution.getForForm();
+        Object.assign(data, attr);
+      }
+
+      try {
+        const response = await fetch('https://services.leadconnectorhq.com/hooks/dGHA224kB5WE4OS1KLqw/webhook-trigger/847113cf-e966-43b5-8d23-12f67951d14a', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+          // Show success message
+          form.style.display = 'none';
+          formSuccess.style.display = 'block';
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (error) {
+        console.error('Form submission error:', error);
+        alert('Something went wrong. Please try again or call us directly.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'GET MY BETTER PRICE →';
+        submitBtn.style.opacity = '1';
+      }
+    });
+
+    // Add focus styles to inputs
+    document.querySelectorAll('#quote-form input, #quote-form select').forEach(el => {
+      el.addEventListener('focus', () => {
+        el.style.borderColor = '#E42F3A';
+        el.style.outline = 'none';
+      });
+      el.addEventListener('blur', () => {
+        el.style.borderColor = '#e0e0e0';
+      });
+    });
+
+    // Update select color when option is selected
+    const selectEl = document.querySelector('#quote-form select');
+    selectEl?.addEventListener('change', () => {
+      selectEl.style.color = '#1a1a1a';
+    });
   </script>
 </Layout>
 
