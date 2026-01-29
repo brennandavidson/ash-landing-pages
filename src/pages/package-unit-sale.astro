@@ -17,8 +17,8 @@ const phone = '(480) 536-4465';
 
   <main>
     <!-- HERO - Split layout: content left, form right -->
-    <section style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); padding: 3rem 0 4rem; position: relative; overflow: hidden;">
-      <div class="hero-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative; display: grid; grid-template-columns: 1fr 420px; gap: 3rem; align-items: center;">
+    <section style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); padding: 3rem 0 0; position: relative; overflow: hidden;">
+      <div class="hero-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative; display: grid; grid-template-columns: 1fr 480px; gap: 3rem; align-items: start;">
         <!-- Left: Content -->
         <div>
           <!-- Urgency Badge -->
@@ -76,33 +76,21 @@ const phone = '(480) 536-4465';
               <span style="font-size: 0.8125rem; font-weight: 600; color: #333;">5.0</span>
             </div>
           </div>
-
-          <!-- Unit Image -->
-          <div style="margin-top: 1.5rem;">
-            <picture>
-              <source srcset="/unit-image.webp" type="image/webp" />
-              <img
-                src="/image 23.png"
-                alt="RunTru by Trane 5-Ton Package Unit"
-                style="max-width: 280px; height: auto; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.2));"
-              />
-            </picture>
-          </div>
         </div>
 
         <!-- Right: Form -->
-        <div id="form">
-          <div style="background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
-            <h2 style="font-size:1.5rem;color:#1a1a1a;text-align:center;margin-bottom:0.25rem;">CLAIM YOUR $1,400 OFF</h2>
-            <p style="color:#666;text-align:center;margin-bottom:1.25rem;font-size:0.9375rem;">Limited inventory available</p>
+        <div id="form" style="padding-bottom: 2rem;">
+          <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+            <h2 style="font-size:1.75rem;color:#1a1a1a;text-align:center;margin-bottom:0.5rem;">CLAIM YOUR $1,400 OFF</h2>
+            <p style="color:#666;text-align:center;margin-bottom:1.5rem;font-size:1rem;">Limited inventory available</p>
 
-            <form id="quote-form" style="display:flex;flex-direction:column;gap:0.625rem;">
-              <input type="text" name="full_name" placeholder="Full Name *" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
-              <input type="tel" name="phone" placeholder="Phone Number *" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
-              <input type="email" name="email" placeholder="Email *" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
-              <input type="text" name="address" placeholder="Address *" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+            <form id="quote-form" style="display:flex;flex-direction:column;gap:0.75rem;">
+              <input type="text" name="full_name" placeholder="Full Name *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+              <input type="tel" name="phone" placeholder="Phone Number *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+              <input type="email" name="email" placeholder="Email *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+              <input type="text" name="address" placeholder="Address *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
 
-              <select name="system_age" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
+              <select name="system_age" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
                 <option value="" disabled selected>How old is your current system? *</option>
                 <option value="0-5 years">0-5 years</option>
                 <option value="5-10 years">5-10 years</option>
@@ -111,7 +99,7 @@ const phone = '(480) 536-4465';
                 <option value="Not sure">Not sure</option>
               </select>
 
-              <select name="best_time_to_call" style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
+              <select name="best_time_to_call" style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
                 <option value="" disabled selected>Best time to call?</option>
                 <option value="Morning">Morning</option>
                 <option value="Afternoon">Afternoon</option>
@@ -120,16 +108,16 @@ const phone = '(480) 536-4465';
 
               <div style="display:flex;align-items:flex-start;gap:0.5rem;margin-top:0.25rem;">
                 <input type="checkbox" id="terms" name="terms_and_conditions" value="I Agree" required style="width:16px;height:16px;margin-top:2px;cursor:pointer;accent-color:#E42F3A;" />
-                <label for="terms" style="font-size:0.75rem;color:#666;line-height:1.4;cursor:pointer;">
+                <label for="terms" style="font-size:0.8125rem;color:#666;line-height:1.4;cursor:pointer;">
                   I agree to <a href="/terms" target="_blank" style="color:#E42F3A;text-decoration:underline;">terms & conditions</a>. By providing my phone number, I agree to receive text messages from the business.
                 </label>
               </div>
 
-              <button type="submit" id="submit-btn" style="width:100%;background:#E42F3A;color:#fff;padding:1rem;border:none;border-radius:8px;font-size:1.125rem;font-weight:700;cursor:pointer;font-family:inherit;">
+              <button type="submit" id="submit-btn" style="width:100%;background:#E42F3A;color:#fff;padding:1.125rem;border:none;border-radius:8px;font-size:1.125rem;font-weight:700;cursor:pointer;font-family:inherit;">
                 CLAIM THIS DEAL →
               </button>
 
-              <p style="text-align:center;color:#666;font-size:0.75rem;margin:0.25rem 0 0;">
+              <p style="text-align:center;color:#666;font-size:0.8125rem;margin:0.25rem 0 0;">
                 ⚡ We'll call within 1 hour to confirm availability.
               </p>
             </form>
@@ -143,6 +131,18 @@ const phone = '(480) 536-4465';
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Unit Image - anchored to bottom -->
+      <div class="hero-unit-image" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; margin-top: -2rem;">
+        <picture>
+          <source srcset="/unit-image.webp" type="image/webp" />
+          <img
+            src="/image 23.png"
+            alt="RunTru by Trane 5-Ton Package Unit"
+            style="max-width: 380px; height: auto; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.25));"
+          />
+        </picture>
       </div>
     </section>
 
@@ -574,9 +574,11 @@ const phone = '(480) 536-4465';
     .hero-grid ul {
       align-items: center;
     }
-    .hero-grid > div:first-child > div:last-child {
-      display: flex;
+    .review-badges {
       justify-content: center;
+    }
+    .hero-unit-image {
+      display: none;
     }
     .offer-grid {
       grid-template-columns: 1fr !important;
