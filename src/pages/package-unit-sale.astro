@@ -16,30 +16,132 @@ const phone = '(480) 536-4465';
   <Header phone={phone} variant="light" />
 
   <main>
-    <!-- HERO -->
+    <!-- HERO - Split layout: content left, form right -->
     <section style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); padding: 3rem 0 4rem; position: relative; overflow: hidden;">
-      <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative;">
-        <div class="hero-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <div class="hero-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative; display: grid; grid-template-columns: 1fr 420px; gap: 3rem; align-items: center;">
+        <!-- Left: Content -->
+        <div>
           <!-- Urgency Badge -->
-          <div style="display: inline-block; background: #fef2f2; border: 1px solid #E42F3A; color: #E42F3A; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem;">
-            Limited inventory. While supplies last.
+          <div style="display: inline-block; background: #fef2f2; border: 1px solid #E42F3A; color: #E42F3A; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.25rem;">
+            ⚡ Limited inventory. While supplies last.
           </div>
 
-          <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); color: #1a1a1a; margin-bottom: 1rem; line-height: 1.05;">
+          <h1 style="font-size: clamp(2.5rem, 5vw, 3.5rem); color: #1a1a1a; margin-bottom: 0.75rem; line-height: 1.05;">
             $1,400 Off 5-Ton<br /><span style="color: #E42F3A;">Package Units.</span>
           </h1>
-          <p style="font-size: 1.25rem; color: #444; margin-bottom: 2rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-            Brand new RunTru by Trane. As low as <strong style="color: #1a1a1a;">$8,997 out the door.</strong> Installed. Full warranty. No hidden fees.
+          <p style="font-size: 1.25rem; color: #444; margin-bottom: 1.5rem; line-height: 1.5;">
+            Brand new RunTru by Trane. As low as <strong style="color: #1a1a1a;">$8,997 out the door.</strong>
           </p>
 
-          <a
-            href="#form"
-            style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1.125rem 2.5rem; font-size: 1.25rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
-            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
-            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
-          >
-            Claim This Deal →
-          </a>
+          <!-- Bullets -->
+          <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: #333; font-size: 1rem;">
+              <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              Installed in 1 day
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: #333; font-size: 1rem;">
+              <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              36 months 0% interest ($250/mo)
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: #333; font-size: 1rem;">
+              <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              Full factory warranty
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: #333; font-size: 1rem;">
+              <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              No hidden fees. Price is the price.
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: #333; font-size: 1rem;">
+              <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              Book now, skip the summer rush
+            </li>
+          </ul>
+
+          <!-- Review Badges -->
+          <div class="review-badges" style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+            <!-- Google Badge -->
+            <div style="display: flex; align-items: center; gap: 0.5rem; background: #fff; padding: 0.5rem 0.75rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              <div style="display: flex; gap: 1px;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 14px; height: 14px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <span style="font-size: 0.8125rem; font-weight: 600; color: #333;">5.0</span>
+            </div>
+            <!-- Facebook Badge -->
+            <div style="display: flex; align-items: center; gap: 0.5rem; background: #fff; padding: 0.5rem 0.75rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24"><path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <div style="display: flex; gap: 1px;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 14px; height: 14px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <span style="font-size: 0.8125rem; font-weight: 600; color: #333;">5.0</span>
+            </div>
+          </div>
+
+          <!-- Unit Image -->
+          <div style="margin-top: 1.5rem;">
+            <picture>
+              <source srcset="/unit-image.webp" type="image/webp" />
+              <img
+                src="/image 23.png"
+                alt="RunTru by Trane 5-Ton Package Unit"
+                style="max-width: 280px; height: auto; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.2));"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div id="form">
+          <div style="background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+            <h2 style="font-size:1.5rem;color:#1a1a1a;text-align:center;margin-bottom:0.25rem;">CLAIM YOUR $1,400 OFF</h2>
+            <p style="color:#666;text-align:center;margin-bottom:1.25rem;font-size:0.9375rem;">Limited inventory available</p>
+
+            <form id="quote-form" style="display:flex;flex-direction:column;gap:0.625rem;">
+              <input type="text" name="full_name" placeholder="Full Name *" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+              <input type="tel" name="phone" placeholder="Phone Number *" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+              <input type="email" name="email" placeholder="Email *" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+              <input type="text" name="address" placeholder="Address *" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+
+              <select name="system_age" required style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
+                <option value="" disabled selected>How old is your current system? *</option>
+                <option value="0-5 years">0-5 years</option>
+                <option value="5-10 years">5-10 years</option>
+                <option value="10-15 years">10-15 years</option>
+                <option value="15+ years">15+ years</option>
+                <option value="Not sure">Not sure</option>
+              </select>
+
+              <select name="best_time_to_call" style="width:100%;padding:0.875rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
+                <option value="" disabled selected>Best time to call?</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+              </select>
+
+              <div style="display:flex;align-items:flex-start;gap:0.5rem;margin-top:0.25rem;">
+                <input type="checkbox" id="terms" name="terms_and_conditions" value="I Agree" required style="width:16px;height:16px;margin-top:2px;cursor:pointer;accent-color:#E42F3A;" />
+                <label for="terms" style="font-size:0.75rem;color:#666;line-height:1.4;cursor:pointer;">
+                  I agree to <a href="/terms" target="_blank" style="color:#E42F3A;text-decoration:underline;">terms & conditions</a>. By providing my phone number, I agree to receive text messages from the business.
+                </label>
+              </div>
+
+              <button type="submit" id="submit-btn" style="width:100%;background:#E42F3A;color:#fff;padding:1rem;border:none;border-radius:8px;font-size:1.125rem;font-weight:700;cursor:pointer;font-family:inherit;">
+                CLAIM THIS DEAL →
+              </button>
+
+              <p style="text-align:center;color:#666;font-size:0.75rem;margin:0.25rem 0 0;">
+                ⚡ We'll call within 1 hour to confirm availability.
+              </p>
+            </form>
+
+            <div id="form-success" style="display:none;text-align:center;padding:2rem 1rem;">
+              <div style="width:50px;height:50px;background:#22c55e;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+                <svg style="width:24px;height:24px;color:#fff;" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              </div>
+              <h3 style="font-size:1.25rem;color:#1a1a1a;margin-bottom:0.5rem;">You're In!</h3>
+              <p style="color:#666;font-size:0.9375rem;">We'll call you within 1 hour to confirm availability.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -234,123 +336,7 @@ const phone = '(480) 536-4465';
       </div>
     </section>
 
-    <!-- FORM SECTION -->
-    <section id="form" style="background: #f5f5f5; padding: 5rem 0;">
-      <div style="max-width: 500px; margin: 0 auto; padding: 0 1.5rem;">
-        <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
-          <h2 style="font-size:1.75rem;color:#1a1a1a;text-align:center;margin-bottom:0.5rem;">CLAIM YOUR $1,400 OFF</h2>
-          <p style="color:#666;text-align:center;margin-bottom:1.5rem;font-size:1rem;">Limited inventory available</p>
-
-          <form id="quote-form" style="display:flex;flex-direction:column;gap:0.75rem;">
-            <div>
-              <input
-                type="text"
-                name="full_name"
-                placeholder="Full Name *"
-                required
-                style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;transition:border-color 0.2s;"
-              />
-            </div>
-
-            <div>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number *"
-                required
-                style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;transition:border-color 0.2s;"
-              />
-            </div>
-
-            <div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email *"
-                required
-                style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;transition:border-color 0.2s;"
-              />
-            </div>
-
-            <div>
-              <input
-                type="text"
-                name="address"
-                placeholder="Address *"
-                required
-                style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;transition:border-color 0.2s;"
-              />
-            </div>
-
-            <div>
-              <select
-                name="system_age"
-                required
-                style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;cursor:pointer;color:#666;transition:border-color 0.2s;"
-              >
-                <option value="" disabled selected>How old is your current system? *</option>
-                <option value="0-5 years">0-5 years</option>
-                <option value="5-10 years">5-10 years</option>
-                <option value="10-15 years">10-15 years</option>
-                <option value="15+ years">15+ years</option>
-                <option value="Not sure">Not sure</option>
-              </select>
-            </div>
-
-            <div>
-              <select
-                name="best_time_to_call"
-                style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;cursor:pointer;color:#666;transition:border-color 0.2s;"
-              >
-                <option value="" disabled selected>Best time to call?</option>
-                <option value="Morning">Morning</option>
-                <option value="Afternoon">Afternoon</option>
-                <option value="Evening">Evening</option>
-              </select>
-            </div>
-
-            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
-              <input
-                type="checkbox"
-                id="terms"
-                name="terms_and_conditions"
-                value="I Agree"
-                required
-                style="width:18px;height:18px;margin-top:2px;cursor:pointer;accent-color:#E42F3A;"
-              />
-              <label for="terms" style="font-size:0.875rem;color:#666;line-height:1.5;cursor:pointer;">
-                I agree to <a href="/terms" target="_blank" style="color:#E42F3A;text-decoration:underline;">terms & conditions</a> provided by the company. By providing my phone number, I agree to receive text messages from the business.
-              </label>
-            </div>
-
-            <button
-              type="submit"
-              id="submit-btn"
-              style="width:100%;background:#E42F3A;color:#fff;padding:1.125rem;border:none;border-radius:8px;font-size:1.125rem;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;"
-            >
-              GET THIS DEAL →
-            </button>
-
-            <p style="text-align:center;color:#666;font-size:0.8125rem;margin:0.5rem 0 0.25rem;display:flex;align-items:center;justify-content:center;gap:0.35rem;">
-              <span>⚡</span> We'll call you within 1 hour during business hours
-            </p>
-
-            <p style="text-align:center;color:#999;font-size:0.6875rem;margin:0;">
-              *Limited inventory. Offer available while supplies last.
-            </p>
-          </form>
-
-          <!-- Success Message (hidden by default) -->
-          <div id="form-success" style="display:none;text-align:center;padding:2rem 1rem;">
-            <div style="width:60px;height:60px;background:#22c55e;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
-              <svg style="width:30px;height:30px;color:#fff;" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-            </div>
-            <h3 style="font-size:1.5rem;color:#1a1a1a;margin-bottom:0.5rem;">You're In!</h3>
-            <p style="color:#666;font-size:1rem;">We'll call you within 1 hour during business hours to confirm availability and schedule your free estimate.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Form section removed - form is now in hero -->
 
     <!-- TESTIMONIALS -->
     <section style="background-color: #ffffff; padding: 5rem 0;">
@@ -581,6 +567,17 @@ const phone = '(480) 536-4465';
 
 <style>
   @media (max-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1fr !important;
+      text-align: center;
+    }
+    .hero-grid ul {
+      align-items: center;
+    }
+    .hero-grid > div:first-child > div:last-child {
+      display: flex;
+      justify-content: center;
+    }
     .offer-grid {
       grid-template-columns: 1fr !important;
     }
