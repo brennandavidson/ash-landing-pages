@@ -359,6 +359,10 @@ const phone = '(480) 536-4465';
             <img
               src="/ashton-cropped.jpg"
               alt="Ashton, owner of ASH Cooling & Heating"
+              loading="lazy"
+              decoding="async"
+              width="350"
+              height="368"
               style="width: 100%; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);"
             />
             <div style="position: absolute; bottom: -15px; right: -15px; background: #E42F3A; color: #fff; padding: 0.75rem 1.25rem; border-radius: 6px; font-weight: 700; font-size: 0.875rem;">
@@ -522,28 +526,7 @@ const phone = '(480) 536-4465';
       </div>
     </section>
 
-    <!-- FORM SECTION -->
-    <section id="form-section" style="background: #f5f5f5; padding: 3rem 0;">
-      <div style="max-width: 500px; margin: 0 auto; padding: 0 1.5rem;">
-        <iframe
-          src="https://api.leadconnectorhq.com/widget/form/o3JbkdmOMRhvBVexub2k"
-          style="width:100%;height:813px;border:none;"
-          id="inline-o3JbkdmOMRhvBVexub2k-2"
-          data-layout="{'id':'INLINE'}"
-          data-trigger-type="alwaysShow"
-          data-trigger-value=""
-          data-activation-type="alwaysActivated"
-          data-activation-value=""
-          data-deactivation-type="neverDeactivate"
-          data-deactivation-value=""
-          data-form-name="LP - Beat a Quote Form"
-          data-height="813"
-          data-layout-iframe-id="inline-o3JbkdmOMRhvBVexub2k-2"
-          data-form-id="o3JbkdmOMRhvBVexub2k"
-          title="LP - Beat a Quote Form"
-        ></iframe>
-      </div>
-    </section>
+    <!-- FORM SECTION - Removed duplicate iframe, links scroll to hero form -->
 
     <!-- FAQ -->
     <section style="background-color: #f5f5f5; padding: 5rem 0;">
@@ -611,8 +594,8 @@ const phone = '(480) 536-4465';
 
   <Footer phone={phone} />
 
-  <!-- GHL Form Script -->
-  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+  <!-- GHL Form Script - deferred for better performance -->
+  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
 
   <!-- Floating CTA Button -->
   <a
@@ -696,12 +679,8 @@ const phone = '(480) 536-4465';
     }
   }
   @media (max-width: 500px) {
-    #form iframe,
-    #form-section iframe {
+    #form iframe {
       height: 1000px !important;
-    }
-    #form-section {
-      padding: 1rem 0 !important;
     }
   }
 </style>

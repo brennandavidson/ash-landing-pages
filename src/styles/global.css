@@ -1,7 +1,6 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap');
-
 @import "tailwindcss";
+
+/* Fonts are now preloaded in Layout.astro for better performance */
 
 /* ASH Cooling & Heating Brand System */
 
