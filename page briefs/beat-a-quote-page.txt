@@ -1,0 +1,102 @@
+Landing Page Copy: Beat Your Quote
+URL: go.ashheating.com/beat-your-quote
+
+Hero Section
+Headline:
+Got An AC Quote? We'll Beat It.
+Subheadline:
+Send us any quote from a major HVAC company. We'll beat it with the same equipment, same warranty, same quality install. Guaranteed.
+CTA Button:
+Get A Better Price
+Trust Bar (logos/badges):
+
+Trane Authorized Dealer
+Licensed & Insured ROC#
+5 Stars on Google (XXX reviews)
+Family Owned Since XXXX
+
+
+Problem Section
+Headline:
+That Quote Is Too High. Here's Why.
+Body:
+Most of the big HVAC companies in Arizona aren't local anymore. They got bought out by private equity firms who answer to investors, not homeowners.
+That means:
+
+40%+ markups on equipment
+"Premium" charges for standard installations
+Commissioned salespeople pushing upgrades you don't need
+Hidden fees that show up on install day
+
+You're not paying for a better AC. You're paying for their profit margins.
+
+Solution Section
+Headline:
+We Beat Their Prices. Every Time.
+Body:
+We're a family-owned shop with no investors, no bloated overhead, and no sales guys working on commission.
+We install the same Trane equipment as the big guys. Same warranties. Same quality. We just don't charge you 40% extra to cover someone's private equity returns.
+Comparison Block:
+Big HVAC Co.ASH HeatingPrice$14,000+Thousands lessEquipmentTraneTraneWarranty10 years10 yearsHidden FeesYesNeverFinancingMaybe36 months 0%
+
+How It Works Section
+Headline:
+Three Steps. That's It.
+Step 1:
+Upload or describe your quote below.
+Step 2:
+We'll send you a better price within 24 hours.
+Step 3:
+If you like what you see, we'll get you scheduled.
+No pressure. No pushy sales calls. Just a better number.
+
+Form Section
+Headline:
+Send Us Your Quote
+Fields:
+
+Name
+Phone
+Email
+Zip Code
+Who gave you the quote? (dropdown: One of the big companies / Not sure / Other)
+Upload your quote (optional)
+Best time to call (Morning / Afternoon / Evening)
+
+Button:
+Get My Better Price
+Microcopy below button:
+We'll call you within 1 hour during business hours. No spam. No selling your info.
+
+Trust Section
+Headline:
+Why Homeowners Switch to ASH
+Testimonial 1:
+"Got quoted $13,500 from [big company]. ASH did the same system for $9,200. Exact same Trane unit. I couldn't believe it."
+— Mike R., Mesa
+Testimonial 2:
+"They showed up when they said they would, finished in one day, and the price was exactly what they quoted. No surprises."
+— Jennifer L., Gilbert
+Testimonial 3:
+"I was skeptical but sent them my quote anyway. They beat it by $4,000. Same equipment. No brainer."
+— David T., Scottsdale
+
+FAQ Section
+Q: What counts as a "major HVAC company"?
+A: Licensed, insured contractors with established businesses. We're not competing with Chuck in a truck. We're competing with the big corporate outfits and beating them on price.
+Q: What if you can't beat my quote?
+A: We'll tell you. No games. But honestly? We haven't lost yet.
+Q: Is the equipment actually the same?
+A: Yes. We're a Trane authorized dealer. Same units, same warranties, same manufacturer support.
+Q: How do you offer lower prices?
+A: No private equity investors. No commissioned salespeople. No bloated corporate overhead. We pass those savings to you.
+Q: What's the catch?
+A: No catch. We're a family business trying to earn your trust. That's it.
+
+Final CTA Section
+Headline:
+Stop Overpaying for AC.
+Subheadline:
+Send us your quote. See the difference in 24 hours.
+Button:
+Get A Better Price

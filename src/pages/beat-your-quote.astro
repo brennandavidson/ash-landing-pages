@@ -1,0 +1,707 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import AttributionScript from '../components/AttributionScript.astro';
+
+const phone = '(480) 536-4465';
+---
+
+<Layout
+  title="Got An AC Quote? We'll Beat It | ASH Cooling & Heating"
+  description="Send us any quote from a major HVAC company. We'll beat it with the same equipment, same warranty, same quality install. Guaranteed."
+>
+  <AttributionScript slot="head" />
+
+  <Header phone={phone} variant="light" />
+
+  <main>
+    <!-- HERO - Split layout: headline left, form right -->
+    <section style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); padding: 3rem 0 4rem; position: relative; overflow: hidden;">
+      <div style="position: absolute; inset: 0; opacity: 0.03; background-image: url('data:image/svg+xml,<svg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><g fill=\"%23000000\" fill-opacity=\"1\"><path d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/></g></g></svg>');"></div>
+
+      <div class="hero-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative; display: grid; grid-template-columns: 1fr 480px; gap: 3rem; align-items: center;">
+        <!-- Left: Headline & copy -->
+        <div>
+          <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); color: #1a1a1a; margin-bottom: 1.25rem; line-height: 1;">
+            Got An AC Quote?<br />
+            <span style="color: #E42F3A;">We'll Beat It.</span>
+          </h1>
+          <p style="font-size: 1.25rem; color: #444; margin-bottom: 2rem; line-height: 1.6;">
+            Send us any quote from a major HVAC company. We'll beat it with the same equipment, same warranty, same quality install. <strong style="color: #1a1a1a;">Guaranteed.*</strong>
+          </p>
+
+          <!-- Trust points -->
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem 2rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <svg style="width: 24px; height: 24px; color: #22c55e;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              <span style="font-weight: 600; color: #1a1a1a;">Veteran Owned</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <svg style="width: 24px; height: 24px; color: #22c55e;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              <span style="font-weight: 600; color: #1a1a1a;">Locally Owned</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <svg style="width: 24px; height: 24px; color: #22c55e;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              <span style="font-weight: 600; color: #1a1a1a;">Same 10-Year Warranty</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <svg style="width: 24px; height: 24px; color: #22c55e;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              <span style="font-weight: 600; color: #1a1a1a;">No Hidden Fees</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div id="form">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/o3JbkdmOMRhvBVexub2k"
+            style="width:100%;height:813px;border:none;"
+            id="inline-o3JbkdmOMRhvBVexub2k"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="LP - Beat a Quote Form"
+            data-height="813"
+            data-layout-iframe-id="inline-o3JbkdmOMRhvBVexub2k"
+            data-form-id="o3JbkdmOMRhvBVexub2k"
+            title="LP - Beat a Quote Form"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR - anchored with background -->
+    <section style="background: linear-gradient(135deg, #2C3590 0%, #1a1a4e 100%); padding: 1.5rem 0;">
+      <div style="max-width: 1100px; margin: 0 auto; padding: 0 1.5rem;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem 3rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: #fff;">
+            <svg style="width: 28px; height: 28px; color: #fff;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+            <span style="font-weight: 600; font-size: 1rem;">Trane Authorized Dealer</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: #fff;">
+            <svg style="width: 28px; height: 28px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+            <span style="font-weight: 600; font-size: 1rem;">Licensed & Insured</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: #fff;">
+            <div style="display: flex; gap: 2px;">
+              {[1,2,3,4,5].map(() => (
+                <svg style="width: 20px; height: 20px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              ))}
+            </div>
+            <span style="font-weight: 600; font-size: 1rem;">80+ Five-Star Reviews</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: #fff;">
+            <svg style="width: 28px; height: 28px; color: #fbbf24;" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2Z" /></svg>
+            <span style="font-weight: 600; font-size: 1rem;">Veteran Owned</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: #fff;">
+            <svg style="width: 28px; height: 28px; color: #E42F3A;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
+            <span style="font-weight: 600; font-size: 1rem;">Locally Owned</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section style="background-color: #ffffff; padding: 5rem 0;">
+      <div style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem;">
+        <h2 style="font-size: clamp(2.25rem, 5vw, 3.5rem); color: #1a1a1a; text-align: center; margin-bottom: 2.5rem;">
+          That Quote Is Too High.<br /><span style="color: #E42F3A;">Here's Why.</span>
+        </h2>
+        <p style="color: #555; font-size: 1.25rem; margin-bottom: 2rem; line-height: 1.7;">
+          Most of the big HVAC companies in Arizona aren't local anymore. They got bought out by <strong style="color: #1a1a1a;">private equity firms</strong> who answer to investors, not homeowners.
+        </p>
+
+        <div style="background: #fef2f2; border-left: 4px solid #E42F3A; padding: 1.5rem 2rem; margin-bottom: 2rem;">
+          <p style="color: #1a1a1a; font-size: 1.125rem; margin: 0 0 1rem; font-weight: 600;">That means you're paying for:</p>
+          <ul style="color: #666; font-size: 1.125rem; padding-left: 1.25rem; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><strong style="color: #E42F3A;">40%+ markups</strong> on equipment</li>
+            <li style="margin-bottom: 0.75rem;"><strong style="color: #E42F3A;">"Premium" charges</strong> for standard installations</li>
+            <li style="margin-bottom: 0.75rem;"><strong style="color: #E42F3A;">Commissioned salespeople</strong> pushing upgrades you don't need</li>
+            <li><strong style="color: #E42F3A;">Hidden fees</strong> that show up on install day</li>
+          </ul>
+        </div>
+
+        <div style="background: #1a1a1a; color: #fff; padding: 2rem; text-align: center;">
+          <p style="font-size: 1.5rem; margin: 0; font-weight: 600; font-family: 'Anton', sans-serif; letter-spacing: 0.02em;">
+            YOU'RE NOT PAYING FOR A BETTER AC.<br />
+            <span style="color: #E42F3A;">YOU'RE PAYING FOR THEIR PROFIT MARGINS.</span>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a
+            href="#form"
+            style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2.5rem; font-size: 1.125rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+          >
+            Get A Fair Price Instead →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOOGLE REVIEWS SLIDER -->
+    <section style="background-color: #f9f9f9; padding: 4rem 0; overflow: hidden;">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: #fff; padding: 0.5rem 1rem; border-radius: 50px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); margin-bottom: 1rem;">
+            <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            <span style="font-weight: 600; color: #1a1a1a; font-size: 0.875rem;">Google Reviews</span>
+            <div style="display: flex; gap: 1px;">
+              {[1,2,3,4,5].map(() => (
+                <svg style="width: 14px; height: 14px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              ))}
+            </div>
+            <span style="font-weight: 700; color: #1a1a1a; font-size: 0.875rem;">5.0</span>
+          </div>
+          <h2 style="font-size: clamp(1.75rem, 4vw, 2.5rem); color: #1a1a1a; margin-bottom: 0.25rem;">
+            What Homeowners <span style="color: #E42F3A;">Are Saying</span>
+          </h2>
+        </div>
+
+        <!-- Slider Container -->
+        <div id="reviews-slider" style="position: relative; padding: 0 3rem;">
+          <div id="reviews-track" style="display: flex; gap: 1rem; transition: transform 0.5s ease;">
+            <!-- Review 1 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"They were the best price from the quotes I received! I never felt pressured. The install team were true professionals! <strong>If I could give 10 stars I would!</strong>"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Jennifer Lyons</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"<strong>1000 stars if possible!</strong> Ash answered on my first call. The service was phenomenal & pricing was so generous! <strong>Don't bother looking anywhere else!</strong>"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Sandra</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"<strong>He's a veteran and a complete gentleman.</strong> Smart questions, great recommendations. Reasonably priced. Neat, clean, and conscientious."</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Lisa Rose</p>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"<strong>Ash fixed what 3 other companies couldn't.</strong> Professional and knowledgeable. Highly recommend for AC Services."</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Jarrod Brown</p>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"<strong>Ash was absolutely honest and upfront</strong> through the whole process. Made it easy for us. HIGHLY recommend!"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Janette Patch</p>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"<strong>Knowledgeable, professional and nice!</strong> Found the problem in minutes. Can't say enough good things."</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Mary Jane Gilley</p>
+            </div>
+
+            <!-- Review 7 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"Easy to schedule, service was timely and thorough. <strong>He will be our first call for all future repairs!</strong>"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Haylee Rae</p>
+            </div>
+
+            <!-- Review 8 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"<strong>Ashton is very professional and knowledgeable.</strong> Went above and beyond. We will continue to use ASH!"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Stephanie Palacios</p>
+            </div>
+
+            <!-- Review 9 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"<strong>Very helpful working through the right unit.</strong> Cost effective, focused on problem solving. Highly recommend!"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Terry Oachs</p>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button id="prev-btn" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.15); cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10;">
+            <svg style="width: 18px; height: 18px; color: #1a1a1a;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+          </button>
+          <button id="next-btn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.15); cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10;">
+            <svg style="width: 18px; height: 18px; color: #1a1a1a;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+          </button>
+        </div>
+
+        <!-- Dots -->
+        <div id="slider-dots" style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem;"></div>
+      </div>
+    </section>
+
+    <script>
+      // Reviews Slider
+      const track = document.getElementById('reviews-track');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const dotsContainer = document.getElementById('slider-dots');
+      const cards = document.querySelectorAll('.review-card');
+      const gap = 16;
+      let currentIndex = 0;
+      let autoplayInterval;
+
+      function getCardWidth() {
+        const vw = window.innerWidth;
+        if (vw < 480) return vw - 120;
+        if (vw < 768) return 280;
+        return 320;
+      }
+
+      function setCardWidths() {
+        const width = getCardWidth();
+        cards.forEach(card => {
+          card.style.minWidth = width + 'px';
+          card.style.maxWidth = width + 'px';
+        });
+      }
+
+      function getVisibleCards() {
+        const containerWidth = track?.parentElement?.offsetWidth || 1200;
+        return Math.max(1, Math.floor(containerWidth / (getCardWidth() + gap)));
+      }
+
+      function createDots() {
+        if (!dotsContainer) return;
+        const totalDots = Math.max(1, cards.length - getVisibleCards() + 1);
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalDots; i++) {
+          const dot = document.createElement('button');
+          dot.style.cssText = 'width: 8px; height: 8px; border-radius: 50%; border: none; cursor: pointer; transition: all 0.3s;';
+          dot.style.background = i === 0 ? '#E42F3A' : '#ddd';
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function updateDots() {
+        const dots = dotsContainer?.querySelectorAll('button') || [];
+        dots.forEach((dot, i) => { dot.style.background = i === currentIndex ? '#E42F3A' : '#ddd'; });
+      }
+
+      function goToSlide(index) {
+        const maxIndex = cards.length - getVisibleCards();
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+        if (track) track.style.transform = `translateX(-${currentIndex * (getCardWidth() + gap)}px)`;
+        updateDots();
+      }
+
+      function nextSlide() {
+        const maxIndex = cards.length - getVisibleCards();
+        goToSlide(currentIndex >= maxIndex ? 0 : currentIndex + 1);
+      }
+
+      function prevSlide() {
+        goToSlide(currentIndex <= 0 ? cards.length - getVisibleCards() : currentIndex - 1);
+      }
+
+      prevBtn?.addEventListener('click', () => { prevSlide(); resetAutoplay(); });
+      nextBtn?.addEventListener('click', () => { nextSlide(); resetAutoplay(); });
+
+      function startAutoplay() { autoplayInterval = setInterval(nextSlide, 4000); }
+      function resetAutoplay() { clearInterval(autoplayInterval); startAutoplay(); }
+
+      track?.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+      track?.addEventListener('mouseleave', startAutoplay);
+
+      setCardWidths();
+      createDots();
+      startAutoplay();
+
+      window.addEventListener('resize', () => {
+        setCardWidths();
+        createDots();
+        goToSlide(Math.min(currentIndex, cards.length - getVisibleCards()));
+      });
+    </script>
+
+    <!-- ASHTON'S STORY -->
+    <section style="background: linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%); padding: 5rem 0;">
+      <div style="max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+        <div class="story-grid" style="display: grid; grid-template-columns: 350px 1fr; gap: 3rem; align-items: center;">
+          <!-- Photo -->
+          <div style="position: relative;">
+            <img
+              src="/ashton-cropped.jpg"
+              alt="Ashton, owner of ASH Cooling & Heating"
+              style="width: 100%; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);"
+            />
+            <div style="position: absolute; bottom: -15px; right: -15px; background: #E42F3A; color: #fff; padding: 0.75rem 1.25rem; border-radius: 6px; font-weight: 700; font-size: 0.875rem;">
+              OWNER & FOUNDER
+            </div>
+          </div>
+
+          <!-- Story -->
+          <div>
+            <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); color: #1a1a1a; margin-bottom: 1.5rem;">
+              Hey, I'm <span style="color: #E42F3A;">Ashton.</span>
+            </h2>
+            <p style="color: #444; font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.25rem;">
+              I spent 8 years working for two of the biggest HVAC companies in Arizona. Both got bought out by private equity.
+            </p>
+            <p style="color: #444; font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.25rem;">
+              Overnight, everything changed. Prices went up. Corners got cut. The guys in suits cared more about margins than the families we were supposed to be helping.
+            </p>
+            <p style="color: #444; font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.25rem;">
+              I started ASH to do it differently. <strong style="color: #1a1a1a;">No investors. No shareholders. No commissioned sales reps.</strong> Just fair prices and honest work.
+            </p>
+            <p style="color: #444; font-size: 1.125rem; line-height: 1.8; margin-bottom: 2rem;">
+              When you work with us, you're working with a veteran-owned, local business that actually gives a damn.
+            </p>
+            <a
+              href="#form"
+              style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2rem; font-size: 1.0625rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+              onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+            >
+              Let Me Beat Your Quote →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON SECTION - Visual weight -->
+    <section style="background: #f5f5f5; padding: 5rem 0;">
+      <div style="max-width: 900px; margin: 0 auto; padding: 0 1.5rem;">
+        <h2 style="font-size: clamp(2.25rem, 5vw, 3.5rem); color: #1a1a1a; text-align: center; margin-bottom: 1rem;">
+          We Beat Their Prices.<br /><span style="color: #E42F3A;">Every. Single. Time.</span>
+        </h2>
+        <p style="color: #666; font-size: 1.25rem; text-align: center; max-width: 600px; margin: 0 auto 3rem;">
+          Same Trane equipment. Same warranties. We just don't charge you extra to cover someone's private equity returns.
+        </p>
+
+        <!-- Comparison Cards -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+          <!-- Big HVAC Co -->
+          <div style="background: #fff; border: 3px solid #E42F3A; border-radius: 12px; overflow: hidden;">
+            <div style="background: #E42F3A; color: #fff; padding: 1rem; text-align: center;">
+              <h3 style="margin: 0; font-size: 1.25rem;">BIG HVAC CO.</h3>
+            </div>
+            <div style="padding: 1.5rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                <span style="color: #666;">Price</span>
+                <span style="font-weight: 700; font-size: 1.25rem; color: #E42F3A;">$14,000+</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                <span style="color: #666;">Equipment</span>
+                <span style="font-weight: 600;">Trane</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                <span style="color: #666;">Warranty</span>
+                <span style="font-weight: 600;">10 years</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                <span style="color: #666;">Hidden Fees</span>
+                <span style="font-weight: 700; color: #E42F3A; font-size: 1.5rem;">✗</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+                <span style="color: #666;">Financing</span>
+                <span style="font-weight: 600; color: #888;">Maybe</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ASH Heating -->
+          <div style="background: #fff; border: 3px solid #22c55e; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(34,197,94,0.2);">
+            <div style="background: linear-gradient(135deg, #2C3590 0%, #000 100%); color: #fff; padding: 1rem; text-align: center;">
+              <h3 style="margin: 0; font-size: 1.25rem;">ASH HEATING ✓</h3>
+            </div>
+            <div style="padding: 1.5rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                <span style="color: #666;">Price</span>
+                <span style="font-weight: 700; font-size: 1.25rem; color: #22c55e;">Thousands Less</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                <span style="color: #666;">Equipment</span>
+                <span style="font-weight: 600;">Trane</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                <span style="color: #666;">Warranty</span>
+                <span style="font-weight: 600;">10 years</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                <span style="color: #666;">Hidden Fees</span>
+                <span style="font-weight: 700; color: #22c55e; font-size: 1.5rem;">✓ Never</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+                <span style="color: #666;">Financing</span>
+                <span style="font-weight: 700; color: #1a1a1a;">36 mo. 0% APR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a
+            href="#form"
+            style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2.5rem; font-size: 1.125rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+          >
+            Send Us Your Quote →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section style="background-color: #ffffff; padding: 5rem 0;">
+      <div style="max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+        <h2 style="font-size: clamp(2.25rem, 5vw, 3.5rem); color: #1a1a1a; text-align: center; margin-bottom: 3.5rem;">
+          Three Steps. <span style="color: #E42F3A;">That's It.</span>
+        </h2>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+          <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: #E42F3A; color: #fff; font-family: 'Anton', sans-serif; font-size: 2.5rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border-radius: 50%;">1</div>
+            <h3 style="font-size: 1.375rem; margin-bottom: 0.75rem; color: #1a1a1a;">UPLOAD YOUR QUOTE</h3>
+            <p style="color: #666; font-size: 1.0625rem; line-height: 1.6;">Snap a photo or describe what they quoted you.</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: #E42F3A; color: #fff; font-family: 'Anton', sans-serif; font-size: 2.5rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border-radius: 50%;">2</div>
+            <h3 style="font-size: 1.375rem; margin-bottom: 0.75rem; color: #1a1a1a;">GET A BETTER PRICE</h3>
+            <p style="color: #666; font-size: 1.0625rem; line-height: 1.6;">We'll send you our price within 24 hours. Usually less.</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: #E42F3A; color: #fff; font-family: 'Anton', sans-serif; font-size: 2.5rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border-radius: 50%;">3</div>
+            <h3 style="font-size: 1.375rem; margin-bottom: 0.75rem; color: #1a1a1a;">GET SCHEDULED</h3>
+            <p style="color: #666; font-size: 1.0625rem; line-height: 1.6;">Like what you see? We'll get you on the calendar.</p>
+          </div>
+        </div>
+
+        <p style="text-align: center; color: #1a1a1a; margin-top: 3rem; font-size: 1.25rem; font-weight: 600; background: #f5f5f5; padding: 1.25rem; border-radius: 8px;">
+          No pressure. No pushy sales calls. Just a better number.
+        </p>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <a
+            href="#form"
+            style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2.5rem; font-size: 1.125rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+          >
+            Start Here →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section id="form-section" style="background: #f5f5f5; padding: 3rem 0;">
+      <div style="max-width: 500px; margin: 0 auto; padding: 0 1.5rem;">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/o3JbkdmOMRhvBVexub2k"
+          style="width:100%;height:813px;border:none;"
+          id="inline-o3JbkdmOMRhvBVexub2k-2"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="LP - Beat a Quote Form"
+          data-height="813"
+          data-layout-iframe-id="inline-o3JbkdmOMRhvBVexub2k-2"
+          data-form-id="o3JbkdmOMRhvBVexub2k"
+          title="LP - Beat a Quote Form"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background-color: #f5f5f5; padding: 5rem 0;">
+      <div style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem;">
+        <h2 style="font-size: clamp(2rem, 5vw, 3rem); color: #1a1a1a; text-align: center; margin-bottom: 3rem;">
+          Questions? <span style="color: #E42F3A;">Answers.</span>
+        </h2>
+
+        <div>
+          <div style="background: #fff; padding: 1.5rem 2rem; margin-bottom: 1rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">What counts as a "major HVAC company"?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">Licensed, insured contractors with established businesses. We're not competing with Chuck in a truck. We're competing with the big corporate outfits—and beating them on price.</p>
+          </div>
+          <div style="background: #fff; padding: 1.5rem 2rem; margin-bottom: 1rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">What if you can't beat my quote?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">We'll tell you. No games. But honestly? <strong>We haven't lost yet.</strong></p>
+          </div>
+          <div style="background: #fff; padding: 1.5rem 2rem; margin-bottom: 1rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">Is the equipment actually the same?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">Yes. We're a Trane authorized dealer. Same units, same warranties, same manufacturer support.</p>
+          </div>
+          <div style="background: #fff; padding: 1.5rem 2rem; margin-bottom: 1rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">How do you offer lower prices?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">No private equity investors. No commissioned salespeople. No bloated corporate overhead. We pass those savings to you.</p>
+          </div>
+          <div style="background: #fff; padding: 1.5rem 2rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">What's the catch?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">No catch. We're a family business trying to earn your trust. That's it.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a
+            href="#form"
+            style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2.5rem; font-size: 1.125rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+          >
+            Ready? Send Your Quote →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section style="background: #1a1a1a; padding: 5rem 0;">
+      <div style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem; text-align: center;">
+        <h2 style="font-size: clamp(2.5rem, 6vw, 4rem); color: #ffffff; margin-bottom: 1rem;">
+          Stop Overpaying <span style="color: #E42F3A;">For AC.</span>
+        </h2>
+        <p style="color: rgba(255,255,255,0.7); font-size: 1.375rem; margin-bottom: 2.5rem;">
+          Send us your quote. See the difference in 24 hours.
+        </p>
+        <a
+          href="#form"
+          style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1.25rem 3rem; font-size: 1.25rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 20px rgba(228,47,58,0.4); transition: all 0.2s;"
+          onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 30px rgba(228,47,58,0.5)';"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 20px rgba(228,47,58,0.4)';"
+        >
+          Get A Better Price →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer phone={phone} />
+
+  <!-- GHL Form Script -->
+  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+
+  <!-- Floating CTA Button -->
+  <a
+    id="floating-cta"
+    href="#form"
+    style="position: fixed; bottom: 1.5rem; right: 1.5rem; background-color: #E42F3A; color: #ffffff; padding: 1rem 1.5rem; font-size: 1rem; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 20px rgba(228,47,58,0.4); z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;"
+  >
+    <span>Get My Quote Beat</span>
+    <svg style="width: 18px; height: 18px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </a>
+
+  <script>
+    const floatingCta = document.getElementById('floating-cta');
+    const hero = document.querySelector('section');
+
+    function checkScroll() {
+      if (!hero || !floatingCta) return;
+
+      const heroBottom = hero.offsetTop + hero.offsetHeight;
+      const scrollY = window.scrollY;
+
+      if (scrollY > heroBottom - 100) {
+        floatingCta.style.opacity = '1';
+        floatingCta.style.visibility = 'visible';
+      } else {
+        floatingCta.style.opacity = '0';
+        floatingCta.style.visibility = 'hidden';
+      }
+    }
+
+    // Add hover effects
+    floatingCta?.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-3px)';
+      this.style.boxShadow = '0 8px 30px rgba(228,47,58,0.5)';
+    });
+
+    floatingCta?.addEventListener('mouseleave', function() {
+      this.style.transform = 'none';
+      this.style.boxShadow = '0 4px 20px rgba(228,47,58,0.4)';
+    });
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll();
+  </script>
+</Layout>
+
+<style>
+  @media (max-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1fr !important;
+      text-align: center;
+    }
+    .hero-grid h1 {
+      font-size: 2.5rem !important;
+    }
+    .hero-grid > div:first-child > div {
+      justify-content: center;
+    }
+    .story-grid {
+      grid-template-columns: 1fr !important;
+      text-align: center;
+    }
+    .story-grid img {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .story-grid > div:first-child > div {
+      right: auto !important;
+      left: 50% !important;
+      transform: translateX(-50%);
+    }
+  }
+  @media (max-width: 768px) {
+    section > div > div[style*="grid-template-columns: 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+    section > div > div[style*="grid-template-columns: repeat(3"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+  @media (max-width: 500px) {
+    #form iframe,
+    #form-section iframe {
+      height: 1000px !important;
+    }
+    #form-section {
+      padding: 1rem 0 !important;
+    }
+  }
+</style>

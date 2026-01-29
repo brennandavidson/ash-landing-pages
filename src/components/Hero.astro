@@ -1,0 +1,80 @@
+---
+interface Props {
+  headline: string;
+  subheadline?: string;
+  ctaText?: string;
+  ctaHref?: string;
+  backgroundImage?: string;
+  variant?: 'default' | 'dark' | 'gradient';
+}
+
+const {
+  headline,
+  subheadline,
+  ctaText = 'Get Your Free Estimate',
+  ctaHref = '#form',
+  backgroundImage,
+  variant = 'default'
+} = Astro.props;
+
+const bgClasses = {
+  default: 'bg-ash-ice',
+  dark: 'bg-ash-navy text-white',
+  gradient: 'bg-gradient-to-br from-ash-navy via-ash-slate to-ash-charcoal text-white'
+};
+---
+
+<section
+  class={`relative py-16 sm:py-20 lg:py-28 overflow-hidden ${bgClasses[variant]}`}
+  style={backgroundImage ? `background-image: url(${backgroundImage}); background-size: cover; background-position: center;` : ''}
+>
+  {backgroundImage && (
+    <div class="absolute inset-0 bg-ash-navy/70"></div>
+  )}
+
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-6" style={variant !== 'default' ? 'color: #ffffff;' : 'color: #0f172a;'}>
+        {headline}
+      </h1>
+
+      {subheadline && (
+        <p class="text-lg sm:text-xl lg:text-2xl mb-8 leading-relaxed" style={variant !== 'default' ? 'color: rgba(255,255,255,0.85);' : 'color: #64748b;'}>
+          {subheadline}
+        </p>
+      )}
+
+      <a
+        href={ctaHref}
+        class="inline-flex items-center gap-2 px-8 py-4 bg-ash-cool hover:bg-ash-cool-dark text-white font-heading font-semibold text-lg rounded-lg transition-all duration-200 hover:shadow-glow-cool hover:-translate-y-0.5"
+      >
+        {ctaText}
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+
+      <!-- Trust indicators -->
+      <div class="flex flex-wrap items-center justify-center gap-6 mt-10 text-sm" style={variant !== 'default' ? 'color: rgba(255,255,255,0.9);' : 'color: #64748b;'}>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5" fill="#fbbf24" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>
+          <span>5-Star Rated</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5" fill="#f97316" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>Veteran Owned</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5" fill="#10b981" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>Licensed & Insured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

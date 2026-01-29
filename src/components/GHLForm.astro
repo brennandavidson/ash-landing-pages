@@ -1,0 +1,59 @@
+---
+/**
+ * GoHighLevel Form Embed Component
+ *
+ * Usage:
+ * <GHLForm formId="your-form-id" />
+ *
+ * Or with iframe:
+ * <GHLForm formUrl="https://link.yourdomain.com/widget/form/xxxxx" />
+ */
+
+interface Props {
+  formId?: string;
+  formUrl?: string;
+  height?: string;
+  className?: string;
+}
+
+const {
+  formId,
+  formUrl,
+  height = '500px',
+  className = ''
+} = Astro.props;
+
+// Construct form URL if formId provided
+const embedUrl = formUrl || (formId ? `https://link.msgsndr.com/widget/form/${formId}` : null);
+---
+
+<div class={`ghl-form-wrapper ${className}`}>
+  {embedUrl ? (
+    <iframe
+      src={embedUrl}
+      style={`width: 100%; height: ${height}; border: none; overflow: hidden;`}
+      scrolling="no"
+      id={formId ? `ghl-form-${formId}` : 'ghl-form'}
+      title="Contact Form"
+      loading="lazy"
+    />
+  ) : (
+    <!-- Placeholder for form script embed -->
+    <div
+      id="ghl-form-container"
+      class="min-h-[400px] flex items-center justify-center bg-ash-smoke rounded-lg"
+    >
+      <p class="text-ash-steel text-sm">Form loading...</p>
+    </div>
+  )}
+</div>
+
+<style>
+  .ghl-form-wrapper {
+    width: 100%;
+  }
+
+  .ghl-form-wrapper iframe {
+    display: block;
+  }
+</style>

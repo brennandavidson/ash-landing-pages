@@ -1,0 +1,132 @@
+---
+import GHLForm from './GHLForm.astro';
+
+interface Props {
+  headline?: string;
+  subheadline?: string;
+  formId?: string;
+  formUrl?: string;
+  formHeight?: string;
+}
+
+const {
+  headline = 'Get Your Free Estimate',
+  subheadline = 'Fill out the form below and we\'ll get back to you within 24 hours.',
+  formId,
+  formUrl,
+  formHeight = '550px'
+} = Astro.props;
+---
+
+<section id="form" class="py-16 sm:py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <!-- Left: Content -->
+      <div class="space-y-6">
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold" style="color: #0f172a;">
+          {headline}
+        </h2>
+        <p class="text-lg" style="color: #64748b;">
+          {subheadline}
+        </p>
+
+        <!-- Benefits list -->
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5" style="background-color: #e0f2fe;">
+              <svg class="w-4 h-4" fill="#0ea5e9" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <span class="font-semibold" style="color: #0f172a;">Free, No-Obligation Estimates</span>
+              <p class="text-sm mt-1" style="color: #64748b;">Get upfront pricing with no hidden fees or surprises.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5" style="background-color: #e0f2fe;">
+              <svg class="w-4 h-4" fill="#0ea5e9" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <span class="font-semibold" style="color: #0f172a;">Fast Response Times</span>
+              <p class="text-sm mt-1" style="color: #64748b;">We'll contact you within 24 hours to schedule your service.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5" style="background-color: #e0f2fe;">
+              <svg class="w-4 h-4" fill="#0ea5e9" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>
+              <span class="font-semibold" style="color: #0f172a;">100% Satisfaction Guaranteed</span>
+              <p class="text-sm mt-1" style="color: #64748b;">Your comfort is our priority. We stand behind our work.</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Trust badge -->
+        <div class="flex items-center gap-4 pt-4" style="border-top: 1px solid #e2e8f0;">
+          <div class="flex -space-x-2">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold border-2 border-white" style="background-color: #0ea5e9;">5</div>
+            <div class="w-10 h-10 rounded-full flex items-center justify-center border-2 border-white" style="background-color: #f97316;">
+              <svg class="w-5 h-5" fill="white" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+          </div>
+          <div class="text-sm">
+            <p class="font-semibold" style="color: #0f172a;">5-Star Rated Service</p>
+            <p style="color: #64748b;">Trusted by homeowners throughout the area</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="rounded-2xl p-6 sm:p-8" style="background-color: #f8fafc; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);">
+        {formId || formUrl ? (
+          <GHLForm formId={formId} formUrl={formUrl} height={formHeight} />
+        ) : (
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium mb-1" style="color: #0f172a;">Full Name</label>
+              <input type="text" class="w-full px-4 py-3 rounded-lg transition-all" style="border: 1px solid #cbd5e1; outline: none;" placeholder="John Smith" onfocus="this.style.borderColor='#0ea5e9'; this.style.boxShadow='0 0 0 3px rgba(14,165,233,0.1)';" onblur="this.style.borderColor='#cbd5e1'; this.style.boxShadow='none';" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1" style="color: #0f172a;">Phone Number</label>
+              <input type="tel" class="w-full px-4 py-3 rounded-lg transition-all" style="border: 1px solid #cbd5e1; outline: none;" placeholder="(555) 123-4567" onfocus="this.style.borderColor='#0ea5e9'; this.style.boxShadow='0 0 0 3px rgba(14,165,233,0.1)';" onblur="this.style.borderColor='#cbd5e1'; this.style.boxShadow='none';" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1" style="color: #0f172a;">Email Address</label>
+              <input type="email" class="w-full px-4 py-3 rounded-lg transition-all" style="border: 1px solid #cbd5e1; outline: none;" placeholder="john@example.com" onfocus="this.style.borderColor='#0ea5e9'; this.style.boxShadow='0 0 0 3px rgba(14,165,233,0.1)';" onblur="this.style.borderColor='#cbd5e1'; this.style.boxShadow='none';" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1" style="color: #0f172a;">Service Needed</label>
+              <select class="w-full px-4 py-3 rounded-lg transition-all" style="border: 1px solid #cbd5e1; outline: none; background-color: white;" onfocus="this.style.borderColor='#0ea5e9'; this.style.boxShadow='0 0 0 3px rgba(14,165,233,0.1)';" onblur="this.style.borderColor='#cbd5e1'; this.style.boxShadow='none';">
+                <option value="">Select a service...</option>
+                <option value="ac-repair">AC Repair</option>
+                <option value="ac-installation">AC Installation</option>
+                <option value="heating-repair">Heating Repair</option>
+                <option value="heating-installation">Heating Installation</option>
+                <option value="maintenance">Maintenance</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1" style="color: #0f172a;">Message (Optional)</label>
+              <textarea rows="3" class="w-full px-4 py-3 rounded-lg transition-all resize-none" style="border: 1px solid #cbd5e1; outline: none;" placeholder="Tell us about your needs..." onfocus="this.style.borderColor='#0ea5e9'; this.style.boxShadow='0 0 0 3px rgba(14,165,233,0.1)';" onblur="this.style.borderColor='#cbd5e1'; this.style.boxShadow='none';"></textarea>
+            </div>
+            <button type="submit" class="w-full py-4 text-white font-heading font-semibold text-lg rounded-lg transition-all duration-200 hover:-translate-y-0.5" style="background-color: #0ea5e9;" onmouseover="this.style.backgroundColor='#0284c7'; this.style.boxShadow='0 0 30px -5px rgba(14,165,233,0.4)';" onmouseout="this.style.backgroundColor='#0ea5e9'; this.style.boxShadow='none';">
+              Get My Free Estimate
+            </button>
+            <p class="text-xs text-center" style="color: #64748b;">
+              By submitting, you agree to receive calls/texts. Reply STOP to opt out.
+            </p>
+          </form>
+        )}
+      </div>
+    </div>
+  </div>
+</section>

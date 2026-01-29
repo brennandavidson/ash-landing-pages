@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+}
+
+const {
+  title = 'Ash Cooling & Heating',
+  description = 'Professional HVAC services you can trust. Veteran-owned, family-focused.',
+  canonical
+} = Astro.props;
+
+const siteUrl = Astro.site?.href || '';
+const canonicalUrl = canonical || Astro.url.href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/Favicon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- GHL Attribution Script Slot -->
+    <slot name="head" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <slot />
+
+    <!-- GHL Scripts Slot -->
+    <slot name="scripts" />
+  </body>
+</html>

@@ -1,0 +1,155 @@
+---
+/**
+ * Attribution Tracking Script Component
+ *
+ * Captures UTM parameters and other attribution data from URL,
+ * stores in localStorage, and makes available for GHL forms.
+ *
+ * Usage:
+ * Place in <head> slot: <AttributionScript slot="head" />
+ */
+
+interface Props {
+  cookieExpiry?: number; // Days until cookie expires
+}
+
+const { cookieExpiry = 30 } = Astro.props;
+---
+
+<script define:vars={{ cookieExpiry }}>
+  (function() {
+    'use strict';
+
+    const STORAGE_KEY = 'ash_attribution';
+    const COOKIE_EXPIRY_DAYS = cookieExpiry;
+
+    // UTM and tracking parameters to capture
+    const TRACK_PARAMS = [
+      'utm_source',
+      'utm_medium',
+      'utm_campaign',
+      'utm_term',
+      'utm_content',
+      'gclid',      // Google Ads
+      'fbclid',     // Facebook
+      'msclkid',    // Microsoft Ads
+      'ref',        // Referral
+      'source',     // Generic source
+      'campaign'    // Generic campaign
+    ];
+
+    function getUrlParams() {
+      const params = new URLSearchParams(window.location.search);
+      const captured = {};
+
+      TRACK_PARAMS.forEach(param => {
+        const value = params.get(param);
+        if (value) {
+          captured[param] = value;
+        }
+      });
+
+      return captured;
+    }
+
+    function getStoredAttribution() {
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        return stored ? JSON.parse(stored) : null;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function storeAttribution(data) {
+      try {
+        const attribution = {
+          ...data,
+          landing_page: window.location.pathname,
+          landing_url: window.location.href,
+          referrer: document.referrer || 'direct',
+          captured_at: new Date().toISOString(),
+          expires_at: new Date(Date.now() + COOKIE_EXPIRY_DAYS * 24 * 60 * 60 * 1000).toISOString()
+        };
+
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(attribution));
+
+        // Also set as cookie for server-side access if needed
+        const expires = new Date(Date.now() + COOKIE_EXPIRY_DAYS * 24 * 60 * 60 * 1000);
+        document.cookie = `${STORAGE_KEY}=${encodeURIComponent(JSON.stringify(attribution))}; expires=${expires.toUTCString()}; path=/; SameSite=Lax`;
+
+        return attribution;
+      } catch (e) {
+        console.warn('Attribution storage failed:', e);
+        return data;
+      }
+    }
+
+    function getAttribution() {
+      const stored = getStoredAttribution();
+
+      // Check if stored attribution is expired
+      if (stored && stored.expires_at) {
+        if (new Date(stored.expires_at) < new Date()) {
+          localStorage.removeItem(STORAGE_KEY);
+          return null;
+        }
+      }
+
+      return stored;
+    }
+
+    function init() {
+      const urlParams = getUrlParams();
+      const hasNewParams = Object.keys(urlParams).length > 0;
+      const existingAttribution = getAttribution();
+
+      // If we have new URL params, update attribution (first touch wins, but update if new campaign)
+      if (hasNewParams) {
+        // Merge with existing, but new params take precedence
+        const merged = {
+          ...(existingAttribution || {}),
+          ...urlParams
+        };
+        storeAttribution(merged);
+      } else if (!existingAttribution) {
+        // No params and no existing attribution - store basic visit data
+        storeAttribution({});
+      }
+
+      // Expose attribution data globally for forms
+      window.ashAttribution = {
+        get: getAttribution,
+        getForForm: function() {
+          const attr = getAttribution();
+          if (!attr) return {};
+
+          // Format for GHL hidden fields
+          return {
+            utm_source: attr.utm_source || '',
+            utm_medium: attr.utm_medium || '',
+            utm_campaign: attr.utm_campaign || '',
+            utm_term: attr.utm_term || '',
+            utm_content: attr.utm_content || '',
+            gclid: attr.gclid || '',
+            fbclid: attr.fbclid || '',
+            landing_page: attr.landing_page || '',
+            referrer: attr.referrer || ''
+          };
+        }
+      };
+
+      // Dispatch event when attribution is ready
+      window.dispatchEvent(new CustomEvent('attributionReady', {
+        detail: getAttribution()
+      }));
+    }
+
+    // Run on DOM ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>

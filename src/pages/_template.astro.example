@@ -1,0 +1,74 @@
+---
+/**
+ * LANDING PAGE TEMPLATE
+ *
+ * To create a new landing page:
+ * 1. Copy this file and rename it (e.g., ac-repair-phoenix.astro)
+ * 2. Update the page variables below
+ * 3. Add your GHL form ID
+ * 4. Customize headline, benefits, etc.
+ *
+ * URL will be: yoursite.com/ac-repair-phoenix
+ */
+
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Benefits from '../components/Benefits.astro';
+import FormSection from '../components/FormSection.astro';
+import AttributionScript from '../components/AttributionScript.astro';
+
+// ============================================
+// PAGE CONFIGURATION - Update these values
+// ============================================
+
+const pageTitle = 'Your Page Title | Ash Cooling & Heating';
+const pageDescription = 'Meta description for SEO (150-160 characters recommended)';
+const phone = '(555) 123-4567';
+
+// Hero section
+const heroHeadline = 'Your Main Headline Here';
+const heroSubheadline = 'Supporting text that explains the value proposition.';
+const heroVariant = 'gradient'; // 'default' | 'dark' | 'gradient'
+
+// Form section
+const formHeadline = 'Get Your Free Estimate';
+const formSubheadline = 'Fill out the form and we\'ll contact you within 24 hours.';
+const ghlFormId = ''; // Add your GHL form ID here
+
+// Optional: Custom benefits (or leave commented to use defaults)
+// const customBenefits = [
+//   { icon: 'shield', title: 'Benefit 1', description: 'Description...' },
+//   { icon: 'clock', title: 'Benefit 2', description: 'Description...' },
+//   // ... more benefits
+// ];
+
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <AttributionScript slot="head" />
+
+  <Header phone={phone} />
+
+  <main>
+    <Hero
+      headline={heroHeadline}
+      subheadline={heroSubheadline}
+      ctaText="Get Your Free Estimate"
+      ctaHref="#form"
+      variant={heroVariant}
+    />
+
+    <Benefits />
+    <!-- Or with custom benefits: <Benefits benefits={customBenefits} /> -->
+
+    <FormSection
+      headline={formHeadline}
+      subheadline={formSubheadline}
+      formId={ghlFormId}
+    />
+  </main>
+
+  <Footer phone={phone} />
+</Layout>
