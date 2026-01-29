@@ -11,21 +11,25 @@ const {
 
 const bgColor = variant === 'dark' ? 'background: linear-gradient(135deg, #2C3590 0%, #000000 100%);' : 'background-color: #ffffff;';
 const textColor = variant === 'dark' ? '#ffffff' : '#1a1a1a';
-const logo = variant === 'dark' ? '/logo-light.png' : '/logo-dark.png';
+const logoWebp = variant === 'dark' ? '/logo-light.webp' : '/logo-dark.webp';
+const logoPng = variant === 'dark' ? '/logo-light.png' : '/logo-dark.png';
 ---
 
 <header style={bgColor}>
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
     <div style="display: flex; align-items: center; justify-content: space-between; height: 80px;">
       <a href="/">
-        <img
-          src={logo}
-          alt="ASH Cooling & Heating"
-          width="158"
-          height="50"
-          fetchpriority="high"
-          style="height: 50px; width: auto;"
-        />
+        <picture>
+          <source srcset={logoWebp} type="image/webp" />
+          <img
+            src={logoPng}
+            alt="ASH Cooling & Heating"
+            width="158"
+            height="50"
+            fetchpriority="high"
+            style="height: 50px; width: auto;"
+          />
+        </picture>
       </a>
 
       <a

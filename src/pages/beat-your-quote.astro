@@ -52,12 +52,24 @@ const phone = '(480) 536-4465';
           </div>
         </div>
 
-        <!-- Right: Form -->
+        <!-- Right: Form - Lazy loaded for performance -->
         <div id="form">
+          <div id="form-placeholder" style="width:100%;height:813px;background:#fff;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.1);cursor:pointer;" onclick="loadGHLForm()">
+            <div style="text-align:center;padding:2rem;">
+              <div style="width:60px;height:60px;background:#E42F3A;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+                <svg style="width:30px;height:30px;color:#fff;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+              </div>
+              <h3 style="font-size:1.5rem;color:#1a1a1a;margin-bottom:0.5rem;font-family:'Anton',sans-serif;">SEND US YOUR QUOTE</h3>
+              <p style="color:#666;margin-bottom:1.5rem;">Click to load the form</p>
+              <div style="background:#E42F3A;color:#fff;padding:0.875rem 2rem;border-radius:4px;font-weight:700;display:inline-block;">
+                Get Started →
+              </div>
+            </div>
+          </div>
           <iframe
-            src="https://api.leadconnectorhq.com/widget/form/o3JbkdmOMRhvBVexub2k"
-            style="width:100%;height:813px;border:none;"
-            id="inline-o3JbkdmOMRhvBVexub2k"
+            id="ghl-iframe"
+            data-src="https://api.leadconnectorhq.com/widget/form/o3JbkdmOMRhvBVexub2k"
+            style="width:100%;height:813px;border:none;display:none;"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
             data-trigger-value=""
@@ -356,15 +368,18 @@ const phone = '(480) 536-4465';
         <div class="story-grid" style="display: grid; grid-template-columns: 350px 1fr; gap: 3rem; align-items: center;">
           <!-- Photo -->
           <div style="position: relative;">
-            <img
-              src="/ashton-cropped.jpg"
-              alt="Ashton, owner of ASH Cooling & Heating"
-              loading="lazy"
-              decoding="async"
-              width="350"
-              height="368"
-              style="width: 100%; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);"
-            />
+            <picture>
+              <source srcset="/ashton-cropped.webp" type="image/webp" />
+              <img
+                src="/ashton-cropped.jpg"
+                alt="Ashton, owner of ASH Cooling & Heating"
+                loading="lazy"
+                decoding="async"
+                width="350"
+                height="368"
+                style="width: 100%; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);"
+              />
+            </picture>
             <div style="position: absolute; bottom: -15px; right: -15px; background: #E42F3A; color: #fff; padding: 0.75rem 1.25rem; border-radius: 6px; font-weight: 700; font-size: 0.875rem;">
               OWNER & FOUNDER
             </div>
@@ -594,8 +609,54 @@ const phone = '(480) 536-4465';
 
   <Footer phone={phone} />
 
-  <!-- GHL Form Script - deferred for better performance -->
-  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+  <!-- GHL Form - Lazy load script and iframe -->
+  <script>
+    let ghlLoaded = false;
+
+    function loadGHLForm() {
+      if (ghlLoaded) return;
+      ghlLoaded = true;
+
+      const placeholder = document.getElementById('form-placeholder');
+      const iframe = document.getElementById('ghl-iframe');
+
+      // Show loading state
+      if (placeholder) {
+        placeholder.innerHTML = '<div style="text-align:center;padding:2rem;"><div style="width:40px;height:40px;border:3px solid #eee;border-top:3px solid #E42F3A;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 1rem;"></div><p style="color:#666;">Loading form...</p></div>';
+      }
+
+      // Load GHL script
+      const script = document.createElement('script');
+      script.src = 'https://link.msgsndr.com/js/form_embed.js';
+      script.onload = function() {
+        if (iframe) {
+          iframe.src = iframe.dataset.src;
+          iframe.style.display = 'block';
+        }
+        if (placeholder) {
+          placeholder.style.display = 'none';
+        }
+      };
+      document.body.appendChild(script);
+    }
+
+    // Auto-load when scrolled into view or after 3 seconds
+    const formObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        loadGHLForm();
+        formObserver.disconnect();
+      }
+    }, { rootMargin: '200px' });
+
+    const formEl = document.getElementById('form');
+    if (formEl) formObserver.observe(formEl);
+
+    // Fallback: load after 3 seconds if user hasn't scrolled
+    setTimeout(loadGHLForm, 3000);
+  </script>
+  <style>
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
 
   <!-- Floating CTA Button -->
   <a

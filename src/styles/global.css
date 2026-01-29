@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* Fonts are now preloaded in Layout.astro for better performance */
-
 /* ASH Cooling & Heating Brand System */
 
 html {
@@ -11,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 400;
   color: #1a1a1a;
   background-color: #ffffff;
@@ -19,7 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Anton', Impact, 'Arial Black', sans-serif;
   font-weight: 400;
   line-height: 1.1;
   text-transform: uppercase;

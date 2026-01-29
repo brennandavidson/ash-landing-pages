@@ -31,10 +31,10 @@ const canonicalUrl = canonical || Astro.url.href;
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://api.leadconnectorhq.com" />
 
-    <!-- Load fonts with display=swap for better LCP -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Load fonts asynchronously to avoid render blocking -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" /></noscript>
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
