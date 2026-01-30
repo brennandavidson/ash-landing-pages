@@ -17,7 +17,7 @@ const phone = '(480) 536-4465';
 
   <main>
     <!-- HERO - Split layout: content left, form right -->
-    <section style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); padding: 3rem 0 0; position: relative; overflow: hidden;">
+    <section class="hero-section" style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); padding: 3rem 0 0; position: relative; overflow: hidden;">
       <div class="hero-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative; display: grid; grid-template-columns: 1fr 480px; gap: 3rem; align-items: stretch;">
         <!-- Left: Content -->
         <div style="display: flex; flex-direction: column;">
@@ -570,6 +570,10 @@ const phone = '(480) 536-4465';
     .hero-grid {
       grid-template-columns: 1fr !important;
       text-align: center;
+      padding-top: 0 !important;
+    }
+    .hero-grid > div:first-child {
+      padding-top: 0;
     }
     .hero-grid ul {
       align-items: center;
@@ -578,13 +582,44 @@ const phone = '(480) 536-4465';
       justify-content: center;
     }
     .hero-unit-image {
-      display: none;
+      display: none !important;
     }
     .offer-grid {
       grid-template-columns: 1fr !important;
     }
     .testimonials-grid {
       grid-template-columns: 1fr !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .hero-section {
+      padding-top: 1rem !important;
+    }
+    .hero-grid h1 {
+      font-size: 2rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    .hero-grid > div:first-child > p {
+      font-size: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+    .hero-grid > div:first-child > div:first-child {
+      margin-bottom: 0.75rem !important;
+    }
+    .hero-grid ul {
+      font-size: 0.875rem;
+      gap: 0.25rem !important;
+      margin-bottom: 0.75rem !important;
+    }
+    .review-badges {
+      margin-top: 0.75rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    #form > div {
+      padding: 1.25rem !important;
+    }
+    #form h2 {
+      font-size: 1.375rem !important;
     }
   }
 </style>
