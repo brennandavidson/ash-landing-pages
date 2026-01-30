@@ -265,6 +265,59 @@ const phone = '(480) 536-4465';
       </div>
     </section>
 
+    <!-- MEET ASHTON -->
+    <section style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); padding: 5rem 0;">
+      <div style="max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+        <div class="story-grid" style="display: grid; grid-template-columns: 350px 1fr; gap: 3rem; align-items: center;">
+          <!-- Photo -->
+          <div style="position: relative;">
+            <picture>
+              <source srcset="/ashton-cropped.webp" type="image/webp" />
+              <img
+                src="/ashton-cropped.jpg"
+                alt="Ashton, owner of ASH Cooling & Heating"
+                loading="lazy"
+                decoding="async"
+                width="350"
+                height="368"
+                style="width: 100%; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);"
+              />
+            </picture>
+            <div style="position: absolute; bottom: -15px; right: -15px; background: #E42F3A; color: #fff; padding: 0.75rem 1.25rem; border-radius: 6px; font-weight: 700; font-size: 0.875rem;">
+              OWNER & FOUNDER
+            </div>
+          </div>
+
+          <!-- Story -->
+          <div>
+            <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); color: #1a1a1a; margin-bottom: 1.5rem;">
+              Hey, I'm <span style="color: #E42F3A;">Ashton.</span>
+            </h2>
+            <p style="color: #444; font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.25rem;">
+              I spent 8 years at two of the biggest HVAC companies in Arizona. Both got bought by private equity while I was there.
+            </p>
+            <p style="color: #444; font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.25rem;">
+              Prices went up. Service went down. I got tired of it.
+            </p>
+            <p style="color: #444; font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.25rem;">
+              So I started ASH Cooling & Heating.
+            </p>
+            <p style="color: #444; font-size: 1.125rem; line-height: 1.8; margin-bottom: 2rem;">
+              This deal is simple. We're booking installs before the summer rush. You get $1,400 off, we get the work scheduled before every AC in Phoenix dies at the same time. <strong style="color: #1a1a1a;">That's it.</strong>
+            </p>
+            <a
+              href="#form"
+              style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2rem; font-size: 1.0625rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+              onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+            >
+              Claim My Discount →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- COMPARISON SECTION -->
     <section style="background-color: #ffffff; padding: 5rem 0;">
       <div style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem;">
@@ -564,6 +617,19 @@ const phone = '(480) 536-4465';
     }
     .testimonials-grid {
       grid-template-columns: 1fr !important;
+    }
+    .story-grid {
+      grid-template-columns: 1fr !important;
+      text-align: center;
+    }
+    .story-grid img {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .story-grid > div:first-child > div {
+      right: auto !important;
+      left: 50% !important;
+      transform: translateX(-50%);
     }
   }
   @media (max-width: 600px) {
