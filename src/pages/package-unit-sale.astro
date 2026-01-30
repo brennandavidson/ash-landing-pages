@@ -18,9 +18,9 @@ const phone = '(480) 536-4465';
   <main>
     <!-- HERO - Split layout: content left, form right -->
     <section style="background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); padding: 3rem 0 0; position: relative; overflow: hidden;">
-      <div class="hero-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative; display: grid; grid-template-columns: 1fr 480px; gap: 3rem; align-items: start;">
+      <div class="hero-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative; display: grid; grid-template-columns: 1fr 480px; gap: 3rem; align-items: stretch;">
         <!-- Left: Content -->
-        <div>
+        <div style="display: flex; flex-direction: column;">
           <!-- Urgency Badge -->
           <div style="display: inline-block; background: #fef2f2; border: 1px solid #E42F3A; color: #E42F3A; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.25rem;">
             ⚡ Limited inventory. While supplies last.
@@ -76,10 +76,22 @@ const phone = '(480) 536-4465';
               <span style="font-size: 0.8125rem; font-weight: 600; color: #333;">5.0</span>
             </div>
           </div>
+
+          <!-- Unit Image - pushed to bottom with flex-grow spacer -->
+          <div class="hero-unit-image" style="flex-grow: 1; display: flex; align-items: flex-end; margin-top: 1rem;">
+            <picture>
+              <source srcset="/unit-image.webp" type="image/webp" />
+              <img
+                src="/image 23.png"
+                alt="RunTru by Trane 5-Ton Package Unit"
+                style="max-width: 350px; height: auto; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.25));"
+              />
+            </picture>
+          </div>
         </div>
 
         <!-- Right: Form -->
-        <div id="form" style="padding-bottom: 2rem;">
+        <div id="form" style="padding-bottom: 1rem;">
           <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
             <h2 style="font-size:1.75rem;color:#1a1a1a;text-align:center;margin-bottom:0.5rem;">CLAIM YOUR $1,400 OFF</h2>
             <p style="color:#666;text-align:center;margin-bottom:1.5rem;font-size:1rem;">Limited inventory available</p>
@@ -131,18 +143,6 @@ const phone = '(480) 536-4465';
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Unit Image - anchored to bottom -->
-      <div class="hero-unit-image" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; margin-top: -2rem;">
-        <picture>
-          <source srcset="/unit-image.webp" type="image/webp" />
-          <img
-            src="/image 23.png"
-            alt="RunTru by Trane 5-Ton Package Unit"
-            style="max-width: 380px; height: auto; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.25));"
-          />
-        </picture>
       </div>
     </section>
 
