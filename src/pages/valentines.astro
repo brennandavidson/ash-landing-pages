@@ -1,0 +1,712 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TrustBar from '../components/TrustBar.astro';
+import AttributionScript from '../components/AttributionScript.astro';
+
+const phone = '(480) 536-4465';
+---
+
+<Layout
+  title="Valentine's Day Special - $1,400 Off AC | ASH Cooling & Heating"
+  description="Your AC shouldn't ghost you. $1,400 off a brand new system. 36 months 0% interest. Installed before the heat comes back. Ends Feb 14."
+>
+  <AttributionScript slot="head" />
+
+  <Header phone={phone} variant="light" />
+
+  <main>
+    <!-- HERO - Split layout: content left, form right -->
+    <section class="hero-section" style="background: linear-gradient(180deg, #ffffff 0%, #fff5f5 100%); padding: 3rem 0 0; position: relative; overflow: hidden;">
+      <div class="hero-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative; display: grid; grid-template-columns: 1fr 480px; gap: 3rem; align-items: start;">
+        <!-- Left: Content -->
+        <div style="padding-top: 1rem;">
+          <!-- Urgency Badge -->
+          <div style="display: inline-block; background: #fef2f2; border: 1px solid #E42F3A; color: #E42F3A; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.25rem;">
+            ❤️ Valentine's Day Special. Ends Feb 14.
+          </div>
+
+          <h1 style="font-size: clamp(2.5rem, 5vw, 3.5rem); color: #1a1a1a; margin-bottom: 0.75rem; line-height: 1.05;">
+            Your AC Shouldn't<br /><span style="color: #E42F3A;">Ghost You.</span>
+          </h1>
+          <p style="font-size: 1.25rem; color: #444; margin-bottom: 1.5rem; line-height: 1.5;">
+            This Valentine's Day, upgrade to something reliable. <strong style="color: #1a1a1a;">$1,400 off</strong> a brand new system. 36 months 0% interest. Installed before the heat comes back.
+          </p>
+
+          <!-- Bullets -->
+          <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: #333; font-size: 1rem;">
+              <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              $1,400 off — Valentine's Day only
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: #333; font-size: 1rem;">
+              <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              36 months 0% interest ($250/mo)
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: #333; font-size: 1rem;">
+              <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              Installed before summer hits
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.5rem; color: #333; font-size: 1rem;">
+              <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+              No hidden fees. Ever.
+            </li>
+          </ul>
+
+          <!-- Review Badges -->
+          <div class="review-badges" style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+            <!-- Google Badge -->
+            <div style="display: flex; align-items: center; gap: 0.5rem; background: #fff; padding: 0.5rem 0.75rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              <div style="display: flex; gap: 1px;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 14px; height: 14px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <span style="font-size: 0.8125rem; font-weight: 600; color: #333;">5.0</span>
+            </div>
+            <!-- Facebook Badge -->
+            <div style="display: flex; align-items: center; gap: 0.5rem; background: #fff; padding: 0.5rem 0.75rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24"><path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <div style="display: flex; gap: 1px;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 14px; height: 14px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <span style="font-size: 0.8125rem; font-weight: 600; color: #333;">5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div id="form" style="padding-bottom: 2rem;">
+          <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);border-top:4px solid #E42F3A;">
+            <h2 style="font-size:1.75rem;color:#1a1a1a;text-align:center;margin-bottom:0.5rem;">CLAIM YOUR $1,400 OFF</h2>
+            <p style="color:#666;text-align:center;margin-bottom:1.5rem;font-size:1rem;">Offer ends February 14</p>
+
+            <form id="quote-form" style="display:flex;flex-direction:column;gap:0.75rem;">
+              <input type="text" name="full_name" placeholder="Full Name *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+              <input type="tel" name="phone" placeholder="Phone Number *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+              <input type="email" name="email" placeholder="Email *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+              <input type="text" name="address" placeholder="Address *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
+
+              <select name="contact.current_system_age" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
+                <option value="" disabled selected>How old is your current system? *</option>
+                <option value="0-5 years">0-5 years</option>
+                <option value="5-10 years">5-10 years</option>
+                <option value="10-15 years">10-15 years</option>
+                <option value="15+ years">15+ years</option>
+                <option value="Not sure">Not sure</option>
+              </select>
+
+              <select name="contact.best_time_to_call" style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
+                <option value="" disabled selected>Best time to call?</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+              </select>
+
+              <div style="display:flex;align-items:flex-start;gap:0.5rem;margin-top:0.25rem;">
+                <input type="checkbox" id="terms" name="terms_and_conditions" value="I Agree" required style="width:16px;height:16px;margin-top:2px;cursor:pointer;accent-color:#E42F3A;" />
+                <label for="terms" style="font-size:0.8125rem;color:#666;line-height:1.4;cursor:pointer;">
+                  I agree to <a href="/terms" target="_blank" style="color:#E42F3A;text-decoration:underline;">terms & conditions</a>. By providing my phone number, I agree to receive text messages from the business.
+                </label>
+              </div>
+
+              <button type="submit" id="submit-btn" style="width:100%;background:#E42F3A;color:#fff;padding:1.125rem;border:none;border-radius:8px;font-size:1.125rem;font-weight:700;cursor:pointer;font-family:inherit;">
+                GET $1,400 OFF →
+              </button>
+
+              <p style="text-align:center;color:#666;font-size:0.8125rem;margin:0.25rem 0 0;">
+                ⚡ We'll call within 1 hour. Offer ends Feb 14.
+              </p>
+            </form>
+
+            <div id="form-success" style="display:none;text-align:center;padding:2rem 1rem;">
+              <div style="width:50px;height:50px;background:#22c55e;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+                <svg style="width:24px;height:24px;color:#fff;" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              </div>
+              <h3 style="font-size:1.25rem;color:#1a1a1a;margin-bottom:0.5rem;">You're In!</h3>
+              <p style="color:#666;font-size:0.9375rem;">We'll call you within 1 hour to lock in your Valentine's Day deal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <TrustBar />
+
+    <!-- PROBLEM SECTION -->
+    <section style="background-color: #ffffff; padding: 5rem 0;">
+      <div style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem;">
+        <h2 style="font-size: clamp(2rem, 5vw, 3rem); color: #1a1a1a; text-align: center; margin-bottom: 2rem;">
+          Remember <span style="color: #E42F3A;">Last Summer?</span>
+        </h2>
+
+        <div style="background: #f9f9f9; padding: 2rem; border-radius: 12px; border-left: 4px solid #E42F3A;">
+          <p style="color: #444; font-size: 1.25rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            <strong style="color: #1a1a1a;">116 degrees.</strong> You're dripping sweat. And your AC just... quit.
+          </p>
+          <p style="color: #444; font-size: 1.25rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            No warning. No goodbye. Just hot air and a <strong style="color: #E42F3A;">$400 emergency repair bill.</strong>
+          </p>
+          <p style="color: #444; font-size: 1.25rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            Then you waited three weeks for someone to show up because every HVAC company in Phoenix was slammed.
+          </p>
+          <p style="color: #1a1a1a; font-size: 1.5rem; font-weight: 700; margin: 0; font-family: 'Anton', sans-serif; letter-spacing: 0.02em;">
+            DON'T DO THAT AGAIN.
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a
+            href="#form"
+            style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2.5rem; font-size: 1.125rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+          >
+            Get $1,400 Off →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER BREAKDOWN -->
+    <section style="background-color: #f5f5f5; padding: 5rem 0;">
+      <div style="max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+        <h2 style="font-size: clamp(2rem, 5vw, 3rem); color: #1a1a1a; text-align: center; margin-bottom: 3rem;">
+          The Valentine's Day <span style="color: #E42F3A;">Deal</span>
+        </h2>
+
+        <div class="offer-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+          <!-- The System -->
+          <div style="background: #fff; padding: 2rem; border-radius: 12px; border-top: 4px solid #2C3590;">
+            <h3 style="font-size: 1.25rem; color: #1a1a1a; margin-bottom: 1.25rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">The System</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; color: #555; font-size: 1rem; line-height: 1.8;">
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                RunTru by Trane 5-ton package unit
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                Built for Arizona heat
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                Factory-backed warranty
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                Actually reliable
+              </li>
+            </ul>
+          </div>
+
+          <!-- The Price -->
+          <div style="background: #fff; padding: 2rem; border-radius: 12px; border-top: 4px solid #E42F3A;">
+            <h3 style="font-size: 1.25rem; color: #1a1a1a; margin-bottom: 1.25rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">The Price</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; color: #555; font-size: 1rem; line-height: 1.8;">
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                <strong>$1,400 off</strong>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                As low as $8,997 out the door
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                36 months at 0% interest ($250/mo)
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                <svg style="width: 20px; height: 20px; color: #22c55e; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                No hidden fees. Ever.
+              </li>
+            </ul>
+          </div>
+
+          <!-- The Deadline -->
+          <div style="background: #fff; padding: 2rem; border-radius: 12px; border-top: 4px solid #E42F3A;">
+            <h3 style="font-size: 1.25rem; color: #1a1a1a; margin-bottom: 1.25rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">The Deadline</h3>
+            <p style="color: #555; font-size: 1.125rem; line-height: 1.6;">
+              Offer ends <strong style="color: #E42F3A;">February 14</strong>. Then it's gone.
+            </p>
+            <p style="color: #555; font-size: 1rem; line-height: 1.6; margin-top: 1rem;">
+              No extensions. No "just this once." Lock it in now or pay full price later.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a
+            href="#form"
+            style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2.5rem; font-size: 1.125rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+          >
+            Claim This Deal →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY NOW SECTION -->
+    <section style="background: #ffffff; padding: 5rem 0;">
+      <div style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem;">
+        <h2 style="font-size: clamp(2rem, 5vw, 3rem); color: #1a1a1a; text-align: center; margin-bottom: 2rem;">
+          Why Replace It <span style="color: #E42F3A;">Before Summer?</span>
+        </h2>
+
+        <p style="color: #444; font-size: 1.25rem; line-height: 1.7; margin-bottom: 2rem; text-align: center;">
+          Right now, our schedule is open. We can get you in fast, at our lowest price.
+        </p>
+
+        <p style="color: #444; font-size: 1.125rem; line-height: 1.7; margin-bottom: 1.5rem;">
+          <strong style="color: #1a1a1a;">Wait until May and three things happen:</strong>
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+          <div style="display: flex; align-items: flex-start; gap: 1rem; background: #fef2f2; padding: 1.25rem; border-radius: 8px;">
+            <span style="font-size: 1.5rem; font-weight: 700; color: #E42F3A;">1</span>
+            <p style="color: #444; font-size: 1.0625rem; margin: 0; line-height: 1.5;"><strong style="color: #1a1a1a;">Our schedule fills up.</strong> You're waiting weeks.</p>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 1rem; background: #fef2f2; padding: 1.25rem; border-radius: 8px;">
+            <span style="font-size: 1.5rem; font-weight: 700; color: #E42F3A;">2</span>
+            <p style="color: #444; font-size: 1.0625rem; margin: 0; line-height: 1.5;"><strong style="color: #1a1a1a;">Prices go up.</strong> Everyone's desperate.</p>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 1rem; background: #fef2f2; padding: 1.25rem; border-radius: 8px;">
+            <span style="font-size: 1.5rem; font-weight: 700; color: #E42F3A;">3</span>
+            <p style="color: #444; font-size: 1.0625rem; margin: 0; line-height: 1.5;"><strong style="color: #1a1a1a;">Your old unit picks the hottest day of the year to die.</strong> It always does.</p>
+          </div>
+        </div>
+
+        <p style="text-align: center; color: #1a1a1a; font-size: 1.5rem; font-weight: 700; font-family: 'Anton', sans-serif; letter-spacing: 0.02em;">
+          BOOK NOW. BEAT THE RUSH. SAVE $1,400.
+        </p>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <a
+            href="#form"
+            style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2.5rem; font-size: 1.125rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+          >
+            Get $1,400 Off →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOOGLE REVIEWS SLIDER -->
+    <section style="background-color: #f9f9f9; padding: 4rem 0; overflow: hidden;">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: #fff; padding: 0.5rem 1rem; border-radius: 50px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); margin-bottom: 1rem;">
+            <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            <span style="font-weight: 600; color: #1a1a1a; font-size: 0.875rem;">Google Reviews</span>
+            <div style="display: flex; gap: 1px;">
+              {[1,2,3,4,5].map(() => (
+                <svg style="width: 14px; height: 14px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              ))}
+            </div>
+            <span style="font-weight: 700; color: #1a1a1a; font-size: 0.875rem;">5.0</span>
+          </div>
+          <h2 style="font-size: clamp(1.75rem, 4vw, 2.5rem); color: #1a1a1a; margin-bottom: 0.25rem;">
+            Why Arizona Homeowners <span style="color: #E42F3A;">Choose ASH</span>
+          </h2>
+        </div>
+
+        <!-- Slider Container -->
+        <div id="reviews-slider" style="position: relative; padding: 0 3rem;">
+          <div id="reviews-track" style="display: flex; gap: 1rem; transition: transform 0.5s ease;">
+            <!-- Review 1 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"No games, no upsells, just a fair price and a great install. <strong>These guys are the real deal.</strong>"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Michelle P., Glendale</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"Got three quotes. <strong>ASH was $4,000 less than the next closest.</strong> Same Trane system. No brainer."</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">James W., Mesa</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"They showed up on time, finished the same day, and cleaned up after themselves. <strong>Can't ask for more.</strong>"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Linda R., Scottsdale</p>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"They were the best price from the quotes I received! <strong>If I could give 10 stars I would!</strong>"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Jennifer Lyons</p>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"<strong>1000 stars if possible!</strong> Ash answered on my first call. The service was phenomenal!"</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Sandra</p>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="review-card" style="background: #fff; padding: 1.25rem; border-radius: 10px; border-left: 3px solid #E42F3A; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+              <div style="display: flex; gap: 2px; margin-bottom: 0.75rem;">
+                {[1,2,3,4,5].map(() => (<svg style="width: 16px; height: 16px; color: #fbbf24;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}
+              </div>
+              <p style="color: #333; font-size: 0.9375rem; line-height: 1.5; margin-bottom: 1rem;">"<strong>He's a veteran and a complete gentleman.</strong> Smart questions, great recommendations."</p>
+              <p style="font-weight: 600; color: #1a1a1a; margin: 0; font-size: 0.875rem;">Lisa Rose</p>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button id="prev-btn" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.15); cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10;">
+            <svg style="width: 18px; height: 18px; color: #1a1a1a;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+          </button>
+          <button id="next-btn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; background: #fff; border: none; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.15); cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10;">
+            <svg style="width: 18px; height: 18px; color: #1a1a1a;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+          </button>
+        </div>
+
+        <!-- Dots -->
+        <div id="slider-dots" style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem;"></div>
+      </div>
+    </section>
+
+    <script>
+      // Reviews Slider
+      const track = document.getElementById('reviews-track');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const dotsContainer = document.getElementById('slider-dots');
+      const cards = document.querySelectorAll('.review-card');
+      const gap = 16;
+      let currentIndex = 0;
+      let autoplayInterval;
+
+      function getCardWidth() {
+        const vw = window.innerWidth;
+        if (vw < 480) return vw - 120;
+        if (vw < 768) return 280;
+        return 320;
+      }
+
+      function setCardWidths() {
+        const width = getCardWidth();
+        cards.forEach(card => {
+          card.style.minWidth = width + 'px';
+          card.style.maxWidth = width + 'px';
+        });
+      }
+
+      function getVisibleCards() {
+        const containerWidth = track?.parentElement?.offsetWidth || 1200;
+        return Math.max(1, Math.floor(containerWidth / (getCardWidth() + gap)));
+      }
+
+      function createDots() {
+        if (!dotsContainer) return;
+        const totalDots = Math.max(1, cards.length - getVisibleCards() + 1);
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalDots; i++) {
+          const dot = document.createElement('button');
+          dot.style.cssText = 'width: 8px; height: 8px; border-radius: 50%; border: none; cursor: pointer; transition: all 0.3s;';
+          dot.style.background = i === 0 ? '#E42F3A' : '#ddd';
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function updateDots() {
+        const dots = dotsContainer?.querySelectorAll('button') || [];
+        dots.forEach((dot, i) => { dot.style.background = i === currentIndex ? '#E42F3A' : '#ddd'; });
+      }
+
+      function goToSlide(index) {
+        const maxIndex = cards.length - getVisibleCards();
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+        if (track) track.style.transform = `translateX(-${currentIndex * (getCardWidth() + gap)}px)`;
+        updateDots();
+      }
+
+      function nextSlide() {
+        const maxIndex = cards.length - getVisibleCards();
+        goToSlide(currentIndex >= maxIndex ? 0 : currentIndex + 1);
+      }
+
+      function prevSlide() {
+        goToSlide(currentIndex <= 0 ? cards.length - getVisibleCards() : currentIndex - 1);
+      }
+
+      prevBtn?.addEventListener('click', () => { prevSlide(); resetAutoplay(); });
+      nextBtn?.addEventListener('click', () => { nextSlide(); resetAutoplay(); });
+
+      function startAutoplay() { autoplayInterval = setInterval(nextSlide, 4000); }
+      function resetAutoplay() { clearInterval(autoplayInterval); startAutoplay(); }
+
+      track?.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+      track?.addEventListener('mouseleave', startAutoplay);
+
+      setCardWidths();
+      createDots();
+      startAutoplay();
+
+      window.addEventListener('resize', () => {
+        setCardWidths();
+        createDots();
+        goToSlide(Math.min(currentIndex, cards.length - getVisibleCards()));
+      });
+    </script>
+
+    <!-- FAQ -->
+    <section style="background-color: #ffffff; padding: 5rem 0;">
+      <div style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem;">
+        <h2 style="font-size: clamp(2rem, 5vw, 3rem); color: #1a1a1a; text-align: center; margin-bottom: 3rem;">
+          Questions? <span style="color: #E42F3A;">Answers.</span>
+        </h2>
+
+        <div>
+          <div style="background: #f9f9f9; padding: 1.5rem 2rem; margin-bottom: 1rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">Is this a real discount or just marketing?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">Real discount. $1,400 off our standard price. We're booking installs before the summer rush.</p>
+          </div>
+          <div style="background: #f9f9f9; padding: 1.5rem 2rem; margin-bottom: 1rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">What's included?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">New 5-ton package unit, full installation, old unit removal, thermostat, permit. No hidden fees.</p>
+          </div>
+          <div style="background: #f9f9f9; padding: 1.5rem 2rem; margin-bottom: 1rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">What happens after Feb 14?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">The $1,400 discount goes away. Standard pricing applies.</p>
+          </div>
+          <div style="background: #f9f9f9; padding: 1.5rem 2rem; margin-bottom: 1rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">Can I finance it?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">Yes. 36 months at 0% interest for qualified buyers.</p>
+          </div>
+          <div style="background: #f9f9f9; padding: 1.5rem 2rem; border-radius: 8px;">
+            <h3 style="font-size: 1.125rem; color: #1a1a1a; margin: 0 0 0.75rem; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700;">How fast can you install?</h3>
+            <p style="color: #666; margin: 0; line-height: 1.6;">Most installs are scheduled within 1-2 weeks right now. During summer it's 3-4 weeks or more.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a
+            href="#form"
+            style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1rem 2.5rem; font-size: 1.125rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 15px rgba(228,47,58,0.3); transition: all 0.2s;"
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(228,47,58,0.4)';"
+            onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(228,47,58,0.3)';"
+          >
+            Claim This Deal →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section style="background: #1a1a1a; padding: 5rem 0;">
+      <div style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem; text-align: center;">
+        <h2 style="font-size: clamp(2.5rem, 6vw, 4rem); color: #ffffff; margin-bottom: 1rem;">
+          Don't Get Left <span style="color: #E42F3A;">In The Heat.</span>
+        </h2>
+        <p style="color: rgba(255,255,255,0.7); font-size: 1.375rem; margin-bottom: 2.5rem;">
+          $1,400 off. Ends February 14. Upgrade before summer.
+        </p>
+        <a
+          href="#form"
+          style="display: inline-block; background-color: #E42F3A; color: #ffffff; padding: 1.25rem 3rem; font-size: 1.25rem; font-weight: 700; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 20px rgba(228,47,58,0.4); transition: all 0.2s;"
+          onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 30px rgba(228,47,58,0.5)';"
+          onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 20px rgba(228,47,58,0.4)';"
+        >
+          Claim This Deal →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer phone={phone} showDisclaimer={false} />
+
+  <!-- Floating CTA Button -->
+  <a
+    id="floating-cta"
+    href="#form"
+    style="position: fixed; bottom: 1.5rem; right: 1.5rem; background-color: #E42F3A; color: #ffffff; padding: 1rem 1.5rem; font-size: 1rem; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 20px rgba(228,47,58,0.4); z-index: 1000; opacity: 0; visibility: hidden; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;"
+  >
+    <span>Get $1,400 Off</span>
+    <svg style="width: 18px; height: 18px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </a>
+
+  <script>
+    const floatingCta = document.getElementById('floating-cta');
+    const hero = document.querySelector('section');
+
+    function checkScroll() {
+      if (!hero || !floatingCta) return;
+
+      const heroBottom = hero.offsetTop + hero.offsetHeight;
+      const scrollY = window.scrollY;
+
+      if (scrollY > heroBottom - 100) {
+        floatingCta.style.opacity = '1';
+        floatingCta.style.visibility = 'visible';
+      } else {
+        floatingCta.style.opacity = '0';
+        floatingCta.style.visibility = 'hidden';
+      }
+    }
+
+    floatingCta?.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-3px)';
+      this.style.boxShadow = '0 8px 30px rgba(228,47,58,0.5)';
+    });
+
+    floatingCta?.addEventListener('mouseleave', function() {
+      this.style.transform = 'none';
+      this.style.boxShadow = '0 4px 20px rgba(228,47,58,0.4)';
+    });
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll();
+  </script>
+
+  <!-- Form Submission -->
+  <script>
+    const form = document.getElementById('quote-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const formSuccess = document.getElementById('form-success');
+
+    // TODO: Replace with actual GHL webhook URL
+    const WEBHOOK_URL = 'PLACEHOLDER_WEBHOOK_URL';
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
+      submitBtn.style.opacity = '0.7';
+
+      const formData = new FormData(form);
+      const data = {};
+
+      formData.forEach((value, key) => {
+        if (key === 'terms_and_conditions') {
+          data[key] = 'I Agree';
+        } else {
+          data[key] = value;
+        }
+      });
+
+      // Add attribution data if available
+      if (window.ashAttribution) {
+        const attr = window.ashAttribution.getForForm();
+        Object.assign(data, attr);
+      }
+
+      try {
+        const response = await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+          form.style.display = 'none';
+          formSuccess.style.display = 'block';
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (error) {
+        console.error('Form submission error:', error);
+        alert('Something went wrong. Please try again or call us directly.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'GET $1,400 OFF →';
+        submitBtn.style.opacity = '1';
+      }
+    });
+
+    // Add focus styles to inputs
+    document.querySelectorAll('#quote-form input, #quote-form select').forEach(el => {
+      el.addEventListener('focus', () => {
+        el.style.borderColor = '#E42F3A';
+        el.style.outline = 'none';
+      });
+      el.addEventListener('blur', () => {
+        el.style.borderColor = '#e0e0e0';
+      });
+    });
+
+    // Update select color when option is selected
+    document.querySelectorAll('#quote-form select').forEach(sel => {
+      sel.addEventListener('change', () => {
+        sel.style.color = '#1a1a1a';
+      });
+    });
+  </script>
+</Layout>
+
+<style>
+  @media (max-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1fr !important;
+      text-align: center;
+      padding-top: 0 !important;
+    }
+    .hero-grid > div:first-child {
+      padding-top: 0;
+    }
+    .hero-grid ul {
+      align-items: center;
+    }
+    .review-badges {
+      justify-content: center;
+    }
+    .offer-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .hero-section {
+      padding-top: 1rem !important;
+    }
+    .hero-grid h1 {
+      font-size: 2.5rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    .hero-grid > div:first-child > p {
+      font-size: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+    .hero-grid > div:first-child > div:first-child {
+      margin-bottom: 0.75rem !important;
+    }
+    .hero-grid ul {
+      font-size: 0.875rem;
+      gap: 0.25rem !important;
+      margin-bottom: 0.75rem !important;
+    }
+    .review-badges {
+      margin-top: 0.75rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    #form > div {
+      padding: 1.25rem !important;
+    }
+    #form h2 {
+      font-size: 1.375rem !important;
+    }
+  }
+</style>
