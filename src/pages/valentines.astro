@@ -84,7 +84,6 @@ const phone = '(480) 536-4465';
             <form id="quote-form" style="display:flex;flex-direction:column;gap:0.75rem;">
               <input type="text" name="full_name" placeholder="Full Name *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
               <input type="tel" name="phone" placeholder="Phone Number *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
-              <input type="email" name="email" placeholder="Email *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
               <input type="text" name="address" placeholder="Address *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
 
               <select name="contact.current_system_age" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
@@ -640,8 +639,7 @@ const phone = '(480) 536-4465';
     const submitBtn = document.getElementById('submit-btn');
     const formSuccess = document.getElementById('form-success');
 
-    // TODO: Replace with actual GHL webhook URL
-    const WEBHOOK_URL = 'PLACEHOLDER_WEBHOOK_URL';
+    const WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/dGHA224kB5WE4OS1KLqw/webhook-trigger/8kedzAUf5kng2bsEAJLO';
 
     form?.addEventListener('submit', async (e) => {
       e.preventDefault();
