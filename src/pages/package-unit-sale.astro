@@ -100,10 +100,9 @@ const phone = '(480) 536-4465';
             <form id="quote-form" style="display:flex;flex-direction:column;gap:0.75rem;">
               <input type="text" name="full_name" placeholder="Full Name *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
               <input type="tel" name="phone" placeholder="Phone Number *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
-              <input type="email" name="email" placeholder="Email *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
               <input type="text" name="address" placeholder="Address *" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;" />
 
-              <select name="system_age" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
+              <select name="contact.current_system_age" required style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
                 <option value="" disabled selected>How old is your current system? *</option>
                 <option value="0-5 years">0-5 years</option>
                 <option value="5-10 years">5-10 years</option>
@@ -112,7 +111,7 @@ const phone = '(480) 536-4465';
                 <option value="Not sure">Not sure</option>
               </select>
 
-              <select name="best_time_to_call" style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
+              <select name="contact.best_time_to_call" style="width:100%;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;font-size:1rem;font-family:inherit;background:#fff;color:#666;">
                 <option value="" disabled selected>Best time to call?</option>
                 <option value="Morning">Morning</option>
                 <option value="Afternoon">Afternoon</option>
@@ -686,8 +685,7 @@ const phone = '(480) 536-4465';
     const submitBtn = document.getElementById('submit-btn');
     const formSuccess = document.getElementById('form-success');
 
-    // TODO: Replace with actual GHL webhook URL
-    const WEBHOOK_URL = 'PLACEHOLDER_WEBHOOK_URL';
+    const WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/dGHA224kB5WE4OS1KLqw/webhook-trigger/0NaFCKo82LOozM7XK04B';
 
     form?.addEventListener('submit', async (e) => {
       e.preventDefault();
