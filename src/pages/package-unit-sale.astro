@@ -721,6 +721,10 @@ const phone = '(480) 536-4465';
         });
 
         if (response.ok) {
+          // Track form submission
+          if (window.ashAttribution) {
+            window.ashAttribution.trackFormSubmit('package_unit_lead_form');
+          }
           form.style.display = 'none';
           formSuccess.style.display = 'block';
         } else {
@@ -735,11 +739,17 @@ const phone = '(480) 536-4465';
       }
     });
 
-    // Add focus styles to inputs
+    // Track form start (first interaction)
+    let formStarted = false;
     document.querySelectorAll('#quote-form input, #quote-form select').forEach(el => {
       el.addEventListener('focus', () => {
         el.style.borderColor = '#E42F3A';
         el.style.outline = 'none';
+        // Track form start on first focus
+        if (!formStarted && window.ashAttribution) {
+          formStarted = true;
+          window.ashAttribution.trackFormStart('package_unit_lead_form');
+        }
       });
       el.addEventListener('blur', () => {
         el.style.borderColor = '#e0e0e0';
@@ -750,6 +760,18 @@ const phone = '(480) 536-4465';
     document.querySelectorAll('#quote-form select').forEach(sel => {
       sel.addEventListener('change', () => {
         sel.style.color = '#1a1a1a';
+      });
+    });
+
+    // Track CTA clicks
+    document.querySelectorAll('a[href="#form"]').forEach(cta => {
+      cta.addEventListener('click', () => {
+        if (window.ashAttribution) {
+          const ctaText = cta.textContent?.trim() || 'CTA Click';
+          const section = cta.closest('section');
+          const ctaLocation = section?.querySelector('h2')?.textContent?.trim() || 'hero';
+          window.ashAttribution.trackCtaClick(ctaText, ctaLocation);
+        }
       });
     });
   </script>

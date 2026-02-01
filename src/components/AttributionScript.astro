@@ -117,6 +117,17 @@ const { cookieExpiry = 30 } = Astro.props;
         storeAttribution({});
       }
 
+      // Initialize dataLayer
+      window.dataLayer = window.dataLayer || [];
+
+      // Push dataLayer event helper
+      function pushEvent(eventName, eventData) {
+        window.dataLayer.push({
+          event: eventName,
+          ...eventData
+        });
+      }
+
       // Expose attribution data globally for forms
       window.ashAttribution = {
         get: getAttribution,
@@ -136,8 +147,48 @@ const { cookieExpiry = 30 } = Astro.props;
             landing_page: attr.landing_page || '',
             referrer: attr.referrer || ''
           };
+        },
+        // GTM event methods
+        trackFormStart: function(formName) {
+          pushEvent('ash_form_start', {
+            form_name: formName || 'lead_form',
+            page_path: window.location.pathname,
+            ...this.getForForm()
+          });
+        },
+        trackFormSubmit: function(formName) {
+          pushEvent('ash_form_submit', {
+            form_name: formName || 'lead_form',
+            page_path: window.location.pathname,
+            ...this.getForForm()
+          });
+        },
+        trackCtaClick: function(ctaText, ctaLocation) {
+          pushEvent('ash_cta_click', {
+            cta_text: ctaText,
+            cta_location: ctaLocation || 'unknown',
+            page_path: window.location.pathname,
+            ...this.getForForm()
+          });
         }
       };
+
+      // Push page view event with attribution data
+      const attr = getAttribution();
+      pushEvent('ash_page_view', {
+        page_path: window.location.pathname,
+        page_url: window.location.href,
+        page_title: document.title,
+        utm_source: attr?.utm_source || '',
+        utm_medium: attr?.utm_medium || '',
+        utm_campaign: attr?.utm_campaign || '',
+        utm_term: attr?.utm_term || '',
+        utm_content: attr?.utm_content || '',
+        gclid: attr?.gclid || '',
+        fbclid: attr?.fbclid || '',
+        landing_page: attr?.landing_page || '',
+        referrer: attr?.referrer || ''
+      });
 
       // Dispatch event when attribution is ready
       window.dispatchEvent(new CustomEvent('attributionReady', {
