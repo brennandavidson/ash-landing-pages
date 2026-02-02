@@ -162,6 +162,10 @@ const { cookieExpiry = 30 } = Astro.props;
             page_path: window.location.pathname,
             ...this.getForForm()
           });
+          // Fire Meta Pixel Lead event
+          if (typeof fbq === 'function') {
+            fbq('track', 'Lead');
+          }
         },
         trackCtaClick: function(ctaText, ctaLocation) {
           pushEvent('ash_cta_click', {
