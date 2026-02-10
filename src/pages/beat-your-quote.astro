@@ -760,6 +760,10 @@ const phone = '(480) 536-4465';
         });
 
         if (response.ok) {
+          // Fire tracking events
+          if (window.ashAttribution) {
+            window.ashAttribution.trackFormSubmit('beat_your_quote');
+          }
           // Show success message
           form.style.display = 'none';
           formSuccess.style.display = 'block';
