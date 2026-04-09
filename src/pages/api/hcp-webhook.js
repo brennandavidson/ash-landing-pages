@@ -1,19 +1,18 @@
 import crypto from 'node:crypto';
 
+export const prerender = false; // This route must be server-rendered
+
 const OFFLINE_DATASET_ID = '1438722024117263';
 
 function sha256(value) {
   if (!value) return null;
-  const cleaned = String(value).toLowerCase().trim();
-  return crypto.createHash('sha256').update(cleaned).digest('hex');
+  return crypto.createHash('sha256').update(String(value).toLowerCase().trim()).digest('hex');
 }
 
 function normalizePhone(phone) {
   if (!phone) return null;
   const digits = phone.replace(/\D/g, '');
-  if (digits.length === 11 && digits.startsWith('1')) {
-    return digits.slice(1);
-  }
+  if (digits.length === 11 && digits.startsWith('1')) return digits.slice(1);
   return digits;
 }
 
@@ -35,41 +34,29 @@ async function sendToMeta(event, token) {
   return response.json();
 }
 
-export default {
-  async fetch(request) {
-    const META_ACCESS_TOKEN = process.env.META_ADS_ACCESS_TOKEN;
-    const WEBHOOK_SECRET = process.env.HCP_WEBHOOK_SECRET;
+export async function POST({ request }) {
+  const META_ACCESS_TOKEN = import.meta.env.META_ADS_ACCESS_TOKEN;
+  const WEBHOOK_SECRET = import.meta.env.HCP_WEBHOOK_SECRET;
 
-    // Only accept POST
-    if (request.method !== 'POST') {
+  if (!META_ACCESS_TOKEN) {
+    return new Response(
+      JSON.stringify({ error: 'Server configuration error' }),
+      { status: 500, headers: { 'Content-Type': 'application/json' } }
+    );
+  }
+
+  if (WEBHOOK_SECRET) {
+    const authHeader = request.headers.get('x-webhook-secret') || request.headers.get('authorization');
+    if (authHeader !== WEBHOOK_SECRET && authHeader !== `Bearer ${WEBHOOK_SECRET}`) {
       return new Response(
-        JSON.stringify({ error: 'Method not allowed' }),
-        { status: 405, headers: { 'Content-Type': 'application/json' } }
+        JSON.stringify({ error: 'Unauthorized' }),
+        { status: 401, headers: { 'Content-Type': 'application/json' } }
       );
     }
-
-    if (!META_ACCESS_TOKEN) {
-      return new Response(
-        JSON.stringify({ error: 'Server configuration error' }),
-        { status: 500, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
-
-    // Optional: validate webhook secret
-    if (WEBHOOK_SECRET) {
-      const authHeader = request.headers.get('x-webhook-secret') || request.headers.get('authorization');
-      if (authHeader !== WEBHOOK_SECRET && authHeader !== `Bearer ${WEBHOOK_SECRET}`) {
-        return new Response(
-          JSON.stringify({ error: 'Unauthorized' }),
-          { status: 401, headers: { 'Content-Type': 'application/json' } }
-        );
-      }
-    }
+  }
 
   try {
     const body = await request.json();
-
-    // Extract customer data from HouseCall Pro webhook payload
     const customer = body.customer || body;
 
     const phone = customer.phone || customer.mobile_number || customer.home_number || '';
@@ -80,7 +67,6 @@ export default {
     const state = customer.state || customer.region || '';
     const zip = customer.zip || customer.postal_code || customer.zip_code || '';
 
-    // Need at least phone or email for matching
     if (!phone && !email) {
       return new Response(
         JSON.stringify({ status: 'skipped', reason: 'No phone or email — cannot match' }),
@@ -88,7 +74,6 @@ export default {
       );
     }
 
-    // Build user_data with hashed PII
     const userData = {};
     if (phone) {
       const normalized = normalizePhone(phone);
@@ -127,5 +112,4 @@ export default {
       { status: 500, headers: { 'Content-Type': 'application/json' } }
     );
   }
-  },
-};
+}
