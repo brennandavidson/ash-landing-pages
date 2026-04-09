@@ -1,4 +1,5 @@
 import crypto from 'node:crypto';
+import { getSecret } from 'astro:env/server';
 
 export const prerender = false; // This route must be server-rendered
 
@@ -35,8 +36,8 @@ async function sendToMeta(event, token) {
 }
 
 export async function POST({ request }) {
-  const META_ACCESS_TOKEN = process.env.META_ADS_ACCESS_TOKEN;
-  const WEBHOOK_SECRET = process.env.HCP_WEBHOOK_SECRET;
+  const META_ACCESS_TOKEN = getSecret('META_ADS_ACCESS_TOKEN');
+  const WEBHOOK_SECRET = getSecret('HCP_WEBHOOK_SECRET');
 
   if (!META_ACCESS_TOKEN) {
     return new Response(
