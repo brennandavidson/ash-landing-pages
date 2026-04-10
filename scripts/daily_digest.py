@@ -225,34 +225,43 @@ def build_digest(campaigns, ads, daily, offline_entries, days):
 
     lines = [f"# ASH Ads Daily Digest — {today}", ""]
 
-    # Campaign snapshot — Offline = Meta-attributed offline Contact events per campaign
+    # Campaign snapshot — Effective CPL includes website leads + Meta-attributed offline
     lines.append(f"## Campaign Snapshot (Last {days} Days)")
     lines.append("")
-    lines.append("| Campaign | Spend | Leads | Offline | CPL | Frequency | CTR | Status |")
-    lines.append("|----------|-------|-------|---------|-----|-----------|-----|--------|")
+    lines.append("| Campaign | Spend | Leads | Offline | CPL | Effective CPL | Frequency | CTR | Status |")
+    lines.append("|----------|-------|-------|---------|-----|---------------|-----------|-----|--------|")
     for c in campaigns:
         cpl_str = f"${c['cpl']:.0f}" if c['cpl'] > 0 else "—"
+        offline = c.get('offline_attributed', 0)
+        total_attr = c['leads'] + offline
+        eff_cpl = c['spend'] / total_attr if total_attr > 0 else 0
+        eff_cpl_str = f"${eff_cpl:.0f}" if eff_cpl > 0 else "—"
         freq_str = f"{c['frequency']:.2f}" if c['frequency'] > 0 else "—"
         ctr_str = f"{c['ctr']:.2f}%" if c['ctr'] > 0 else "—"
         status = "ACTIVE" if c["spend"] > 10 else "NEW"
-        offline_str = f"{c.get('offline_attributed', 0)}"
-        lines.append(f"| {c['name']} | ${c['spend']:.2f} | {c['leads']} | {offline_str} | {cpl_str} | {freq_str} | {ctr_str} | {status} |")
+        lines.append(f"| {c['name']} | ${c['spend']:.2f} | {c['leads']} | {offline} | {cpl_str} | {eff_cpl_str} | {freq_str} | {ctr_str} | {status} |")
     lines.append("")
-    lines.append(f"*Offline = HCP leads Meta matched to ad exposure (attributed), per campaign. Total sent to Meta this period: {total_offline_sent}. Match rate: {(total_offline_attributed / total_offline_sent * 100):.0f}%*" if total_offline_sent > 0 else "*Offline = HCP leads Meta matched to ad exposure (attributed), per campaign.*")
+    lines.append("*CPL = website leads only. Effective CPL = includes Meta-attributed offline contacts.*")
+    if total_offline_sent > 0:
+        lines.append(f"*Offline sent to Meta this period: {total_offline_sent}. Match rate: {(total_offline_attributed / total_offline_sent * 100):.0f}%*")
     lines.append("")
 
     # Ad-level
     lines.append("## Ad-Level Performance")
     lines.append("")
-    lines.append("| Ad Name | Campaign | Spend | Leads | CPL | CTR | Verdict |")
-    lines.append("|---------|----------|-------|-------|-----|-----|---------|")
+    lines.append("| Ad Name | Campaign | Spend | Leads | Offline | CPL | Effective CPL | CTR | Verdict |")
+    lines.append("|---------|----------|-------|-------|---------|-----|---------------|-----|---------|")
     sorted_ads = sorted(ads, key=lambda a: (a["cpl"] if a["cpl"] > 0 else 99999))
     for a in sorted_ads:
         cpl_str = f"${a['cpl']:.0f}" if a["cpl"] > 0 else "—"
+        offline = a.get('offline_attributed', 0)
+        total_attr = a['leads'] + offline
+        eff_cpl = a['spend'] / total_attr if total_attr > 0 else 0
+        eff_cpl_str = f"${eff_cpl:.0f}" if eff_cpl > 0 else "—"
         ctr_str = f"{a['ctr']:.2f}%" if a["ctr"] > 0 else "—"
         v = a["verdict"]
         v_fmt = f"**{v}**" if v in ("SCALE", "KILL") else v
-        lines.append(f"| {a['name']} | {a['campaign']} | ${a['spend']:.2f} | {a['leads']} | {cpl_str} | {ctr_str} | {v_fmt} |")
+        lines.append(f"| {a['name']} | {a['campaign']} | ${a['spend']:.2f} | {a['leads']} | {offline} | {cpl_str} | {eff_cpl_str} | {ctr_str} | {v_fmt} |")
     lines.append("")
 
     # Alerts
@@ -379,6 +388,7 @@ def main():
     ads = []
     for row in ad_raw.get("data", []):
         leads, cpl = extract_leads_cpl(row)
+        offline_attributed = extract_offline_contacts(row)
         spend = float(row.get("spend", 0))
         freq = float(row.get("frequency", 0))
         v = verdict(spend, leads, cpl, freq)
@@ -395,6 +405,7 @@ def main():
             "cpc": float(row.get("cpc", 0)),
             "leads": leads,
             "cpl": cpl,
+            "offline_attributed": offline_attributed,
             "verdict": v,
         })
 
