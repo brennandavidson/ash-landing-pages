@@ -58,7 +58,7 @@ def api_get(endpoint, params, token):
 def pull_insights(token, account_id, days, level):
     since = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
     until = datetime.now().strftime("%Y-%m-%d")
-    fields = "campaign_name,campaign_id,spend,impressions,reach,frequency,clicks,ctr,cpc,actions,cost_per_action_type"
+    fields = "campaign_name,campaign_id,spend,impressions,reach,frequency,clicks,ctr,cpc,actions,cost_per_action_type,conversions"
     if level == "ad":
         fields = "ad_name,ad_id,adset_name," + fields
     params = {
@@ -66,6 +66,7 @@ def pull_insights(token, account_id, days, level):
         "time_range": json.dumps({"since": since, "until": until}),
         "level": level,
         "limit": 500,
+        "use_unified_attribution_setting": "true",
     }
     return api_get(f"{account_id}/insights", params, token)
 
@@ -84,8 +85,11 @@ def pull_daily(token, account_id, days):
 
 
 def extract_leads_cpl(row):
-    """Meta returns both 'lead' (rollup) and 'offsite_conversion.fb_pixel_lead'
-    for the same conversion. Use only 'lead' to avoid double-counting."""
+    """Extract website lead count and CPL.
+
+    Note: Meta returns 'lead', 'onsite_web_lead', and 'offsite_conversion.fb_pixel_lead'
+    as the same website conversion. Use only 'lead' to avoid double-counting.
+    """
     leads, cpl = 0, 0.0
     for a in row.get("actions", []):
         if a.get("action_type") == "lead":
@@ -96,6 +100,19 @@ def extract_leads_cpl(row):
             cpl = float(c.get("value", 0))
             break
     return leads, cpl
+
+
+def extract_offline_contacts(row):
+    """Extract Meta-attributed offline Contact events from the 'conversions' field.
+
+    This is the actual count of offline events Meta matched to people who saw
+    our ads. Available under the 'conversions' field (not 'actions') when
+    querying with use_unified_attribution_setting=true.
+    """
+    for c in row.get("conversions", []):
+        if c.get("action_type") == "contact_offline":
+            return int(c.get("value", 0))
+    return 0
 
 
 def pull_latest_log():
@@ -202,26 +219,26 @@ def build_digest(campaigns, ads, daily, offline_entries, days):
     today = datetime.now().strftime("%B %d, %Y")
     total_spend = sum(c["spend"] for c in campaigns)
     total_leads = sum(c["leads"] for c in campaigns)
-    total_offline = len(offline_entries)
+    total_offline_attributed = sum(c.get("offline_attributed", 0) for c in campaigns)
+    total_offline_sent = len(offline_entries)
     blended_cpl = total_spend / total_leads if total_leads > 0 else 0
 
     lines = [f"# ASH Ads Daily Digest — {today}", ""]
 
-    # Campaign snapshot — Offline = total HCP leads sent to Meta (global, not per-campaign)
+    # Campaign snapshot — Offline = Meta-attributed offline Contact events per campaign
     lines.append(f"## Campaign Snapshot (Last {days} Days)")
     lines.append("")
     lines.append("| Campaign | Spend | Leads | Offline | CPL | Frequency | CTR | Status |")
     lines.append("|----------|-------|-------|---------|-----|-----------|-----|--------|")
-    for i, c in enumerate(campaigns):
+    for c in campaigns:
         cpl_str = f"${c['cpl']:.0f}" if c['cpl'] > 0 else "—"
         freq_str = f"{c['frequency']:.2f}" if c['frequency'] > 0 else "—"
         ctr_str = f"{c['ctr']:.2f}%" if c['ctr'] > 0 else "—"
         status = "ACTIVE" if c["spend"] > 10 else "NEW"
-        # Show offline only once in the first row as a global total
-        offline_str = f"{total_offline}" if i == 0 else "—"
+        offline_str = f"{c.get('offline_attributed', 0)}"
         lines.append(f"| {c['name']} | ${c['spend']:.2f} | {c['leads']} | {offline_str} | {cpl_str} | {freq_str} | {ctr_str} | {status} |")
     lines.append("")
-    lines.append(f"*Offline = total HCP leads sent to Meta Offline Conversions dataset in the period. Not split per-campaign — see Meta Ads Manager > Offline Contacts column for attribution breakdown.*")
+    lines.append(f"*Offline = HCP leads Meta matched to ad exposure (attributed), per campaign. Total sent to Meta this period: {total_offline_sent}. Match rate: {(total_offline_attributed / total_offline_sent * 100):.0f}%*" if total_offline_sent > 0 else "*Offline = HCP leads Meta matched to ad exposure (attributed), per campaign.*")
     lines.append("")
 
     # Ad-level
@@ -277,8 +294,10 @@ def build_digest(campaigns, ads, daily, offline_entries, days):
         lines.append(f"{i}. {rec}")
     lines.append("")
 
-    # Offline Leads Table
-    lines.append(f"## Offline Leads Sent to Meta ({days}d)")
+    # Offline Leads Audit Trail (full list of what we sent to Meta)
+    lines.append(f"## Offline Leads Audit Trail ({days}d)")
+    lines.append("")
+    lines.append(f"*Full list of HCP leads sent to Meta's offline dataset. Meta attributed {total_offline_attributed} of {total_offline_sent} to ad exposure.*")
     lines.append("")
     if offline_entries:
         # Sort newest first
@@ -306,8 +325,15 @@ def build_digest(campaigns, ads, daily, offline_entries, days):
     lines.append("|--------|-------|")
     lines.append(f"| Total spend ({days}d) | ${total_spend:.2f} |")
     lines.append(f"| Total website leads ({days}d) | {total_leads} |")
-    lines.append(f"| Total offline leads sent ({days}d) | {total_offline} |")
+    lines.append(f"| Total offline leads sent to Meta ({days}d) | {total_offline_sent} |")
+    lines.append(f"| Total offline leads Meta attributed ({days}d) | {total_offline_attributed} |")
+    if total_offline_sent > 0:
+        lines.append(f"| Meta offline match rate | {(total_offline_attributed / total_offline_sent * 100):.0f}% |")
+    total_attributed = total_leads + total_offline_attributed
+    lines.append(f"| Total attributed conversions | {total_attributed} |")
     lines.append(f"| Blended CPL (website only) | ${blended_cpl:.2f} |" if total_leads > 0 else f"| Blended CPL (website only) | — |")
+    if total_attributed > 0:
+        lines.append(f"| Blended CPL (website + offline) | ${total_spend / total_attributed:.2f} |")
     lines.append(f"| Active ads | {len([a for a in ads if a['spend'] > 0])} |")
     lines.append("")
 
@@ -335,6 +361,7 @@ def main():
     campaigns = []
     for row in camp_raw.get("data", []):
         leads, cpl = extract_leads_cpl(row)
+        offline_attributed = extract_offline_contacts(row)
         campaigns.append({
             "name": row.get("campaign_name", "Unknown"),
             "spend": float(row.get("spend", 0)),
@@ -346,6 +373,7 @@ def main():
             "cpc": float(row.get("cpc", 0)),
             "leads": leads,
             "cpl": cpl,
+            "offline_attributed": offline_attributed,
         })
 
     ads = []
