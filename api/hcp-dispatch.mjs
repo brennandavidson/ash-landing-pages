@@ -12,9 +12,9 @@
 // forwards the raw HCP payload. If the tag parity path fails, it
 // cannot affect the Meta CAPI path and vice versa.
 
-const SELF_BASE = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : 'https://go.ashcooling.com';
+// Always use the production domain — VERCEL_URL resolves to the
+// preview deployment which requires auth on Pro accounts.
+const SELF_BASE = 'https://go.ashcooling.com';
 
 async function forward(path, body) {
   try {
