@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K professional advertising photograph"
+  },
+  "global_context": {
+    "scene_description": "A dramatic close-up photograph of a modern white digital wall thermostat mounted on a beige interior wall. The thermostat display is glowing bright red/orange and showing a temperature reading of 115 degrees Fahrenheit. The plastic housing of the thermostat is visibly warped and melting — the edges are drooping, bubbling, and deforming as if exposed to extreme heat. The wall paint around the thermostat is cracking, peeling, and blistering from heat damage in a radial pattern. There is a visible heat shimmer or heat distortion effect in the air around the thermostat. The scene is lit with intense warm orange-red lighting from the right side suggesting brutal sunlight pouring through a window, while the left side falls into darker shadow. A small smartphone is propped against the wall nearby showing a notification on screen reading 'HVAC Install — EARLIEST AVAILABLE: AUGUST 2'. The overall mood is oppressive, uncomfortable, and urgent — this is what waiting too long looks like.",
+    "time_of_day": "Midday, brutal Arizona summer sun",
+    "weather_atmosphere": "Oppressive heat, heat shimmer visible in air",
+    "lighting": {
+      "source": "Harsh sunlight from window on right side",
+      "direction": "Strong side-light from right, creating dramatic shadows on left",
+      "quality": "Hard, harsh, unforgiving — like Arizona summer sun",
+      "color_temp": "Very warm, orange-shifted, oppressive"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#F5E6D0", "#E42F3A", "#FF6B00", "#1A1A1A"],
+    "accent_colors": ["Glowing red-orange from thermostat display", "Warm cream wall color", "Dark shadows"],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Straight-on, eye level with thermostat, slight macro feel",
+    "framing": "Close-up to medium, thermostat fills center 40% of frame",
+    "depth_of_field": "Shallow — thermostat tack sharp, wall and edges softly out of focus",
+    "focal_point": "The melting thermostat display showing 115 degrees"
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "Melting digital thermostat",
+      "category": "Prop/Device",
+      "location": "Center of frame, mounted on wall",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White plastic housing, now yellowing and warping. Red-orange glowing digital display.",
+        "texture": "Smooth plastic that is melting, bubbling, drooping at edges",
+        "material": "White plastic, digital LCD screen",
+        "state": "Melting, warped, distorted from extreme heat",
+        "dimensions_relative": "Medium-large, fills center 35-40% of frame"
+      },
+      "micro_details": ["Display clearly reads '115°F' in bright red digits", "Plastic drooping downward at bottom edge", "Small bubbles forming on plastic surface", "Edge of housing separating from wall", "Screen has slight glitch artifacts"],
+      "pose_or_orientation": "Wall-mounted, straight on to camera",
+      "text_content": "115°F"
+    },
+    {
+      "id": "obj_002",
+      "label": "Damaged wall around thermostat",
+      "category": "Environment",
+      "location": "Surrounding the thermostat, filling most of frame",
+      "prominence": "Background",
+      "visual_attributes": {
+        "color": "Beige/cream wall paint, cracking and peeling to reveal darker underlayer",
+        "texture": "Cracking, blistering, peeling paint",
+        "material": "Painted drywall",
+        "state": "Heat-damaged, paint peeling in radial pattern from thermostat",
+        "dimensions_relative": "Fills frame around thermostat"
+      },
+      "micro_details": ["Radial cracking pattern emanating from thermostat", "Paint bubbles", "Exposed drywall beneath peeling areas", "Subtle heat shimmer distortion in the air"],
+      "pose_or_orientation": "Flat wall surface, facing camera",
+      "text_content": null
+    },
+    {
+      "id": "obj_003",
+      "label": "Smartphone with notification",
+      "category": "Device/Prop",
+      "location": "Lower right area, leaning against wall or on nearby surface",
+      "prominence": "Midground",
+      "visual_attributes": {
+        "color": "Dark phone body, lit screen showing notification",
+        "texture": "Glass and metal smartphone",
+        "material": "Glass, aluminum",
+        "state": "Lit screen showing a scheduling notification",
+        "dimensions_relative": "Small — about 15-20% of frame width"
+      },
+      "micro_details": ["Screen shows a calendar notification or text reading 'HVAC Install — Earliest available: August 2'", "Notification has a red alert icon"],
+      "pose_or_orientation": "Propped at an angle, screen facing camera",
+      "text_content": "HVAC Install — Earliest available: August 2"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "115°F",
+      "HVAC Install — Earliest available: August 2"
+    ]
+  },
+  "semantic_relationships": [
+    "The thermostat is the central focus, showing the extreme temperature",
+    "The melting plastic communicates the severity of the heat visually",
+    "The damaged wall radiates outward from the thermostat suggesting prolonged heat exposure",
+    "The phone notification in the corner delivers the 'too late' message — you waited and now you can't get an install",
+    "Warm orange lighting reinforces the oppressive heat atmosphere",
+    "The overall scene makes the viewer feel the discomfort of waiting too long"
+  ]
+}

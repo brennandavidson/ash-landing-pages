@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K professional advertising photograph"
+  },
+  "global_context": {
+    "scene_description": "A dramatic, cinematic close-up photograph of an old, weathered rooftop HVAC package unit shot in moody blue-tinted lighting like a crime scene or forensic photograph. The AC unit is visibly aged — rusted panels, dust-caked vents, dented housing, discolored metal. A bright red tag or sticker is attached to the unit reading 'CONDEMNED' in bold black text, like an official inspection tag. A thin wisp of white smoke or steam rises from a gap in the housing. On the concrete pad below the unit, there is a small puddle of water/condensation with an oily sheen. The background is a dark night sky with minimal ambient light — just enough deep blue to separate the unit from pure black. A single harsh spotlight or flashlight beam illuminates the unit from the upper left, creating dramatic shadows on the right side and making the rust and damage highly visible. Small dust particles are visible floating in the light beam. The mood is ominous, foreboding — this unit is on death's door. Styled like a true crime documentary still or a movie poster for a thriller.",
+    "time_of_day": "Night, dark, single artificial light source",
+    "weather_atmosphere": "Still, slightly hazy from dust/heat, ominous",
+    "lighting": {
+      "source": "Single harsh spotlight or flashlight beam from upper left",
+      "direction": "Upper left to lower right, creating strong directional shadows",
+      "quality": "Hard, dramatic, forensic/investigative feel",
+      "color_temp": "Cool blue overall with warm highlights on rust spots"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#0A1628", "#E42F3A", "#8B7355", "#2C3E50"],
+    "accent_colors": ["Rust orange-brown on metal", "White steam wisp", "Oily iridescence in puddle"],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Slightly low angle, looking up at the unit — making it loom ominously",
+    "framing": "Medium-close, unit fills 60% of frame, dark space around it",
+    "depth_of_field": "Medium-shallow — unit sharp, background falls to dark blur",
+    "focal_point": "The red CONDEMNED tag on the unit, with the deteriorating housing surrounding it"
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "Old weathered HVAC package unit",
+      "category": "Product/Subject",
+      "location": "Center, filling majority of frame",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Originally gray/beige, now covered in rust patches, dust, discoloration",
+        "texture": "Rough, corroded, pitted metal. Dust-caked ventilation grilles. Oxidized surfaces.",
+        "material": "Sheet metal, heavily weathered",
+        "state": "Very old, deteriorating, barely functional, on the verge of complete failure",
+        "dimensions_relative": "Large — fills roughly 55-60% of frame"
+      },
+      "micro_details": ["Deep rust streaks running down from screw holes", "Dented corner panel", "Bent ventilation fins", "Faded and peeling manufacturer label", "Cobwebs in one corner of the housing", "Dust buildup visible on every surface"],
+      "pose_or_orientation": "Three-quarter angle, slight rotation showing two faces of the unit",
+      "text_content": null
+    },
+    {
+      "id": "obj_002",
+      "label": "Red CONDEMNED tag",
+      "category": "Prop/Label",
+      "location": "Attached to front-center of the unit, highly visible",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Bright red tag with bold black text",
+        "texture": "Thick cardstock or plastic tag, like an official inspection notice",
+        "material": "Laminated tag or heavy paper, attached with a zip tie or wire",
+        "state": "Fresh and crisp — contrasting with the aged unit. Recently placed.",
+        "dimensions_relative": "Small-medium — roughly 10-12% of frame width but eye-catching due to color"
+      },
+      "micro_details": ["Bold black text reads 'CONDEMNED'", "Resembles an official municipal or inspection tag", "Wire or zip tie attachment visible", "The tag's bright color contrasts sharply with the aged unit"],
+      "pose_or_orientation": "Hanging from unit, slightly angled, catching the spotlight",
+      "text_content": "CONDEMNED"
+    },
+    {
+      "id": "obj_003",
+      "label": "Steam or smoke wisp",
+      "category": "Effect",
+      "location": "Rising from a gap or seam in the unit housing, upper area",
+      "prominence": "Midground",
+      "visual_attributes": {
+        "color": "White-gray, translucent",
+        "texture": "Wispy, ethereal, slowly rising",
+        "material": "Steam/vapor",
+        "state": "Gently rising, caught in the spotlight beam",
+        "dimensions_relative": "Thin wisp, subtle but visible in the light beam"
+      },
+      "micro_details": ["Illuminated by the spotlight, visible against dark background", "Suggests overheating or imminent failure"],
+      "pose_or_orientation": "Rising vertically with slight drift",
+      "text_content": null
+    },
+    {
+      "id": "obj_004",
+      "label": "Puddle with oily sheen",
+      "category": "Detail",
+      "location": "Below the unit on the concrete pad, bottom of frame",
+      "prominence": "Midground",
+      "visual_attributes": {
+        "color": "Dark water with rainbow oily iridescence",
+        "texture": "Wet, reflective, oily film on surface",
+        "material": "Water/condensation with refrigerant or oil leak",
+        "state": "Pooled, still, reflecting the spotlight above",
+        "dimensions_relative": "Small — bottom 10% of frame"
+      },
+      "micro_details": ["Rainbow oil sheen on water surface", "Reflects the unit and spotlight creating a moody mirror effect", "Suggests a leak — something is wrong"],
+      "pose_or_orientation": "Flat on concrete surface",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Dust particles in light beam",
+      "category": "Atmospheric effect",
+      "location": "Throughout the spotlight beam, scattered in air",
+      "prominence": "Background",
+      "visual_attributes": {
+        "color": "Bright white specks against dark background",
+        "texture": "Tiny floating particles",
+        "material": "Dust",
+        "state": "Floating, suspended in air, caught in light",
+        "dimensions_relative": "Tiny specks spread throughout the light cone"
+      },
+      "micro_details": ["Visible only where the spotlight beam passes", "Creates a volumetric light effect", "Adds atmospheric depth"],
+      "pose_or_orientation": "Floating randomly in light beam",
+      "text_content": null
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "CONDEMNED"
+    ]
+  },
+  "semantic_relationships": [
+    "The spotlight beam illuminates the unit from upper left, creating dramatic shadows on the right",
+    "The CONDEMNED tag is the sharpest, most colorful element — drawing the eye first against the aged metal",
+    "Steam rising from the unit suggests it's overheating or failing",
+    "The oily puddle below suggests a leak — physical evidence of failure",
+    "Dust particles floating in the spotlight beam create a forensic/investigative atmosphere",
+    "The low camera angle makes the dying unit loom over the viewer ominously",
+    "The contrast between the fresh red tag and the aged unit tells the story: this has been evaluated and it's done"
+  ]
+}

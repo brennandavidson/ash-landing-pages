@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K digital ad creative"
+  },
+  "global_context": {
+    "scene_description": "A realistic exterior daytime photograph of a Phoenix-area residential driveway. In the background, a tan stucco single-story home with a terracotta tile roof, a mature palm tree, desert rock landscaping, and small cacti. Parked in the driveway, facing left and with its side panel fully visible to the camera, is a WHITE CHEVROLET EXPRESS cargo van. The van has a thin horizontal RED STRIPE running along the lower side panel from front to rear, and an aluminum LADDER RACK mounted on the roof. The van's side panel is heavily branded with the following visible decals, laid out clearly: (1) Right side of panel, large: a bold ASH logo — the word 'ASH' in thick black capital letters inside a thin rectangular black frame, with a small red-and-blue decorative arc underneath, and 'COOLING & HEATING' in thin subtitle text below. (2) Middle of panel, upper: a small American flag icon followed by bold black text 'VETERAN OWNED BUSINESS'. (3) Middle of panel, lower: bold red numerals '480-680-8651' with 'ASHCOOLING.COM' in bold black below. (4) Driver's door (front-left): a circular wreath badge reading 'A.S.H. — ARIZONA'S SERVICE HEROS' with a star in the center. (5) Small black text near the right edge of the panel: 'LICENSED BONDED INSURED'. (6) Lower-right corner, tiny text: 'ROC#356015'. An Arizona license plate on the front bumper. Standing in front of the van, in mid-stride walking toward the camera, is the owner/technician — a fit white male in his mid-30s with short auburn hair and light auburn stubble, wearing dark aviator sunglasses, a grey-and-white mesh trucker cap with a small leather 'ASH' patch on the front, a heather-grey short-sleeve t-shirt with a small black ASH logo embroidered on the left chest, dark-tan cargo work pants, and brown leather work boots. Both of his arms have dense tribal/floral sleeve tattoos visible from shoulder to wrist. In his right hand he holds a brown wooden clipboard. On the clipboard, a printed HVAC quote document is visible, with the bold printed text 'TOTAL: $14,500' crossed out with a single red marker line, and 'BEAT BY $4,200' written beside it in bold red handwritten marker. His posture is confident, purposeful, slight smile, not posed. Harsh midday Arizona sun from directly overhead casts crisp short shadows. Clear bright blue sky. Across the top 15% of the frame — OVERLAID on a clean dark-navy bar — bold white sans-serif headline reads: 'SEND US YOUR QUOTE. WE'LL SHOW UP AND BEAT IT.' Across the bottom 12% of the frame — OVERLAID as a solid red rectangular banner — bold white sans-serif text reads 'BEAT MY QUOTE →' on the left and the ASH Cooling & Heating logo appears on the right.",
+    "time_of_day": "Midday",
+    "weather_atmosphere": "Clear, bright, dry Arizona day",
+    "lighting": {
+      "source": "Direct overhead natural sunlight",
+      "direction": "Overhead",
+      "quality": "Hard, crisp shadows",
+      "color_temp": "Warm daylight — 5200-5600K"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": [
+      "#D4BFA2",
+      "#FFFFFF",
+      "#E42F3A",
+      "#87CEEB",
+      "#1A1A1A"
+    ],
+    "accent_colors": [
+      "#0B1F3A",
+      "#8B4513"
+    ],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Eye-level, slight 3/4 angle on van",
+    "framing": "Medium wide — van fills right 60%, tech mid-left at 3/4 of frame height",
+    "depth_of_field": "Moderate — tech sharp, van sharp, background slightly softer",
+    "focal_point": "Tech walking toward camera with marked-up clipboard; van is supporting brand context",
+    "notes": "Reserve top 15% for dark-navy headline bar. Reserve bottom 12% for red CTA banner. Scene middle 73%."
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "White Chevy Express cargo van",
+      "category": "Vehicle",
+      "location": "Right-center of frame, parked facing left",
+      "prominence": "Background-foreground — frame dominant",
+      "visual_attributes": {
+        "color": "White body, red horizontal stripe along side, black accents",
+        "texture": "Clean painted metal, slight road dust on lower panels",
+        "material": "Metal",
+        "state": "Clean working vehicle, parked",
+        "dimensions_relative": "Fills right 60% of frame"
+      },
+      "micro_details": [
+        "Aluminum LADDER RACK on roof",
+        "Red horizontal stripe along lower side panel",
+        "ASH logo (black block letters in rectangle with red-blue arc) on right side of panel",
+        "American flag + 'VETERAN OWNED BUSINESS' text on middle-upper side panel",
+        "Red phone number '480-680-8651' with 'ASHCOOLING.COM' below",
+        "Circular 'A.S.H. — ARIZONA'S SERVICE HEROS' wreath badge on driver door",
+        "'LICENSED BONDED INSURED' small black text",
+        "'ROC#356015' tiny text in lower corner",
+        "Arizona front license plate"
+      ],
+      "pose_or_orientation": "Side view facing left",
+      "text_content": "ASH COOLING & HEATING | VETERAN OWNED BUSINESS | 480-680-8651 | ASHCOOLING.COM | A.S.H. — ARIZONA'S SERVICE HEROS | LICENSED BONDED INSURED | ROC#356015"
+    },
+    {
+      "id": "obj_002",
+      "label": "Ashton — ASH owner/technician",
+      "category": "Person",
+      "location": "Mid-left of frame, standing in front of van, walking toward camera",
+      "prominence": "Foreground hero",
+      "visual_attributes": {
+        "color": "Heather-grey t-shirt, dark-tan cargo pants, brown boots, natural skin tone",
+        "texture": "Cotton, canvas, leather",
+        "material": "N/A",
+        "state": "Mid-stride, relaxed confident posture",
+        "dimensions_relative": "Full figure ~55% of frame height"
+      },
+      "micro_details": [
+        "Fit white male, mid-30s",
+        "Short auburn hair, light auburn stubble",
+        "Dark aviator sunglasses",
+        "Grey-and-white mesh trucker cap with small leather 'ASH' patch on front",
+        "Heather-grey short-sleeve t-shirt with small black ASH logo on left chest",
+        "Dark-tan cargo work pants",
+        "Brown leather work boots",
+        "DENSE tribal/floral sleeve tattoos on BOTH arms, visible shoulder to wrist",
+        "Holding brown wooden clipboard in right hand",
+        "Slight genuine smile, not posed"
+      ],
+      "pose_or_orientation": "Mid-stride walking toward camera, body slightly angled 3/4",
+      "text_content": null
+    },
+    {
+      "id": "obj_003",
+      "label": "Clipboard with marked-up HVAC quote",
+      "category": "Prop",
+      "location": "Held in Ashton's right hand, mid-frame waist-height",
+      "prominence": "Foreground narrative element",
+      "visual_attributes": {
+        "color": "Brown wooden clipboard, white paper, red marker ink",
+        "texture": "Wood, matte paper, marker ink",
+        "material": "Wood, paper",
+        "state": "Quote visible with fresh red marker annotations",
+        "dimensions_relative": "Clipboard ~12% of frame"
+      },
+      "micro_details": [
+        "Printed quote visible with header and one visible line",
+        "Printed text: 'TOTAL: $14,500'",
+        "'$14,500' has a single horizontal red marker strikethrough line across it",
+        "Beside it, bold red handwritten marker text: 'BEAT BY $4,200'"
+      ],
+      "pose_or_orientation": "Held angled slightly toward camera so quote text is legible",
+      "text_content": "TOTAL: $14,500 | BEAT BY $4,200"
+    },
+    {
+      "id": "obj_004",
+      "label": "Phoenix residential environment",
+      "category": "Environment",
+      "location": "Background",
+      "prominence": "Background",
+      "visual_attributes": {
+        "color": "Tan stucco, terracotta tile, dusty browns, bright sky blue",
+        "texture": "Stucco, tile, gravel",
+        "material": "Stucco, clay, desert rock",
+        "state": "Clean, typical Phoenix suburb",
+        "dimensions_relative": "Fills upper 40% of frame"
+      },
+      "micro_details": ["One mature palm tree left-background", "Desert rock landscaping", "Small barrel cacti"],
+      "pose_or_orientation": "Background setting",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Headline overlay bar",
+      "category": "Graphic Overlay",
+      "location": "Top 15% of frame",
+      "prominence": "Foreground overlay",
+      "visual_attributes": {
+        "color": "Dark navy #0B1F3A with bold white sans-serif text",
+        "texture": "Flat",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full frame width, top 15%"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Horizontal, top-aligned",
+      "text_content": "SEND US YOUR QUOTE. WE'LL SHOW UP AND BEAT IT."
+    },
+    {
+      "id": "obj_006",
+      "label": "Red CTA banner",
+      "category": "Graphic Overlay",
+      "location": "Bottom — full width",
+      "prominence": "Foreground overlay",
+      "visual_attributes": {
+        "color": "Solid red #E42F3A with bold white sans-serif text",
+        "texture": "Flat",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full frame width, bottom 12%"
+      },
+      "micro_details": ["Sharp edges", "White text left, ASH logo right"],
+      "pose_or_orientation": "Horizontal, bottom-aligned",
+      "text_content": "BEAT MY QUOTE →    ASH COOLING & HEATING"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "SEND US YOUR QUOTE. WE'LL SHOW UP AND BEAT IT.",
+      "ASH COOLING & HEATING",
+      "VETERAN OWNED BUSINESS",
+      "480-680-8651",
+      "ASHCOOLING.COM",
+      "A.S.H. — ARIZONA'S SERVICE HEROS",
+      "LICENSED BONDED INSURED",
+      "ROC#356015",
+      "TOTAL: $14,500",
+      "BEAT BY $4,200",
+      "BEAT MY QUOTE →"
+    ]
+  },
+  "semantic_relationships": [
+    "Headline bar top 15%, red CTA bottom 12%",
+    "Van fills right 60% of frame, Ashton mid-left walking toward camera",
+    "Clipboard is waist-height, tilted toward camera so '$14,500' strikethrough and 'BEAT BY $4,200' are readable",
+    "Stucco home, palm, and desert landscaping establish Phoenix setting",
+    "Van decals are scene-critical text — must render as listed"
+  ]
+}

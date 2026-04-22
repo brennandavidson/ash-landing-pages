@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K professional advertising photograph"
+  },
+  "global_context": {
+    "scene_description": "A dramatic, slightly surreal advertising photograph of a hospital emergency room waiting room filled with sweating, miserable people in the middle of a heat emergency. At the very top of the image, large bold white text with a strong drop shadow reads 'THIS IS JULY WITHOUT A NEW AC.' in a heavy condensed sans-serif uppercase font. Below the headline, smaller white text reads 'Book now while we still have openings.' The waiting room has harsh fluorescent overhead lighting giving everything a slightly sickly green-blue cast. Rows of uncomfortable blue plastic waiting chairs are packed with people in summer clothes — tank tops, shorts — all visibly sweating, red-faced, using paper fans, magazines, and newspapers to fan themselves. Some are slumped over in misery. One person is holding a small battery-powered desk fan. The walls are a sterile institutional off-white with scuff marks. On the wall is a large LED digital display board showing wait information, reading 'HVAC EMERGENCY ROOM' as the header and below that 'CURRENT WAIT TIME: 3 WEEKS' in red LED text. A stressed nurse or receptionist is visible at a window in the background, overwhelmed. The floor is generic hospital vinyl tile. The overall mood is uncomfortable, claustrophobic, and miserable — this is what happens when you wait. At the very bottom of the image is a solid bright red horizontal banner spanning full width containing bold white uppercase text reading '$1,400 OFF. SUMMER BLOWOUT SALE.' and the ASH Cooling & Heating logo in white on the right side.",
+    "time_of_day": "Daytime, harsh indoor fluorescent lighting",
+    "weather_atmosphere": "Oppressively hot inside, everyone sweating",
+    "lighting": {
+      "source": "Harsh overhead fluorescent tube lights",
+      "direction": "Directly overhead, flat, unflattering",
+      "quality": "Hard, institutional, slightly green-tinged fluorescent",
+      "color_temp": "Cool/sickly fluorescent with warm skin tones from sweating people"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#E8E4D8", "#E42F3A", "#FFFFFF", "#3A5A7C"],
+    "accent_colors": ["Blue plastic chairs", "Red flushed skin", "Green fluorescent cast", "Sickly off-white walls"],
+    "contrast_level": "Medium-high"
+  },
+  "composition": {
+    "camera_angle": "Eye level, slightly wide angle to capture the full waiting room scene",
+    "framing": "Wide shot showing the whole waiting room, people, and the sign",
+    "depth_of_field": "Medium — foreground people sharp, back of room slightly softer",
+    "focal_point": "The digital display board showing '3 WEEKS' wait time, with the miserable crowd below it"
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "Headline text",
+      "category": "Text Overlay",
+      "location": "Top 18% of image",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White with strong drop shadow for readability",
+        "texture": "Bold, heavy, condensed sans-serif, uppercase",
+        "material": "N/A",
+        "state": "Clean, bold, highly legible over the scene",
+        "dimensions_relative": "Large — spans 90% of width"
+      },
+      "micro_details": ["Strong black drop shadow ensures readability over busy scene"],
+      "pose_or_orientation": "Centered, top of composition",
+      "text_content": "THIS IS JULY WITHOUT A NEW AC."
+    },
+    {
+      "id": "obj_002",
+      "label": "Subline text",
+      "category": "Text Overlay",
+      "location": "Below headline",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White, lighter weight",
+        "texture": "Clean sans-serif",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Small-medium, single line"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Centered",
+      "text_content": "Book now while we still have openings."
+    },
+    {
+      "id": "obj_003",
+      "label": "Digital display board on wall",
+      "category": "Prop/Sign",
+      "location": "Upper center-right of the scene, mounted on wall above the crowd",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Dark display body with red LED text",
+        "texture": "LED dot-matrix style display, glowing",
+        "material": "Plastic and LED panel",
+        "state": "Active, displaying wait time information",
+        "dimensions_relative": "Medium — roughly 25% of frame width"
+      },
+      "micro_details": ["Header text: 'HVAC EMERGENCY ROOM' in red LED", "Below: 'CURRENT WAIT TIME:' in red LED", "Below that: '3 WEEKS' in larger bright red LED text, prominent and alarming", "Slight LED glow/bloom effect"],
+      "pose_or_orientation": "Wall-mounted, angled slightly toward camera",
+      "text_content": "HVAC EMERGENCY ROOM. CURRENT WAIT TIME: 3 WEEKS"
+    },
+    {
+      "id": "obj_004",
+      "label": "Sweating, miserable waiting room crowd",
+      "category": "People",
+      "location": "Middle and lower portion of frame, seated in rows",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Various casual summer clothing — tank tops, t-shirts, shorts",
+        "texture": "Skin glistening with sweat, hair damp",
+        "material": "Fabric clothing, skin",
+        "state": "Overheated, miserable, uncomfortable, impatient",
+        "dimensions_relative": "Group fills roughly 50% of frame"
+      },
+      "micro_details": ["Visibly sweating faces and arms", "One person fanning with a folded newspaper", "One person fanning with a paper plate", "One person holding a small portable fan", "Someone slumped over in their chair", "Red flushed faces", "Expressions of frustration and exhaustion", "6-10 people visible in various states of heat misery"],
+      "pose_or_orientation": "Seated in rows of chairs, facing various directions, all clearly uncomfortable",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Blue plastic waiting room chairs",
+      "category": "Furniture",
+      "location": "Rows throughout the middle section",
+      "prominence": "Midground",
+      "visual_attributes": {
+        "color": "Institutional blue plastic seats with chrome/metal legs",
+        "texture": "Smooth molded plastic, chrome tubing",
+        "material": "Plastic and chrome",
+        "state": "Worn, institutional, generic hospital furniture",
+        "dimensions_relative": "Multiple rows filling the scene"
+      },
+      "micro_details": ["Typical hospital/ER waiting room connected chairs"],
+      "pose_or_orientation": "Rows facing forward, standard waiting room layout",
+      "text_content": null
+    },
+    {
+      "id": "obj_006",
+      "label": "Bottom red banner with CTA and logo",
+      "category": "Graphic Element",
+      "location": "Bottom 12-15% of image, full width",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Solid bright red #E42F3A background with white text and white logo",
+        "texture": "Flat solid color bar",
+        "material": "N/A",
+        "state": "Clean, bold",
+        "dimensions_relative": "Full width, bottom 12-15% of frame"
+      },
+      "micro_details": ["Bold white uppercase text on left", "ASH Cooling & Heating logo in white on right"],
+      "pose_or_orientation": "Horizontal bar, bottom edge",
+      "text_content": "$1,400 OFF. SUMMER BLOWOUT SALE. ASH COOLING & HEATING"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "THIS IS JULY WITHOUT A NEW AC.",
+      "Book now while we still have openings.",
+      "HVAC EMERGENCY ROOM",
+      "CURRENT WAIT TIME: 3 WEEKS",
+      "$1,400 OFF. SUMMER BLOWOUT SALE.",
+      "ASH COOLING & HEATING"
+    ]
+  },
+  "semantic_relationships": [
+    "Headline at top frames the scene below: this is what July looks like",
+    "The display board is the key information point — 3 WEEKS wait time is the horror",
+    "The crowd of sweating people makes the scenario visceral and relatable",
+    "Harsh fluorescent lighting makes everyone look uncomfortable and sickly",
+    "The 'HVAC Emergency Room' sign reframes AC failure as a medical emergency — because in Arizona, it basically is",
+    "The nurse in the background being overwhelmed reinforces that help isn't coming fast",
+    "Red banner at bottom is the escape from this nightmare — act now and avoid this"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K digital ad creative"
+  },
+  "global_context": {
+    "scene_description": "Top-down photograph of a newspaper obituary page resting on a kitchen table. The paper has realistic newsprint texture, slight yellowing, a visible fold crease running vertically down the center, and a light coffee stain in the upper-right corner. One obituary is the focal point — centered on the page, framed with a thin black border like a traditional obituary block. Where the deceased's portrait would be, there is instead a crumpled, coffee-stained HVAC invoice/quote with the bold text '$15,000' clearly visible on it, photographed as if it were a portrait. Below the 'portrait' is the obituary headline reading 'IN LOVING MEMORY' in traditional serif font, followed by 'The $15,000 AC Quote' and the dates '2015 — 2026'. Below that, body text of the obituary reads: 'Passed away peacefully after being beaten by ASH Cooling & Heating. Survived by homeowners who now have $5,000 back in their pockets. In lieu of flowers, please send your quote to ASH.' A ceramic coffee cup sits in the upper-left corner of the frame, partially cropped. A pair of reading glasses rests to the right of the obituary. Morning light from a window casts soft, diagonal shadows from the coffee cup and glasses. Across the very bottom of the entire image — OVERLAID on top of the newspaper scene, breaking the newspaper frame — is a solid red rectangular banner occupying the bottom 12% of the image. Inside the red banner, bold white sans-serif text reads 'BEAT MY QUOTE →' on the left and the ASH Cooling & Heating logo appears on the right.",
+    "time_of_day": "Morning",
+    "weather_atmosphere": "Indoor, warm domestic atmosphere",
+    "lighting": {
+      "source": "Natural morning window light from upper-left",
+      "direction": "Upper-left, creating diagonal shadows",
+      "quality": "Soft, warm",
+      "color_temp": "Warm — 3500-4000K"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": [
+      "#F4EADB",
+      "#1A1A1A",
+      "#E42F3A",
+      "#FFFFFF"
+    ],
+    "accent_colors": [
+      "#8B7355",
+      "#C4A27A"
+    ],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Direct top-down, slight angle for depth",
+    "framing": "Medium close — newspaper fills ~85% of frame, red banner occupies bottom 12%",
+    "depth_of_field": "Deep — most of scene in focus",
+    "focal_point": "The crumpled HVAC quote serving as the obituary 'portrait' with '$15,000' visible",
+    "notes": "Reserve bottom 12% of frame for the solid red CTA banner. Obituary occupies middle 60% of frame. Coffee cup and glasses frame the composition in upper corners."
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "Newspaper obituary page",
+      "category": "Paper document",
+      "location": "Center, fills middle 85% of frame",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Aged cream newsprint with black serif text",
+        "texture": "Realistic newsprint, slightly yellowed, fold crease visible",
+        "material": "Newspaper",
+        "state": "Slightly worn, one coffee stain upper-right",
+        "dimensions_relative": "Fills middle 85% of frame"
+      },
+      "micro_details": [
+        "Thin black border around the featured obituary",
+        "Surrounding classified/obituary columns visible but blurred",
+        "Vertical fold crease down center"
+      ],
+      "pose_or_orientation": "Lying flat on table, viewed top-down",
+      "text_content": "IN LOVING MEMORY — The $15,000 AC Quote — 2015-2026 — Passed away peacefully after being beaten by ASH Cooling & Heating. Survived by homeowners who now have $5,000 back in their pockets. In lieu of flowers, please send your quote to ASH."
+    },
+    {
+      "id": "obj_002",
+      "label": "Crumpled HVAC quote as obituary portrait",
+      "category": "Paper document",
+      "location": "Upper-center of obituary block, where portrait would normally be",
+      "prominence": "Foreground hero",
+      "visual_attributes": {
+        "color": "White paper with black printed text and visible '$15,000' in large print",
+        "texture": "Crumpled, coffee-stained",
+        "material": "Paper",
+        "state": "Rumpled, one clear coffee ring, slight tears",
+        "dimensions_relative": "Roughly 20% of frame width, positioned as portrait-size"
+      },
+      "micro_details": [
+        "Clearly legible '$15,000' in bold print",
+        "Company logo suggested but not identifiable",
+        "Coffee ring stain visible"
+      ],
+      "pose_or_orientation": "Slightly askew, photographed as if a portrait",
+      "text_content": "$15,000 — AC REPLACEMENT QUOTE"
+    },
+    {
+      "id": "obj_003",
+      "label": "Ceramic coffee cup",
+      "category": "Prop",
+      "location": "Upper-left corner, partially cropped",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Matte cream ceramic",
+        "texture": "Smooth ceramic",
+        "material": "Ceramic",
+        "state": "Half-full, steam rising faintly",
+        "dimensions_relative": "Roughly 10% of frame, partially cropped"
+      },
+      "micro_details": ["Faint steam", "slight coffee stain at rim"],
+      "pose_or_orientation": "Upright",
+      "text_content": null
+    },
+    {
+      "id": "obj_004",
+      "label": "Reading glasses",
+      "category": "Prop",
+      "location": "Mid-right, beside obituary",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Black frame",
+        "texture": "Matte plastic",
+        "material": "Plastic, glass",
+        "state": "Folded",
+        "dimensions_relative": "Small, ~8% of frame width"
+      },
+      "micro_details": ["Casting soft shadow to lower-right"],
+      "pose_or_orientation": "Folded, flat on table",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Red CTA banner",
+      "category": "Graphic Overlay",
+      "location": "Bottom — full width, breaks the newspaper frame",
+      "prominence": "Foreground, overlay",
+      "visual_attributes": {
+        "color": "Solid red #E42F3A background, white bold sans-serif text",
+        "texture": "Flat solid color, sharp edges",
+        "material": "N/A — graphic overlay",
+        "state": "Clean, modern",
+        "dimensions_relative": "Full frame width, bottom 12% of frame height"
+      },
+      "micro_details": ["Sharp-edged rectangle, no gradient", "White text left-aligned, ASH logo right-aligned"],
+      "pose_or_orientation": "Horizontal, bottom-aligned",
+      "text_content": "BEAT MY QUOTE →    ASH COOLING & HEATING"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "IN LOVING MEMORY",
+      "The $15,000 AC Quote",
+      "2015 — 2026",
+      "Passed away peacefully after being beaten by ASH Cooling & Heating.",
+      "Survived by homeowners who now have $5,000 back in their pockets.",
+      "In lieu of flowers, please send your quote to ASH.",
+      "BEAT MY QUOTE →",
+      "ASH COOLING & HEATING"
+    ]
+  },
+  "semantic_relationships": [
+    "Newspaper fills the upper 88% of frame",
+    "Coffee cup sits in upper-left, glasses sit mid-right — framing the obituary",
+    "Crumpled HVAC quote occupies the upper portion of the obituary block as a 'portrait'",
+    "Red CTA banner overlays the bottom 12% of frame, breaking the newspaper scene",
+    "The red banner visually separates the editorial scene from the brand call-to-action"
+  ]
+}

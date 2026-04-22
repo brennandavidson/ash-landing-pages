@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Graphic Design",
+    "resolution_estimation": "2K digital ad creative"
+  },
+  "global_context": {
+    "scene_description": "A bold typographic advertising graphic on a solid black background. At the top center is a small white HVAC company logo. Below that, a bold white uppercase headline reads 'YOU'RE ALREADY PAYING FOR IT.' In the center of the image is a large comparison of two numbers stacked vertically. The top number '$300+/mo' is displayed in large bold red text with a small gray label beneath it reading 'your electric bill nursing a dying AC'. Below that is a smaller 'VS.' in medium gray. Below that is '~$250/mo' in large bold bright green text with a small gray label beneath it reading 'brand new AC system, 0% interest'. At the very bottom is a solid bright red horizontal banner spanning full width with bold white text reading '$1,400 OFF — 36 MONTHS. 0% INTEREST.'",
+    "time_of_day": "N/A - graphic design",
+    "weather_atmosphere": "N/A",
+    "lighting": {
+      "source": "N/A - flat graphic",
+      "direction": "N/A",
+      "quality": "N/A",
+      "color_temp": "N/A"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#000000", "#FFFFFF", "#E42F3A", "#22C55E"],
+    "accent_colors": ["Medium gray #888888 for labels and VS text"],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Flat, straight-on graphic",
+    "framing": "Full frame typography",
+    "depth_of_field": "N/A - flat graphic",
+    "focal_point": "The contrast between the red $300+ and the green ~$250"
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "Company Logo",
+      "category": "Graphic Element",
+      "location": "Top-Center",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White",
+        "texture": "Flat vector",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Small - 12% of frame width"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Centered",
+      "text_content": "ASH"
+    },
+    {
+      "id": "obj_002",
+      "label": "Headline",
+      "category": "Text Overlay",
+      "location": "Upper area, below logo",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White #FFFFFF",
+        "texture": "Bold, uppercase, sans-serif",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Medium-large text spanning 80% of width"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Centered",
+      "text_content": "YOU'RE ALREADY PAYING FOR IT."
+    },
+    {
+      "id": "obj_003",
+      "label": "Expensive monthly cost",
+      "category": "Text Overlay",
+      "location": "Center-upper",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Bright red #E42F3A",
+        "texture": "Very large, very bold, sans-serif",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Very large - the dollar amount dominates"
+      },
+      "micro_details": ["Small gray subtitle beneath: 'your electric bill nursing a dying AC'"],
+      "pose_or_orientation": "Centered",
+      "text_content": "$300+/mo"
+    },
+    {
+      "id": "obj_004",
+      "label": "VS separator",
+      "category": "Text Overlay",
+      "location": "Center",
+      "prominence": "Background",
+      "visual_attributes": {
+        "color": "Medium gray #888888",
+        "texture": "Medium weight, sans-serif",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Small"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Centered",
+      "text_content": "VS."
+    },
+    {
+      "id": "obj_005",
+      "label": "Affordable monthly cost",
+      "category": "Text Overlay",
+      "location": "Center-lower",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Bright green #22C55E",
+        "texture": "Very large, very bold, sans-serif",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Very large - matches the red number in size"
+      },
+      "micro_details": ["Small gray subtitle beneath: 'brand new AC system, 0% interest'"],
+      "pose_or_orientation": "Centered",
+      "text_content": "~$250/mo"
+    },
+    {
+      "id": "obj_006",
+      "label": "Offer Banner",
+      "category": "Graphic Element",
+      "location": "Bottom - full width",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Red #E42F3A background, white text",
+        "texture": "Flat solid",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full width, 12% of frame height"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Horizontal, bottom-aligned",
+      "text_content": "$1,400 OFF — 36 MONTHS. 0% INTEREST."
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "ASH",
+      "YOU'RE ALREADY PAYING FOR IT.",
+      "$300+/mo",
+      "your electric bill nursing a dying AC",
+      "VS.",
+      "~$250/mo",
+      "brand new AC system, 0% interest",
+      "$1,400 OFF — 36 MONTHS. 0% INTEREST."
+    ]
+  },
+  "semantic_relationships": [
+    "Logo sits above headline",
+    "Headline introduces the comparison below it",
+    "Red expensive number and green affordable number are the focal contrast",
+    "VS. separates the two numbers",
+    "Gray labels explain what each number represents",
+    "Banner at bottom presents the offer/CTA"
+  ]
+}

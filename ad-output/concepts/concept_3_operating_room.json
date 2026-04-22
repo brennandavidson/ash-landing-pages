@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K digital ad creative"
+  },
+  "global_context": {
+    "scene_description": "Direct top-down photograph of a surgical operating table scene, but the 'patient' on the table is a competitor HVAC quote document laid flat. The quote is surrounded by a blue surgical drape that frames it like a patient prepped for surgery. Inside the drape opening, the quote is visible with 'HVAC REPLACEMENT — TOTAL: $15,000' in bold text at the top. The quote has red surgical incision lines drawn across specific line items in red marker — roughly 4-5 line items are circled or struck through. The excised line items are pinned or placed on a metal surgical tray to the right of the quote, each with a small handwritten label: 'SALES COMMISSION $2,400', 'PREMIUM MARKUP $3,500', 'DIAGNOSTIC FEE $1,800', 'CORPORATE OVERHEAD $1,300'. On the opposite side (left of the quote), a stainless steel surgical tray holds a scalpel, forceps, and a red surgical marker. A pair of blue-gloved surgeon's hands enters the frame from the top of the scene, one holding the scalpel just above the quote, mid-operation. At the bottom of the quote, the original 'TOTAL: $15,000' is crossed out with a single red line, and a new price '$9,500' is written below it in red marker. Harsh overhead operating-room lighting casts crisp shadows. The scene has the sterile, high-contrast feel of an operating room. Across the top 15% of the image, bold white sans-serif headline text on a slim dark bar reads 'WE OPERATE ON YOUR HVAC QUOTE.' Across the bottom 12%, a solid red rectangular banner contains bold white text 'BEAT MY QUOTE →' on the left and the ASH Cooling & Heating logo on the right.",
+    "time_of_day": "N/A — interior operating room",
+    "weather_atmosphere": "Sterile, cool interior",
+    "lighting": {
+      "source": "Overhead operating-room surgical lamp",
+      "direction": "Directly overhead",
+      "quality": "Hard, clinical, high contrast",
+      "color_temp": "Cool — 5500-6500K"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": [
+      "#2E5F7B",
+      "#FFFFFF",
+      "#E42F3A",
+      "#C0C5CC"
+    ],
+    "accent_colors": [
+      "#1A1A1A",
+      "#8B0000"
+    ],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Direct top-down, 90-degree overhead",
+    "framing": "Medium — operating table fills ~80% of frame, headline top 15%, CTA bottom 12%",
+    "depth_of_field": "Deep — everything in focus",
+    "focal_point": "The quote being operated on, with red incision lines visible and scalpel poised above",
+    "notes": "Reserve top 15% for headline bar. Reserve bottom 12% for red CTA banner. Surgical scene in middle 73%."
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "HVAC quote as patient",
+      "category": "Paper document",
+      "location": "Center of frame, centered in surgical drape opening",
+      "prominence": "Foreground hero",
+      "visual_attributes": {
+        "color": "White paper with black printed text and red marker incision lines",
+        "texture": "Matte paper, marked up",
+        "material": "Paper",
+        "state": "Mid-operation — red marker cuts visible",
+        "dimensions_relative": "Roughly 35% of frame"
+      },
+      "micro_details": [
+        "Bold header 'HVAC REPLACEMENT — TOTAL: $15,000' at top",
+        "4-5 line items circled or struck through in red",
+        "Bottom shows 'TOTAL: $15,000' crossed out, replaced with '$9,500' in red marker"
+      ],
+      "pose_or_orientation": "Lying flat, centered",
+      "text_content": "HVAC REPLACEMENT — TOTAL: $15,000 — (crossed out) $9,500"
+    },
+    {
+      "id": "obj_002",
+      "label": "Blue surgical drape",
+      "category": "Prop",
+      "location": "Surrounds the quote",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Medical blue",
+        "texture": "Cloth, slight wrinkles",
+        "material": "Surgical cloth",
+        "state": "Draped around the quote with an opening cut",
+        "dimensions_relative": "Frames the quote, covers ~50% of frame around it"
+      },
+      "micro_details": ["Slight wrinkles", "Cut opening around the quote"],
+      "pose_or_orientation": "Flat, surrounding the document",
+      "text_content": null
+    },
+    {
+      "id": "obj_003",
+      "label": "Surgical tray with instruments",
+      "category": "Prop",
+      "location": "Left side of frame",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Stainless steel, metal instruments",
+        "texture": "Metallic, reflective",
+        "material": "Stainless steel",
+        "state": "Clean, instruments ready",
+        "dimensions_relative": "~15% of frame width"
+      },
+      "micro_details": ["Scalpel, forceps, red surgical marker", "Slight reflection of overhead light"],
+      "pose_or_orientation": "Flat, tray top-down",
+      "text_content": null
+    },
+    {
+      "id": "obj_004",
+      "label": "Second tray with excised line items",
+      "category": "Prop",
+      "location": "Right side of frame",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Stainless steel with white paper scraps",
+        "texture": "Metallic with paper",
+        "material": "Metal, paper",
+        "state": "Holding excised 'tumors' (line items)",
+        "dimensions_relative": "~15% of frame width"
+      },
+      "micro_details": [
+        "Small paper scraps with handwritten labels: 'SALES COMMISSION $2,400'",
+        "'PREMIUM MARKUP $3,500'",
+        "'DIAGNOSTIC FEE $1,800'",
+        "'CORPORATE OVERHEAD $1,300'"
+      ],
+      "pose_or_orientation": "Flat, tray top-down",
+      "text_content": "SALES COMMISSION $2,400 — PREMIUM MARKUP $3,500 — DIAGNOSTIC FEE $1,800 — CORPORATE OVERHEAD $1,300"
+    },
+    {
+      "id": "obj_005",
+      "label": "Surgeon's gloved hands holding scalpel",
+      "category": "Person",
+      "location": "Entering from top of frame",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Medical blue nitrile gloves, silver scalpel",
+        "texture": "Smooth gloves, reflective scalpel",
+        "material": "Nitrile, stainless steel",
+        "state": "Mid-operation, scalpel poised above quote",
+        "dimensions_relative": "Hands occupy ~15% of frame"
+      },
+      "micro_details": ["Scalpel blade catches overhead light", "Slight shadow from hands on quote"],
+      "pose_or_orientation": "Entering from top, hands poised above the quote",
+      "text_content": null
+    },
+    {
+      "id": "obj_006",
+      "label": "Headline text bar",
+      "category": "Text Overlay",
+      "location": "Top 15% of frame",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Dark navy/black bar with white bold sans-serif text",
+        "texture": "Flat",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full frame width, top 15% of frame"
+      },
+      "micro_details": ["Clean, no decoration"],
+      "pose_or_orientation": "Horizontal, top-aligned",
+      "text_content": "WE OPERATE ON YOUR HVAC QUOTE."
+    },
+    {
+      "id": "obj_007",
+      "label": "Red CTA banner",
+      "category": "Graphic Overlay",
+      "location": "Bottom — full width",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Solid red #E42F3A with bold white sans-serif text",
+        "texture": "Flat",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full frame width, bottom 12%"
+      },
+      "micro_details": ["Sharp edges", "White text left, ASH logo right"],
+      "pose_or_orientation": "Horizontal, bottom-aligned",
+      "text_content": "BEAT MY QUOTE →    ASH COOLING & HEATING"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "WE OPERATE ON YOUR HVAC QUOTE.",
+      "HVAC REPLACEMENT — TOTAL: $15,000",
+      "$9,500",
+      "SALES COMMISSION $2,400",
+      "PREMIUM MARKUP $3,500",
+      "DIAGNOSTIC FEE $1,800",
+      "CORPORATE OVERHEAD $1,300",
+      "BEAT MY QUOTE →",
+      "ASH COOLING & HEATING"
+    ]
+  },
+  "semantic_relationships": [
+    "Headline bar at top 15%, red CTA at bottom 12%",
+    "Quote at center, surrounded by blue surgical drape",
+    "Instrument tray on left, excised-line-items tray on right — visually balanced",
+    "Surgeon's hands enter from top of scene, scalpel poised above quote",
+    "The scene reads top-to-bottom: headline → surgery in progress → CTA"
+  ]
+}

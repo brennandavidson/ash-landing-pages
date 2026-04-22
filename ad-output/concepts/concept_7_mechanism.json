@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Graphic Design",
+    "resolution_estimation": "2K digital ad creative"
+  },
+  "global_context": {
+    "scene_description": "A bold infographic-style advertising graphic on a solid black background. At the top center is a small white HVAC company logo. Below that, bold white uppercase text reads 'WHY THEY CHARGE $13,000'. In the center are three horizontal rows, each containing a simple white icon on the left, a white text label in the middle, and a large bold red X mark on the right. Row 1: a money/dollar icon with text 'Private Equity Margins' and a red X. Row 2: a person/salesman icon with text 'Commissioned Sales Reps' and a red X. Row 3: a building icon with text 'Corporate Overhead' and a red X. Below the three rows, bold bright green text reads 'WHY WE DON'T.' At the very bottom is a solid bright red horizontal banner spanning full width with bold white text reading '$1,400 OFF — SAME EQUIPMENT. NO MARKUP.'",
+    "time_of_day": "N/A - graphic design",
+    "weather_atmosphere": "N/A",
+    "lighting": {
+      "source": "N/A - flat graphic",
+      "direction": "N/A",
+      "quality": "N/A",
+      "color_temp": "N/A"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#000000", "#FFFFFF", "#E42F3A", "#22C55E"],
+    "accent_colors": ["Light gray for icons"],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Flat, straight-on graphic",
+    "framing": "Full frame infographic",
+    "depth_of_field": "N/A - flat",
+    "focal_point": "The three crossed-out cost drivers forming a scannable list"
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "Company Logo",
+      "category": "Graphic Element",
+      "location": "Top-Center",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White",
+        "texture": "Flat vector",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Small - 12% of frame width"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Centered",
+      "text_content": "ASH"
+    },
+    {
+      "id": "obj_002",
+      "label": "Top headline",
+      "category": "Text Overlay",
+      "location": "Upper area below logo",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White #FFFFFF",
+        "texture": "Bold, uppercase, sans-serif",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Medium-large"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Centered",
+      "text_content": "WHY THEY CHARGE $13,000"
+    },
+    {
+      "id": "obj_003",
+      "label": "Cost driver row 1 - Private Equity",
+      "category": "Graphic Element",
+      "location": "Center-upper, first row",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White icon and text, red X mark",
+        "texture": "Clean line icons, bold text",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Row spanning 80% width"
+      },
+      "micro_details": ["Simple dollar sign or money bag icon on left", "Red X is bold and prominent"],
+      "pose_or_orientation": "Horizontal row: icon | text | X",
+      "text_content": "Private Equity Margins"
+    },
+    {
+      "id": "obj_004",
+      "label": "Cost driver row 2 - Commission",
+      "category": "Graphic Element",
+      "location": "Center, second row",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White icon and text, red X mark",
+        "texture": "Clean line icons, bold text",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Row spanning 80% width"
+      },
+      "micro_details": ["Simple person/salesman silhouette icon on left"],
+      "pose_or_orientation": "Horizontal row: icon | text | X",
+      "text_content": "Commissioned Sales Reps"
+    },
+    {
+      "id": "obj_005",
+      "label": "Cost driver row 3 - Overhead",
+      "category": "Graphic Element",
+      "location": "Center-lower, third row",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White icon and text, red X mark",
+        "texture": "Clean line icons, bold text",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Row spanning 80% width"
+      },
+      "micro_details": ["Simple building/office icon on left"],
+      "pose_or_orientation": "Horizontal row: icon | text | X",
+      "text_content": "Corporate Overhead"
+    },
+    {
+      "id": "obj_006",
+      "label": "Contrasting statement",
+      "category": "Text Overlay",
+      "location": "Below the three rows",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Bright green #22C55E",
+        "texture": "Bold, uppercase, sans-serif",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Medium-large"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Centered",
+      "text_content": "WHY WE DON'T."
+    },
+    {
+      "id": "obj_007",
+      "label": "Offer Banner",
+      "category": "Graphic Element",
+      "location": "Bottom - full width",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Red #E42F3A background, white text",
+        "texture": "Flat solid",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full width, 12% of frame height"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Horizontal, bottom-aligned",
+      "text_content": "$1,400 OFF — SAME EQUIPMENT. NO MARKUP."
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "ASH",
+      "WHY THEY CHARGE $13,000",
+      "Private Equity Margins",
+      "Commissioned Sales Reps",
+      "Corporate Overhead",
+      "WHY WE DON'T.",
+      "$1,400 OFF — SAME EQUIPMENT. NO MARKUP."
+    ]
+  },
+  "semantic_relationships": [
+    "Logo above headline",
+    "Headline introduces the three cost drivers below",
+    "Three rows are vertically stacked with consistent spacing",
+    "Each row has icon on left, label in center, red X on right",
+    "Green contrasting statement below the three rows provides the pivot",
+    "Banner at bottom presents the offer"
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K digital ad creative"
+  },
+  "global_context": {
+    "scene_description": "A realistic top-down photograph of a light-wood kitchen table in a Phoenix-area home, shot from directly overhead. Two printed HVAC quote documents lie flat side by side on the table, each on plain white letter-size paper. LEFT document is printed on letterhead reading 'PREMIER HOME SERVICES' at the top in bold black type, showing one visible line item 'Trane XR16 3-Ton AC System — 10yr Warranty' and below it in bold black type 'TOTAL: $14,500'. The '$14,500' total has a hand-drawn red pen circle around it. RIGHT document is printed on letterhead reading 'ASH COOLING & HEATING' at the top in bold black type, showing the SAME line item 'Trane XR16 3-Ton AC System — 10yr Warranty' and below it in bold black type 'TOTAL: $9,800'. The '$9,800' total has a hand-drawn green pen circle around it. Directly in the space between the two documents (roughly in the center of the image, horizontally), a hand-drawn red marker arrow points from left to right. Above the arrow, in bold red handwritten marker text: 'YOU SAVE $4,700'. Ambient props: a matte cream ceramic coffee mug sits in the upper-left corner (partially cropped), a red felt-tip marker rests to the left of the left document, a green felt-tip marker rests to the right of the right document. Soft diagonal morning light from a window at upper-left casts gentle shadows toward the lower-right. Across the very top 15% of the frame — OVERLAID on a clean dark-navy bar — bold white sans-serif headline text reads 'SAME EQUIPMENT. LOWER PRICE.' Across the very bottom 12% of the frame — OVERLAID as a solid red rectangular banner — bold white sans-serif text reads 'BEAT MY QUOTE →' on the left and the ASH Cooling & Heating logo appears on the right.",
+    "time_of_day": "Morning",
+    "weather_atmosphere": "Indoor, bright natural light",
+    "lighting": {
+      "source": "Natural window light from upper-left",
+      "direction": "Diagonal from upper-left",
+      "quality": "Soft, diffused",
+      "color_temp": "Warm-neutral — 4200-4800K"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": [
+      "#D4B88A",
+      "#FFFFFF",
+      "#1A1A1A",
+      "#E42F3A",
+      "#2E8B57"
+    ],
+    "accent_colors": [
+      "#0B1F3A",
+      "#F4EADB"
+    ],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Direct top-down, 90-degree overhead",
+    "framing": "Medium overhead — table fills full frame, two documents centered side by side",
+    "depth_of_field": "Deep — everything in focus",
+    "focal_point": "The contrast between '$14,500' (red circle) and '$9,800' (green circle), with red arrow and 'YOU SAVE $4,700' between them",
+    "notes": "Reserve top 15% for dark-navy headline bar. Reserve bottom 12% for red CTA banner. Middle 73% contains the table scene with both quotes side-by-side."
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "LEFT quote — Premier Home Services",
+      "category": "Paper document",
+      "location": "Left-center of table, lower-left of frame scene area",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White paper, black printed text, red pen circle",
+        "texture": "Matte printer paper",
+        "material": "Paper",
+        "state": "Flat, clean",
+        "dimensions_relative": "Roughly 35% of frame width"
+      },
+      "micro_details": [
+        "Top header: 'PREMIER HOME SERVICES' in bold black block letters",
+        "Middle line item: 'Trane XR16 3-Ton AC System — 10yr Warranty'",
+        "Bottom line: 'TOTAL: $14,500' in bold, with a hand-drawn red pen circle around '$14,500'"
+      ],
+      "pose_or_orientation": "Flat on table, portrait orientation",
+      "text_content": "PREMIER HOME SERVICES | Trane XR16 3-Ton AC System — 10yr Warranty | TOTAL: $14,500"
+    },
+    {
+      "id": "obj_002",
+      "label": "RIGHT quote — ASH Cooling & Heating",
+      "category": "Paper document",
+      "location": "Right-center of table, lower-right of frame scene area",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White paper, black printed text, green pen circle",
+        "texture": "Matte printer paper",
+        "material": "Paper",
+        "state": "Flat, clean",
+        "dimensions_relative": "Roughly 35% of frame width"
+      },
+      "micro_details": [
+        "Top header: 'ASH COOLING & HEATING' in bold black block letters",
+        "Middle line item: 'Trane XR16 3-Ton AC System — 10yr Warranty'",
+        "Bottom line: 'TOTAL: $9,800' in bold, with a hand-drawn green pen circle around '$9,800'"
+      ],
+      "pose_or_orientation": "Flat on table, portrait orientation",
+      "text_content": "ASH COOLING & HEATING | Trane XR16 3-Ton AC System — 10yr Warranty | TOTAL: $9,800"
+    },
+    {
+      "id": "obj_003",
+      "label": "Red arrow with savings callout",
+      "category": "Graphic Element (handwritten into scene)",
+      "location": "Center of scene, between the two documents",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Red marker on table surface",
+        "texture": "Marker ink on wood",
+        "material": "N/A",
+        "state": "Fresh",
+        "dimensions_relative": "~20% of frame width"
+      },
+      "micro_details": [
+        "Red marker arrow pointing left-to-right",
+        "Above the arrow: handwritten red marker text 'YOU SAVE $4,700'"
+      ],
+      "pose_or_orientation": "Horizontal, centered",
+      "text_content": "YOU SAVE $4,700"
+    },
+    {
+      "id": "obj_004",
+      "label": "Coffee mug",
+      "category": "Prop",
+      "location": "Upper-left corner, partially cropped",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Matte cream ceramic",
+        "texture": "Smooth ceramic",
+        "material": "Ceramic",
+        "state": "Half-full",
+        "dimensions_relative": "~8% of frame"
+      },
+      "micro_details": ["Faint steam"],
+      "pose_or_orientation": "Upright",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Red felt-tip marker",
+      "category": "Prop",
+      "location": "Left of left document, mid-frame",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Red body with black cap",
+        "texture": "Plastic",
+        "material": "Plastic",
+        "state": "Uncapped, resting",
+        "dimensions_relative": "~8% of frame"
+      },
+      "micro_details": ["Red tip visible"],
+      "pose_or_orientation": "Horizontal",
+      "text_content": null
+    },
+    {
+      "id": "obj_006",
+      "label": "Green felt-tip marker",
+      "category": "Prop",
+      "location": "Right of right document, mid-frame",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Green body with black cap",
+        "texture": "Plastic",
+        "material": "Plastic",
+        "state": "Uncapped, resting",
+        "dimensions_relative": "~8% of frame"
+      },
+      "micro_details": ["Green tip visible"],
+      "pose_or_orientation": "Horizontal",
+      "text_content": null
+    },
+    {
+      "id": "obj_007",
+      "label": "Headline overlay bar",
+      "category": "Graphic Overlay",
+      "location": "Top 15% of frame",
+      "prominence": "Foreground overlay",
+      "visual_attributes": {
+        "color": "Dark navy #0B1F3A with bold white sans-serif text",
+        "texture": "Flat solid",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full frame width, top 15%"
+      },
+      "micro_details": ["Clean, no decoration"],
+      "pose_or_orientation": "Horizontal, top-aligned",
+      "text_content": "SAME EQUIPMENT. LOWER PRICE."
+    },
+    {
+      "id": "obj_008",
+      "label": "Red CTA banner",
+      "category": "Graphic Overlay",
+      "location": "Bottom — full width",
+      "prominence": "Foreground overlay",
+      "visual_attributes": {
+        "color": "Solid red #E42F3A with bold white sans-serif text",
+        "texture": "Flat solid",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full frame width, bottom 12%"
+      },
+      "micro_details": ["Sharp edges", "White text left, ASH logo right"],
+      "pose_or_orientation": "Horizontal, bottom-aligned",
+      "text_content": "BEAT MY QUOTE →    ASH COOLING & HEATING"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "SAME EQUIPMENT. LOWER PRICE.",
+      "PREMIER HOME SERVICES",
+      "Trane XR16 3-Ton AC System — 10yr Warranty",
+      "TOTAL: $14,500",
+      "ASH COOLING & HEATING",
+      "TOTAL: $9,800",
+      "YOU SAVE $4,700",
+      "BEAT MY QUOTE →"
+    ]
+  },
+  "semantic_relationships": [
+    "Headline bar top 15%, red CTA banner bottom 12%",
+    "LEFT document and RIGHT document are symmetric on either side of center",
+    "Red arrow and 'YOU SAVE $4,700' text sit between the two documents",
+    "Coffee mug upper-left, markers at outer edges of each document"
+  ]
+}

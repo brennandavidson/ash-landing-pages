@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K professional advertising creative"
+  },
+  "global_context": {
+    "scene_description": "A darkly humorous advertising image styled as a newspaper obituary page. At the very top of the image, large bold black text in a heavy condensed font reads 'DON'T WAIT FOR THE FUNERAL.' on a slightly off-white newspaper-textured background. Below the headline, the main visual is a realistic newspaper page laid on a dark wooden table surface, slightly crumpled and coffee-stained. The newspaper is open to the obituaries section. The central obituary is prominently displayed with a small black-and-white photo of an old, rusty HVAC unit where a person's portrait would normally be. The obituary text reads: 'In Loving Memory of Your Old AC Unit, 2011-2026. Died doing what it loved: making weird noises and running up your electric bill. Survived by a homeowner who should have replaced it sooner. In lieu of flowers, please send $1,400 off a new system.' The obituary is circled in red marker. A pair of reading glasses sits on the newspaper. A coffee mug with a ring stain is nearby. The overall lighting is warm and domestic, like a kitchen table in morning light. At the very bottom of the image is a solid bright red horizontal banner spanning full width with bold white uppercase text reading '$1,400 OFF A NEW SYSTEM. BEFORE IT'S TOO LATE.' and the ASH Cooling & Heating logo in white on the right side.",
+    "time_of_day": "Morning, warm indoor light",
+    "weather_atmosphere": "Calm, domestic, morning routine",
+    "lighting": {
+      "source": "Warm natural window light from upper left",
+      "direction": "Upper left to lower right",
+      "quality": "Soft, warm, natural morning light",
+      "color_temp": "Warm, golden"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#F5F0E8", "#1A1A1A", "#E42F3A", "#5C4033"],
+    "accent_colors": ["Coffee brown stain", "Red marker circle", "Dark wood table", "Warm golden light"],
+    "contrast_level": "Medium-high"
+  },
+  "composition": {
+    "camera_angle": "Overhead, looking down at the table and newspaper, slight angle",
+    "framing": "Medium shot, newspaper fills center 60% of frame",
+    "depth_of_field": "Medium-shallow — obituary text sharp, edges of newspaper and table items softly blurred",
+    "focal_point": "The obituary with the HVAC unit photo and the red marker circle around it"
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "Headline text",
+      "category": "Text Overlay",
+      "location": "Top 18% of image",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Black on off-white/newspaper texture background",
+        "texture": "Bold, heavy, condensed sans-serif, uppercase",
+        "material": "N/A",
+        "state": "Clean, bold, attention-grabbing",
+        "dimensions_relative": "Large — spans 85% of width"
+      },
+      "micro_details": ["Newspaper-textured background behind headline area"],
+      "pose_or_orientation": "Centered, top of composition",
+      "text_content": "DON'T WAIT FOR THE FUNERAL."
+    },
+    {
+      "id": "obj_002",
+      "label": "Newspaper obituary page",
+      "category": "Prop/Document",
+      "location": "Center of image, on table surface",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Off-white newsprint with black text",
+        "texture": "Newspaper paper texture, slightly yellowed, thin and crinkled",
+        "material": "Newsprint paper",
+        "state": "Read, slightly crumpled, with coffee stain",
+        "dimensions_relative": "Large — fills roughly 65% of frame"
+      },
+      "micro_details": ["Multiple obituary columns visible but blurred except the main one", "Newspaper fold creases visible", "Section header reads 'OBITUARIES'", "Date visible near top of page"],
+      "pose_or_orientation": "Laid flat on table, slight rotation, overhead view",
+      "text_content": "OBITUARIES"
+    },
+    {
+      "id": "obj_003",
+      "label": "Main HVAC obituary",
+      "category": "Content/Text",
+      "location": "Center of the newspaper page, circled in red",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Black text on newsprint, red marker circle around it",
+        "texture": "Newspaper print text",
+        "material": "Printed text on newsprint",
+        "state": "Highlighted with red marker circle",
+        "dimensions_relative": "Medium — roughly 30% of frame, centered on page"
+      },
+      "micro_details": ["Small black-and-white photo of an old rusty HVAC unit where the portrait would be", "Obituary text: 'In Loving Memory of Your Old AC Unit, 2011-2026. Died doing what it loved: making weird noises and running up your electric bill. Survived by a homeowner who should have replaced it sooner. In lieu of flowers, please send $1,400 off a new system.'", "Red marker circle drawn around entire obituary", "The small HVAC photo has a black border like a memorial portrait"],
+      "pose_or_orientation": "Within the newspaper page, standard column layout",
+      "text_content": "In Loving Memory of Your Old AC Unit, 2011-2026. Died doing what it loved: making weird noises and running up your electric bill. Survived by a homeowner who should have replaced it sooner. In lieu of flowers, please send $1,400 off a new system."
+    },
+    {
+      "id": "obj_004",
+      "label": "Reading glasses",
+      "category": "Prop",
+      "location": "Lower left area, partially on newspaper",
+      "prominence": "Midground",
+      "visual_attributes": {
+        "color": "Dark tortoiseshell frames, clear lenses",
+        "texture": "Polished plastic/acetate",
+        "material": "Acetate frames, glass lenses",
+        "state": "Set down casually, slightly open",
+        "dimensions_relative": "Small — 12% of frame"
+      },
+      "micro_details": ["Lens catching a slight reflection from window light"],
+      "pose_or_orientation": "Laid casually, temples slightly open, as if just removed",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Coffee mug and ring stain",
+      "category": "Prop",
+      "location": "Upper right area of table",
+      "prominence": "Midground",
+      "visual_attributes": {
+        "color": "White ceramic mug, brown coffee ring stain on paper",
+        "texture": "Ceramic, slight sheen",
+        "material": "Ceramic",
+        "state": "Partially full, has left a ring on the newspaper",
+        "dimensions_relative": "Small — 10% of frame"
+      },
+      "micro_details": ["Brown coffee ring stain on the newspaper edge", "Dark coffee visible inside mug"],
+      "pose_or_orientation": "Sitting on table surface, near edge of newspaper",
+      "text_content": null
+    },
+    {
+      "id": "obj_006",
+      "label": "Bottom red banner with CTA and logo",
+      "category": "Graphic Element",
+      "location": "Bottom 12-15% of image, full width",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Solid bright red #E42F3A background with white text and white logo",
+        "texture": "Flat solid color bar",
+        "material": "N/A",
+        "state": "Clean, bold",
+        "dimensions_relative": "Full width, bottom 12-15% of frame"
+      },
+      "micro_details": ["Bold white uppercase text on left side", "ASH Cooling & Heating logo in white on right side"],
+      "pose_or_orientation": "Horizontal bar, bottom edge of image",
+      "text_content": "$1,400 OFF A NEW SYSTEM. BEFORE IT'S TOO LATE. ASH COOLING & HEATING"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "DON'T WAIT FOR THE FUNERAL.",
+      "OBITUARIES",
+      "In Loving Memory of Your Old AC Unit, 2011-2026",
+      "Died doing what it loved: making weird noises and running up your electric bill.",
+      "Survived by a homeowner who should have replaced it sooner.",
+      "In lieu of flowers, please send $1,400 off a new system.",
+      "$1,400 OFF A NEW SYSTEM. BEFORE IT'S TOO LATE.",
+      "ASH COOLING & HEATING"
+    ]
+  },
+  "semantic_relationships": [
+    "Headline at top sets the dark humor tone immediately",
+    "Newspaper fills the frame below, creating an immersive obituary reading experience",
+    "The HVAC unit photo where a person's portrait would be is the comedic twist",
+    "Red marker circle draws the eye to the specific obituary among the page",
+    "Reading glasses and coffee mug create a domestic morning scene — this is someone's kitchen table",
+    "The obituary copy is the punchline: 'Died doing what it loved: making weird noises'",
+    "Red banner at bottom pivots from humor to offer — the solution to avoiding this fate"
+  ]
+}

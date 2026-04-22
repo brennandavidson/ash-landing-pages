@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K professional advertising photograph"
+  },
+  "global_context": {
+    "scene_description": "A dramatic, cinematic advertising photograph of a black office paper shredder actively destroying a white HVAC contractor invoice. The paper is halfway into the shredder, with the top half still visible showing printed text reading 'HVAC QUOTE' as a header, with itemized line items below including 'Premium Installation Fee - $4,500', 'System Markup - $3,200', 'Sales Commission - $1,800', and a circled total of '$14,500+' in red ink. Each line item has an aggressive red 'X' drawn through it in red marker. Red crossed-out dollar sign icons float in the air around the shredder, scattered at various angles. Below the shredder, shredded paper strips and confetti-like pieces are exploding outward dramatically, caught mid-air with motion blur. The scene is set against a very dark, nearly black background with subtle dark gray gradient, with dramatic rim lighting hitting the edges of the shredder and the paper from behind and to the sides, creating a moody, high-contrast commercial look. The overall mood is aggressive and satisfying — the overpriced quote is being destroyed.",
+    "time_of_day": "Studio, dramatic artificial lighting",
+    "weather_atmosphere": "Dark, dramatic, high-energy",
+    "lighting": {
+      "source": "Artificial studio lighting, two rim lights from behind/sides",
+      "direction": "Backlit and side-lit, creating rim lighting on shredder edges",
+      "quality": "Hard, dramatic, commercial product photography style",
+      "color_temp": "Cool neutral with slight warm highlights on paper"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#0A0A0A", "#FFFFFF", "#E42F3A", "#1A1A1A"],
+    "accent_colors": ["Silver metallic from shredder body", "Red ink marks on paper", "Warm cream of paper"],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Slightly low angle looking up at the shredder, making it feel powerful",
+    "framing": "Medium shot, shredder fills center of frame, paper and debris spread across full width",
+    "depth_of_field": "Medium — shredder and paper sharp, background falls to soft dark",
+    "focal_point": "The invoice being destroyed, specifically the red-marked line items and $14,500 total"
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "Paper shredder",
+      "category": "Product/Prop",
+      "location": "Center, slightly below middle of frame",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Black with silver/chrome trim accents",
+        "texture": "Smooth matte black plastic with metallic feed slot",
+        "material": "Plastic and metal, office equipment",
+        "state": "Active, mid-shred, powered on",
+        "dimensions_relative": "Large — fills roughly 40% of frame width, 30% of frame height"
+      },
+      "micro_details": ["Chrome edge on feed slot catching rim light", "Slight motion blur on shredding mechanism", "Small LED indicator light"],
+      "pose_or_orientation": "Facing camera straight on, feed slot visible at top",
+      "text_content": null
+    },
+    {
+      "id": "obj_002",
+      "label": "HVAC invoice being shredded",
+      "category": "Document/Prop",
+      "location": "Top-center, emerging from top of shredder, upper half visible",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White/cream paper with black printed text and red ink markings",
+        "texture": "Standard printer paper, slightly worn at edges near shredder",
+        "material": "Paper",
+        "state": "Being destroyed, halfway through shredder",
+        "dimensions_relative": "Medium — paper extends roughly 35% of frame width"
+      },
+      "micro_details": ["Printed header 'HVAC QUOTE' in bold", "Itemized line items with dollar amounts", "Red X marks drawn aggressively over each line item", "Red circled total '$14,500+' near bottom of visible portion", "Paper slightly crumpling where it enters the feed slot"],
+      "pose_or_orientation": "Vertical, feeding into shredder from top, slight angle",
+      "text_content": "HVAC QUOTE, Premium Installation Fee - $4,500, System Markup - $3,200, Sales Commission - $1,800, $14,500+"
+    },
+    {
+      "id": "obj_003",
+      "label": "Shredded paper debris",
+      "category": "Debris/Effect",
+      "location": "Below shredder, spreading outward across bottom third of frame",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White paper strips and confetti",
+        "texture": "Thin paper strips, cross-cut shredder pieces",
+        "material": "Shredded paper",
+        "state": "Mid-flight, explosive scatter, motion blur",
+        "dimensions_relative": "Spread across bottom 30% of frame, various sizes"
+      },
+      "micro_details": ["Some strips still have partial text visible", "Various sizes of confetti", "Motion blur on fastest pieces", "Catching rim light as they fly"],
+      "pose_or_orientation": "Scattered outward and downward in explosive pattern",
+      "text_content": null
+    },
+    {
+      "id": "obj_004",
+      "label": "Floating red dollar sign icons",
+      "category": "Graphic Element",
+      "location": "Scattered around the shredder and invoice, floating in air",
+      "prominence": "Midground",
+      "visual_attributes": {
+        "color": "Red #E42F3A with red X marks through them",
+        "texture": "Flat graphic icons, slightly translucent",
+        "material": "Graphic overlay elements",
+        "state": "Floating, scattered at various angles and sizes",
+        "dimensions_relative": "Small to medium, 5-8 icons scattered around"
+      },
+      "micro_details": ["Each dollar sign has a diagonal red X or slash through it", "Various sizes suggesting depth", "Some partially behind shredder for layering"],
+      "pose_or_orientation": "Random rotations, floating loosely around scene",
+      "text_content": null
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "HVAC QUOTE",
+      "Premium Installation Fee - $4,500",
+      "System Markup - $3,200",
+      "Sales Commission - $1,800",
+      "$14,500+"
+    ]
+  },
+  "semantic_relationships": [
+    "Invoice is being fed into the shredder from above",
+    "Shredded debris is exploding out below the shredder",
+    "Red X marks on the invoice line items indicate they are being rejected/destroyed",
+    "Floating dollar sign icons with X marks surround the scene reinforcing the 'killing overpriced quotes' theme",
+    "Dramatic rim lighting creates separation between the shredder/paper and the dark background",
+    "The camera angle looking slightly up makes the shredder feel powerful and satisfying"
+  ]
+}

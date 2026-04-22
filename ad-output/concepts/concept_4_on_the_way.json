@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K digital ad creative"
+  },
+  "global_context": {
+    "scene_description": "Exterior daytime photograph of a Phoenix-area residential driveway in front of a stucco single-story home with a tile roof. A landscaped yard of desert rock, small cacti, and one mature palm tree is visible. An HVAC service van is parked in the driveway. The van is white with bold black and red graphics on the side reading 'ASH COOLING & HEATING' and below that in smaller text 'VETERAN OWNED — ROC #356015'. The side door of the van is open, and an HVAC technician — a fit adult male in his 30s-40s wearing a navy polo with a small ASH logo embroidered on the chest, dark work pants, and work boots — is stepping down from the van onto the driveway. He is holding a clipboard in his right hand. On the clipboard, a printed HVAC quote is clearly visible with a bold red marker circle around the price and handwritten red text '$14,500' crossed out, with 'BEAT BY $4,200' written next to it in red marker. In the open van doorway behind him, military dog tags are hanging from the rearview mirror, visible in the frame. A small Trane dealer decal is visible on the van's front windshield. The van license plate is Arizona-standard. Harsh midday Arizona sunlight creates crisp shadows. The tech is mid-stride, walking toward the viewer — body oriented slightly toward the camera, purposeful posture, confident but not posed. Sky above is clear, bright blue. Across the top 15% of the frame, bold white sans-serif headline text on a slim dark navy bar reads 'SEND US YOUR QUOTE. WE'LL SHOW UP AND BEAT IT.' Across the bottom 12%, a solid red rectangular banner contains bold white sans-serif text 'BEAT MY QUOTE →' on the left and the ASH Cooling & Heating logo on the right.",
+    "time_of_day": "Midday",
+    "weather_atmosphere": "Clear, bright, dry Arizona day",
+    "lighting": {
+      "source": "Natural direct sunlight, overhead",
+      "direction": "Overhead, slight front-left",
+      "quality": "Hard, crisp shadows",
+      "color_temp": "Warm daylight — 5200-5600K"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": [
+      "#D4BFA2",
+      "#FFFFFF",
+      "#E42F3A",
+      "#87CEEB"
+    ],
+    "accent_colors": [
+      "#1A1A1A",
+      "#2C3E50"
+    ],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Eye-level, slight 3/4 angle toward the van's open side",
+    "framing": "Medium wide — tech and open van door are main subjects, house in background",
+    "depth_of_field": "Moderate — tech in sharp focus, house slightly softer",
+    "focal_point": "The technician stepping down from the van with the marked-up quote on his clipboard",
+    "notes": "Reserve top 15% for headline bar. Reserve bottom 12% for red CTA banner. Tech + van occupy middle 73%."
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "HVAC service van",
+      "category": "Vehicle",
+      "location": "Center-right of frame, filling right two-thirds",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White van with bold black and red graphics",
+        "texture": "Clean painted metal, slight dust on lower panels",
+        "material": "Metal",
+        "state": "Side door open, clean, working vehicle",
+        "dimensions_relative": "Fills ~55% of frame width"
+      },
+      "micro_details": [
+        "Side door open",
+        "Bold side graphics 'ASH COOLING & HEATING'",
+        "Smaller text below 'VETERAN OWNED — ROC #356015'",
+        "Military dog tags visible hanging from rearview mirror through open doorway",
+        "Small Trane dealer decal on front windshield",
+        "Arizona license plate"
+      ],
+      "pose_or_orientation": "Parked facing left, side door open toward camera",
+      "text_content": "ASH COOLING & HEATING — VETERAN OWNED — ROC #356015"
+    },
+    {
+      "id": "obj_002",
+      "label": "HVAC technician",
+      "category": "Person",
+      "location": "Center-left of frame, stepping out of van",
+      "prominence": "Foreground hero",
+      "visual_attributes": {
+        "color": "Navy polo, dark work pants, work boots, natural skin tone",
+        "texture": "Fabric polo, canvas work pants, leather boots",
+        "material": "N/A",
+        "state": "Mid-stride, exiting van, purposeful",
+        "dimensions_relative": "Full figure ~45% of frame height"
+      },
+      "micro_details": [
+        "ASH logo embroidered on polo chest",
+        "Holding clipboard in right hand",
+        "Confident posture, slight smile, not posed",
+        "Fit, 30s-40s, approachable"
+      ],
+      "pose_or_orientation": "Mid-stride, body angled slightly toward camera",
+      "text_content": null
+    },
+    {
+      "id": "obj_003",
+      "label": "Clipboard with marked-up quote",
+      "category": "Prop",
+      "location": "Held by technician, mid-frame",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Brown clipboard with white paper and red marker",
+        "texture": "Clipboard wood, paper",
+        "material": "Wood, paper",
+        "state": "Quote visible, marked up with red marker",
+        "dimensions_relative": "~15% of frame width"
+      },
+      "micro_details": [
+        "Printed HVAC quote visible",
+        "'$14,500' crossed out in red marker",
+        "'BEAT BY $4,200' written next to it in red handwriting",
+        "Red marker cap visible on clipboard"
+      ],
+      "pose_or_orientation": "Held at waist height, angled slightly toward camera",
+      "text_content": "HVAC QUOTE — $14,500 (crossed out) — BEAT BY $4,200"
+    },
+    {
+      "id": "obj_004",
+      "label": "Stucco house background",
+      "category": "Environment",
+      "location": "Background, fills upper portion",
+      "prominence": "Background",
+      "visual_attributes": {
+        "color": "Warm tan stucco, terracotta tile roof",
+        "texture": "Stucco, tile",
+        "material": "Stucco, clay",
+        "state": "Clean, typical Phoenix home",
+        "dimensions_relative": "Fills upper 40% of scene"
+      },
+      "micro_details": ["Desert rock yard", "Small cacti", "One mature palm tree"],
+      "pose_or_orientation": "Background setting",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Headline text bar",
+      "category": "Text Overlay",
+      "location": "Top 15% of frame",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Dark navy bar with white bold sans-serif text",
+        "texture": "Flat",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full frame width, top 15%"
+      },
+      "micro_details": ["Clean, no decoration"],
+      "pose_or_orientation": "Horizontal, top-aligned",
+      "text_content": "SEND US YOUR QUOTE. WE'LL SHOW UP AND BEAT IT."
+    },
+    {
+      "id": "obj_006",
+      "label": "Red CTA banner",
+      "category": "Graphic Overlay",
+      "location": "Bottom — full width",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Solid red #E42F3A with bold white sans-serif text",
+        "texture": "Flat",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full frame width, bottom 12%"
+      },
+      "micro_details": ["Sharp edges", "White text left, ASH logo right"],
+      "pose_or_orientation": "Horizontal, bottom-aligned",
+      "text_content": "BEAT MY QUOTE →    ASH COOLING & HEATING"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "SEND US YOUR QUOTE. WE'LL SHOW UP AND BEAT IT.",
+      "ASH COOLING & HEATING",
+      "VETERAN OWNED — ROC #356015",
+      "$14,500",
+      "BEAT BY $4,200",
+      "BEAT MY QUOTE →"
+    ]
+  },
+  "semantic_relationships": [
+    "Headline bar occupies top 15%, red CTA at bottom 12%",
+    "Van fills right two-thirds of frame, tech stepping out to left of open door",
+    "Clipboard with marked-up quote is the narrative payload — shows the 'beat' in action",
+    "Dog tags hanging in van interior visible through open door — veteran angle delivered subtly",
+    "Phoenix environment (stucco, palm, desert landscaping) grounds the scene geographically"
+  ]
+}

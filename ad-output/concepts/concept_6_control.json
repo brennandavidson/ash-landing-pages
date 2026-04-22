@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Graphic Design",
+    "resolution_estimation": "2K digital ad creative"
+  },
+  "global_context": {
+    "scene_description": "A bold advertising graphic on a solid black background. At the top center is a white HVAC company logo reading 'ASH' in a stylized format with 'COOLING & HEATING' beneath it. Below the logo, large bold uppercase text reads 'SUMMER' in bright red color, and directly below that 'BLOWOUT SALE' in white. In the center-lower area of the image is a photograph of a new, clean, silver-gray commercial HVAC package unit, shown at a slight three-quarter angle with a subtle drop shadow beneath it grounding it on the black background. Across the very bottom of the image is a solid bright red horizontal banner spanning the full width, containing bold white uppercase text reading '$1,400 OFF NEW AC SYSTEMS — LIMITED TIME'.",
+    "time_of_day": "Studio lighting",
+    "weather_atmosphere": "N/A - graphic design",
+    "lighting": {
+      "source": "Studio lighting on product",
+      "direction": "Front-lit with slight top-down",
+      "quality": "Hard, clean, commercial product lighting",
+      "color_temp": "Neutral"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#000000", "#FFFFFF", "#E42F3A"],
+    "accent_colors": ["Silver-gray metallic from HVAC unit"],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Eye-level, slight three-quarter angle on product",
+    "framing": "Full product visible, medium-wide shot",
+    "depth_of_field": "Deep - everything sharp",
+    "focal_point": "The headline text 'SUMMER BLOWOUT SALE' and the HVAC unit together"
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "ASH Company Logo",
+      "category": "Graphic Element",
+      "location": "Top-Center",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White",
+        "texture": "Flat vector logo",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Small - roughly 15% of frame width"
+      },
+      "micro_details": ["Stylized 'ASH' lettering with 'COOLING & HEATING' subtitle"],
+      "pose_or_orientation": "Centered horizontally",
+      "text_content": "ASH COOLING & HEATING"
+    },
+    {
+      "id": "obj_002",
+      "label": "Headline Text",
+      "category": "Text Overlay",
+      "location": "Upper-center, below logo",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "SUMMER in red #E42F3A, BLOWOUT SALE in white #FFFFFF",
+        "texture": "Bold, heavy weight, sans-serif, uppercase",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Large - each word spans roughly 70-80% of frame width"
+      },
+      "micro_details": ["Very bold weight, condensed sans-serif typeface"],
+      "pose_or_orientation": "Centered, stacked two lines",
+      "text_content": "SUMMER BLOWOUT SALE"
+    },
+    {
+      "id": "obj_003",
+      "label": "HVAC Package Unit Product Photo",
+      "category": "Product",
+      "location": "Center-lower, above banner",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Silver-gray metallic with dark vents",
+        "texture": "Metallic, industrial, clean",
+        "material": "Sheet metal, industrial equipment",
+        "state": "Brand new, clean, pristine",
+        "dimensions_relative": "Medium - fills roughly 40% of frame width, 35% of frame height"
+      },
+      "micro_details": ["Visible ventilation grilles", "Clean edges", "Subtle brand markings"],
+      "pose_or_orientation": "Slight three-quarter angle, facing slightly left",
+      "text_content": null
+    },
+    {
+      "id": "obj_004",
+      "label": "Offer Banner",
+      "category": "Graphic Element",
+      "location": "Bottom - full width banner",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Bright red #E42F3A background with white text",
+        "texture": "Flat solid color",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full width, roughly 12% of frame height"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Horizontal, bottom-aligned, edge to edge",
+      "text_content": "$1,400 OFF NEW AC SYSTEMS — LIMITED TIME"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "ASH COOLING & HEATING",
+      "SUMMER",
+      "BLOWOUT SALE",
+      "$1,400 OFF NEW AC SYSTEMS — LIMITED TIME"
+    ]
+  },
+  "semantic_relationships": [
+    "Logo is above headline, both centered horizontally",
+    "Headline text is above the product photo",
+    "Product photo sits between headline and offer banner",
+    "Offer banner is at the very bottom edge of the image",
+    "Drop shadow beneath product grounds it on the black background"
+  ]
+}

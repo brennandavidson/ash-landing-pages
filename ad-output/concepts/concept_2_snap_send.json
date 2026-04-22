@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K digital ad creative"
+  },
+  "global_context": {
+    "scene_description": "A realistic, slightly angled top-down photograph of a kitchen counter in a Phoenix-area home. In the center of the counter lies a printed HVAC quote — a single-page printed document on plain white letterhead. The quote is clearly legible: the top reads 'HVAC REPLACEMENT QUOTE — Complete AC System' and the bottom-right shows 'TOTAL: $14,500' in bold black type with a highlight marker stripe over the price. A homeowner's hand (skin-tone natural, no jewelry, adult male or female) holds a smartphone roughly 12 inches above the quote, camera app open on screen. The phone's display shows the quote framed within the camera viewfinder with a visible white circular capture button at the bottom of the screen. The phone itself is a modern smartphone, held in landscape orientation by the right hand. Surrounding counter details: a matte ceramic coffee mug in the upper-left, a set of car keys with a small keychain in the upper-right, and a pen resting on the edge of the paper. The counter surface is a warm light-grey granite with subtle veining. Soft morning light enters from a window on the left, casting gentle shadows of the phone and hand onto the quote below. Above the scene, across the top 15% of the frame, large bold black sans-serif text reads 'SNAP IT. SEND IT. WE BEAT IT.' against a clean off-white background that blends with the counter. Across the very bottom of the frame, occupying the bottom 12%, is a solid red rectangular banner with bold white sans-serif text reading 'BEAT MY QUOTE →' on the left and the ASH Cooling & Heating logo on the right.",
+    "time_of_day": "Morning",
+    "weather_atmosphere": "Indoor, bright natural light",
+    "lighting": {
+      "source": "Natural morning window light from left",
+      "direction": "Left-side, creating soft diagonal shadows to the right",
+      "quality": "Soft, diffused",
+      "color_temp": "Neutral-warm — 4200-4800K"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": [
+      "#E8E4DE",
+      "#1A1A1A",
+      "#E42F3A",
+      "#FFFFFF"
+    ],
+    "accent_colors": [
+      "#8B9299",
+      "#F0C96A"
+    ],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Top-down with slight 15-degree tilt to show phone screen legibly",
+    "framing": "Medium overhead — counter fills full frame, phone+quote are focal center",
+    "depth_of_field": "Deep — phone, quote, and counter all in focus",
+    "focal_point": "The smartphone capturing the HVAC quote — the ACT of snapping the photo",
+    "notes": "Reserve top 15% of frame for headline text. Reserve bottom 12% for red CTA banner. Counter scene occupies middle 73%."
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "HVAC quote document",
+      "category": "Paper document",
+      "location": "Center of counter, slightly below center of frame",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White paper with black printed text, yellow highlight marker stripe over price",
+        "texture": "Matte printer paper",
+        "material": "Paper",
+        "state": "Flat, unwrinkled, pen resting on edge",
+        "dimensions_relative": "Roughly 30% of frame width"
+      },
+      "micro_details": [
+        "Header: 'HVAC REPLACEMENT QUOTE — Complete AC System'",
+        "Line items listed below header",
+        "Bold 'TOTAL: $14,500' at bottom with yellow highlight stripe",
+        "Generic big-company letterhead feel, no specific identifiable brand"
+      ],
+      "pose_or_orientation": "Lying flat on counter",
+      "text_content": "HVAC REPLACEMENT QUOTE — Complete AC System — TOTAL: $14,500"
+    },
+    {
+      "id": "obj_002",
+      "label": "Smartphone with camera app open",
+      "category": "Prop",
+      "location": "Center of frame, held above the quote",
+      "prominence": "Foreground hero",
+      "visual_attributes": {
+        "color": "Modern dark metallic smartphone with screen visible",
+        "texture": "Smooth matte metal/glass",
+        "material": "Metal and glass",
+        "state": "In use, camera app open",
+        "dimensions_relative": "Roughly 22% of frame width"
+      },
+      "micro_details": [
+        "Camera app UI visible on screen",
+        "Quote visible within the camera viewfinder on screen",
+        "Visible white circular capture button at bottom of phone screen",
+        "Subtle reflection of overhead light on phone glass"
+      ],
+      "pose_or_orientation": "Held horizontally, slight angle for screen readability",
+      "text_content": null
+    },
+    {
+      "id": "obj_003",
+      "label": "Homeowner's hand",
+      "category": "Person",
+      "location": "Entering frame from the right, holding the phone",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Natural skin tone",
+        "texture": "Realistic skin",
+        "material": "N/A",
+        "state": "Relaxed grip",
+        "dimensions_relative": "Hand occupies ~8% of frame"
+      },
+      "micro_details": ["No rings", "Clean nails", "Relaxed casual grip"],
+      "pose_or_orientation": "Extending from lower-right, holding phone",
+      "text_content": null
+    },
+    {
+      "id": "obj_004",
+      "label": "Coffee mug",
+      "category": "Prop",
+      "location": "Upper-left corner",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Matte cream ceramic",
+        "texture": "Smooth ceramic",
+        "material": "Ceramic",
+        "state": "Half-full",
+        "dimensions_relative": "~8% of frame"
+      },
+      "micro_details": ["Faint steam"],
+      "pose_or_orientation": "Upright",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Car keys",
+      "category": "Prop",
+      "location": "Upper-right corner",
+      "prominence": "Mid-ground",
+      "visual_attributes": {
+        "color": "Silver and black",
+        "texture": "Metal and leather keychain",
+        "material": "Metal, leather",
+        "state": "Casually dropped",
+        "dimensions_relative": "~7% of frame"
+      },
+      "micro_details": ["Small keychain fob"],
+      "pose_or_orientation": "Resting",
+      "text_content": null
+    },
+    {
+      "id": "obj_006",
+      "label": "Headline text",
+      "category": "Text Overlay — baked into scene",
+      "location": "Top 15% of frame, centered",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Bold black sans-serif text on off-white background",
+        "texture": "Flat, clean",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Text spans ~75% of frame width, occupies top 15% of frame"
+      },
+      "micro_details": ["Period punctuation between words for rhythm"],
+      "pose_or_orientation": "Horizontal, centered",
+      "text_content": "SNAP IT. SEND IT. WE BEAT IT."
+    },
+    {
+      "id": "obj_007",
+      "label": "Red CTA banner",
+      "category": "Graphic Overlay",
+      "location": "Bottom — full width",
+      "prominence": "Foreground, overlay",
+      "visual_attributes": {
+        "color": "Solid red #E42F3A with bold white sans-serif text",
+        "texture": "Flat solid",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Full frame width, bottom 12%"
+      },
+      "micro_details": ["Sharp edges", "White text left, ASH logo right"],
+      "pose_or_orientation": "Horizontal, bottom-aligned",
+      "text_content": "BEAT MY QUOTE →    ASH COOLING & HEATING"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "SNAP IT. SEND IT. WE BEAT IT.",
+      "HVAC REPLACEMENT QUOTE",
+      "Complete AC System",
+      "TOTAL: $14,500",
+      "BEAT MY QUOTE →",
+      "ASH COOLING & HEATING"
+    ]
+  },
+  "semantic_relationships": [
+    "Headline occupies top 15% of frame",
+    "Phone is held directly above the quote, with camera viewfinder framing the quote",
+    "Coffee mug (upper-left) and car keys (upper-right) bookend the composition",
+    "Quote sits centered on counter with pen resting on its edge",
+    "Red CTA banner occupies bottom 12% of frame, separated from the scene"
+  ]
+}

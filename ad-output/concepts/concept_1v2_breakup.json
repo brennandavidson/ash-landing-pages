@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "image_quality": "High",
+    "image_type": "Photo",
+    "resolution_estimation": "2K professional advertising creative"
+  },
+  "global_context": {
+    "scene_description": "A vibrant, eye-catching advertising image with a fiery orange and red gradient background suggesting intense summer heat, with subtle flame-like shapes and heat waves throughout. At the very top of the image, large bold white text in a heavy condensed sans-serif font reads 'YOUR AC IS GHOSTING YOU THIS SUMMER.' in all caps. Below the headline, smaller white text reads 'Upgrade before it leaves you sweating.' In the center of the image is a large realistic iPhone shown at a slight angle, displaying an iMessage text conversation. The contact name at the top of the conversation reads 'Your Old AC' with a snowflake emoji. The text bubbles show: a blue outgoing message 'hey it's 110° you coming?' with timestamp '1:15 PM', then another blue outgoing message 'hello??' at '2:45 PM', then another blue outgoing message 'seriously?' at '2:47 PM', and below that a gray 'Read 2:47 PM' receipt. Below the read receipt is a gray typing indicator bubble with three dots, suggesting the AC is struggling to respond. Scattered around the phone are broken red heart emojis and small heat shimmer effects. At the very bottom of the image is a solid bright red horizontal banner spanning full width containing bold white uppercase text reading '$1,400 OFF ANY NEW SYSTEM. SUMMER BLOWOUT.' and the ASH Cooling & Heating logo in white on the right side of the banner.",
+    "time_of_day": "N/A - stylized graphic with photo elements",
+    "weather_atmosphere": "Hot, fiery, intense summer heat",
+    "lighting": {
+      "source": "Warm ambient glow from the fiery background",
+      "direction": "Even, surrounding warm light",
+      "quality": "Soft, warm, glowing",
+      "color_temp": "Very warm, orange-red"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#FF6B00", "#E42F3A", "#FFFFFF", "#1A1A1A"],
+    "accent_colors": ["Blue iMessage bubble color", "Gray text bubble", "Broken red hearts"],
+    "contrast_level": "High"
+  },
+  "composition": {
+    "camera_angle": "Straight-on, phone slightly angled for depth",
+    "framing": "Full composition with text zones top and bottom, phone centered",
+    "depth_of_field": "Medium — phone sharp, background softly out of focus",
+    "focal_point": "The iPhone text conversation, specifically the unanswered messages and read receipt"
+  },
+  "objects": [
+    {
+      "id": "obj_001",
+      "label": "Headline text",
+      "category": "Text Overlay",
+      "location": "Top 20% of image",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White",
+        "texture": "Bold, heavy weight, condensed sans-serif, uppercase, slight drop shadow",
+        "material": "N/A",
+        "state": "Clean, crisp, highly legible",
+        "dimensions_relative": "Large — spans 90% of width, roughly 15% of image height"
+      },
+      "micro_details": ["Strong drop shadow for readability over fiery background"],
+      "pose_or_orientation": "Centered, top of composition",
+      "text_content": "YOUR AC IS GHOSTING YOU THIS SUMMER."
+    },
+    {
+      "id": "obj_002",
+      "label": "Subline text",
+      "category": "Text Overlay",
+      "location": "Below headline, above phone",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "White, slightly smaller and lighter weight than headline",
+        "texture": "Clean sans-serif, sentence case",
+        "material": "N/A",
+        "state": "Clean",
+        "dimensions_relative": "Medium — single line of text"
+      },
+      "micro_details": [],
+      "pose_or_orientation": "Centered",
+      "text_content": "Upgrade before it leaves you sweating."
+    },
+    {
+      "id": "obj_003",
+      "label": "iPhone with iMessage conversation",
+      "category": "Device/Prop",
+      "location": "Center of image, filling middle 50%",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Dark phone body, dark iMessage background, blue outgoing bubbles",
+        "texture": "Glossy glass and metal smartphone, realistic screen",
+        "material": "Glass front, aluminum body",
+        "state": "Active, showing a text conversation",
+        "dimensions_relative": "Large — phone fills roughly 40% of frame width, 45% of frame height"
+      },
+      "micro_details": ["Contact name 'Your Old AC' with snowflake emoji at top of conversation", "Blue outgoing bubble: 'hey it's 110° you coming?' at 1:15 PM", "Blue outgoing bubble: 'hello??' at 2:45 PM", "Blue outgoing bubble: 'seriously?' at 2:47 PM", "Gray 'Read 2:47 PM' text below last message", "Gray typing indicator dots at bottom suggesting a response that never comes", "iPhone notch visible at top", "Realistic iMessage UI styling"],
+      "pose_or_orientation": "Slight angle, tilted a few degrees for depth, screen facing viewer",
+      "text_content": "Your Old AC, hey it's 110° you coming?, hello??, seriously?, Read 2:47 PM"
+    },
+    {
+      "id": "obj_004",
+      "label": "Broken heart emojis",
+      "category": "Decorative Element",
+      "location": "Scattered around the phone, floating in the fiery background",
+      "prominence": "Midground",
+      "visual_attributes": {
+        "color": "Red broken hearts",
+        "texture": "Emoji-style, slightly translucent",
+        "material": "Graphic elements",
+        "state": "Floating, scattered at various sizes and angles",
+        "dimensions_relative": "Small, 5-7 scattered around"
+      },
+      "micro_details": ["Various sizes suggesting depth", "Some partially behind phone for layering"],
+      "pose_or_orientation": "Random rotations, floating",
+      "text_content": null
+    },
+    {
+      "id": "obj_005",
+      "label": "Bottom red banner with CTA and logo",
+      "category": "Graphic Element",
+      "location": "Bottom 12-15% of image, full width",
+      "prominence": "Foreground",
+      "visual_attributes": {
+        "color": "Solid bright red #E42F3A background with white text and white logo",
+        "texture": "Flat solid color bar",
+        "material": "N/A",
+        "state": "Clean, bold",
+        "dimensions_relative": "Full width, bottom 12-15% of frame"
+      },
+      "micro_details": ["Bold white uppercase text on left: '$1,400 OFF ANY NEW SYSTEM. SUMMER BLOWOUT.'", "ASH Cooling & Heating logo in white on right side of banner"],
+      "pose_or_orientation": "Horizontal bar, bottom edge of image",
+      "text_content": "$1,400 OFF ANY NEW SYSTEM. SUMMER BLOWOUT. ASH COOLING & HEATING"
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": [
+      "YOUR AC IS GHOSTING YOU THIS SUMMER.",
+      "Upgrade before it leaves you sweating.",
+      "Your Old AC",
+      "hey it's 110° you coming?",
+      "hello??",
+      "seriously?",
+      "Read 2:47 PM",
+      "$1,400 OFF ANY NEW SYSTEM. SUMMER BLOWOUT.",
+      "ASH COOLING & HEATING"
+    ]
+  },
+  "semantic_relationships": [
+    "Headline text at top establishes the concept immediately",
+    "Subline below headline provides context before the eye reaches the phone",
+    "iPhone in center IS the visual metaphor — your AC is leaving you on read",
+    "The unanswered messages escalate in desperation (casual > confused > frustrated)",
+    "Read receipt confirms the AC saw the messages and chose not to respond",
+    "Typing indicator suggests the AC is struggling but failing to come through",
+    "Broken hearts floating around reinforce the relationship/breakup metaphor",
+    "Fiery orange background creates heat atmosphere without being literal",
+    "Red banner at bottom contains the offer and brand — the solution to the problem above"
+  ]
+}
