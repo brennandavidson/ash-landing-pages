@@ -464,7 +464,7 @@ def fmt_test(result):
     return "✓" if result else "✗"
 
 
-def build_digest(ads, offline_entries, days, tracking, refresh_info, pacing, cbo_alerts):
+def build_digest(campaigns, ads, offline_entries, days, tracking, refresh_info, pacing, cbo_alerts):
     today = datetime.now().strftime("%B %d, %Y")
     lines = [f"# ASH Ads Daily — {today}", ""]
 
@@ -493,6 +493,27 @@ def build_digest(ads, offline_entries, days, tracking, refresh_info, pacing, cbo
         f"{pacing['days_remaining']}d. ${pacing['spend']:.0f} / ${MONTHLY_SPEND_TARGET:,} spent "
         f"({pacing['pct_to_spend_target']:.0f}%)."
     )
+    lines.append("")
+
+    # --- Campaign Snapshot ---
+    lines.append(f"## Campaign Snapshot (Last {days} Days)")
+    lines.append("")
+    lines.append("| Campaign | Spend | Leads | Offline | CPL | Effective CPL | Frequency | CTR |")
+    lines.append("|----------|-------|-------|---------|-----|---------------|-----------|-----|")
+    for c in campaigns:
+        cpl_str = f"${c['cpl']:.0f}" if c["cpl"] > 0 else "—"
+        offline = c.get("offline_attributed", 0)
+        total_attr = c["leads"] + offline
+        eff_cpl = c["spend"] / total_attr if total_attr > 0 else 0
+        eff_cpl_str = f"${eff_cpl:.0f}" if eff_cpl > 0 else "—"
+        freq_str = f"{c['frequency']:.2f}" if c["frequency"] > 0 else "—"
+        ctr_str = f"{c['ctr']:.2f}%" if c["ctr"] > 0 else "—"
+        lines.append(
+            f"| {c['name']} | ${c['spend']:.2f} | {c['leads']} | {offline} | "
+            f"{cpl_str} | {eff_cpl_str} | {freq_str} | {ctr_str} |"
+        )
+    lines.append("")
+    lines.append("*CPL = website leads only. Effective CPL = includes Meta-attributed offline contacts.*")
     lines.append("")
 
     # --- Ad decision table ---
@@ -614,6 +635,9 @@ def main():
         print("Missing API keys", file=sys.stderr)
         sys.exit(1)
 
+    print("Pulling campaign-level insights...", file=sys.stderr)
+    camp_raw = pull_insights(token, account_id, args.days, "campaign")
+
     print("Pulling ad-level insights...", file=sys.stderr)
     ad_raw = pull_insights(token, account_id, args.days, "ad")
 
@@ -624,6 +648,23 @@ def main():
     print("Pulling month-to-date totals for pacing...", file=sys.stderr)
     mtd_raw = pull_month_to_date(token, account_id)
     pacing = calculate_monthly_pacing(mtd_raw)
+
+    # Build campaign list
+    campaigns = []
+    for row in camp_raw.get("data", []):
+        leads, cpl = extract_leads_cpl(row)
+        offline_attributed = extract_offline_contacts(row)
+        campaigns.append({
+            "name": row.get("campaign_name", "Unknown"),
+            "spend": float(row.get("spend", 0)),
+            "impressions": int(row.get("impressions", 0)),
+            "frequency": float(row.get("frequency", 0)),
+            "clicks": int(row.get("clicks", 0)),
+            "ctr": float(row.get("ctr", 0)),
+            "leads": leads,
+            "cpl": cpl,
+            "offline_attributed": offline_attributed,
+        })
 
     # Build ad list
     ads = []
@@ -670,7 +711,7 @@ def main():
     offline_entries = load_offline_log(args.days)
 
     digest = build_digest(
-        ads, offline_entries, args.days,
+        campaigns, ads, offline_entries, args.days,
         tracking, refresh_info, pacing, cbo_alerts,
     )
 
