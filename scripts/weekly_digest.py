@@ -149,9 +149,9 @@ def generate_recommendations(ads, buckets, refresh_info, pacing, cbo_alerts, tre
     # Pacing
     if pacing["day_of_month"] >= 7 and pacing["pct_to_lead_target"] < pacing["pct_through_month"] - 15:
         recs.append(
-            f"Monthly pacing behind: {pacing['pct_to_lead_target']:.0f}% of lead target at "
-            f"{pacing['pct_through_month']:.0f}% through month. Need {pacing['leads_needed']} more leads "
-            f"in {pacing['days_remaining']}d."
+            f"Pacing behind: {pacing['pct_to_lead_target']:.0f}% of lead target at "
+            f"{pacing['pct_through_month']:.0f}% through {pacing['days_in_month']}-day launch window. "
+            f"Need {pacing['leads_needed']} more leads in {pacing['days_remaining']}d."
         )
 
     # CBO bias — if >1 ad set takes this much spend share, it's a pattern
@@ -207,7 +207,7 @@ def build_weekly(ads, daily, offline_entries, days, tracking, refresh_info,
         lines.append(f"| Blended CPL (website) | ${blended_cpl:.2f} |")
     if total_attributed > 0:
         lines.append(f"| Effective CPL (web + offline) | ${effective_cpl:.2f} |")
-    lines.append(f"| Monthly pacing | {pacing['total_attributed']}/{MONTHLY_LEAD_TARGET} leads ({pacing['pct_to_lead_target']:.0f}%) at {pacing['pct_through_month']:.0f}% through month |")
+    lines.append(f"| Launch-window pacing | {pacing['total_attributed']}/{MONTHLY_LEAD_TARGET} leads ({pacing['pct_to_lead_target']:.0f}%) at day {pacing['day_of_month']}/{pacing['days_in_month']} since {pacing['launch_date']} |")
     lines.append("")
 
     # --- Ad lifecycle audit ---

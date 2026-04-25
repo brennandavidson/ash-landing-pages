@@ -72,9 +72,13 @@ MIN_SPEND_FOR_KILL = 50          # Don't kill an ad with barely any spend
 REFRESH_CYCLE_DAYS = 14
 REFRESH_DUE_DAYS = 10
 
-# Monthly targets ($8k/mo @ $177 CPL = 45 leads)
-MONTHLY_LEAD_TARGET = 45
-MONTHLY_SPEND_TARGET = 8000
+# Pacing window — anchored to the test/batch launch, not calendar month.
+# Update PACING_LAUNCH_DATE whenever you launch a new test. The window is rolling
+# 30 days from that date, with $8k spend / 45 leads as the targets across the window.
+PACING_LAUNCH_DATE = "2026-04-21"
+PACING_WINDOW_DAYS = 30
+MONTHLY_LEAD_TARGET = 45      # 45 leads target across PACING_WINDOW_DAYS
+MONTHLY_SPEND_TARGET = 8000   # $8k spend target across PACING_WINDOW_DAYS
 
 # CBO bias watch (shown in weekly; flagged in daily alerts if egregious)
 CBO_BIAS_SPEND_SHARE = 0.60
@@ -154,13 +158,14 @@ def pull_ad_daily(token, account_id, days=30):
 
 
 def pull_month_to_date(token, account_id):
-    """Per-adset month-to-date totals. Filtered by ACTIVE_CAMPAIGNS+ACTIVE_ADSETS in pacing calc."""
-    now = datetime.now()
-    since = now.replace(day=1).strftime("%Y-%m-%d")
-    until = now.strftime("%Y-%m-%d")
+    """Per-adset spend since PACING_LAUNCH_DATE through today.
+
+    Function name is legacy ("month-to-date") — math is now launch-anchored.
+    """
+    until = datetime.now().strftime("%Y-%m-%d")
     params = {
         "fields": "campaign_name,adset_name,spend,actions,cost_per_action_type,conversions",
-        "time_range": json.dumps({"since": since, "until": until}),
+        "time_range": json.dumps({"since": PACING_LAUNCH_DATE, "until": until}),
         "level": "adset",
         "limit": 500,
         "use_unified_attribution_setting": "true",
@@ -446,25 +451,25 @@ def detect_cbo_bias(ads):
 # ============================================================
 
 def calculate_monthly_pacing(mtd_raw):
-    """Sum month-to-date totals across ACTIVE_CAMPAIGNS only."""
+    """Pacing math anchored to PACING_LAUNCH_DATE (not calendar month)."""
     data = mtd_raw.get("data", [])
     now = datetime.now()
-    if now.month == 12:
-        next_month = now.replace(year=now.year + 1, month=1, day=1)
-    else:
-        next_month = now.replace(month=now.month + 1, day=1)
-    last_day = (next_month - timedelta(days=1)).day
+    launch = datetime.strptime(PACING_LAUNCH_DATE, "%Y-%m-%d")
+    days_elapsed = max(0, (now - launch).days)
+    days_remaining = max(0, PACING_WINDOW_DAYS - days_elapsed)
+    pct_through = min(100.0, (days_elapsed / PACING_WINDOW_DAYS) * 100) if PACING_WINDOW_DAYS else 0
 
     rows = [r for r in data if is_active_row(r)]
 
     if not rows:
         return {
             "spend": 0, "leads": 0, "offline_attributed": 0, "total_attributed": 0,
-            "day_of_month": now.day, "days_in_month": last_day,
-            "pct_through_month": (now.day / last_day) * 100,
+            "day_of_month": days_elapsed, "days_in_month": PACING_WINDOW_DAYS,
+            "pct_through_month": pct_through,
             "pct_to_lead_target": 0, "pct_to_spend_target": 0,
             "leads_needed": MONTHLY_LEAD_TARGET,
-            "days_remaining": last_day - now.day,
+            "days_remaining": days_remaining,
+            "launch_date": PACING_LAUNCH_DATE,
         }
 
     spend = sum(float(r.get("spend", 0)) for r in rows)
@@ -475,12 +480,13 @@ def calculate_monthly_pacing(mtd_raw):
     return {
         "spend": spend, "leads": leads, "offline_attributed": offline,
         "total_attributed": total,
-        "day_of_month": now.day, "days_in_month": last_day,
-        "pct_through_month": (now.day / last_day) * 100,
+        "day_of_month": days_elapsed, "days_in_month": PACING_WINDOW_DAYS,
+        "pct_through_month": pct_through,
         "pct_to_lead_target": (total / MONTHLY_LEAD_TARGET) * 100 if MONTHLY_LEAD_TARGET else 0,
         "pct_to_spend_target": (spend / MONTHLY_SPEND_TARGET) * 100 if MONTHLY_SPEND_TARGET else 0,
         "leads_needed": max(0, MONTHLY_LEAD_TARGET - total),
-        "days_remaining": last_day - now.day,
+        "days_remaining": days_remaining,
+        "launch_date": PACING_LAUNCH_DATE,
     }
 
 
@@ -521,7 +527,8 @@ def build_digest(adsets, ads, offline_entries, days, tracking, refresh_info, pac
         f"**Pacing:** {pacing_emoji} — {pacing['total_attributed']}/{MONTHLY_LEAD_TARGET} leads "
         f"({pacing['pct_to_lead_target']:.0f}%), need {pacing['leads_needed']} more in "
         f"{pacing['days_remaining']}d. ${pacing['spend']:.0f} / ${MONTHLY_SPEND_TARGET:,} spent "
-        f"({pacing['pct_to_spend_target']:.0f}%)."
+        f"({pacing['pct_to_spend_target']:.0f}%). "
+        f"*Day {pacing['day_of_month']}/{pacing['days_in_month']} since launch ({pacing['launch_date']}).*"
     )
     lines.append("")
 
