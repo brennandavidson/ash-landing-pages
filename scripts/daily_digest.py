@@ -38,6 +38,29 @@ REPO_DIR = Path(__file__).resolve().parent.parent
 OFFLINE_LOG_PATH = REPO_DIR / "logs" / "offline-leads.jsonl"
 AD_TRACKING_PATH = REPO_DIR / "logs" / "ad-tracking.json"
 
+# Only campaigns AND ad sets in these lists are included in the report.
+# Empty list = no filter at that level. Update when launching/sunsetting.
+# Match is exact on the name string.
+ACTIVE_CAMPAIGNS = [
+    "Beat A Quote - New - 3/26",
+]
+ACTIVE_ADSETS = [
+    "April - Creative Batch",
+]
+
+
+def is_active_campaign(name):
+    return not ACTIVE_CAMPAIGNS or name in ACTIVE_CAMPAIGNS
+
+
+def is_active_adset(name):
+    return not ACTIVE_ADSETS or name in ACTIVE_ADSETS
+
+
+def is_active_row(row):
+    """Match insights row by both campaign AND adset filters."""
+    return is_active_campaign(row.get("campaign_name", "")) and is_active_adset(row.get("adset_name", ""))
+
 # The three-test thresholds
 CPL_TARGET = 177
 FREQUENCY_CAP = 3.5
@@ -90,6 +113,8 @@ def pull_insights(token, account_id, days, level):
     fields = "campaign_name,campaign_id,spend,impressions,reach,frequency,clicks,ctr,cpc,actions,cost_per_action_type,conversions"
     if level == "ad":
         fields = "ad_name,ad_id,adset_name," + fields
+    elif level == "adset":
+        fields = "adset_name,adset_id," + fields
     params = {
         "fields": fields,
         "time_range": json.dumps({"since": since, "until": until}),
@@ -101,14 +126,15 @@ def pull_insights(token, account_id, days, level):
 
 
 def pull_daily(token, account_id, days):
+    """Daily breakdown at ad-set level so it can be filtered by ACTIVE_ADSETS."""
     since = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
     until = datetime.now().strftime("%Y-%m-%d")
     params = {
-        "fields": "campaign_name,spend,impressions,clicks,actions,cost_per_action_type",
+        "fields": "campaign_name,adset_name,spend,impressions,clicks,actions,cost_per_action_type",
         "time_range": json.dumps({"since": since, "until": until}),
         "time_increment": 1,
-        "level": "campaign",
-        "limit": 500,
+        "level": "adset",
+        "limit": 1000,
     }
     return api_get(f"{account_id}/insights", params, token)
 
@@ -128,13 +154,15 @@ def pull_ad_daily(token, account_id, days=30):
 
 
 def pull_month_to_date(token, account_id):
+    """Per-adset month-to-date totals. Filtered by ACTIVE_CAMPAIGNS+ACTIVE_ADSETS in pacing calc."""
     now = datetime.now()
     since = now.replace(day=1).strftime("%Y-%m-%d")
     until = now.strftime("%Y-%m-%d")
     params = {
-        "fields": "spend,actions,cost_per_action_type,conversions",
+        "fields": "campaign_name,adset_name,spend,actions,cost_per_action_type,conversions",
         "time_range": json.dumps({"since": since, "until": until}),
-        "level": "account",
+        "level": "adset",
+        "limit": 500,
         "use_unified_attribution_setting": "true",
     }
     return api_get(f"{account_id}/insights", params, token)
@@ -418,6 +446,7 @@ def detect_cbo_bias(ads):
 # ============================================================
 
 def calculate_monthly_pacing(mtd_raw):
+    """Sum month-to-date totals across ACTIVE_CAMPAIGNS only."""
     data = mtd_raw.get("data", [])
     now = datetime.now()
     if now.month == 12:
@@ -426,7 +455,9 @@ def calculate_monthly_pacing(mtd_raw):
         next_month = now.replace(month=now.month + 1, day=1)
     last_day = (next_month - timedelta(days=1)).day
 
-    if not data:
+    rows = [r for r in data if is_active_row(r)]
+
+    if not rows:
         return {
             "spend": 0, "leads": 0, "offline_attributed": 0, "total_attributed": 0,
             "day_of_month": now.day, "days_in_month": last_day,
@@ -436,10 +467,9 @@ def calculate_monthly_pacing(mtd_raw):
             "days_remaining": last_day - now.day,
         }
 
-    row = data[0]
-    spend = float(row.get("spend", 0))
-    leads, _ = extract_leads_cpl(row)
-    offline = extract_offline_contacts(row)
+    spend = sum(float(r.get("spend", 0)) for r in rows)
+    leads = sum(extract_leads_cpl(r)[0] for r in rows)
+    offline = sum(extract_offline_contacts(r) for r in rows)
     total = leads + offline
 
     return {
@@ -464,7 +494,7 @@ def fmt_test(result):
     return "✓" if result else "✗"
 
 
-def build_digest(campaigns, ads, offline_entries, days, tracking, refresh_info, pacing, cbo_alerts):
+def build_digest(adsets, ads, offline_entries, days, tracking, refresh_info, pacing, cbo_alerts):
     today = datetime.now().strftime("%B %d, %Y")
     lines = [f"# ASH Ads Daily — {today}", ""]
 
@@ -495,21 +525,21 @@ def build_digest(campaigns, ads, offline_entries, days, tracking, refresh_info, 
     )
     lines.append("")
 
-    # --- Campaign Snapshot ---
-    lines.append(f"## Campaign Snapshot (Last {days} Days)")
+    # --- Ad Set Snapshot ---
+    lines.append(f"## Ad Set Snapshot (Last {days} Days)")
     lines.append("")
-    lines.append("| Campaign | Spend | Leads | Offline | CPL | Effective CPL | Frequency | CTR |")
-    lines.append("|----------|-------|-------|---------|-----|---------------|-----------|-----|")
-    for c in campaigns:
-        cpl_str = f"${c['cpl']:.0f}" if c["cpl"] > 0 else "—"
-        offline = c.get("offline_attributed", 0)
-        total_attr = c["leads"] + offline
-        eff_cpl = c["spend"] / total_attr if total_attr > 0 else 0
+    lines.append("| Ad Set | Spend | Leads | Offline | CPL | Effective CPL | Frequency | CTR |")
+    lines.append("|--------|-------|-------|---------|-----|---------------|-----------|-----|")
+    for a in adsets:
+        cpl_str = f"${a['cpl']:.0f}" if a["cpl"] > 0 else "—"
+        offline = a.get("offline_attributed", 0)
+        total_attr = a["leads"] + offline
+        eff_cpl = a["spend"] / total_attr if total_attr > 0 else 0
         eff_cpl_str = f"${eff_cpl:.0f}" if eff_cpl > 0 else "—"
-        freq_str = f"{c['frequency']:.2f}" if c["frequency"] > 0 else "—"
-        ctr_str = f"{c['ctr']:.2f}%" if c["ctr"] > 0 else "—"
+        freq_str = f"{a['frequency']:.2f}" if a["frequency"] > 0 else "—"
+        ctr_str = f"{a['ctr']:.2f}%" if a["ctr"] > 0 else "—"
         lines.append(
-            f"| {c['name']} | ${c['spend']:.2f} | {c['leads']} | {offline} | "
+            f"| {a['name']} | ${a['spend']:.2f} | {a['leads']} | {offline} | "
             f"{cpl_str} | {eff_cpl_str} | {freq_str} | {ctr_str} |"
         )
     lines.append("")
@@ -635,8 +665,8 @@ def main():
         print("Missing API keys", file=sys.stderr)
         sys.exit(1)
 
-    print("Pulling campaign-level insights...", file=sys.stderr)
-    camp_raw = pull_insights(token, account_id, args.days, "campaign")
+    print("Pulling ad-set-level insights...", file=sys.stderr)
+    adset_raw = pull_insights(token, account_id, args.days, "adset")
 
     print("Pulling ad-level insights...", file=sys.stderr)
     ad_raw = pull_insights(token, account_id, args.days, "ad")
@@ -649,13 +679,16 @@ def main():
     mtd_raw = pull_month_to_date(token, account_id)
     pacing = calculate_monthly_pacing(mtd_raw)
 
-    # Build campaign list
-    campaigns = []
-    for row in camp_raw.get("data", []):
+    # Build ad-set snapshot list (filtered to ACTIVE_CAMPAIGNS + ACTIVE_ADSETS)
+    adsets = []
+    for row in adset_raw.get("data", []):
+        if not is_active_row(row):
+            continue
         leads, cpl = extract_leads_cpl(row)
         offline_attributed = extract_offline_contacts(row)
-        campaigns.append({
-            "name": row.get("campaign_name", "Unknown"),
+        adsets.append({
+            "name": row.get("adset_name", "Unknown"),
+            "campaign": row.get("campaign_name", ""),
             "spend": float(row.get("spend", 0)),
             "impressions": int(row.get("impressions", 0)),
             "frequency": float(row.get("frequency", 0)),
@@ -666,9 +699,11 @@ def main():
             "offline_attributed": offline_attributed,
         })
 
-    # Build ad list
+    # Build ad list (filtered to ACTIVE_CAMPAIGNS + ACTIVE_ADSETS)
     ads = []
     for row in ad_raw.get("data", []):
+        if not is_active_row(row):
+            continue
         leads, cpl = extract_leads_cpl(row)
         offline_attributed = extract_offline_contacts(row)
         ads.append({
@@ -711,7 +746,7 @@ def main():
     offline_entries = load_offline_log(args.days)
 
     digest = build_digest(
-        campaigns, ads, offline_entries, args.days,
+        adsets, ads, offline_entries, args.days,
         tracking, refresh_info, pacing, cbo_alerts,
     )
 

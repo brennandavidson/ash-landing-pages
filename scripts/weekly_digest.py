@@ -40,6 +40,8 @@ from daily_digest import (
     # verdict + analysis
     three_test_verdict, detect_cbo_bias, get_latest_batch_info,
     calculate_monthly_pacing,
+    # active-campaign + adset filter
+    is_active_row,
 )
 
 
@@ -379,6 +381,8 @@ def main():
     # Build ads
     ads = []
     for row in ad_raw.get("data", []):
+        if not is_active_row(row):
+            continue
         leads, cpl = extract_leads_cpl(row)
         offline = extract_offline_contacts(row)
         ads.append({
@@ -414,8 +418,8 @@ def main():
     refresh_info = get_latest_batch_info(ads, tracking)
     cbo_alerts = detect_cbo_bias(ads)
 
-    # Daily campaign trend for first-vs-second-half comparison
-    daily_rows = daily_raw.get("data", [])
+    # Daily ad-set trend for first-vs-second-half comparison (active filters only)
+    daily_rows = [r for r in daily_raw.get("data", []) if is_active_row(r)]
     trend = period_trend(daily_rows)
 
     # Offline log
