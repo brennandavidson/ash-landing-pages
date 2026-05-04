@@ -1,0 +1,61 @@
+{
+  "global_context": {
+    "scene_description": "A magazine-style testimonial ad layout. The image is divided into a portrait and a quote area, designed like an editorial testimonial card. On the LEFT half: a head-and-shoulders portrait of a regular-guy Phoenix homeowner — Mike, white male, late 30s to early 40s, working-class, slight stubble, casual blue short-sleeve button-down shirt, trimmed brown hair, weathered tan from Phoenix sun, sitting on his front porch in late afternoon Phoenix golden light. He has a slight genuine smile — not posed, more like he's mid-conversation with the photographer. Behind him, the soft blur of his Phoenix neighborhood — gravel landscaping, saguaros, tan stucco. He looks exactly like a real customer would, NOT a stock model. On the RIGHT half: a clean off-white background with a large bold black serif quote: 'I PUT IT OFF FOR 2 YEARS. WHEN I FINALLY CALLED, THEY MADE IT PAINLESS.' Below the quote, smaller text in dark grey: '— Mike R., Chandler'. Below that, a row of five gold stars. The quote text is the focal element — large, breaking across multiple lines, designed like a real review/testimonial layout. Lighting on the portrait is warm golden hour, soft, flattering, real. The whole composition feels like a Consumer Reports review or a polished local-business testimonial — trustworthy, real, not over-glossed. Cinematic but documentary-real, NOT staged-stock-photo.",
+    "time_of_day": "late afternoon golden hour Phoenix",
+    "lighting": {"source": "low warm sun raking from camera-right", "quality": "warm soft golden, flattering"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#F5EDD8", "#D4B896", "#8B6F47", "#3A3A3A", "#FFFFFF"],
+    "accent_colors": ["#FFB048", "#1A1A1A"]
+  },
+  "composition": {
+    "framing": "magazine testimonial card layout — portrait left, quote right, hard vertical division",
+    "focal_point": "the quote text 'I PUT IT OFF FOR 2 YEARS...'"
+  },
+  "objects": [
+    {
+      "label": "portrait of Mike, Phoenix homeowner",
+      "location": "left half of frame",
+      "prominence": "primary subject",
+      "visual_attributes": {
+        "color": "blue casual button-down shirt, weathered tan skin, brown hair",
+        "material": "cotton button-down"
+      },
+      "pose_or_orientation": "head-and-shoulders, slight genuine smile, eyes meeting camera, looks real not posed",
+      "micro_details": ["light stubble, trimmed", "weathered Phoenix tan", "slight crow's feet from squinting in the sun", "looks like a real working-class homeowner, not a model"]
+    },
+    {
+      "label": "Phoenix porch background, soft blur",
+      "location": "behind Mike",
+      "prominence": "atmospheric",
+      "micro_details": ["soft-focused Phoenix neighborhood with gravel landscaping, saguaros, tan stucco wall in background"]
+    },
+    {
+      "label": "large quote text — testimonial",
+      "location": "right half of frame, centered vertically",
+      "prominence": "primary text element",
+      "text_content": "I PUT IT OFF FOR 2 YEARS. WHEN I FINALLY CALLED, THEY MADE IT PAINLESS.",
+      "visual_attributes": {
+        "color": "bold black serif type on off-white background",
+        "material": "graphic typography overlay"
+      },
+      "micro_details": ["large bold serif font, breaks across 3-4 lines", "centered horizontally on the right half", "off-white background panel behind the right half makes the type pop"]
+    },
+    {
+      "label": "attribution text",
+      "location": "below the quote",
+      "prominence": "secondary",
+      "text_content": "— Mike R., Chandler",
+      "micro_details": ["small dark grey sans-serif, em-dash before name", "italic or regular weight"]
+    },
+    {
+      "label": "5 gold stars",
+      "location": "below attribution",
+      "prominence": "secondary",
+      "text_content": "★★★★★",
+      "visual_attributes": {"color": "warm gold/amber"},
+      "micro_details": ["five solid filled stars in a row, evenly spaced"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["I PUT IT OFF FOR 2 YEARS. WHEN I FINALLY CALLED, THEY MADE IT PAINLESS.", "— Mike R., Chandler", "★★★★★"]}
+}

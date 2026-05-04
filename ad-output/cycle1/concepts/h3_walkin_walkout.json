@@ -1,0 +1,75 @@
+{
+  "global_context": {
+    "scene_description": "A bold editorial cartoon-illustrated split-frame composition, single image with a clean vertical divider down the middle. Same homeowner character drawn in both frames — recognizable, expressive, slightly exaggerated cartoon proportions. Theatrical lighting with strong color blocks behind each frame. Editorial illustration style, NOT photorealistic, NOT flat infographic — closer to New Yorker editorial cartoon meets modern brand illustration. LEFT FRAME (cool blue-grey background, slightly desaturated, anxious mood): the homeowner is mid-stride walking toward a door, body tense, shoulders hunched, sweat drops on his forehead, eyebrows pinched together, mouth a tight line, hands clenched into nervous fists. A large rounded speech bubble emerges from his head reading exactly: 'This is gonna be $20K and they'll pressure me into upgrades...' RIGHT FRAME (warm sunlit background, relieved mood): the SAME homeowner walking the opposite direction, away from the door, posture relaxed, shoulders dropped, a folded quote/document in his hand, eyebrows raised in pleasant surprise, the corner of his mouth turned up in a small disbelieving smile. A speech bubble from his head reads exactly: 'Wait... that's it?' A bold black vertical line separates the two halves. Above the entire image, a clean banner-style headline reads in bold uppercase: 'WHAT EVERY PHOENIX HOMEOWNER EXPECTS. WHAT ACTUALLY HAPPENS.' At the bottom, a small italic caption: 'New AC install. It's not what you've been telling yourself.' Mood: the satisfying click of a wrong assumption being corrected. Editorial cartoon illustration, theatrical color blocking, expressive character work.",
+    "lighting": {"source": "stylized cartoon lighting per frame", "quality": "left frame cool/anxious, right frame warm/relieved"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#3A4A5E", "#F4C77A", "#FFFFFF", "#1A1A1A"],
+    "accent_colors": ["#E42F3A", "#22C55E", "#FFD93D"]
+  },
+  "composition": {
+    "framing": "vertical split-frame, two equal halves divided by a bold vertical line, headline banner across top, small caption strip across bottom",
+    "focal_point": "the contrast between the tense character on the left and the relaxed character on the right"
+  },
+  "objects": [
+    {
+      "label": "top headline banner",
+      "location": "top 12% of frame, full width",
+      "prominence": "primary text",
+      "text_content": "WHAT EVERY PHOENIX HOMEOWNER EXPECTS. WHAT ACTUALLY HAPPENS.",
+      "visual_attributes": {"color": "bold black on white background"},
+      "micro_details": ["clean editorial sans-serif", "all caps", "tight letter spacing", "thin black border separating banner from main image"]
+    },
+    {
+      "label": "left frame anxious homeowner",
+      "location": "left half of frame",
+      "prominence": "primary character",
+      "text_content": "This is gonna be $20K and they'll pressure me into upgrades...",
+      "visual_attributes": {"color": "cool blue-grey background, character in muted casual clothes", "material": "cartoon editorial illustration"},
+      "micro_details": [
+        "homeowner character mid-stride walking toward a door",
+        "body language tense, shoulders hunched up",
+        "sweat drops on forehead",
+        "eyebrows pinched together in worry",
+        "mouth a tight straight line",
+        "hands clenched into fists at his sides",
+        "rounded speech bubble emerging from his head with the dread quote",
+        "background suggests an HVAC company storefront or front door entry",
+        "color palette dominated by cool blue-grey and desaturated tones"
+      ]
+    },
+    {
+      "label": "right frame relieved homeowner",
+      "location": "right half of frame",
+      "prominence": "primary character",
+      "text_content": "Wait... that's it?",
+      "visual_attributes": {"color": "warm sunlit golden-yellow background, character in same clothes but body language relaxed", "material": "cartoon editorial illustration"},
+      "micro_details": [
+        "the SAME homeowner character walking the opposite direction, away from the door",
+        "posture relaxed, shoulders dropped",
+        "a folded quote/document held loosely in his hand",
+        "eyebrows raised in pleasant disbelief",
+        "small disbelieving smile",
+        "rounded speech bubble emerging from his head reading 'Wait... that\\'s it?'",
+        "background warm sunlit, suggesting a relieved exit",
+        "color palette dominated by warm gold and bright neutrals"
+      ]
+    },
+    {
+      "label": "vertical divider line",
+      "location": "exact center vertical, full height between banner and footer",
+      "prominence": "structural element",
+      "visual_attributes": {"color": "solid black, 4-6px width"},
+      "micro_details": ["clean bold vertical separator", "suggests before/after contrast"]
+    },
+    {
+      "label": "bottom caption strip",
+      "location": "bottom 8% of frame, full width",
+      "prominence": "secondary text",
+      "text_content": "New AC install. It's not what you've been telling yourself.",
+      "visual_attributes": {"color": "small italic dark grey on white"},
+      "micro_details": ["italic editorial sans-serif", "thin top border separating from main image"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["WHAT EVERY PHOENIX HOMEOWNER EXPECTS.", "WHAT ACTUALLY HAPPENS.", "This is gonna be $20K and they'll pressure me into upgrades...", "Wait... that's it?", "New AC install. It's not what you've been telling yourself."]}
+}

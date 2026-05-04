@@ -1,0 +1,76 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic 3/4 angled overhead view of a kitchen-table scene showing a single printed HVAC quote document from a local family-owned shop, lying on a warm walnut wood table. The document is the focal point, occupying the central 60% of the frame. The document has a clean, modern, family-business-style header at the top and shows itemized line items in a neat table. At the top-right of the document, a clear bold header reads: 0% APR FOR 36 MONTHS — APPROVED. A pair of relaxed adult hands rests beside the document — palms partly open, not gripping, not anxious — suggesting calm review. To one side, a ceramic coffee mug with steam rising. To the other side, a smartphone face-down on the table. Soft warm morning natural light flows from the upper-right, casting gentle shadows across the document. The document has a small ASH-style logo in the corner (a stylized 'ASH' type-mark in red and blue) — small, not dominant. Mood: relief, calm, 'wait, this is doable.' Photorealistic, shot on 50mm lens, slight angled top-down view.",
+    "time_of_day": "morning, warm natural light",
+    "weather_atmosphere": "indoor, calm",
+    "lighting": {
+      "source": "soft window light from upper right",
+      "direction": "raking from upper right",
+      "quality": "soft, diffused, warm",
+      "color_temp": "warm morning"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4B896", "#F5EDD8", "#FFFFFF", "#2A2A2A", "#8B6F47"],
+    "accent_colors": ["#22C55E", "#E42F3A", "#2C3590"]
+  },
+  "composition": {
+    "camera_angle": "3/4 overhead, slight tilt — about 70 degrees down from horizontal",
+    "framing": "medium close-up, document fills central 60% of frame",
+    "depth_of_field": "deep, document in sharp focus, hands and props slightly soft at edges",
+    "focal_point": "the bold APPROVED header on the document"
+  },
+  "objects": [
+    {
+      "label": "ASH-branded HVAC quote document",
+      "location": "center of frame",
+      "prominence": "primary focal element",
+      "visual_attributes": {
+        "color": "white paper with black body text, accent red and blue header type",
+        "texture": "matte printed paper, slightly off-white",
+        "material": "8.5x11 letterhead printed quote"
+      },
+      "text_content": "0% APR FOR 36 MONTHS — APPROVED",
+      "micro_details": ["small 'ASH' logo in red and blue type-mark in upper-left corner of document, not dominant", "'0% APR FOR 36 MONTHS — APPROVED' in bold black caps as a prominent header banner near the top of the document, with green checkmark", "neat itemized line items below in a clean table — labels visible: 'New AC System', 'Installation', 'Permits' — but no specific dollar amounts visible (no readable totals)", "clean bottom margin with signature line"]
+    },
+    {
+      "label": "pair of adult hands at rest",
+      "location": "lower edge of frame, partially in view",
+      "prominence": "secondary",
+      "visual_attributes": {
+        "color": "natural skin tone",
+        "material": "relaxed, unstressed posture"
+      },
+      "pose_or_orientation": "palms partly open, fingers relaxed, resting beside the document",
+      "micro_details": ["body language reads calm review, not anxious gripping"]
+    },
+    {
+      "label": "ceramic coffee mug with steam",
+      "location": "upper-left of frame",
+      "prominence": "atmospheric",
+      "visual_attributes": {"color": "off-white ceramic", "material": "ceramic"},
+      "micro_details": ["soft steam rising", "partially cropped at frame edge"]
+    },
+    {
+      "label": "smartphone face-down on table",
+      "location": "right side of frame, beside the document",
+      "prominence": "atmospheric",
+      "visual_attributes": {"color": "matte black or dark grey back", "material": "modern smartphone"}
+    },
+    {
+      "label": "warm walnut wood table surface",
+      "location": "fills the entire frame as background",
+      "prominence": "set",
+      "visual_attributes": {"color": "warm walnut brown", "texture": "natural wood grain visible"}
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": ["0% APR FOR 36 MONTHS — APPROVED", "ASH"]
+  },
+  "semantic_relationships": [
+    "the APPROVED header is the protagonist of the image — the visible relief moment",
+    "deliberately NO specific dollar amounts on the quote — this is per copy rule (don't commit to a fixed price); the 0% financing approval IS the relief signal",
+    "the relaxed hands and steaming coffee make the moment feel calm, not transactional — this is a homeowner who has just realized 'this is doable'"
+  ]
+}

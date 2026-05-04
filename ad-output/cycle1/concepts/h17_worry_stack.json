@@ -1,0 +1,72 @@
+{
+  "global_context": {
+    "scene_description": "A bold editorial cartoon-illustrated split-frame composition, single image with a clean vertical divider down the middle. Same homeowner character drawn in both frames — recognizable, cartoon proportions, expressive. Editorial cartoon illustration style with theatrical color blocking, NOT photorealistic, NOT flat infographic. LEFT FRAME (cool blue-grey background, anxious mood): the homeowner stands hunched over slightly, a comically tall WOBBLY STACK of dread-objects piled precariously on his head. The stack from bottom to top: a giant bold red '$20,000' invoice paper, on top of that a calendar marked '2 WEEKS' with red X marks, on top of that a sleazy salesman cartoon caricature in a cheap suit holding a clipboard, on top of that a stack of bills/paperwork, on top of that a chunk of demolition debris, on top a tiny stress lightning bolt squiggle. The stack leans precariously, sweat drops fly off the homeowner's head, his eyes are bugged, eyebrows furrowed, hands raised to try to balance the stack. RIGHT FRAME (warm sunlit background, calm relieved mood): the SAME homeowner stands upright and relaxed, NOTHING on his head, holding ONLY a single folded clean ASH quote/document at his side. Eyebrows raised in pleasant surprise, small content smile, posture loose, weight evenly distributed. Above the entire image, a clean banner-style headline reads in bold uppercase: 'WHAT YOU'VE BEEN CARRYING. WHAT IT ACTUALLY IS.' At the bottom, a small italic caption: 'New AC install — drop the stack.' A bold black vertical line separates the two halves. Mood: the visible relief of dropping a stack of imagined fears that were never real. Editorial cartoon illustration, theatrical color blocking, expressive character work.",
+    "lighting": {"source": "stylized cartoon lighting per frame", "quality": "left frame cool/anxious, right frame warm/relieved"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#3A4A5E", "#F4C77A", "#FFFFFF", "#1A1A1A"],
+    "accent_colors": ["#E42F3A", "#22C55E", "#FFD93D"]
+  },
+  "composition": {
+    "framing": "vertical split-frame, two equal halves divided by a bold vertical line, headline banner across top, small caption strip across bottom",
+    "focal_point": "the comically tall wobbly worry-stack on the left vs the empty-headed relief on the right"
+  },
+  "objects": [
+    {
+      "label": "top headline banner",
+      "location": "top 12% of frame, full width",
+      "prominence": "primary text",
+      "text_content": "WHAT YOU'VE BEEN CARRYING. WHAT IT ACTUALLY IS.",
+      "visual_attributes": {"color": "bold black on white background"},
+      "micro_details": ["clean editorial sans-serif", "all caps", "tight letter spacing", "thin black border separating banner from main image"]
+    },
+    {
+      "label": "left frame anxious homeowner with worry-stack",
+      "location": "left half of frame",
+      "prominence": "primary character",
+      "text_content": "$20,000 | 2 WEEKS",
+      "visual_attributes": {"color": "cool blue-grey background, character in muted clothes", "material": "cartoon editorial illustration"},
+      "micro_details": [
+        "homeowner cartoon character standing slightly hunched",
+        "comically tall wobbly stack of dread-objects piled on his head",
+        "stack from bottom to top: red '$20,000' invoice paper, calendar with '2 WEEKS' and red X marks, sleazy cartoon salesman caricature in cheap suit holding clipboard, stack of bills, chunk of demolition debris, tiny stress lightning bolt squiggle on top",
+        "stack leans precariously, suggests it's about to topple",
+        "sweat drops flying off the homeowner's head",
+        "bugged eyes, furrowed eyebrows, mouth tight",
+        "hands raised at his sides trying to balance",
+        "color palette cool blue-grey and desaturated"
+      ]
+    },
+    {
+      "label": "right frame relieved homeowner",
+      "location": "right half of frame",
+      "prominence": "primary character",
+      "visual_attributes": {"color": "warm golden background, character in same clothes but body language relaxed", "material": "cartoon editorial illustration"},
+      "micro_details": [
+        "the SAME homeowner cartoon character standing upright and relaxed",
+        "absolutely NOTHING on his head — clean and clear",
+        "holds only a single folded clean ASH quote/document at his side",
+        "eyebrows raised in pleasant surprise",
+        "small content smile",
+        "loose relaxed posture",
+        "color palette warm golden and bright neutrals",
+        "the contrast with the left frame should be visually punchy and immediate"
+      ]
+    },
+    {
+      "label": "vertical divider line",
+      "location": "exact center vertical, full height between banner and footer",
+      "prominence": "structural element",
+      "visual_attributes": {"color": "solid black, 4-6px width"}
+    },
+    {
+      "label": "bottom caption strip",
+      "location": "bottom 8% of frame, full width",
+      "prominence": "secondary text",
+      "text_content": "New AC install — drop the stack.",
+      "visual_attributes": {"color": "small italic dark grey on white"},
+      "micro_details": ["italic editorial sans-serif", "thin top border separating from main image"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["WHAT YOU'VE BEEN CARRYING.", "WHAT IT ACTUALLY IS.", "$20,000", "2 WEEKS", "New AC install — drop the stack."]}
+}

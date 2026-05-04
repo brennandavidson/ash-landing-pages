@@ -1,0 +1,65 @@
+{
+  "global_context": {
+    "scene_description": "A full-frame UI mockup that fills the entire image — designed to look exactly like a Booking.com or Airbnb travel-booking date-search results page, but for AC installation appointments instead of hotel rooms. NO phone, NO real-world environment, NO hand. Just the UI fills the frame edge-to-edge. At the very top: a clean header bar with 'AC INSTALL — PHOENIX' as the search title and a small generic search bar below. Below the header, a list of available date options stacked vertically as cards, looking exactly like Booking.com hotel result cards. The list shows 5 dates from May through July: (1) MAY 12 - Available, $9,500, calm green tag (2) MAY 26 - Available, $9,800, slightly yellow tag (3) JUNE 14 - 'Limited - 2 left', $11,500, orange tag (4) JULY 4 - 'Only 1 left! High demand', $14,500, bold red tag, with a fire icon (5) JULY 18 - 'Sold out - waitlist', $15,500, dark red, struck-through pricing for emphasis. Each row has a small calendar icon, a 'BOOK' button on the right, and a star/heart icon. Familiar visual language — small badges, urgency cues, tiny pricing strikethroughs, all the visual machinery of urgency-booking sites. Mood: oh god, the supply is running out and the price is climbing exactly like a hotel during a conference. Pure clean UI mockup edge-to-edge, NOT a phone, NOT a hand.",
+    "lighting": {"source": "screen-light only, flat UI lighting"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#FFFFFF", "#F5F5F5", "#1A1A1A", "#3A3A3A"],
+    "accent_colors": ["#22C55E", "#FFD93D", "#FFB048", "#FF6B47", "#E42F3A", "#0066CC"]
+  },
+  "composition": {
+    "framing": "full-frame UI mockup, no real-world context, edge-to-edge",
+    "focal_point": "the JULY 4 row with red 'Only 1 left! High demand' urgency callout"
+  },
+  "objects": [
+    {
+      "label": "header bar at top",
+      "location": "top 12% of frame",
+      "prominence": "primary text",
+      "text_content": "AC INSTALL — PHOENIX",
+      "visual_attributes": {"color": "white background, bold black sans-serif title"},
+      "micro_details": ["clean modern booking-app header", "small calendar icon", "thin separator line below"]
+    },
+    {
+      "label": "MAY 12 booking row",
+      "location": "first row in list, upper section",
+      "prominence": "secondary",
+      "text_content": "MAY 12 - Available - $9,500",
+      "visual_attributes": {"color": "calm green availability tag, white card background"},
+      "micro_details": ["calendar icon at left", "date and 'Available' label", "$9,500 price on the right", "BOOK button"]
+    },
+    {
+      "label": "MAY 26 booking row",
+      "location": "second row",
+      "prominence": "secondary",
+      "text_content": "MAY 26 - Available - $9,800",
+      "visual_attributes": {"color": "yellow-green availability tag"},
+      "micro_details": ["similar layout to MAY 12 but slightly more urgency colored"]
+    },
+    {
+      "label": "JUNE 14 booking row",
+      "location": "third row",
+      "prominence": "secondary",
+      "text_content": "JUNE 14 - Limited - 2 left - $11,500",
+      "visual_attributes": {"color": "orange urgency tag"},
+      "micro_details": ["'Limited - 2 left' label in orange", "$11,500 price"]
+    },
+    {
+      "label": "JULY 4 booking row — featured urgency",
+      "location": "fourth row",
+      "prominence": "primary focal element",
+      "text_content": "JULY 4 - Only 1 left! High demand - $14,500",
+      "visual_attributes": {"color": "bold red urgency tag with fire icon"},
+      "micro_details": ["'Only 1 left! High demand' in bold red", "small fire/flame icon", "$14,500 price in larger bold red text", "BOOK button highlighted"]
+    },
+    {
+      "label": "JULY 18 booking row",
+      "location": "fifth row",
+      "prominence": "secondary",
+      "text_content": "JULY 18 - Sold out - waitlist - $15,500",
+      "visual_attributes": {"color": "dark red, faded/struckthrough", "material": "unavailable booking card"},
+      "micro_details": ["'Sold out - waitlist' label", "$15,500 with strikethrough and faded styling", "'JOIN WAITLIST' button instead of 'BOOK'"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["AC INSTALL — PHOENIX", "MAY 12", "MAY 26", "JUNE 14", "JULY 4", "JULY 18", "Available", "Limited - 2 left", "Only 1 left! High demand", "Sold out - waitlist", "$9,500", "$9,800", "$11,500", "$14,500", "$15,500", "BOOK", "JOIN WAITLIST"]}
+}

@@ -1,0 +1,39 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial overhead shot of a single printed HVAC quote document lying flat on a clean dark walnut wood surface. The document is the only subject, dominating the central 60% of the frame. The quote is printed letterhead-style with a modest header reading 'AC INSTALL ESTIMATE' at the top. Below the header, a clean 4-line itemized list with line items only (no specific dollar amounts visible — fields read 'Trane AC System', 'Installation Labor', 'Permits', 'Material'). At the bottom of the document, a 'TOTAL' row exists but the dollar amount is also generic. The document looks legitimate and professional. ACROSS the entire document, slammed at a steep diagonal angle, a HUGE bright red ink stamp impression dominates the visual: 'EMERGENCY SURCHARGE +$5,000' in bold ink-impression-style typography. The stamp ink is slightly uneven, slightly bleeding at edges, like a real rubber-stamp impression. The stamp obliterates the quiet professional document — the price hike is visible and visceral. Single theatrical top-light, deep shadow falloff to near-black at edges of the frame. Mood: cold bureaucratic damnation, the moment a routine quote becomes an emergency premium. Editorial document still life, NOT documentary photo, NOT cartoon.",
+    "lighting": {"source": "single soft top-light", "quality": "theatrical, dramatic falloff to dark, document brightly lit, edges fall to black"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#FFFFFF", "#3A3A3A", "#8B6F47"],
+    "accent_colors": ["#E42F3A", "#5A5A5A"]
+  },
+  "composition": {
+    "framing": "near-overhead document shot, slight 3/4 tilt, document dominates 60% of frame",
+    "focal_point": "the diagonal 'EMERGENCY SURCHARGE +$5,000' red stamp"
+  },
+  "objects": [
+    {
+      "label": "printed HVAC quote document",
+      "location": "center of frame, slight tilt",
+      "prominence": "primary background element",
+      "visual_attributes": {"color": "white paper, black sans-serif type", "material": "8.5x11 printed letterhead"},
+      "text_content": "AC INSTALL ESTIMATE",
+      "micro_details": ["clean professional letterhead with 'AC INSTALL ESTIMATE' header at top", "4-line itemized table below: Trane AC System, Installation Labor, Permits, Material", "TOTAL row at the bottom", "no specific dollar amounts visible — the line items are generic placeholders"]
+    },
+    {
+      "label": "diagonal red EMERGENCY SURCHARGE stamp",
+      "location": "across the entire document at a 25-degree diagonal angle",
+      "prominence": "primary visual statement",
+      "visual_attributes": {"color": "bright red ink, slightly uneven application", "material": "rubber-stamp ink impression"},
+      "text_content": "EMERGENCY SURCHARGE +$5,000",
+      "micro_details": ["large bold ink-stamp-style typography", "slight ink bleed at edges, uneven application like a real rubber stamp", "slightly faded in spots, very deep red in others", "the stamp covers approximately 70% of the document's width", "diagonal at about 25 degrees from horizontal"]
+    },
+    {
+      "label": "dark walnut wood surface",
+      "location": "fills frame around document",
+      "prominence": "set",
+      "visual_attributes": {"color": "deep walnut, fades to near-black at edges"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["AC INSTALL ESTIMATE", "EMERGENCY SURCHARGE +$5,000", "Trane AC System", "Installation Labor", "Permits", "Material", "TOTAL"]}
+}

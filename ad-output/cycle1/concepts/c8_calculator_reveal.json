@@ -1,0 +1,49 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic close-up of a smartphone lying on a kitchen counter, displaying the iOS Calculator app. The screen shows the calculator with a large display reading '$15,000' in the standard calculator typography — large bold numerals on the dark display area. Below the display, the standard calculator buttons are visible in their iOS layout. A man's thumb is hovering just above the 'C' (clear) button, mid-action, as if about to clear the number. To the side of the phone, a small printed financing approval slip is visible — small enough to read but not the focal point — that says '0% APR — 36 MONTHS'. A coffee mug sits in the upper-left corner, soft natural morning light pouring from upper-right. The visual story: the homeowner punched in the panic number, and is about to clear it — because there's a different math that nobody told them. Photorealistic, shot on 50mm lens, slight overhead angle.",
+    "time_of_day": "morning, warm natural light",
+    "lighting": {"source": "soft window light from upper-right", "quality": "soft, warm"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#3A3A3A", "#FFFFFF", "#8B6F47", "#D4B896"],
+    "accent_colors": ["#FF9500", "#22C55E"]
+  },
+  "composition": {
+    "framing": "close-up on the phone showing calculator, slight overhead angle",
+    "focal_point": "the calculator display reading $15,000"
+  },
+  "objects": [
+    {
+      "label": "smartphone displaying iOS calculator app",
+      "location": "center of frame",
+      "prominence": "primary",
+      "text_content": "$15,000",
+      "micro_details": ["standard iOS calculator interface with dark background and large white numerals", "the display reads '$15,000' in large bold calculator-style typography", "standard button grid below — 0-9, +, -, ×, ÷, =, C", "the C button is highlighted as if about to be tapped"]
+    },
+    {
+      "label": "man's thumb hovering above the C button",
+      "location": "lower portion of frame, entering from the side",
+      "prominence": "secondary, action element",
+      "pose_or_orientation": "thumb just above the C button, mid-tap pose",
+      "micro_details": ["natural skin tone, masculine hand"]
+    },
+    {
+      "label": "small printed financing approval slip beside the phone",
+      "location": "right side of frame, beside the phone",
+      "prominence": "secondary",
+      "text_content": "0% APR — 36 MONTHS",
+      "micro_details": ["small printed slip with bold black text on white paper", "stamped or printed in clean type", "smaller than the phone, secondary in visual hierarchy"]
+    },
+    {
+      "label": "ceramic coffee mug",
+      "location": "upper-left corner of frame",
+      "prominence": "atmospheric"
+    },
+    {
+      "label": "warm walnut counter surface",
+      "location": "fills frame as background",
+      "prominence": "set"
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["$15,000", "0% APR — 36 MONTHS", "C"]}
+}

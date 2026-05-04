@@ -1,0 +1,59 @@
+{
+  "global_context": {
+    "scene_description": "A photographic interior scene of a Phoenix-style living room with a couple in their late 30s sitting together on a cream-colored couch — both visibly relaxed, both with the body language of 'thank god this is over.' The husband (white male, mid-30s, casual t-shirt, sweatpants, slight beard) sits with his arm around his wife. He has a beer in one hand, head tilted back slightly with a small relieved laugh. The wife (white woman, mid-30s, casual sweater, jeans, brown hair, no makeup needed) leans against him, holding a coffee mug, smiling — eyes slightly closed, like she's just exhaled for the first time in months. Both look genuine, NOT posed-model perfect. The room is cool, comfortable, in a warm Phoenix Southwestern style — terracotta accents, woven throw, indoor cactus. Through a large window behind them, the Phoenix afternoon outside is visibly blasting — bright bleached sun, heat haze on the horizon, dry desert. A modern Nest-style thermostat on the wall reads 72°. The contrast is the visual story: HOT outside, COOL inside, COUPLE finally relaxed. Caption text appears at the very bottom of the frame in white letters on a slim solid black bar (only the bottom 8% of frame): 'TWO YEARS OF DREAD. ONE PHONE CALL.' The whole image feels like a real moment, not a stock photo — slightly imperfect framing, casual posture, Phoenix-real.",
+    "time_of_day": "late afternoon Phoenix",
+    "lighting": {"source": "soft window light from camera-right + interior ambient", "quality": "soft, warm interior contrasting with bright exterior"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#E8DFD0", "#C9A878", "#A87B5A", "#5A4A3D", "#FFFFFF"],
+    "accent_colors": ["#1A1A1A", "#7A6E5C"]
+  },
+  "composition": {
+    "framing": "medium-wide, couple centered slightly left on couch, window with hot exterior on the right",
+    "focal_point": "the couple's relaxed, relieved body language together"
+  },
+  "objects": [
+    {
+      "label": "husband on couch, relaxed",
+      "location": "left-center of couch",
+      "prominence": "primary subject",
+      "pose_or_orientation": "arm around wife, beer in hand, head tilted back slightly with a small genuine laugh",
+      "micro_details": ["casual t-shirt, sweatpants, slight beard", "real-guy energy, not stock-model perfect", "feet up on coffee table"]
+    },
+    {
+      "label": "wife on couch, leaning into husband",
+      "location": "next to husband, slightly to his right",
+      "prominence": "primary subject",
+      "pose_or_orientation": "leaning against husband's chest, holding coffee mug, smiling with eyes slightly closed — exhale-of-relief expression",
+      "micro_details": ["casual sweater and jeans, brown hair, real-woman natural look (not glamour-model)", "subtle smile of relief"]
+    },
+    {
+      "label": "Phoenix exterior visible through window",
+      "location": "background right, behind couple",
+      "prominence": "narrative-critical context",
+      "micro_details": ["bright bleached Phoenix sun outside", "heat haze visible on the horizon", "dry desert and saguaros softly visible"]
+    },
+    {
+      "label": "modern Nest-style thermostat reading 72",
+      "location": "wall behind couch, mid-ground",
+      "prominence": "secondary scene element",
+      "text_content": "72",
+      "micro_details": ["small numeric display", "subtle but visible — reinforces the cool interior"]
+    },
+    {
+      "label": "caption bar at bottom",
+      "location": "bottom 8% of frame, full-width slim solid black bar",
+      "prominence": "primary text element",
+      "text_content": "TWO YEARS OF DREAD. ONE PHONE CALL.",
+      "visual_attributes": {"color": "white bold text on solid black bar", "material": "graphic overlay"},
+      "micro_details": ["bold all-caps sans-serif white text, centered horizontally on the black bar"]
+    },
+    {
+      "label": "warm Phoenix interior set",
+      "location": "throughout",
+      "prominence": "set",
+      "micro_details": ["cream couch, terracotta woven throw, walnut coffee table, indoor potted cactus, Southwestern decor — comfortable but lived-in"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["TWO YEARS OF DREAD. ONE PHONE CALL.", "72"]}
+}

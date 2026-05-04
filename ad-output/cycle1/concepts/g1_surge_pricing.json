@@ -1,0 +1,31 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial close-up of a single smartphone laying flat on a dark walnut surface. The phone screen fills 70% of the frame as the hero element. The screen shows an iOS-style booking app interface for an HVAC service. At the very top of the screen, a prominent solid yellow horizontal banner with bold black text reads '1.5x SURGE PRICING ACTIVE'. Below that banner, a smaller subtitle in dark grey: 'Phoenix demand is high right now.' Below the banner, the main content shows: 'EMERGENCY HVAC INSTALL' as a service heading in bold black. Below the service name: 'Standard rate: $9,500' with a clear strikethrough line crossing the price. Below the strikethrough: 'Surge rate: $14,500' in bold red, much larger. A 'BOOK NOW' button at the bottom in a bright app-style color. The entire phone screen is clean, modern, instantly readable, mimicking the Uber surge UI pattern that everyone recognizes. Single soft theatrical top-light catches the phone's edges, deep shadow falloff to near-black. Mood: that surge moment everyone knows from Uber, applied to HVAC. NOT a documentary photo, NOT cartoon, editorial product still life with theatrical lighting.",
+    "lighting": {"source": "single soft top-light", "quality": "theatrical, dramatic falloff to dark"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#3A3A3A", "#FFFFFF", "#8B6F47"],
+    "accent_colors": ["#FFD93D", "#E42F3A", "#22C55E"]
+  },
+  "composition": {
+    "framing": "smartphone fills 70% of frame, slight 3/4 angle so screen is dominantly visible",
+    "focal_point": "the bright yellow SURGE PRICING banner across the top of the phone screen"
+  },
+  "objects": [
+    {
+      "label": "smartphone displaying HVAC booking app",
+      "location": "center of frame",
+      "prominence": "primary hero",
+      "visual_attributes": {"color": "modern smartphone, dark bezel, bright lit screen", "material": "iPhone-style modern device"},
+      "text_content": "1.5x SURGE PRICING ACTIVE | Phoenix demand is high right now. | EMERGENCY HVAC INSTALL | Standard rate: $9,500 | Surge rate: $14,500 | BOOK NOW",
+      "micro_details": ["iOS-style app interface", "solid yellow horizontal banner at top with bold black text '1.5x SURGE PRICING ACTIVE'", "subtitle 'Phoenix demand is high right now.' in dark grey", "service heading 'EMERGENCY HVAC INSTALL' in bold black", "'Standard rate: $9,500' with strikethrough line through it", "'Surge rate: $14,500' in bold red, larger font", "'BOOK NOW' button at bottom in app-bright color"]
+    },
+    {
+      "label": "dark walnut surface",
+      "location": "fills frame around phone, fades to near-black at edges",
+      "prominence": "set",
+      "visual_attributes": {"color": "deep walnut grain"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["1.5x SURGE PRICING ACTIVE", "Phoenix demand is high right now.", "EMERGENCY HVAC INSTALL", "Standard rate: $9,500", "Surge rate: $14,500", "BOOK NOW"]}
+}

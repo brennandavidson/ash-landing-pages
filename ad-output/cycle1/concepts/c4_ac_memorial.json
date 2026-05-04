@@ -1,0 +1,48 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic outdoor scene of a small mock-memorial set up at the base of an aging residential outdoor AC condenser unit on a Phoenix property. The memorial is dark-humor: a small chalk outline of a body shape on the concrete equipment pad next to the unit, a wilted bouquet of grocery-store flowers leaning against the unit's grille, a single white candle on the concrete. The AC unit itself looks weathered, dust-caked, faded — clearly the 'deceased.' The setting is a residential side yard, tan stucco wall, intense Phoenix afternoon sunlight, long harsh shadows. Mood: gallows humor, the inevitable summer death of the system being mourned in advance. No people in the scene. No text overlay. Photorealistic, shot on 35mm lens, dramatic lighting.",
+    "time_of_day": "late afternoon, intense Phoenix sun",
+    "lighting": {"source": "low golden sun from upper-right", "quality": "harsh, dramatic, long shadows", "color_temp": "warm golden"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4A56A", "#E8C586", "#A8967D", "#3A3A3A", "#FFFFFF"],
+    "accent_colors": ["#7A6E5C", "#5A5A5A"]
+  },
+  "composition": {
+    "framing": "medium, AC unit center, memorial elements on the ground at its base",
+    "focal_point": "the wilted flowers leaning against the AC unit, with the chalk outline visible on the pad"
+  },
+  "objects": [
+    {
+      "label": "old residential outdoor AC condenser unit",
+      "location": "center of frame",
+      "prominence": "primary",
+      "visual_attributes": {"color": "sun-faded beige with rust patches", "texture": "weathered metal, dusty fins"}
+    },
+    {
+      "label": "wilted bouquet of flowers",
+      "location": "leaning against the unit's lower grille",
+      "prominence": "primary atmospheric",
+      "visual_attributes": {"color": "muted browns and faded pinks", "texture": "drooping petals"}
+    },
+    {
+      "label": "white memorial candle",
+      "location": "on the concrete pad next to the unit",
+      "prominence": "secondary",
+      "visual_attributes": {"color": "white wax", "material": "single tall pillar candle, unlit"}
+    },
+    {
+      "label": "chalk outline of a body shape on the concrete",
+      "location": "on the concrete equipment pad beside the unit",
+      "prominence": "primary visual joke",
+      "visual_attributes": {"color": "white chalk", "texture": "rough hand-drawn outline"},
+      "micro_details": ["roughly drawn human-figure outline in white chalk on weathered grey concrete"]
+    },
+    {
+      "label": "tan stucco wall and Phoenix backyard context",
+      "location": "background",
+      "prominence": "context"
+    }
+  ],
+  "text_ocr": {"present": false, "content": []}
+}

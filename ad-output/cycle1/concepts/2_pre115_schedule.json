@@ -1,0 +1,65 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic interior shot of an HVAC contractor's office or job-board area, showing a paper wall calendar pinned to a corkboard. The calendar is the focal point, dominating the center-right of the frame. Multiple weeks of dates are visible. Most of the date squares have a red rubber-stamp impression that reads BOOKED in bold all-caps red ink, applied at slight angles, some overlapping the date numbers. A few date squares remain unstamped. A man's hand holding a black ballpoint pen is visible from the right side of the frame, hovering over the calendar as if about to mark another date. Behind the corkboard, a slightly out-of-focus contractor's workspace is visible with a phone, a clipboard, and a coffee mug. Lighting is warm fluorescent overhead, casting realistic indoor shadows. The top 18% of the frame is reserved for headline overlay. The bottom 14% of the frame is reserved for a red CTA banner overlay. Mood: scarcity, busy, urgency.",
+    "time_of_day": "midday office hours",
+    "weather_atmosphere": "indoor, neutral",
+    "lighting": {
+      "source": "overhead fluorescent + warm window light from left",
+      "direction": "from above, slightly left",
+      "quality": "soft mixed, slightly directional",
+      "color_temp": "neutral warm white"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#F2E5C5", "#A0826D", "#E8E0D0", "#3A3A3A", "#FFFFFF"],
+    "accent_colors": ["#E42F3A", "#1A1A1A"]
+  },
+  "composition": {
+    "camera_angle": "slight downward angle, looking at the calendar like a person standing in front of it",
+    "framing": "medium close-up on calendar",
+    "depth_of_field": "calendar in sharp focus, background workspace softly blurred",
+    "focal_point": "the BOOKED stamps clustered across the calendar dates",
+    "notes": "top 18% reserved for headline overlay, bottom 14% reserved for red CTA banner overlay"
+  },
+  "objects": [
+    {
+      "label": "paper wall calendar pinned to corkboard",
+      "location": "center to right of frame, dominates 60% of the visible area",
+      "prominence": "primary focal point",
+      "visual_attributes": {
+        "color": "off-white paper with black grid lines and date numbers",
+        "texture": "paper, slightly creased",
+        "material": "printed paper on cork"
+      },
+      "text_content": "BOOKED",
+      "micro_details": ["red rubber-stamp BOOKED ink applied at slight angles across most date squares", "some stamps slightly smudged or partial", "two or three date squares left unstamped, suggesting near-full booking"]
+    },
+    {
+      "label": "man's hand holding a pen",
+      "location": "entering from right edge of frame",
+      "prominence": "secondary",
+      "visual_attributes": {
+        "color": "natural skin tone",
+        "material": "weathered working hands, holding a black ballpoint pen"
+      },
+      "pose_or_orientation": "hovering above the calendar as if about to write or stamp",
+      "micro_details": ["slight tan line on the wrist suggesting outdoor work", "pen tip pointed downward at an unstamped date"]
+    },
+    {
+      "label": "blurred workspace background",
+      "location": "background, behind corkboard",
+      "prominence": "atmospheric only",
+      "visual_attributes": {"color": "muted desk surface tones"},
+      "micro_details": ["a coffee mug, a clipboard, a phone receiver — softly out of focus"]
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": ["BOOKED"]
+  },
+  "semantic_relationships": [
+    "the BOOKED stamps create a visual rhythm of scarcity / fullness across the calendar grid",
+    "the hand entering frame implies someone is actively trying to schedule but running out of room",
+    "the blurred workspace establishes that this is a real contractor's office, not a stock-photo prop"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "global_context": {
+    "scene_description": "A pixel-accurate full-frame screenshot mockup of a Google business review card, rendered in Google Maps DARK MODE UI exactly as it appears on a mobile device. NOT a phone bezel, NOT a hand holding a phone — just the review card UI fills the frame edge-to-edge against a dark near-black background (#1F1F1F). The card has authentic Google Maps review formatting and looks like a real screenshot. Layout from top to bottom: (1) A small circular profile photo placeholder in the top-left, slightly stylized (a small abstract avatar or photo of a young woman, indistinct, with a small Google Local Guide pin marker overlaid in the bottom-right of the avatar). (2) Reviewer name 'Courtnee Buelna' in bold white sans-serif. (3) Below the name in muted grey: 'Local Guide · 36 reviews · 27 photos'. (4) A three-dot menu icon (⋮) in the top-right corner. (5) Five yellow gold stars (★★★★★) in a horizontal row, followed by muted grey text 'a year ago'. (6) The main review body text in white sans-serif at body-text size, generously line-spaced, reading exactly: 'Ashton installed a new unit on my home. He gave me a fair honest quote and was extremely professional throughout. I did not feel pressured to purchase anything extra, and his company offers great perks for veterans and first responders. Highly recommend.' (7) At the bottom of the card, a small heart icon followed by muted grey text 'Hover to react', then a share icon (⎙ or arrow symbol). The entire card uses Google's Roboto-style sans-serif typography. Background near-black, text white/grey hierarchy, stars gold-yellow. Mood: completely native Google review UI — the goal is for this to read indistinguishably from a real Google Maps review screenshot. NOT decorative, NOT branded as ad creative — pure UI fidelity.",
+    "lighting": {"source": "screen-light only", "quality": "flat UI rendering, no real-world light"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1F1F1F", "#FFFFFF", "#9AA0A6", "#3C4043"],
+    "accent_colors": ["#FBBC04", "#1A73E8"]
+  },
+  "composition": {
+    "framing": "full-frame UI mockup, edge-to-edge, no real-world context, vertical card layout",
+    "focal_point": "the review body text in the center"
+  },
+  "objects": [
+    {
+      "label": "circular profile photo with Local Guide marker",
+      "location": "top-left of card",
+      "prominence": "secondary",
+      "visual_attributes": {"color": "small circular avatar, indistinct stylized photo of a young woman", "material": "pixel-accurate Google avatar"},
+      "micro_details": ["small circular profile picture", "soft abstract photo of a young woman, not detailed enough to identify a specific person", "tiny Google Local Guide blue pin marker overlaid in bottom-right corner of the avatar"]
+    },
+    {
+      "label": "reviewer name and metadata",
+      "location": "top of card, right of avatar",
+      "prominence": "primary identification",
+      "text_content": "Courtnee Buelna | Local Guide · 36 reviews · 27 photos",
+      "visual_attributes": {"color": "bold white name, muted grey metadata"},
+      "micro_details": ["'Courtnee Buelna' in bold white", "below in smaller muted grey: 'Local Guide · 36 reviews · 27 photos'", "Google sans-serif typography"]
+    },
+    {
+      "label": "three-dot menu icon",
+      "location": "top-right corner of card",
+      "prominence": "tertiary UI element",
+      "visual_attributes": {"color": "muted grey vertical three dots"}
+    },
+    {
+      "label": "5-star rating with date",
+      "location": "below name/metadata, left-aligned",
+      "prominence": "secondary",
+      "text_content": "★★★★★ a year ago",
+      "visual_attributes": {"color": "five gold-yellow stars, muted grey 'a year ago' text"},
+      "micro_details": ["five gold/yellow stars in a horizontal row", "spaced separator", "'a year ago' in muted grey"]
+    },
+    {
+      "label": "review body text",
+      "location": "center of card, dominant text block",
+      "prominence": "primary content",
+      "text_content": "Ashton installed a new unit on my home. He gave me a fair honest quote and was extremely professional throughout. I did not feel pressured to purchase anything extra, and his company offers great perks for veterans and first responders. Highly recommend.",
+      "visual_attributes": {"color": "clean white sans-serif on near-black background"},
+      "micro_details": ["white body text in Google Roboto-style sans-serif", "generous line spacing", "left-aligned", "body-text size, fully legible"]
+    },
+    {
+      "label": "bottom react/share row",
+      "location": "bottom of card",
+      "prominence": "tertiary UI element",
+      "text_content": "Hover to react",
+      "visual_attributes": {"color": "muted grey heart icon, muted grey 'Hover to react' text, muted grey share icon"},
+      "micro_details": ["heart outline icon", "'Hover to react' in muted grey", "share icon (small arrow / paper plane)"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["Courtnee Buelna", "Local Guide · 36 reviews · 27 photos", "★★★★★", "a year ago", "Ashton installed a new unit on my home. He gave me a fair honest quote and was extremely professional throughout. I did not feel pressured to purchase anything extra, and his company offers great perks for veterans and first responders. Highly recommend.", "Hover to react"]}
+}

@@ -1,0 +1,95 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic outdoor scene of an old, weathered residential outdoor air conditioning condenser unit on the side of a Phoenix-style stucco home. The aging AC unit dominates the lower-right portion of the frame. The unit shows years of Arizona sun: faded paint, light surface rust at corners, dust caked into protective grille fins. Above and around the unit, intense Phoenix afternoon heat radiates visibly from the metal cabinet — heat shimmer rising off the top of the unit. Behind the unit, a tan stucco wall and beyond that a slice of pale sun-bleached sky with intense direct sunlight. Long harsh shadows stretch across a concrete equipment pad. Sunlight floods from the upper-right of the frame, creating dramatic glare and lens flare. The image has THREE text elements composited as part of the design: (1) a small narrow red horizontal sash spanning the top edge of the frame containing the bold all-caps white text 'PHOENIX HOMEOWNERS' centered, (2) very large bold all-caps white sans-serif headline text 'WILL THIS MAKE IT TO JULY?' positioned in the upper-third of the frame over the sky area, with a subtle dark drop-shadow behind it for legibility against the bright sky, (3) a tall solid bright red horizontal banner spanning the entire bottom edge of the frame, approximately 12% of the image height, containing the bold all-caps white text 'FREE IN-HOME ESTIMATE • 602-905-1450' centered in the banner. Photorealistic, shot on a 50mm lens, with the text overlays rendered crisply and cleanly as part of the final designed image.",
+    "time_of_day": "late afternoon, peak summer pressure",
+    "weather_atmosphere": "intense Phoenix heat, dry, dusty, heat shimmer in air",
+    "lighting": {
+      "source": "low intense sun from upper-right",
+      "direction": "raking from right",
+      "quality": "harsh, glaring, with lens flare",
+      "color_temp": "warm golden / amber"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4A56A", "#E8C586", "#A8967D", "#3A3A3A", "#FFFFFF"],
+    "accent_colors": ["#E42F3A", "#FFB048"]
+  },
+  "composition": {
+    "camera_angle": "slightly low angle, eye-level with the AC unit's mid-height",
+    "framing": "medium, AC unit anchors lower-right third of frame, sky and sun glare fill upper portion",
+    "depth_of_field": "deep focus, AC unit and stucco wall sharp",
+    "focal_point": "the headline 'WILL THIS MAKE IT TO JULY?' over the aged AC unit"
+  },
+  "objects": [
+    {
+      "label": "top red sash with PHOENIX HOMEOWNERS text",
+      "location": "very top edge of the frame, narrow horizontal banner spanning full width",
+      "prominence": "first-glance audience selector",
+      "visual_attributes": {
+        "color": "solid bright red sash with bold white text",
+        "material": "graphic overlay element, flat solid color"
+      },
+      "text_content": "PHOENIX HOMEOWNERS",
+      "micro_details": ["sash is approximately 6% of total frame height", "text is bold all-caps sans-serif, white, kerned tight, perfectly centered horizontally"]
+    },
+    {
+      "label": "main headline overlay",
+      "location": "upper-third of the frame, centered horizontally",
+      "prominence": "primary text element, the visual hook",
+      "visual_attributes": {
+        "color": "white text with subtle dark drop-shadow",
+        "material": "graphic text overlay"
+      },
+      "text_content": "WILL THIS MAKE IT TO JULY?",
+      "micro_details": ["very large bold all-caps sans-serif font, condensed style, white", "subtle dark drop-shadow behind text for legibility against bright sky", "perfectly horizontal, two lines maximum"]
+    },
+    {
+      "label": "bottom red CTA banner",
+      "location": "bottom edge of frame, full-width horizontal solid red bar",
+      "prominence": "CTA element",
+      "visual_attributes": {
+        "color": "solid bright red banner with bold white text",
+        "material": "graphic overlay element, flat solid color"
+      },
+      "text_content": "FREE IN-HOME ESTIMATE • 602-905-1450",
+      "micro_details": ["banner is approximately 12% of total frame height", "text is bold all-caps sans-serif, white, perfectly centered horizontally", "the • bullet is a clean middle-dot character separating the two phrases"]
+    },
+    {
+      "label": "old residential outdoor AC condenser unit",
+      "location": "center-right, lower portion of frame, behind/under the headline overlay",
+      "prominence": "primary photographic subject",
+      "visual_attributes": {
+        "color": "originally beige or off-white, now sun-faded with patches of rust",
+        "texture": "weathered painted metal, dusty fins"
+      },
+      "micro_details": ["surface rust at base corners", "dust caked between condenser fins", "slightly bent fan guard wire"]
+    },
+    {
+      "label": "visible heat shimmer rising off the AC unit",
+      "location": "above and around the unit",
+      "prominence": "primary atmosphere",
+      "visual_attributes": {"color": "transparent distortion of background", "texture": "wavy refraction"}
+    },
+    {
+      "label": "intense Phoenix sun and lens flare",
+      "location": "upper-right of frame, partially behind headline overlay",
+      "prominence": "atmospheric element",
+      "visual_attributes": {"color": "blinding white-yellow"}
+    },
+    {
+      "label": "tan stucco wall and concrete pad",
+      "location": "background and ground beneath the unit",
+      "prominence": "context",
+      "visual_attributes": {"color": "warm desert beige stucco, weathered grey concrete"}
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": ["PHOENIX HOMEOWNERS", "WILL THIS MAKE IT TO JULY?", "FREE IN-HOME ESTIMATE • 602-905-1450"]
+  },
+  "semantic_relationships": [
+    "the three text overlays form a clear visual hierarchy: top sash selects the audience, large headline is the hook, bottom red banner is the CTA",
+    "the photographic scene of the aged AC + heat shimmer carries the emotional story behind the text",
+    "the rendered text MUST be crisp, legible, and free of any spelling errors or character distortions"
+  ]
+}

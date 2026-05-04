@@ -1,0 +1,79 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic top-down kitchen-table scene showing two HVAC quote documents laid side-by-side on a warm wood surface. Both documents are clearly printed letterhead-style quotes with similar layout and identical line items. The left quote document has a generic corporate-looking header at the top and shows a large total dollar amount of $14,200 in bold black at the bottom. The right quote document has a simpler family-business-looking header and shows a total of $9,500 in bold black at the bottom. A coffee mug rests in the upper-left corner of the frame, partially in shadow. A pair of reading glasses rests near the right document. Soft warm morning light comes from the upper-right, casting gentle shadows. The image conveys quiet kitchen-table comparison, the moment a homeowner does the math. Top 18% of frame is reserved for headline overlay. Bottom 14% reserved for red CTA banner overlay. Mood: quiet, contemplative, financial.",
+    "time_of_day": "morning, soft natural light",
+    "weather_atmosphere": "indoor, calm",
+    "lighting": {
+      "source": "soft window light from upper right",
+      "direction": "from upper right, raking across the documents",
+      "quality": "soft, diffused, warm",
+      "color_temp": "warm morning"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4B896", "#F5EDD8", "#FFFFFF", "#2A2A2A", "#8B6F47"],
+    "accent_colors": ["#E42F3A", "#22C55E"]
+  },
+  "composition": {
+    "camera_angle": "top-down (overhead), straight 90-degree birds-eye view",
+    "framing": "medium close, both documents fill the central 70% of the frame",
+    "depth_of_field": "deep, both documents in sharp focus",
+    "focal_point": "the two large total amounts at the bottom of each document — $14,200 and $9,500",
+    "notes": "top 18% of frame reserved for headline overlay (open table surface above the documents); bottom 14% reserved for red CTA banner overlay (open table surface below the documents)"
+  },
+  "objects": [
+    {
+      "label": "left quote document — big corporate company",
+      "location": "left half of frame",
+      "prominence": "primary focal element",
+      "visual_attributes": {
+        "color": "white paper, black ink, generic corporate header in dark blue",
+        "texture": "printed paper, slightly off-white",
+        "material": "8.5x11 letterhead"
+      },
+      "text_content": "$14,200",
+      "micro_details": ["a generic corporate-style logo placeholder at the top (no real brand)", "line items showing 'Trane System', 'Installation Labor', 'Permits' with dollar amounts beside each", "the total $14,200 is bold and underlined at the bottom-right of the page"]
+    },
+    {
+      "label": "right quote document — local family business",
+      "location": "right half of frame",
+      "prominence": "primary focal element",
+      "visual_attributes": {
+        "color": "white paper, black ink, simpler red-and-blue local header",
+        "texture": "printed paper",
+        "material": "8.5x11 letterhead"
+      },
+      "text_content": "$9,500",
+      "micro_details": ["a simpler family-business-style header at the top (no real brand name)", "the same line items as the left document — 'Trane System', 'Installation Labor', 'Permits' — with smaller dollar amounts beside each", "the total $9,500 is bold and underlined at the bottom-right of the page, in green ink"]
+    },
+    {
+      "label": "ceramic coffee mug",
+      "location": "upper-left corner of frame",
+      "prominence": "atmospheric",
+      "visual_attributes": {
+        "color": "off-white ceramic with steam",
+        "material": "ceramic"
+      },
+      "micro_details": ["partially cropped at frame edge", "soft steam rising"]
+    },
+    {
+      "label": "reading glasses",
+      "location": "between and slightly to the right of the documents",
+      "prominence": "atmospheric",
+      "visual_attributes": {
+        "color": "tortoiseshell brown",
+        "material": "plastic frames"
+      },
+      "micro_details": ["folded, lying on the wood surface"]
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": ["$14,200", "$9,500", "Trane System", "Installation Labor", "Permits"]
+  },
+  "semantic_relationships": [
+    "the two documents are mirror compositions — same line items, drastically different totals — emphasizing the only real difference is the markup",
+    "the coffee mug and glasses establish this is a real homeowner's kitchen-table moment, not a sales pitch",
+    "morning light feels intimate, calm, decision-making time"
+  ]
+}

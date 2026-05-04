@@ -1,0 +1,45 @@
+{
+  "global_context": {
+    "scene_description": "A digital-painted illustration in the same cartoon-illustrated style as the reference image (a cinematic graphic-novel / Pixar-illustration painterly look, not photographic). The scene shows a Phoenix dad-archetype standing on his front porch, slight dad-bod, mid-40s, casual blue button-down shirt, jeans, slight stubble, with one hand resting on his hip and the other gesturing toward the camera. He has a sheepish-but-genuine expression, like he's admitting something he wishes he'd done sooner. Behind him, a cool Phoenix house with AC unit visible at the side, saguaros, late-afternoon golden Phoenix light. To the right of him, a large bold cartoon-style speech bubble in white with bold black outline, containing the bold black hand-lettered text 'I WAITED 2 YEARS. DON'T BE ME.' The speech bubble points back at the dad. Below the speech bubble, smaller attribution text 'MIKE R., CHANDLER · ★★★★★'. The whole image has the same digital-painted illustrated rendering as the reference image — slightly exaggerated facial features, hand-painted texture, rich saturated colors, comic-book / animated-film energy. Visually distinct from a photograph. Cinematic illustration, NOT photo-realism.",
+    "lighting": {"source": "warm late-afternoon Phoenix sun from camera-right", "quality": "warm directional, slightly stylized"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4A56A", "#E8C586", "#8B6F47", "#FFFFFF", "#3A3A3A"],
+    "accent_colors": ["#1A1A1A", "#FFB048"]
+  },
+  "composition": {
+    "framing": "medium illustration, dad on left, speech bubble on right",
+    "focal_point": "the speech bubble text 'I WAITED 2 YEARS. DON'T BE ME.'"
+  },
+  "objects": [
+    {
+      "label": "Phoenix dad character — illustrated cartoon style",
+      "location": "left half of frame",
+      "prominence": "primary",
+      "pose_or_orientation": "standing on his porch, one hand on hip, other gesturing palm-up toward camera, sheepish smile, slight shrug",
+      "micro_details": ["mid-40s, slight dad-bod, casual blue button-down, jeans", "slight stubble", "facial expression is sheepish-but-genuine — admitting something", "matches the digital-painted illustrated style of the reference image"]
+    },
+    {
+      "label": "cartoon speech bubble with quote",
+      "location": "right side of frame, pointing back at dad",
+      "prominence": "primary text element",
+      "text_content": "I WAITED 2 YEARS. DON'T BE ME.",
+      "visual_attributes": {"color": "white speech bubble with bold black outline, bold hand-lettered black text inside", "material": "cartoon comic-style speech bubble"},
+      "micro_details": ["large bold black hand-lettered text", "speech bubble has the classic comic pointed tail going back to dad's mouth"]
+    },
+    {
+      "label": "attribution text below speech bubble",
+      "location": "below the speech bubble",
+      "prominence": "secondary text",
+      "text_content": "MIKE R., CHANDLER · ★★★★★",
+      "micro_details": ["smaller bold black sans-serif", "five gold/amber stars after the city"]
+    },
+    {
+      "label": "Phoenix house with AC unit in background",
+      "location": "behind dad",
+      "prominence": "context",
+      "micro_details": ["tan stucco Phoenix-style home", "outdoor AC unit visible at side of house — looks NEW and clean", "saguaros, golden hour light"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["I WAITED 2 YEARS. DON'T BE ME.", "MIKE R., CHANDLER", "★★★★★"]}
+}

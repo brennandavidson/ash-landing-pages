@@ -1,0 +1,75 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic Phoenix residential street scene showing two HVAC service trucks parked at the curb in front of a Southwestern stucco home. The truck on the LEFT is a large, polished, glossy white corporate-style box truck with a tall enclosed cargo area and a mounted ladder rack — generic, no readable logo or branding, but it has the clean over-styled look of a private-equity-backed company fleet truck. The truck on the RIGHT is a smaller, more practical white work van with a single rear ladder and a simpler clean profile — generic, no readable logo, but it has the look of a local family-owned shop. Same neighborhood, same time of day, same lighting. The houses behind both trucks are typical Phoenix flat-roof stucco homes with desert landscaping. Late afternoon golden Phoenix light bathes both trucks evenly. The composition is wide, shot from across the street, slight angle showing both trucks in profile. The contrast in scale between the two trucks is the visual story. Top 18% of frame is reserved for headline overlay. Bottom 14% of frame is reserved for red CTA banner overlay. Mood: quiet contrast, side-by-side decision.",
+    "time_of_day": "late afternoon, golden hour Phoenix light",
+    "weather_atmosphere": "warm, dry, clear desert",
+    "lighting": {
+      "source": "low golden sun from camera-right, slightly behind",
+      "direction": "raking from right, casting long soft shadows",
+      "quality": "warm, soft, low-angle",
+      "color_temp": "warm golden"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#E8C586", "#D4A56A", "#F5E8D2", "#8B7355", "#FFFFFF"],
+    "accent_colors": ["#E42F3A", "#1A1A1A"]
+  },
+  "composition": {
+    "camera_angle": "ground-level, slight 3/4 angle, from across the street",
+    "framing": "wide, both trucks fully visible side-by-side",
+    "depth_of_field": "deep, both trucks and house background sharp",
+    "focal_point": "the contrast in scale between the two trucks",
+    "notes": "top 18% reserved for headline overlay (clear sky); bottom 14% reserved for red CTA banner overlay (street/sidewalk in foreground)"
+  },
+  "objects": [
+    {
+      "label": "large corporate-style HVAC truck",
+      "location": "left half of frame",
+      "prominence": "primary",
+      "visual_attributes": {
+        "color": "glossy bright white with chrome trim",
+        "texture": "polished smooth painted metal, very clean",
+        "material": "modern enclosed-box truck body"
+      },
+      "micro_details": ["tall vertical box body", "shiny ladder rack on top", "bigger wheel base than the other truck", "deliberately generic — no readable logo, no business name, no phone number", "perfectly clean as if just washed"]
+    },
+    {
+      "label": "smaller family-owned style work van",
+      "location": "right half of frame",
+      "prominence": "primary",
+      "visual_attributes": {
+        "color": "matte white with simple red horizontal accent stripe",
+        "texture": "working clean but not detailed, slightly road-dusty",
+        "material": "standard cargo van body"
+      },
+      "micro_details": ["smaller, more practical profile", "single ladder mounted on the rear", "deliberately generic — no readable logo, no business name, no phone number", "looks lived-in, like a real working tradesman's truck"]
+    },
+    {
+      "label": "Phoenix-style stucco home behind the trucks",
+      "location": "background, center of frame",
+      "prominence": "atmospheric",
+      "visual_attributes": {
+        "color": "tan / desert-stucco beige",
+        "material": "stucco walls, flat roof"
+      },
+      "micro_details": ["typical Phoenix landscaping with rocks and a single agave"]
+    },
+    {
+      "label": "asphalt residential street",
+      "location": "foreground",
+      "prominence": "supporting",
+      "visual_attributes": {"color": "warm grey asphalt with soft tar shimmer"},
+      "micro_details": ["clean curb line, no clutter"]
+    }
+  ],
+  "text_ocr": {
+    "present": false,
+    "content": []
+  },
+  "semantic_relationships": [
+    "side-by-side framing makes the size and polish difference between the two trucks the story",
+    "no logos on either truck — keeps the comparison about category, not specific brand callout",
+    "the residential setting establishes 'these are both showing up at YOUR house' context",
+    "warm golden-hour light gives a calm, contemplative tone rather than aggressive pitch energy"
+  ]
+}

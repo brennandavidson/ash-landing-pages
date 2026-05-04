@@ -1,0 +1,48 @@
+{
+  "global_context": {
+    "scene_description": "A full-frame UI mockup that fills the entire image — designed to look exactly like an Uber surge-pricing map of Phoenix, but the surge is HVAC emergency demand. NO phone bezel, NO hand, no real-world context — just the map UI filling the frame edge-to-edge. The map shows a stylized aerial view of Phoenix metro, with neighborhood labels softly visible: 'PHOENIX', 'SCOTTSDALE', 'TEMPE', 'MESA', 'CHANDLER', 'GLENDALE'. Across the map, RED surge zones are glowing in concentrated patches over the populated neighborhoods, with a heatmap-style red-orange-yellow gradient. The red zones are clearly active and pulsing. At the top of the screen, a prominent banner reads 'EMERGENCY HVAC SURGE — 1.5x ACTIVE' in bold red on white. A subtitle below reads 'Demand has spiked. Phoenix is hot.' At the bottom-right of the map, a small floating callout/popup reads 'Estimated wait: 3-5 days · $14,500 average'. The map uses Uber/Lyft-style aesthetic — clean light grey roads, dark grey background, prominent red surge overlay. Mood: that 'oh shit' moment when you open Uber on New Year's Eve and see the surge map applied to HVAC service. Editorial UI mockup, NOT photo, NOT cartoon.",
+    "lighting": {"source": "screen-light only", "quality": "flat UI lighting with red surge overlay glow"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#3A3A3A", "#FFFFFF", "#5A5A5A"],
+    "accent_colors": ["#FFD93D", "#FFB048", "#FF6B47", "#E42F3A"]
+  },
+  "composition": {
+    "framing": "full-frame UI mockup, edge-to-edge, no real-world context",
+    "focal_point": "the red surge zones glowing across Phoenix metro"
+  },
+  "objects": [
+    {
+      "label": "top banner with surge warning",
+      "location": "top 10% of frame",
+      "prominence": "primary text alert",
+      "text_content": "EMERGENCY HVAC SURGE — 1.5x ACTIVE",
+      "visual_attributes": {"color": "bold red on white banner"},
+      "micro_details": ["banner-style top element", "prominent bold red sans-serif text", "subtle warning icon"]
+    },
+    {
+      "label": "subtitle below banner",
+      "location": "below the top banner",
+      "prominence": "secondary text",
+      "text_content": "Demand has spiked. Phoenix is hot.",
+      "micro_details": ["smaller dark grey sans-serif"]
+    },
+    {
+      "label": "Phoenix metro map with surge zones",
+      "location": "fills middle 75% of frame",
+      "prominence": "primary visual element",
+      "text_content": "PHOENIX SCOTTSDALE TEMPE MESA CHANDLER GLENDALE",
+      "visual_attributes": {"color": "Uber-style dark grey base with light grey road network", "material": "stylized map UI"},
+      "micro_details": ["aerial view of Phoenix metro stylized like Uber's map", "neighborhood labels softly visible: PHOENIX, SCOTTSDALE, TEMPE, MESA, CHANDLER, GLENDALE", "red surge zones overlaying populated areas in heatmap-style red-orange-yellow gradient", "surge zones look concentrated over residential neighborhoods", "subtle pulse / glow effect on red zones"]
+    },
+    {
+      "label": "bottom-right callout popup",
+      "location": "lower-right corner of map",
+      "prominence": "secondary text element",
+      "text_content": "Estimated wait: 3-5 days · $14,500 average",
+      "visual_attributes": {"color": "white floating card with dark text"},
+      "micro_details": ["small floating callout card with rounded corners", "estimated wait time and average price"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["EMERGENCY HVAC SURGE — 1.5x ACTIVE", "Demand has spiked. Phoenix is hot.", "PHOENIX", "SCOTTSDALE", "TEMPE", "MESA", "CHANDLER", "GLENDALE", "Estimated wait: 3-5 days", "$14,500 average"]}
+}

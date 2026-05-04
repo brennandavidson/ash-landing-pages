@@ -1,0 +1,74 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial typography poster on a deep dark walnut wood surface, slight overhead-table view as if the typography is etched or printed on a single sheet of heavy paper laid on the wood. NO photographs of people or objects, NO illustrations, NO UI mockups. Just dramatic editorial typography. Single soft theatrical top-light, deep shadow falloff to near-black at corners. At the top of the composition, a small label in tiny letterspaced uppercase grey: 'NEW AC INSTALL'. Below it, the main editorial vertical list — five lines of large bold white sans-serif text, each starting with 'NOT' in red, followed by the dread item: 'NOT $20,000.' / 'NOT 2 weeks of disruption.' / 'NOT a salesman in your kitchen.' / 'NOT 5 contractor visits.' / 'NOT a financing trap.' Each line is left-aligned, generous vertical spacing between lines, the word 'NOT' rendered in red as a deliberate visual anchor. Below the five-line list, a thin horizontal rule. Below the rule, in a different style — slightly smaller, in calm green or warm white: 'It's $9,500. One day. One truck. $0 down.' At the very bottom, in tiny grey: 'Phoenix homeowners — the panic was sold to you.' Mood: cold confident correction. Editorial poster typography meets serious newspaper masthead. The single sheet of paper has subtle realistic texture and slight curl at one corner. Single theatrical top-light catches the paper, dramatic falloff to near-black walnut grain at the edges of the frame.",
+    "lighting": {"source": "single soft theatrical top-light", "quality": "dramatic falloff to near-black, paper brightly lit, edges of frame fade dark"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#FFFFFF", "#3A3A3A", "#8B6F47"],
+    "accent_colors": ["#E42F3A", "#22C55E"]
+  },
+  "composition": {
+    "framing": "near-overhead document shot, paper dominates 70% of frame, slight 3/4 tilt",
+    "focal_point": "the vertical stack of five red 'NOT' words anchoring each line"
+  },
+  "objects": [
+    {
+      "label": "small top label",
+      "location": "top of paper, centered",
+      "prominence": "tertiary text",
+      "text_content": "NEW AC INSTALL",
+      "visual_attributes": {"color": "tiny letterspaced grey uppercase"}
+    },
+    {
+      "label": "main reverse-dread list",
+      "location": "central 60% of paper, left-aligned",
+      "prominence": "primary text",
+      "text_content": "NOT $20,000. | NOT 2 weeks of disruption. | NOT a salesman in your kitchen. | NOT 5 contractor visits. | NOT a financing trap.",
+      "visual_attributes": {"color": "bold dark text with NOT in red"},
+      "micro_details": [
+        "five separate lines, generous vertical spacing",
+        "each line starts with 'NOT' rendered in red",
+        "the rest of each line in bold near-black sans-serif",
+        "left-aligned",
+        "line 1: 'NOT $20,000.'",
+        "line 2: 'NOT 2 weeks of disruption.'",
+        "line 3: 'NOT a salesman in your kitchen.'",
+        "line 4: 'NOT 5 contractor visits.'",
+        "line 5: 'NOT a financing trap.'"
+      ]
+    },
+    {
+      "label": "horizontal divider",
+      "location": "below the list",
+      "prominence": "structural",
+      "visual_attributes": {"color": "thin grey hairline"}
+    },
+    {
+      "label": "reality reveal line",
+      "location": "below the divider, centered",
+      "prominence": "secondary text",
+      "text_content": "It's $9,500. One day. One truck. $0 down.",
+      "visual_attributes": {"color": "calm green or warm dark text, italic editorial sans-serif"}
+    },
+    {
+      "label": "footer",
+      "location": "bottom of paper, centered",
+      "prominence": "tertiary text",
+      "text_content": "Phoenix homeowners — the panic was sold to you.",
+      "visual_attributes": {"color": "tiny grey italic"}
+    },
+    {
+      "label": "paper sheet",
+      "location": "central element on dark walnut",
+      "prominence": "background canvas",
+      "visual_attributes": {"color": "warm cream-white", "material": "heavy paper with subtle texture and slight corner curl"}
+    },
+    {
+      "label": "dark walnut wood surface",
+      "location": "fills frame around paper",
+      "prominence": "set",
+      "visual_attributes": {"color": "deep walnut grain fading to near-black at edges"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["NEW AC INSTALL", "NOT $20,000.", "NOT 2 weeks of disruption.", "NOT a salesman in your kitchen.", "NOT 5 contractor visits.", "NOT a financing trap.", "It's $9,500. One day. One truck. $0 down.", "Phoenix homeowners — the panic was sold to you."]}
+}

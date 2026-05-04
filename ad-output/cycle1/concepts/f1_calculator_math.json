@@ -1,0 +1,42 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial still of a single chunky vintage-style desktop calculator sitting on a dark walnut wood surface. The calculator is the only subject — single hero object, dramatic theatrical lighting from a single soft top-light, deep shadow falloff into a near-black background. The calculator's segmented LCD display shows the math equation in dim greenish digital characters: '14,500 - 9,500 = 5,000'. The result '5,000' is the largest, displayed clearly. Beside the calculator, a small printed slip of paper sits at a slight angle, like an annotation, in clean dark sans-serif: 'SAME AC INSTALL.' / 'JUST DIFFERENT MONTHS.' Mood: cold mathematical reveal, the moment a number stops being abstract. Editorial product-shot aesthetic, NOT documentary photo, NOT cartoon — magazine still life with theatrical lighting. Cinematic, dramatic, minimal.",
+    "lighting": {"source": "single soft top-light, dramatic falloff to near-black", "quality": "theatrical, editorial product-shot lighting"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#3A3A3A", "#8B6F47", "#FFFFFF", "#5A5A5A"],
+    "accent_colors": ["#22C55E", "#E42F3A"]
+  },
+  "composition": {
+    "framing": "centered hero object, calculator dominates 60% of frame",
+    "focal_point": "the calculator's display showing the math equation"
+  },
+  "objects": [
+    {
+      "label": "vintage chunky desktop calculator",
+      "location": "center of frame",
+      "prominence": "primary hero object",
+      "visual_attributes": {
+        "color": "matte beige-grey plastic body, dark grey buttons, segmented LCD display in dim green",
+        "material": "1980s-era plastic accountant's calculator, slightly worn"
+      },
+      "text_content": "14,500 - 9,500 = 5,000",
+      "micro_details": ["LCD shows '14,500 - 9,500 = 5,000' — the result '5,000' rendered largest and most prominent on the display", "calculator body slightly weathered, faintly patinated", "rubber buttons clearly visible — number pad, math operators"]
+    },
+    {
+      "label": "small printed annotation slip beside calculator",
+      "location": "beside calculator, slightly angled",
+      "prominence": "secondary text element",
+      "text_content": "SAME AC INSTALL. JUST DIFFERENT MONTHS.",
+      "visual_attributes": {"color": "white paper with bold dark sans-serif type"},
+      "micro_details": ["small printed slip of paper, ~3in wide", "two lines of bold dark sans-serif: 'SAME AC INSTALL.' on top line, 'JUST DIFFERENT MONTHS.' on bottom line", "slight 5-degree tilt"]
+    },
+    {
+      "label": "dark walnut wood surface",
+      "location": "background, fills frame",
+      "prominence": "set",
+      "visual_attributes": {"color": "deep dark walnut grain, fades to near-black at edges of frame"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["14,500 - 9,500 = 5,000", "SAME AC INSTALL.", "JUST DIFFERENT MONTHS."]}
+}

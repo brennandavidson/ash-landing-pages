@@ -1,0 +1,44 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial overhead shot of a single printed itemized receipt or invoice document on a dark walnut wood surface. The document is the only subject — single hero element, dramatic theatrical lighting from a single soft top-light, deep shadow falloff to near-black at the edges of the frame. The document looks like a clean professional HVAC invoice. At the top, a header: 'AC INSTALL — EMERGENCY DISPATCH'. Below that, a subheading: 'Issued during peak Phoenix demand'. Then a clean itemized table with right-aligned dollar amounts. The line items are: 'Standard install ........ $9,500.00', 'Summer peak surcharge .... +$2,500.00', 'Emergency dispatch fee ... +$1,500.00', 'After-hours premium ...... +$1,000.00'. A thin horizontal rule separator. Below the rule: 'TOTAL ............... $14,500.00' in bold black, larger font. Below the total, a small italic note in red: 'Off-season standard: $9,500'. Document is clean, modern professional invoice typography, no logo. Subtle realistic paper texture, slight curl at one corner. Single soft theatrical top-light catches the paper, edges of the frame fall to near-black. Mood: cold mathematical reveal — the line items make the markup undeniable. Editorial document still life with theatrical lighting, NOT documentary photo, NOT cartoon.",
+    "lighting": {"source": "single soft top-light", "quality": "theatrical, dramatic falloff to near-black at edges"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#FFFFFF", "#3A3A3A", "#8B6F47"],
+    "accent_colors": ["#E42F3A", "#5A5A5A"]
+  },
+  "composition": {
+    "framing": "near-overhead document shot, slight 3/4 tilt, document dominates 65% of frame",
+    "focal_point": "the bold TOTAL line at the bottom showing $14,500"
+  },
+  "objects": [
+    {
+      "label": "printed HVAC invoice document",
+      "location": "center of frame, slight tilt",
+      "prominence": "primary hero",
+      "visual_attributes": {"color": "white paper, black sans-serif type, red accent for note", "material": "8.5x11 printed letterhead, slight realistic paper texture"},
+      "text_content": "AC INSTALL — EMERGENCY DISPATCH | Issued during peak Phoenix demand | Standard install $9,500.00 | Summer peak surcharge +$2,500.00 | Emergency dispatch fee +$1,500.00 | After-hours premium +$1,000.00 | TOTAL $14,500.00 | Off-season standard: $9,500",
+      "micro_details": [
+        "header 'AC INSTALL — EMERGENCY DISPATCH' in bold black at top",
+        "subheading 'Issued during peak Phoenix demand' in dark grey italic",
+        "clean itemized table with line items left-aligned and dollar amounts right-aligned",
+        "line 1: 'Standard install' with '$9,500.00' on the right",
+        "line 2: 'Summer peak surcharge' with '+$2,500.00' on the right",
+        "line 3: 'Emergency dispatch fee' with '+$1,500.00' on the right",
+        "line 4: 'After-hours premium' with '+$1,000.00' on the right",
+        "thin horizontal rule",
+        "TOTAL row in bold larger font: 'TOTAL $14,500.00'",
+        "small italic note below in red: 'Off-season standard: $9,500'",
+        "slight realistic paper curl at one corner",
+        "professional invoice typography, no logos"
+      ]
+    },
+    {
+      "label": "dark walnut wood surface",
+      "location": "fills frame around document",
+      "prominence": "set",
+      "visual_attributes": {"color": "deep walnut grain", "texture": "natural wood, fades to near-black at edges"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["AC INSTALL — EMERGENCY DISPATCH", "Issued during peak Phoenix demand", "Standard install", "$9,500.00", "Summer peak surcharge", "+$2,500.00", "Emergency dispatch fee", "+$1,500.00", "After-hours premium", "+$1,000.00", "TOTAL", "$14,500.00", "Off-season standard: $9,500"]}
+}

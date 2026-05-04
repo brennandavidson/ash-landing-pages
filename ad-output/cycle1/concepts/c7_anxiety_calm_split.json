@@ -1,0 +1,38 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic split-frame composition showing the SAME homeowner (white woman, mid-30s, casual clothes, brown hair, face cropped or angled away from camera so identity isn't focal) in two contrasting states. The image is split vertically down the middle. LEFT HALF: she sits at a cluttered kitchen table, head in her hands, elbows down, body language tense and stressed. The table is covered in scattered HVAC quote papers, a calculator, an unopened bill envelope, a half-empty coffee cup. The lighting is harsh overhead fluorescent, slightly blue-grey, anxious. RIGHT HALF: same woman, now relaxed on a cream-colored couch, feet up on an ottoman, holding a fresh hot coffee mug, head tilted slightly back as if exhaling relief. Soft warm late-afternoon light pours from a window. The room is calm, cool, lived-in. Both halves of the image are visually distinct in lighting and color but clearly the same woman, same wardrobe (light denim, cream sweater). The split is VISIBLE — a clean hard line down the middle, like before/after photos. No text overlays. The visual story: dread to relief, after the AC decision was easier than feared. Photorealistic, shot on 35mm lens.",
+    "time_of_day": "left: harsh midday | right: soft late afternoon",
+    "lighting": {"source": "left: overhead fluorescent | right: window light", "quality": "left: cold harsh | right: warm soft"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#A8A8A8", "#5A5A5A", "#E8DFD0", "#D4B896", "#FFFFFF"],
+    "accent_colors": ["#7A7A7A", "#C9A878"]
+  },
+  "composition": {
+    "framing": "split-frame, hard vertical center line",
+    "focal_point": "the contrast between the woman's two postures"
+  },
+  "objects": [
+    {
+      "label": "left half — anxious homeowner at cluttered table",
+      "location": "left half of frame",
+      "prominence": "primary subject part 1",
+      "pose_or_orientation": "head in hands, elbows on table, body tense",
+      "micro_details": ["scattered papers labeled with HVAC company names", "calculator visible", "unopened bill envelope", "half-empty coffee cup", "cool blue-grey overhead fluorescent lighting"]
+    },
+    {
+      "label": "right half — calm homeowner on couch",
+      "location": "right half of frame",
+      "prominence": "primary subject part 2",
+      "pose_or_orientation": "feet up on ottoman, holding hot coffee, head tilted back exhaling, body language relaxed",
+      "micro_details": ["cream-colored couch", "warm afternoon light from window", "calm room", "same outfit and hair as left side"]
+    },
+    {
+      "label": "vertical split line",
+      "location": "center of frame",
+      "prominence": "structural",
+      "micro_details": ["clean visible separation between the two halves, like a before/after photo divider"]
+    }
+  ],
+  "text_ocr": {"present": false, "content": []}
+}

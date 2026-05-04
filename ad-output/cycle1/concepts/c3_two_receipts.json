@@ -1,0 +1,42 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic 3/4 overhead view of a kitchen table with TWO HVAC quote receipts laid side-by-side on a warm walnut wood table. Both receipts are clearly printed paper invoices with similar layout. The LEFT receipt has a header banner that reads 'MAY INSTALL — OFF SEASON' in clean black type, with itemized line items below (TRANE AC SYSTEM, INSTALLATION LABOR, PERMITS) and a bottom total of '$9,500' in bold black. The RIGHT receipt has a header banner that reads 'JULY EMERGENCY — PEAK SEASON' in red type, with the SAME itemized line items below (TRANE AC SYSTEM, INSTALLATION LABOR, PERMITS, plus 'EMERGENCY DISPATCH FEE') and a bottom total of '$14,500' in bold red. Same equipment, same install, only the calendar varies. The exact dollar values must render legibly. Coffee mug to upper-left, ballpoint pen to side. Soft warm morning light from upper-right. Mood: side-by-side mechanism reveal — same job, two prices, the calendar is the only variable. Photorealistic, shot on 50mm lens, slight angle.",
+    "time_of_day": "morning, warm natural light",
+    "lighting": {"source": "soft window light from upper-right", "quality": "soft, diffused, warm"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4B896", "#F5EDD8", "#FFFFFF", "#2A2A2A", "#8B6F47"],
+    "accent_colors": ["#E42F3A", "#22C55E"]
+  },
+  "composition": {
+    "framing": "medium close-up, both receipts fill 70% of frame",
+    "focal_point": "the contrasting bottom-line totals — $9,500 vs $14,500"
+  },
+  "objects": [
+    {
+      "label": "left receipt — MAY INSTALL OFF SEASON",
+      "location": "left half of frame",
+      "prominence": "primary",
+      "text_content": "MAY INSTALL — OFF SEASON ... TRANE AC SYSTEM ... INSTALLATION LABOR ... PERMITS ... TOTAL: $9,500",
+      "micro_details": ["clean black-and-white invoice", "'MAY INSTALL — OFF SEASON' header banner in black", "itemized line items in a neat table", "bottom total '$9,500' in bold black, large font"]
+    },
+    {
+      "label": "right receipt — JULY EMERGENCY PEAK SEASON",
+      "location": "right half of frame",
+      "prominence": "primary",
+      "text_content": "JULY EMERGENCY — PEAK SEASON ... TRANE AC SYSTEM ... INSTALLATION LABOR ... PERMITS ... EMERGENCY DISPATCH FEE ... TOTAL: $14,500",
+      "micro_details": ["same invoice format as the left", "'JULY EMERGENCY — PEAK SEASON' header banner in RED", "same itemized line items, plus an additional line 'EMERGENCY DISPATCH FEE'", "bottom total '$14,500' in bold red, large font"]
+    },
+    {
+      "label": "ceramic coffee mug",
+      "location": "upper-left of frame",
+      "prominence": "atmospheric"
+    },
+    {
+      "label": "warm walnut wood table surface",
+      "location": "background",
+      "prominence": "set"
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["MAY INSTALL — OFF SEASON", "JULY EMERGENCY — PEAK SEASON", "$9,500", "$14,500", "TRANE AC SYSTEM", "INSTALLATION LABOR", "PERMITS", "EMERGENCY DISPATCH FEE"]}
+}

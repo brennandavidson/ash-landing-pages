@@ -1,0 +1,96 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic 3/4 angled overhead view of a kitchen-table scene showing a single printed HVAC quote document from a local family-owned shop, lying on a warm walnut wood table. The document occupies the central 50% of the frame, slightly lower than center to leave room for headline text above. The document has a small ASH-style logo in the upper-left corner (a stylized 'ASH' type-mark in red and blue), and a clear bold dark green header banner that reads '0% APR FOR 36 MONTHS — APPROVED' with a green checkmark. A pair of relaxed adult hands rests beside the document — palms partly open, calm, not gripping. To one side, a ceramic coffee mug with steam rising. To the other side, a smartphone face-down on the table. Soft warm morning natural light flows from the upper-right. The image has THREE additional text overlay elements composited as part of the final designed ad: (1) a small narrow red horizontal sash spanning the very top edge of the frame containing the bold all-caps white text 'PHOENIX HOMEOWNERS' centered, (2) very large bold all-caps white sans-serif headline text '0% APR. PRICE MATCH. NO REGRETS.' positioned in the upper-third of the frame above the document, with subtle dark drop-shadow for legibility, (3) a tall solid bright red horizontal banner spanning the entire bottom edge of the frame, approximately 12% of image height, containing the bold all-caps white text 'FREE IN-HOME ESTIMATE • 602-905-1450' centered. Text overlays rendered crisply and cleanly. Photorealistic, shot on 50mm lens.",
+    "time_of_day": "morning, warm natural light",
+    "weather_atmosphere": "indoor, calm",
+    "lighting": {
+      "source": "soft window light from upper right",
+      "direction": "raking from upper right",
+      "quality": "soft, diffused, warm",
+      "color_temp": "warm morning"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4B896", "#F5EDD8", "#FFFFFF", "#2A2A2A", "#8B6F47"],
+    "accent_colors": ["#22C55E", "#E42F3A", "#2C3590"]
+  },
+  "composition": {
+    "camera_angle": "3/4 overhead, slight tilt — about 70 degrees down from horizontal",
+    "framing": "medium close-up, document fills central 50% of lower frame, headline space above",
+    "depth_of_field": "deep, document in sharp focus",
+    "focal_point": "the headline '0% APR. PRICE MATCH. NO REGRETS.' above the document"
+  },
+  "objects": [
+    {
+      "label": "top red sash with PHOENIX HOMEOWNERS text",
+      "location": "very top edge of frame, narrow horizontal banner spanning full width",
+      "prominence": "audience selector",
+      "visual_attributes": {
+        "color": "solid bright red sash with bold white text",
+        "material": "graphic overlay, flat solid color"
+      },
+      "text_content": "PHOENIX HOMEOWNERS",
+      "micro_details": ["approximately 6% of total frame height", "bold all-caps sans-serif white text, centered"]
+    },
+    {
+      "label": "main headline overlay",
+      "location": "upper-third of frame, centered horizontally above the document",
+      "prominence": "primary text hook",
+      "visual_attributes": {
+        "color": "white text with subtle dark drop-shadow",
+        "material": "graphic text overlay"
+      },
+      "text_content": "0% APR. PRICE MATCH. NO REGRETS.",
+      "micro_details": ["very large bold all-caps sans-serif font, condensed style, white", "may break across two lines: '0% APR. PRICE MATCH.' / 'NO REGRETS.'", "subtle dark drop-shadow"]
+    },
+    {
+      "label": "bottom red CTA banner",
+      "location": "bottom edge of frame, full-width horizontal solid red bar",
+      "prominence": "CTA",
+      "visual_attributes": {
+        "color": "solid bright red banner with bold white text",
+        "material": "graphic overlay"
+      },
+      "text_content": "FREE IN-HOME ESTIMATE • 602-905-1450",
+      "micro_details": ["approximately 12% of total frame height", "bold all-caps sans-serif white text, centered"]
+    },
+    {
+      "label": "ASH-branded HVAC quote document",
+      "location": "lower-center of frame, slightly tilted",
+      "prominence": "primary photographic element",
+      "visual_attributes": {
+        "color": "white paper with black body text, accent red and blue header type, dark green APPROVED banner",
+        "material": "8.5x11 letterhead printed quote"
+      },
+      "text_content": "0% APR FOR 36 MONTHS — APPROVED",
+      "micro_details": ["ASH logo in upper-left corner of document, small", "0% APR FOR 36 MONTHS — APPROVED in bold caps as a green-banded header on the document, with green checkmark", "neat itemized line items below — labels visible: 'New AC System', 'Installation', 'Permits' — but no specific dollar amounts visible on totals", "clean bottom margin"]
+    },
+    {
+      "label": "pair of adult hands at rest",
+      "location": "lower edge of frame, partially in view",
+      "prominence": "atmospheric",
+      "pose_or_orientation": "palms partly open, fingers relaxed, resting beside the document"
+    },
+    {
+      "label": "ceramic coffee mug with steam",
+      "location": "upper-left of document area",
+      "prominence": "atmospheric",
+      "visual_attributes": {"color": "off-white ceramic"}
+    },
+    {
+      "label": "warm walnut wood table surface",
+      "location": "fills the frame as background",
+      "prominence": "set",
+      "visual_attributes": {"color": "warm walnut brown", "texture": "natural wood grain"}
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": ["PHOENIX HOMEOWNERS", "0% APR. PRICE MATCH. NO REGRETS.", "FREE IN-HOME ESTIMATE • 602-905-1450", "0% APR FOR 36 MONTHS — APPROVED", "ASH"]
+  },
+  "semantic_relationships": [
+    "the headline overlay reinforces the APPROVED stamp on the document — the visible relief moment is doubled",
+    "the three text overlays form a clear hierarchy: audience selector → hook → CTA",
+    "rendered text MUST be crisp, legible, free of spelling errors"
+  ]
+}

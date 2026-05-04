@@ -1,0 +1,68 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial overhead flat-lay shot on a dark walnut wood surface. Hero subject: a messy overlapping pile of approximately 7-8 HVAC service repair invoices/receipts, each clearly legible with visible repair charges and dates, fanned and stacked like a poker spread. The invoices are from various generic HVAC companies (no specific brand names) and show repair charges visible to the viewer: '$487 - Capacitor replacement - June 2024', '$612 - Refrigerant recharge - July 2024', '$390 - Fan motor - Aug 2024', '$850 - Compressor diagnostic - May 2025', '$235 - Service call - June 2025', '$1,100 - Coil cleaning + repair - July 2025', '$520 - Emergency dispatch - Aug 2025'. The repair invoices look worn, slightly crumpled at edges, some marked with red pen or check marks. Sitting cleanly ON TOP of the messy pile is a single crisp ASH new install quote, fresh white paper, with bold clean typography reading: 'ASH COOLING & HEATING' header, 'NEW AC INSTALL', '$9,500', '0% APR FINANCING', 'PRICE MATCH GUARANTEE'. The contrast between the messy pile of small repair receipts and the single clean ASH quote on top is the entire mechanism. Single soft theatrical top-light catches the documents, dramatic shadow falloff to near-black walnut grain at edges. Small headline overlaid at top in bold uppercase white sans-serif: 'YOU HAVE SPENT MORE PUTTING IT OFF.' Small italic caption at bottom: 'New AC install. $9,500. 0% APR. Price match. Skip the next repair.' Mood: cold mathematical reveal of opportunity cost. Editorial document still life, NOT documentary photo, NOT cartoon.",
+    "lighting": {"source": "single soft theatrical top-light", "quality": "dramatic falloff to near-black, documents brightly lit"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#FFFFFF", "#8B6F47", "#3A3A3A"],
+    "accent_colors": ["#E42F3A", "#22C55E"]
+  },
+  "composition": {
+    "framing": "near-overhead flat-lay, document pile dominates central 65% of frame",
+    "focal_point": "the clean ASH quote sitting cleanly on top of the messy repair receipt pile"
+  },
+  "objects": [
+    {
+      "label": "pile of past repair invoices",
+      "location": "central pile, fanned and overlapping",
+      "prominence": "primary background mass",
+      "text_content": "$487 | $612 | $390 | $850 | $235 | $1,100 | $520",
+      "visual_attributes": {"color": "various off-white papers with slight wear, black sans-serif text", "material": "8.5x11 invoices, slightly crumpled"},
+      "micro_details": [
+        "approximately 7 invoices fanned in an overlapping pile",
+        "each invoice clearly shows a dollar amount and a repair description",
+        "$487 capacitor replacement, $612 refrigerant recharge, $390 fan motor, $850 compressor diagnostic, $235 service call, $1,100 coil cleaning + repair, $520 emergency dispatch",
+        "dates visible: June 2024 through August 2025",
+        "papers slightly worn, some marked with red pen check marks",
+        "generic HVAC company names, no real brand names"
+      ]
+    },
+    {
+      "label": "clean ASH new install quote on top of pile",
+      "location": "centered on top of the pile",
+      "prominence": "primary focal element",
+      "text_content": "ASH COOLING & HEATING | NEW AC INSTALL | $9,500 | 0% APR FINANCING | PRICE MATCH GUARANTEE",
+      "visual_attributes": {"color": "crisp white paper, bold clean black sans-serif typography"},
+      "micro_details": [
+        "single fresh clean printed quote",
+        "ASH COOLING & HEATING header at top",
+        "'NEW AC INSTALL' as service line",
+        "'$9,500' in large bold text",
+        "'0% APR FINANCING' visible",
+        "'PRICE MATCH GUARANTEE' visible",
+        "the clean appearance of this quote contrasts strongly with the worn repair invoices below"
+      ]
+    },
+    {
+      "label": "top headline",
+      "location": "top 10% of frame, centered",
+      "prominence": "primary text",
+      "text_content": "YOU HAVE SPENT MORE PUTTING IT OFF.",
+      "visual_attributes": {"color": "bold white sans-serif"}
+    },
+    {
+      "label": "bottom caption",
+      "location": "bottom 8% of frame, centered",
+      "prominence": "secondary text",
+      "text_content": "New AC install. $9,500. 0% APR. Price match. Skip the next repair.",
+      "visual_attributes": {"color": "small italic white"}
+    },
+    {
+      "label": "dark walnut wood surface",
+      "location": "fills frame around documents",
+      "prominence": "set",
+      "visual_attributes": {"color": "deep walnut grain fading to near-black at edges"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["YOU HAVE SPENT MORE PUTTING IT OFF.", "$487", "$612", "$390", "$850", "$235", "$1,100", "$520", "ASH COOLING & HEATING", "NEW AC INSTALL", "$9,500", "0% APR FINANCING", "PRICE MATCH GUARANTEE", "New AC install. $9,500. 0% APR. Price match. Skip the next repair."]}
+}

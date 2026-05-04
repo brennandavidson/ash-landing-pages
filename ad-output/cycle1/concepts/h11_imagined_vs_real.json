@@ -1,0 +1,73 @@
+{
+  "global_context": {
+    "scene_description": "A bold editorial cartoon-illustrated split-frame composition, single image with a clean vertical divider down the middle. NOT a customer's emotional reaction split — this split shows the JOB ITSELF: what people imagine an AC install looks like, vs. what it actually looks like. Editorial cartoon illustration style, NOT photorealistic, NOT flat infographic — closer to New Yorker editorial cartoon meets modern brand illustration. Theatrical color blocking per frame. LEFT FRAME (cool blue-grey background, chaotic mood, exaggerated cartoon dread): a Phoenix-style suburban house with multiple things going wrong simultaneously — walls partially demolished with debris piles, dust clouds rising, FOUR contractors swarming around with various tools and clipboards looking aggressive, a stack of paperwork visible, a thought-bubble / floating element showing '$20,000' in red bold, a calendar in the corner with multiple weeks marked off in red X marks. The scene reads as DAYS OR WEEKS of disruption, an overwhelmed homeowner watching from the corner with hands on his head. RIGHT FRAME (warm sunlit background, calm and clean): the SAME house, completely intact and clean. ONE single ASH-branded service truck parked out front, ONE technician in a clean uniform working calmly at an exterior AC unit, the homeowner casually drinking coffee on the porch in the background, a small calendar in the corner with a SINGLE day circled and a 'DONE BY 5PM' tag. The scene reads as ONE WORKDAY, professional, calm. A bold black vertical line separates the two halves. Above the entire image, a clean banner-style headline reads in bold uppercase: 'WHAT YOU'RE PICTURING. WHAT IT ACTUALLY IS.' At the bottom, a small italic caption: 'New AC install — same house, two stories.' Mood: the satisfying click of a wrong assumption being corrected via direct visualization of the JOB itself. Editorial cartoon illustration with theatrical color blocking.",
+    "lighting": {"source": "stylized cartoon lighting per frame", "quality": "left frame cool/chaotic with dust diffusion, right frame warm/clean golden-hour"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#3A4A5E", "#F4C77A", "#FFFFFF", "#1A1A1A"],
+    "accent_colors": ["#E42F3A", "#22C55E", "#FFD93D"]
+  },
+  "composition": {
+    "framing": "vertical split-frame, two equal halves divided by a bold vertical line, headline banner across top, small caption strip across bottom",
+    "focal_point": "the contrast between the chaotic 4-contractor scene on the left and the calm 1-truck scene on the right"
+  },
+  "objects": [
+    {
+      "label": "top headline banner",
+      "location": "top 12% of frame, full width",
+      "prominence": "primary text",
+      "text_content": "WHAT YOU'RE PICTURING. WHAT IT ACTUALLY IS.",
+      "visual_attributes": {"color": "bold black on white background"},
+      "micro_details": ["clean editorial sans-serif", "all caps", "tight letter spacing", "thin black border separating banner from main image"]
+    },
+    {
+      "label": "left frame chaotic install scene",
+      "location": "left half of frame",
+      "prominence": "primary visual",
+      "text_content": "$20,000",
+      "visual_attributes": {"color": "cool blue-grey desaturated palette", "material": "cartoon editorial illustration"},
+      "micro_details": [
+        "Phoenix-style suburban single-story home, partially demolished",
+        "walls torn open, debris and rubble piles",
+        "rising dust clouds",
+        "FOUR cartoon contractors swarming with tools, clipboards, looking pushy or aggressive",
+        "a floating '$20,000' in red bold above the scene",
+        "a small calendar in the corner with multiple weeks crossed out in red X marks",
+        "an overwhelmed homeowner cartoon character watching with hands on his head, mouth agape",
+        "exaggerated cartoon chaos, multiple simultaneous problems",
+        "color palette dominated by cool blue-grey and desaturated tones"
+      ]
+    },
+    {
+      "label": "right frame calm install scene",
+      "location": "right half of frame",
+      "prominence": "primary visual",
+      "text_content": "DONE BY 5PM",
+      "visual_attributes": {"color": "warm sunlit golden palette", "material": "cartoon editorial illustration"},
+      "micro_details": [
+        "the SAME suburban Phoenix home, completely intact and clean",
+        "ONE single ASH-branded service truck parked at the curb",
+        "ONE technician in a clean uniform working calmly at an exterior AC compressor unit",
+        "the same homeowner casually drinking coffee on the front porch in the background",
+        "a small calendar in the corner with a SINGLE day circled and a green 'DONE BY 5PM' tag",
+        "warm golden afternoon sunlight",
+        "color palette dominated by warm gold, white, and bright clean neutrals"
+      ]
+    },
+    {
+      "label": "vertical divider line",
+      "location": "exact center vertical, full height between banner and footer",
+      "prominence": "structural element",
+      "visual_attributes": {"color": "solid black, 4-6px width"}
+    },
+    {
+      "label": "bottom caption strip",
+      "location": "bottom 8% of frame, full width",
+      "prominence": "secondary text",
+      "text_content": "New AC install — same house, two stories.",
+      "visual_attributes": {"color": "small italic dark grey on white"},
+      "micro_details": ["italic editorial sans-serif", "thin top border separating from main image"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["WHAT YOU'RE PICTURING.", "WHAT IT ACTUALLY IS.", "$20,000", "DONE BY 5PM", "New AC install — same house, two stories."]}
+}

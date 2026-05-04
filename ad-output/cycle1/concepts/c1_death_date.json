@@ -1,0 +1,30 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic close-up of a paper kitchen wall calendar pinned to a wall in a Phoenix-area home. The calendar shows the month of JULY 2026. One specific day in mid-July (the 18th) is heavily marked with thick red marker — a bold red circle around the date and the words 'AC FUNERAL' scrawled diagonally across the date in red marker handwriting. Other dates on the calendar are blank or have small mundane notes (dentist, kid soccer, etc.) in pencil — making the red AC FUNERAL mark stand out drastically. The calendar paper is slightly creased. Behind/below the calendar, the edge of a kitchen counter is visible — a coffee mug, a stack of mail. Soft natural morning light from a window to the left. Mood: dark humor, dread treated as routine, the AC has an appointment with death and the homeowner already knows the date. Photorealistic, shot on 50mm lens, slight grain.",
+    "time_of_day": "morning, soft natural light",
+    "lighting": {"source": "soft window light from left", "quality": "soft, warm-neutral"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#F5EDD8", "#FFFFFF", "#D4B896", "#3A3A3A"],
+    "accent_colors": ["#E42F3A", "#1A1A1A"]
+  },
+  "composition": {
+    "framing": "close-up on the calendar, dominant in frame",
+    "focal_point": "the red 'AC FUNERAL' written across July 18"
+  },
+  "objects": [
+    {
+      "label": "paper wall calendar showing July 2026",
+      "location": "center of frame, dominates 70% of image",
+      "prominence": "primary",
+      "text_content": "JULY 2026 — AC FUNERAL",
+      "micro_details": ["thick red marker bold circle around the 18", "the words 'AC FUNERAL' written diagonally across the 18 in handwritten red marker", "other dates have small pencil notes — 'dentist', 'soccer', 'lunch w/ Mike' — mundane, in pencil", "calendar paper slightly creased and pinned to wall"]
+    },
+    {
+      "label": "kitchen counter edge with coffee mug and mail",
+      "location": "lower portion of frame",
+      "prominence": "atmospheric"
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["JULY 2026", "AC FUNERAL", "18"]}
+}

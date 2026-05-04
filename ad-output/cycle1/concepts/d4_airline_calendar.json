@@ -1,0 +1,43 @@
+{
+  "global_context": {
+    "scene_description": "A close-up of a smartphone screen displaying a flight-booking-style price calendar — but instead of airline tickets, the calendar shows AC INSTALL PRICING by month. The screen is the entire focal element. The interface mimics Google Flights or Kayak's calendar view: a clean white background with a header bar at top reading 'AC INSTALL PRICING — PHOENIX' in bold black sans-serif. Below the header, a calendar grid showing months from MAY through JULY 2026. Each month's dates show a color-coded price like an airline ticket: MAY dates are GREEN with prices like '$8,500' and '$9,500', late MAY into early JUNE are YELLOW with '$10,500' and '$11,500', mid JUNE is ORANGE with '$12,500', late JUNE through JULY are BRIGHT RED with prices climbing to '$13,500', '$14,500', and the deepest JULY dates flash with '$15,500 — PEAK' in bold red. The visual implication: the calendar punishes you for waiting, EXACTLY like booking a summer flight last-minute. A finger is hovering above the calendar as if scrolling through dates. The phone is held in a hand, slight tilt. Background is a soft Phoenix kitchen counter, slightly out of focus — coffee mug visible. Lighting is soft natural indoor. Mood: oh god, this is going up by the day, like I'm trying to book a flight too late. Sharp, mobile-native, immediately recognizable interface pattern. Cinematic close-up.",
+    "time_of_day": "indoor day",
+    "lighting": {"source": "soft natural indoor", "quality": "soft, neutral, screen-bright"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#FFFFFF", "#1A1A1A", "#3A3A3A", "#D4B896"],
+    "accent_colors": ["#22C55E", "#FFB048", "#FF6B47", "#E42F3A"]
+  },
+  "composition": {
+    "framing": "close-up, phone screen fills 70% of frame",
+    "focal_point": "the color-coded pricing calendar — green May, red July"
+  },
+  "objects": [
+    {
+      "label": "smartphone displaying AC install pricing calendar",
+      "location": "center of frame",
+      "prominence": "primary",
+      "text_content": "AC INSTALL PRICING — PHOENIX | MAY $8,500 | MAY $9,500 | JUN $10,500 | JUN $11,500 | JUN $12,500 | JUL $13,500 | JUL $14,500 | JUL $15,500 — PEAK",
+      "micro_details": ["clean white background like Google Flights or Kayak interface", "bold black header 'AC INSTALL PRICING — PHOENIX' at top", "calendar grid showing May, June, July 2026", "each date has a color-coded price tile: May dates GREEN ($8,500-$9,500), late May/early June YELLOW ($10,500-$11,500), mid-June ORANGE ($12,500), late June/July RED ($13,500-$14,500), deep July dates DARK RED with 'PEAK' label ($15,500)", "the visual gradient from green to red across the calendar tells the story instantly", "small flight-booking-style icons or affordances around the edges"]
+    },
+    {
+      "label": "finger hovering above the calendar",
+      "location": "lower portion of frame",
+      "prominence": "secondary",
+      "pose_or_orientation": "index finger extended, mid-scroll, about to tap a date",
+      "micro_details": ["natural skin tone, mid-action"]
+    },
+    {
+      "label": "hand holding phone",
+      "location": "around phone",
+      "prominence": "supporting"
+    },
+    {
+      "label": "soft Phoenix kitchen counter background, blurred",
+      "location": "behind phone",
+      "prominence": "atmospheric",
+      "micro_details": ["walnut counter, coffee mug, slight blur"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["AC INSTALL PRICING — PHOENIX", "MAY", "JUN", "JUL", "$8,500", "$9,500", "$10,500", "$11,500", "$12,500", "$13,500", "$14,500", "$15,500", "PEAK"]}
+}

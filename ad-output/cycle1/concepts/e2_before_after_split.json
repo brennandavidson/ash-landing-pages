@@ -1,0 +1,58 @@
+{
+  "global_context": {
+    "scene_description": "A digital-painted cartoon illustration in the same style as the reference image — graphic-novel / Pixar-illustration painterly look, NOT photographic. The image is a vertical split-frame composition showing the SAME Phoenix family in two states: BEFORE (left half) and AFTER (right half). Same room, same characters, same furniture — drastically different conditions. LEFT HALF (BEFORE — the AC is dead): Husband sprawled on the couch in a sweat-soaked white tank top, towel on face, defeated. Wife mid-yell, pointing at the AC unit visible through the window, frustration clear on her face. The room is hot — orange-amber lighting, sweat visible everywhere, useless oscillating fan in corner, melting bag of ice on counter, sweat puddle on floor. Phoenix exterior visibly brutal heat outside. RIGHT HALF (AFTER — they finally called us, AC is fixed): SAME husband in same tank top now relaxed on the couch, beer in hand, head tilted back with a relieved laugh. SAME wife now sitting next to him, leaning into his shoulder, smiling, holding a coffee mug. The room is COOL — soft cool blue-white interior light, no sweat, no chaos, fan turned off, ice bag gone. Modern Nest thermostat on the wall reads 72°. Phoenix exterior still brutal outside the window — but it doesn't matter inside. A clean vertical line down the middle separates the two halves. Both halves are clearly the same illustrated style as the reference. The visual story is instant: dread to relief, all because they finally called. NO text overlay needed beyond a small label in a slim solid black bar at the very bottom of the frame, full-width, white text: 'BEFORE YOU CALL US >> AFTER YOU CALL US'. Cinematic illustrated style, NOT photo-realism.",
+    "lighting": {"source": "left: harsh hot orange-amber | right: cool blue-white soft", "quality": "left: punishing | right: relaxed"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#E8C586", "#A87B5A", "#FFFFFF", "#3A3A3A", "#5A6A78"],
+    "accent_colors": ["#FF6B47", "#22C55E", "#1A1A1A"]
+  },
+  "composition": {
+    "framing": "vertical split-frame, hard center line, identical room on both sides",
+    "focal_point": "the contrast in body language — husband sprawled defeated on left, husband laughing relaxed on right"
+  },
+  "objects": [
+    {
+      "label": "left half — BEFORE the AC is fixed",
+      "location": "left half of frame",
+      "prominence": "primary subject part 1",
+      "micro_details": [
+        "husband sprawled on couch in sweat-soaked white tank top, towel over face, defeated",
+        "wife mid-yell pointing at AC unit through window, frustrated",
+        "useless desk fan oscillating in corner",
+        "melting bag of ice on counter",
+        "sweat puddle on wood floor",
+        "harsh orange-amber hot lighting throughout",
+        "Phoenix exterior brutal heat visible through window"
+      ]
+    },
+    {
+      "label": "right half — AFTER they called us",
+      "location": "right half of frame",
+      "prominence": "primary subject part 2",
+      "micro_details": [
+        "SAME husband, same tank top, but now relaxed on couch, beer in hand, head tilted back laughing",
+        "SAME wife, now sitting next to him, leaning into his shoulder smiling, holding coffee mug",
+        "fan turned off, ice bag gone, no sweat",
+        "Nest-style thermostat on wall reads 72°",
+        "soft cool blue-white interior lighting",
+        "Phoenix exterior still hot through window, but doesn't matter inside"
+      ]
+    },
+    {
+      "label": "vertical split line",
+      "location": "center of frame",
+      "prominence": "structural",
+      "micro_details": ["clean visible vertical separation between halves"]
+    },
+    {
+      "label": "label bar at bottom of frame",
+      "location": "very bottom of frame, slim solid black bar full-width",
+      "prominence": "secondary text",
+      "text_content": "BEFORE YOU CALL US >> AFTER YOU CALL US",
+      "visual_attributes": {"color": "white bold text on solid black bar"},
+      "micro_details": ["bold all-caps sans-serif white text, centered horizontally", "the arrow >> bridges the two halves"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["BEFORE YOU CALL US", "AFTER YOU CALL US", "72"]}
+}

@@ -1,0 +1,61 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic real-but-comedic scene of a Phoenix domestic crisis: a hot living room where the AC has just died on a 110°+ Phoenix day. The husband (white male, mid-30s, balding slightly or short hair, dad-bod, white tank top — the kind that sticks to skin in heat — sweat visibly soaking through, gym shorts) is fully sprawled on his back across the couch, defeated, towel draped over his face, one arm hanging off the side. He looks like he's surrendered to the heat. The wife (white woman, mid-30s, brown ponytail, tank top, denim shorts, sweat at her hairline, frustration written all over her face) stands in front of the couch with one hand on her hip and the other pointing accusingly at an outdoor AC condenser unit visible through a window — mouth open in a yell, mid-sentence, eyes wide with frustration. She is not amused. The Phoenix exterior visible through the window is BRUTALLY hot — bleached pale sky, intense sun, heat shimmer rising from the patio. A weak desk fan oscillates uselessly in the corner. A puddle of sweat on the wood floor. An empty Costco-sized bag of ice on the counter, melting. The air feels thick. Lighting: harsh, hot Phoenix afternoon sun pouring through the windows, slight orange-amber tint suggesting heat — NOT soft natural light. Mood: real-but-comedic Phoenix domestic comedy, the kind of scene every Phoenix homeowner has lived. NO text overlay needed — the situation IS the visual story. Cinematic, like a still from a comedy film, NOT a stock photo.",
+    "time_of_day": "midday Phoenix, peak heat",
+    "lighting": {"source": "harsh direct sunlight from windows", "quality": "harsh, hot, slightly orange-amber, contrast-heavy", "color_temp": "warm-hot"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#E8C586", "#D4A56A", "#A87B5A", "#FFFFFF", "#3A3A3A"],
+    "accent_colors": ["#FFB048", "#FF6B47", "#5A5A5A"]
+  },
+  "composition": {
+    "framing": "medium-wide, captures both husband on couch and wife standing, window with hot exterior visible",
+    "focal_point": "the wife's frustrated yell and the husband's collapsed defeat — the contrast"
+  },
+  "objects": [
+    {
+      "label": "husband collapsed on couch",
+      "location": "right side of frame, on couch",
+      "prominence": "primary subject",
+      "pose_or_orientation": "sprawled on back across the couch, one arm hanging off the side, towel draped over face, completely defeated body language",
+      "micro_details": ["white tank top sweat-soaked through, sticking to body", "dad-bod, mid-30s, real-guy not model-fit", "gym shorts", "looks like he's been there for hours and given up"]
+    },
+    {
+      "label": "wife yelling and pointing",
+      "location": "center-left, standing in front of couch",
+      "prominence": "primary subject",
+      "pose_or_orientation": "one hand on hip, other arm extended pointing at the AC unit visible through window, mouth open mid-yell, eyes wide with frustration",
+      "micro_details": ["brown ponytail with strands sticking to sweat at hairline", "tank top, denim shorts", "frustration is real, not played for comedy — this is genuine domestic crisis", "mid-30s, real woman, not model"]
+    },
+    {
+      "label": "outdoor AC condenser unit visible through window",
+      "location": "background right, through a window",
+      "prominence": "secondary",
+      "micro_details": ["sitting silently outside, the cause of the crisis", "intense Phoenix heat shimmer rising around it"]
+    },
+    {
+      "label": "Phoenix exterior through window — brutal heat",
+      "location": "background, through window",
+      "prominence": "atmospheric pressure",
+      "micro_details": ["bleached pale sky, intense sun, visible heat shimmer rising from patio", "saguaros wilting"]
+    },
+    {
+      "label": "useless oscillating desk fan",
+      "location": "corner of room",
+      "prominence": "supporting comedy element",
+      "micro_details": ["small white desk fan plugged in, oscillating, completely failing to help"]
+    },
+    {
+      "label": "melting bag of ice on counter",
+      "location": "kitchen counter visible in background",
+      "prominence": "supporting comedy element",
+      "micro_details": ["empty Costco-sized bag of ice puddling on the counter, water dripping"]
+    },
+    {
+      "label": "small puddle of sweat on floor",
+      "location": "wood floor near couch",
+      "prominence": "atmospheric comedy detail"
+    }
+  ],
+  "text_ocr": {"present": false, "content": []}
+}

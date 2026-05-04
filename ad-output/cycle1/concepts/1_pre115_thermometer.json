@@ -1,0 +1,63 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic outdoor scene of a residential Phoenix neighborhood in extreme summer heat. The composition shows a flat-roofed Southwestern stucco house in the middle distance, with mature saguaro cacti and palo verde trees in the foreground. The sky is a piercing pale blue-white with intense sun glare. A large outdoor mercury thermometer mounted on a wooden post in the foreground dominates the right third of the frame, with the red mercury column maxed out near the top, displaying a clearly readable temperature reading of 115. Heat shimmer rises from the asphalt driveway. Dust hangs in the air. The light is harsh, direct, blinding, with the kind of midday Sonoran-desert glare that flattens shadows. The top 18% of the frame is uncluttered pale sky reserved for headline overlay. The bottom 14% of the frame is empty pavement / dirt foreground reserved for a CTA banner overlay.",
+    "time_of_day": "midday, peak summer, June or July afternoon",
+    "weather_atmosphere": "blazing hot, dry, sun-bleached Phoenix summer",
+    "lighting": {
+      "source": "direct overhead sun",
+      "direction": "from above, slightly camera-right",
+      "quality": "harsh, glaring, high-contrast",
+      "color_temp": "warm but bleached, almost white in highlights"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#E8D7B8", "#C9A878", "#F4E8D2", "#7A8AA0", "#D9D4C7"],
+    "accent_colors": ["#E42F3A", "#1A1A1A"]
+  },
+  "composition": {
+    "camera_angle": "eye-level, slight upward tilt to catch the thermometer and sky",
+    "framing": "medium-wide, environmental",
+    "depth_of_field": "deep focus, both foreground thermometer and house in middle distance sharp",
+    "focal_point": "the thermometer reading 115",
+    "notes": "top 18% of frame is reserved for headline overlay (clear sky); bottom 14% reserved for red CTA banner overlay (foreground ground)"
+  },
+  "objects": [
+    {
+      "label": "outdoor mercury thermometer",
+      "location": "right third of frame, foreground",
+      "prominence": "primary focal point",
+      "visual_attributes": {
+        "color": "white face with black markings, red mercury column",
+        "texture": "glass tube on weathered white-painted wood backing",
+        "material": "glass and painted wood"
+      },
+      "text_content": "115",
+      "micro_details": ["weathered paint on the wooden backing", "fine dust on the glass", "the red mercury column reaches the top of the visible scale"]
+    },
+    {
+      "label": "Phoenix-style stucco home",
+      "location": "middle ground, center-left",
+      "prominence": "secondary",
+      "visual_attributes": {
+        "color": "tan / desert-stucco beige",
+        "material": "stucco walls, flat clay-tile roof"
+      },
+      "micro_details": ["small landscape rocks in the front yard", "a single palm tree to the side"]
+    },
+    {
+      "label": "saguaro cacti",
+      "location": "foreground left and middle ground",
+      "prominence": "background atmosphere",
+      "visual_attributes": {"color": "muted desert green"},
+      "micro_details": ["tall classic Phoenix saguaros, slightly weathered"]
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": ["115"]
+  },
+  "semantic_relationships": [
+    "the thermometer dominates the foreground; the house and saguaros sit in the middle distance creating Phoenix context; the sky behind both is empty for headline space",
+    "shadows are short and harsh, reinforcing the midday-sun feeling"
+  ]
+}

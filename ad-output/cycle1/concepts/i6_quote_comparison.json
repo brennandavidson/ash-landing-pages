@@ -1,0 +1,71 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial overhead flat-lay shot on a dark walnut wood surface. Two professional HVAC quote documents lying side by side, dominating the central 70% of the frame. LEFT DOCUMENT: a flashy busy quote from a generic 'PREMIER HVAC SOLUTIONS' (fictional generic brand, not a real company). The document is overdesigned: bold colorful header banner with sunburst graphics, a 'LIMITED TIME OFFER!' starburst badge in the corner, multiple asterisks and footnotes, fine print at the bottom, fake testimonial quotes, '$3,000 in REBATES!' callout, small text disclaimers. The bottom line shows: 'TOTAL: $19,800' in bold. The whole document feels chaotic, sales-pitchy, and visually busy. RIGHT DOCUMENT: a clean simple quote from 'ASH COOLING & HEATING'. The document is the opposite of the left: clean modern minimalist letterhead, just a few lines of black text on white, no graphics, no starbursts, no fine print. Reads simply: 'ASH COOLING & HEATING / NEW AC INSTALL / $9,500 / 0% APR FINANCING / PRICE MATCH GUARANTEE / Done in one day.' The contrast between the two documents is the entire mechanism. Single soft theatrical top-light catches both documents, dramatic shadow falloff to near-black walnut grain at the edges. Small headline overlaid at the top of the frame in clean bold uppercase white sans-serif: 'ONE OF THESE QUOTES IS HONEST.' Small italic caption at bottom: 'New AC install. $9,500. 0% APR. Price match. No upsells.' Mood: cold confident comparison. Editorial document still life with theatrical lighting, NOT documentary photo, NOT cartoon.",
+    "lighting": {"source": "single soft theatrical top-light", "quality": "dramatic falloff to near-black at edges, both documents brightly lit"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#FFFFFF", "#8B6F47", "#3A3A3A"],
+    "accent_colors": ["#E42F3A", "#FFD93D", "#22C55E", "#0066CC"]
+  },
+  "composition": {
+    "framing": "near-overhead flat-lay, two documents side by side, slight 3/4 tilt, both dominate the central frame",
+    "focal_point": "the visual contrast between the chaotic left quote and the clean right ASH quote"
+  },
+  "objects": [
+    {
+      "label": "LEFT document - chaotic competitor quote",
+      "location": "left half of frame, slight tilt",
+      "prominence": "primary visual mass",
+      "text_content": "PREMIER HVAC SOLUTIONS | LIMITED TIME OFFER! | $3,000 in REBATES! | TOTAL: $19,800",
+      "visual_attributes": {"color": "busy multi-color document with red yellow blue accents", "material": "8.5x11 printed letterhead, slightly worn"},
+      "micro_details": [
+        "fictional generic brand 'PREMIER HVAC SOLUTIONS' header (not a real company)",
+        "overdesigned with sunburst graphics in header",
+        "'LIMITED TIME OFFER!' starburst badge in corner",
+        "multiple asterisks and footnote markers",
+        "fine print disclaimer text at bottom",
+        "fake testimonial pull-quote in a sidebar",
+        "'$3,000 in REBATES!' callout in red",
+        "TOTAL: $19,800 prominently shown",
+        "the whole document feels chaotic, sales-pitchy, visually busy"
+      ]
+    },
+    {
+      "label": "RIGHT document - clean ASH quote",
+      "location": "right half of frame, slight tilt",
+      "prominence": "primary focal element",
+      "text_content": "ASH COOLING & HEATING | NEW AC INSTALL | $9,500 | 0% APR FINANCING | PRICE MATCH GUARANTEE | Done in one day.",
+      "visual_attributes": {"color": "clean white paper, bold minimal black sans-serif typography"},
+      "micro_details": [
+        "ASH COOLING & HEATING simple letterhead, no graphics",
+        "NEW AC INSTALL service line",
+        "$9,500 in large clear text",
+        "0% APR FINANCING line",
+        "PRICE MATCH GUARANTEE line",
+        "small line: 'Done in one day.'",
+        "visually minimal, calm, confident"
+      ]
+    },
+    {
+      "label": "top headline",
+      "location": "top 10% of frame, centered",
+      "prominence": "primary text",
+      "text_content": "ONE OF THESE QUOTES IS HONEST.",
+      "visual_attributes": {"color": "bold white sans-serif"}
+    },
+    {
+      "label": "bottom caption",
+      "location": "bottom 8% of frame, centered",
+      "prominence": "secondary text",
+      "text_content": "New AC install. $9,500. 0% APR. Price match. No upsells.",
+      "visual_attributes": {"color": "small italic white"}
+    },
+    {
+      "label": "dark walnut wood surface",
+      "location": "fills frame around documents",
+      "prominence": "set",
+      "visual_attributes": {"color": "deep walnut grain fading to near-black at edges"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["ONE OF THESE QUOTES IS HONEST.", "PREMIER HVAC SOLUTIONS", "LIMITED TIME OFFER!", "$3,000 in REBATES!", "TOTAL: $19,800", "ASH COOLING & HEATING", "NEW AC INSTALL", "$9,500", "0% APR FINANCING", "PRICE MATCH GUARANTEE", "Done in one day.", "New AC install. $9,500. 0% APR. Price match. No upsells."]}
+}

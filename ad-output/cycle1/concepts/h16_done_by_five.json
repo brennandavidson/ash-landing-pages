@@ -1,0 +1,72 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial photograph (or photorealistic editorial illustration with photographic depth) of a single ASH-branded HVAC service truck parked at the curb of a regular Phoenix-style suburban home, late afternoon golden-hour light. The truck is the hero element, parked at a slight 3/4 angle so the side branding panel is visible. NOT a logo design — the truck looks like a real working service truck with subtle wraps and visible 'ASH COOLING & HEATING' lettering on the side panel and ladder racks visible on top. ONE technician in a clean uniform is at the back of the truck, having just closed the rear doors, holding a small clipboard, walking toward the driver's side. In the background mid-distance: the Phoenix-style home, single-story stucco with desert landscaping, a brand-new exterior AC compressor unit visible at the side of the house with morning dew or just-installed cleanliness. Late afternoon golden-hour sun raking from the left, long shadows, warm orange-gold tones, palm tree silhouettes in the deep background, distant mountain hint. Mood: a clean workday completed, professional, calm, simple. Single overlay text element top-third: bold white sans-serif 'STARTED AT 8. DONE BY 5.' as an editorial banner. Small subhead in white italic: 'New AC. It's just a workday.' Editorial cinematic photography lighting, NOT documentary snapshot, NOT cartoon, NOT flat infographic. Composition feels like an Apple commercial frame or a high-end trade campaign — clean, intentional, golden, the truck and tech the only humans/vehicles in frame.",
+    "lighting": {"source": "late afternoon golden-hour sun raking from the left", "quality": "warm cinematic editorial, long shadows, golden tones"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#F4C77A", "#E89B5A", "#3A3A3A", "#FFFFFF"],
+    "accent_colors": ["#E42F3A", "#1A2B4A"]
+  },
+  "composition": {
+    "framing": "horizontal cinematic frame, truck at 3/4 angle dominating mid-foreground, house in mid-distance, golden sky background",
+    "focal_point": "the ASH service truck with the technician closing it up"
+  },
+  "objects": [
+    {
+      "label": "ASH service truck",
+      "location": "mid-foreground, parked at curb at 3/4 angle",
+      "prominence": "primary hero",
+      "text_content": "ASH COOLING & HEATING",
+      "visual_attributes": {"color": "white truck body with red/dark accent wrap, visible ladder rack on roof", "material": "real working service truck with realistic wear"},
+      "micro_details": [
+        "side panel branding reads 'ASH COOLING & HEATING' in clean sans-serif",
+        "ladder racks on top",
+        "rear doors just closed",
+        "subtle work-truck details: visible tires, license plate area, side-mirror",
+        "parked alongside curb of a residential street"
+      ]
+    },
+    {
+      "label": "single technician",
+      "location": "near the back of the truck, walking toward driver's side",
+      "prominence": "secondary character",
+      "visual_attributes": {"color": "clean ASH branded uniform, navy or grey work shirt", "material": "professional uniform"},
+      "micro_details": [
+        "clean uniform, polo or work shirt",
+        "small clipboard or work tablet in hand",
+        "calm posture, walking, mid-step",
+        "appears to have just finished the job",
+        "no facial expression overemphasis — calm professionalism"
+      ]
+    },
+    {
+      "label": "Phoenix-style suburban home",
+      "location": "mid-distance background",
+      "prominence": "context",
+      "visual_attributes": {"color": "warm stucco beige, terracotta tile roof"},
+      "micro_details": [
+        "single-story stucco with desert landscaping",
+        "newly-installed exterior AC compressor unit visible at the side of the house",
+        "neat front yard, gravel/desert plants",
+        "a few palm trees nearby",
+        "warm afternoon light hitting the front facade"
+      ]
+    },
+    {
+      "label": "top headline overlay",
+      "location": "top-third of frame, centered",
+      "prominence": "primary text",
+      "text_content": "STARTED AT 8. DONE BY 5.",
+      "visual_attributes": {"color": "bold white sans-serif on slight semi-transparent backdrop or pure overlay"},
+      "micro_details": ["all caps", "tight letter spacing", "editorial banner weight"]
+    },
+    {
+      "label": "subhead text",
+      "location": "below main headline, centered",
+      "prominence": "secondary text",
+      "text_content": "New AC. It's just a workday.",
+      "visual_attributes": {"color": "white italic"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["STARTED AT 8. DONE BY 5.", "New AC. It's just a workday.", "ASH COOLING & HEATING"]}
+}

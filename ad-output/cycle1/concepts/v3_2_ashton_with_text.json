@@ -1,0 +1,90 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic outdoor scene of Ashton, the lean-fit owner of a Phoenix HVAC company, squatting on his haunches next to an outdoor residential AC condenser unit on the right side of the frame, hand resting on the side of the unit, looking thoughtfully at the unit. He matches the reference image: lean fit white male in his mid-30s, short brown hair under a grey ASH trucker-style cap with a tan ASH patch, dark sunglasses, light stubble, sleeve tattoos visible on both arms, wearing a grey heather t-shirt with the small ASH logo on the left chest, dark cargo work pants. The setting is a residential side yard of a Phoenix home, tan stucco wall behind, gravel landscaping, saguaro and palo verde in middle distance. Late afternoon Phoenix sun from upper right with strong shadows and lens flare. The image has THREE text overlay elements composited as part of the final design: (1) a small narrow red horizontal sash spanning the very top edge of the frame containing the bold all-caps white text 'PHOENIX HOMEOWNERS' centered, (2) very large bold all-caps white sans-serif headline text 'BEFORE 115° HITS.' positioned in the upper portion of the frame over the sky/saguaro area on the left side where there's clean negative space, with subtle dark drop-shadow for legibility, (3) a tall solid bright red horizontal banner spanning the entire bottom edge of the frame, approximately 12% of image height, containing the bold all-caps white text 'FREE IN-HOME ESTIMATE • 602-905-1450' centered in the banner. The text overlays are rendered crisply and cleanly as part of the final designed image. Photorealistic, shot on 50mm lens, Ashton in sharp focus.",
+    "time_of_day": "late afternoon, intense Phoenix sun",
+    "weather_atmosphere": "warm, dry, summer approaching",
+    "lighting": {
+      "source": "low intense Phoenix sun from upper right",
+      "direction": "raking from right",
+      "quality": "harsh, directional, with sun glare",
+      "color_temp": "warm golden"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4A56A", "#E8C586", "#8B7355", "#A8A8A8", "#FFFFFF"],
+    "accent_colors": ["#E42F3A", "#3A3A3A"]
+  },
+  "composition": {
+    "camera_angle": "eye-level, slight 3/4 view of Ashton in profile-quarter facing the unit",
+    "framing": "medium, three-quarter body shot of Ashton on the right side, with negative space on the left for headline",
+    "depth_of_field": "shallow-medium, Ashton in sharp focus, background gently blurred",
+    "focal_point": "Ashton's face and the headline 'BEFORE 115° HITS.' on the left side"
+  },
+  "objects": [
+    {
+      "label": "top red sash with PHOENIX HOMEOWNERS text",
+      "location": "very top edge of frame, narrow horizontal banner spanning full width",
+      "prominence": "audience selector",
+      "visual_attributes": {
+        "color": "solid bright red sash with bold white text",
+        "material": "graphic overlay element, flat solid color"
+      },
+      "text_content": "PHOENIX HOMEOWNERS",
+      "micro_details": ["sash approximately 6% of total frame height", "bold all-caps sans-serif white text, centered horizontally"]
+    },
+    {
+      "label": "main headline overlay",
+      "location": "upper-left area of frame, over the sky/saguaro negative space",
+      "prominence": "primary text hook",
+      "visual_attributes": {
+        "color": "white text with subtle dark drop-shadow",
+        "material": "graphic text overlay"
+      },
+      "text_content": "BEFORE 115° HITS.",
+      "micro_details": ["very large bold all-caps sans-serif font, condensed style, white", "subtle dark drop-shadow for legibility", "perfectly horizontal, two lines or one line — sized to fill the negative space without overlapping Ashton"]
+    },
+    {
+      "label": "bottom red CTA banner",
+      "location": "bottom edge of frame, full-width horizontal solid red bar",
+      "prominence": "CTA element",
+      "visual_attributes": {
+        "color": "solid bright red banner with bold white text",
+        "material": "graphic overlay element, flat solid color"
+      },
+      "text_content": "FREE IN-HOME ESTIMATE • 602-905-1450",
+      "micro_details": ["banner approximately 12% of total frame height", "bold all-caps sans-serif white text, centered", "the • is a clean middle-dot character"]
+    },
+    {
+      "label": "Ashton — Phoenix HVAC owner, lean fit",
+      "location": "center-right of frame, squatting pose",
+      "prominence": "primary photographic subject",
+      "visual_attributes": {
+        "color": "grey heather t-shirt, dark cargo pants, grey trucker cap with tan ASH patch, dark sunglasses",
+        "material": "natural cotton tee, work pants, mesh-back trucker cap"
+      },
+      "pose_or_orientation": "squatting on haunches next to the AC unit, hand resting on the side of the unit, looking down at the unit thoughtfully",
+      "micro_details": ["sleeve tattoos visible on both forearms", "lean athletic build", "light stubble", "small ASH logo on chest", "matches the reference image likeness"]
+    },
+    {
+      "label": "outdoor residential AC condenser unit",
+      "location": "right side of frame, beside Ashton",
+      "prominence": "secondary",
+      "visual_attributes": {"color": "off-white aging metal cabinet"}
+    },
+    {
+      "label": "Phoenix backyard context",
+      "location": "background, softly out of focus",
+      "prominence": "context",
+      "visual_attributes": {"color": "warm desert beige stucco, muted desert greens, gravel ground"}
+    }
+  ],
+  "text_ocr": {
+    "present": true,
+    "content": ["PHOENIX HOMEOWNERS", "BEFORE 115° HITS.", "FREE IN-HOME ESTIMATE • 602-905-1450"]
+  },
+  "semantic_relationships": [
+    "Ashton on the right + headline on the left creates clean visual balance with no text-over-face issues",
+    "the three text overlays form a clear hierarchy: audience selector → hook → CTA",
+    "rendered text MUST be crisp, legible, free of spelling errors or character distortions"
+  ]
+}

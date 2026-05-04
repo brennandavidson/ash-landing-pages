@@ -1,0 +1,51 @@
+{
+  "global_context": {
+    "scene_description": "A full-frame digital UI mockup that fills the ENTIRE image — no phone, no hand, no real-world context. The frame IS the screen. Designed to look exactly like a Google Flights / Kayak airline booking calendar interface, but for AC installation pricing instead of flights. Header bar at the top in bold black sans-serif: 'AC INSTALL PRICING — PHOENIX'. Below the header, a sub-header row showing month tabs: MAY · JUNE · JULY · AUG, with a small flight-calendar-style icon. Then a calendar grid filling 80% of the frame, showing a 3-month view. Each date cell is a colored rectangle with a price tile inside, color-coded like an airline pricing calendar: early MAY dates are kelly-green '$8,500', mid-MAY '$9,000', late MAY into early JUNE yellow-green '$9,500-$10,500', mid-JUNE yellow-orange '$11,500-$12,500', late JUNE into early JULY orange-red '$13,000-$13,500', mid-late JULY DEEP RED '$14,500-$15,500' with 'PEAK' tags on the deepest red dates. The visual gradient goes green → yellow → orange → red across the calendar, telling the entire story at a glance. Today's date is subtly highlighted with a small darker outline. Bottom of frame has small fine-print sub-text in light grey: 'Prices rise as Phoenix summer demand spikes. Book off-season to lock in lowest rates.' The interface has clean subtle drop-shadow and modern airline-booking-app aesthetic. NO phone bezel, NO hand, NO real-world environment — pure UI mockup that fills the entire square frame edge-to-edge.",
+    "lighting": {"source": "screen-light only", "quality": "clean, flat UI lighting"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#FFFFFF", "#1A1A1A", "#3A3A3A", "#E5E5E5"],
+    "accent_colors": ["#22C55E", "#FFD93D", "#FFB048", "#FF6B47", "#E42F3A"]
+  },
+  "composition": {
+    "framing": "full-frame UI mockup, edge-to-edge, no real-world context",
+    "focal_point": "the color-graded calendar — green May fading through yellow June into red July"
+  },
+  "objects": [
+    {
+      "label": "header bar with title",
+      "location": "top 12% of frame",
+      "prominence": "primary text",
+      "text_content": "AC INSTALL PRICING — PHOENIX",
+      "visual_attributes": {"color": "bold black sans-serif on white background"},
+      "micro_details": ["clean modern app header", "small calendar icon next to title", "thin separator line below"]
+    },
+    {
+      "label": "month tab row",
+      "location": "below header, ~5% of frame",
+      "prominence": "secondary",
+      "text_content": "MAY · JUNE · JULY · AUG",
+      "micro_details": ["airline-app-style tab navigation", "active month underlined"]
+    },
+    {
+      "label": "main calendar grid filling 75% of frame",
+      "location": "center to bottom, dominant area",
+      "prominence": "primary visual element",
+      "text_content": "MAY $8,500 $9,000 $9,500 | JUNE $10,500 $11,500 $12,500 | JULY $13,000 $13,500 $14,500 $15,500 PEAK",
+      "micro_details": [
+        "6 rows by 7 columns grid showing dates from May through late July",
+        "each cell is a price tile color-coded: GREEN for May ($8,500-$9,500), YELLOW-GREEN for late May ($9,500), YELLOW-ORANGE for June ($10,500-$12,500), ORANGE-RED for early July ($13,000-$13,500), DEEP RED for late July ($14,500-$15,500) with 'PEAK' label on the deepest dates",
+        "each cell shows date number small in the corner and price prominently in the center",
+        "color gradient flows visually across the calendar from green to red — the story is the gradient"
+      ]
+    },
+    {
+      "label": "fine-print footer text",
+      "location": "bottom 6% of frame, small light grey",
+      "prominence": "atmospheric",
+      "text_content": "Prices rise as Phoenix summer demand spikes. Book off-season to lock in lowest rates.",
+      "micro_details": ["small light grey sans-serif italic", "centered"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["AC INSTALL PRICING — PHOENIX", "MAY", "JUNE", "JULY", "AUG", "$8,500", "$9,000", "$9,500", "$10,500", "$11,500", "$12,500", "$13,000", "$13,500", "$14,500", "$15,500", "PEAK", "Prices rise as Phoenix summer demand spikes. Book off-season to lock in lowest rates."]}
+}

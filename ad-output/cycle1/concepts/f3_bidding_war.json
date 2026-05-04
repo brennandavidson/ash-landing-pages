@@ -1,0 +1,76 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic top-down overhead shot of a kitchen counter / desk surface in chaotic disarray on a hot Phoenix July afternoon — a homeowner's panic scene. The surface is clearly cluttered with FOUR smartphones, each with its screen lit up showing a different HVAC company's quote. Each phone screen displays a quote text/email with a generic HVAC company name and a high price. The four screens, going clockwise from upper-left: 'Desert Air HVAC — QUOTE: $14,500' / 'Cool Choice — QUOTE: $14,800' / 'AZ Climate Pros — QUOTE: $15,200' / 'Phoenix Heating Co. — QUOTE: $15,500'. Each price is in bold red on the screen. One phone is being held to a man's ear (his ear is visible at the right edge of the frame, hand gripping the phone) — that phone shows 'On Call: Sun State Cooling' and a notification 'CALLER ON HOLD — 8:23'. Other elements scattered on the counter add to the panic: a sweaty water bottle leaving a wet ring, several missed-call notifications, an open laptop showing a search results page for 'EMERGENCY HVAC PHOENIX', a pencil, a crumpled napkin, a small thermometer reading 92° (indoor temp). Lighting: harsh hot Phoenix afternoon sun spilling in from a window, slight orange-amber tint, sweat highlights on the man's hand. Mood: visceral panic, the chaos of being on the wrong side of demand. Cinematic overhead, theatrical lighting, NOT documentary photo, NOT cartoon — high-end editorial photo composition.",
+    "lighting": {"source": "harsh hot afternoon light from window", "quality": "harsh, contrast-heavy, slight orange-amber tint, hot"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4B896", "#8B6F47", "#3A3A3A", "#FFFFFF", "#1A1A1A"],
+    "accent_colors": ["#E42F3A", "#FFB048"]
+  },
+  "composition": {
+    "framing": "top-down overhead, ~75-degree-down camera angle, captures full counter area with all phones visible",
+    "focal_point": "the four phone screens with their climbing quote prices"
+  },
+  "objects": [
+    {
+      "label": "phone 1 — Desert Air HVAC quote screen",
+      "location": "upper-left of frame on counter",
+      "prominence": "primary",
+      "text_content": "Desert Air HVAC — QUOTE: $14,500",
+      "visual_attributes": {"color": "white background, bold red price"},
+      "micro_details": ["smartphone laying flat, screen glowing bright", "HVAC company name in dark sans-serif at top", "QUOTE: $14,500 in bold red"]
+    },
+    {
+      "label": "phone 2 — Cool Choice quote screen",
+      "location": "upper-right of frame on counter",
+      "prominence": "primary",
+      "text_content": "Cool Choice — QUOTE: $14,800",
+      "visual_attributes": {"color": "white background, bold red price"},
+      "micro_details": ["smartphone laying flat", "QUOTE: $14,800 in bold red"]
+    },
+    {
+      "label": "phone 3 — AZ Climate Pros quote screen",
+      "location": "lower-left of frame on counter",
+      "prominence": "primary",
+      "text_content": "AZ Climate Pros — QUOTE: $15,200",
+      "visual_attributes": {"color": "white background, bold red price"},
+      "micro_details": ["smartphone laying flat, slightly tilted", "QUOTE: $15,200 in bold red"]
+    },
+    {
+      "label": "phone 4 — Phoenix Heating Co. quote screen",
+      "location": "lower-right of frame on counter",
+      "prominence": "primary",
+      "text_content": "Phoenix Heating Co. — QUOTE: $15,500",
+      "visual_attributes": {"color": "white background, bold red price"},
+      "micro_details": ["smartphone laying flat", "QUOTE: $15,500 in bold red, slightly larger than the others"]
+    },
+    {
+      "label": "fifth phone held to man's ear at right edge",
+      "location": "right edge of frame, partially in view",
+      "prominence": "secondary",
+      "text_content": "Sun State Cooling — ON HOLD 8:23",
+      "micro_details": ["man's ear and hand gripping phone visible at right edge of frame", "phone screen shows 'Sun State Cooling — ON HOLD 8:23'", "sweat visible on the man's hand"]
+    },
+    {
+      "label": "open laptop showing search results",
+      "location": "upper portion of counter",
+      "prominence": "secondary",
+      "text_content": "EMERGENCY HVAC PHOENIX",
+      "micro_details": ["laptop screen with browser tab showing search 'EMERGENCY HVAC PHOENIX' in the search bar"]
+    },
+    {
+      "label": "small indoor thermometer reading 92",
+      "location": "edge of counter",
+      "prominence": "atmospheric",
+      "text_content": "92",
+      "micro_details": ["small analog thermometer showing 92° — indoor temperature, the AC is dead and it's hot inside too"]
+    },
+    {
+      "label": "scattered chaos elements",
+      "location": "throughout counter",
+      "prominence": "supporting atmosphere",
+      "micro_details": ["sweaty water bottle leaving wet ring", "crumpled napkin", "pencil", "missed-call notification badges visible on phone edges"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["Desert Air HVAC", "Cool Choice", "AZ Climate Pros", "Phoenix Heating Co.", "Sun State Cooling", "QUOTE: $14,500", "QUOTE: $14,800", "QUOTE: $15,200", "QUOTE: $15,500", "ON HOLD 8:23", "EMERGENCY HVAC PHOENIX", "92"]}
+}

@@ -1,0 +1,65 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial flat-lay or overhead shot on a clean light grey or near-white surface. The composition is split into two columns. LEFT COLUMN: a stack/list of seven recognizable monthly subscription service cards/receipts arranged vertically, each shown as a clean rectangular card with the service name and monthly price clearly visible. The cards from top to bottom: 'NETFLIX - $22.99/mo', 'SPOTIFY - $11.99/mo', 'iPHONE PLAN - $85/mo', 'DISNEY+ - $15.99/mo', 'HULU - $17.99/mo', 'GYM - $40/mo', 'AMAZON PRIME - $14.99/mo'. Below the stack a clean total line: 'TOTAL: $208.95/mo'. NOT real brand logos rendered in detail (to avoid trademark issues) but stylized generic-but-recognizable card designs in each brand's color palette. RIGHT COLUMN: a single clean stand-alone card showing 'ASH COOLING & HEATING - NEW AC INSTALL - $250/mo - 0% APR - PRICE MATCH'. The single ASH card is the same size as one subscription card from the left, visually emphasizing that this is just ONE more line in your monthly budget. A center vertical comparison axis or thin separator line. At the top of the frame, a clean bold sans-serif headline reads: 'YOUR NEW AC COSTS LESS THAN YOUR SUBSCRIPTIONS.' Small italic caption at bottom: 'New AC install. $250/mo. 0% APR. Price match. Done in a day.' Lighting: soft even editorial overhead, almost product photography. Mood: cold financial reframe. Editorial product still life, NOT documentary photo, NOT cartoon, NOT a flat infographic.",
+    "lighting": {"source": "soft even overhead light", "quality": "clean editorial product photography"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#F5F5F5", "#FFFFFF", "#1A1A1A", "#3A3A3A"],
+    "accent_colors": ["#E42F3A", "#22C55E", "#0066CC", "#FFD93D"]
+  },
+  "composition": {
+    "framing": "horizontal frame with two-column comparison, subscription stack on left, single ASH card on right",
+    "focal_point": "the visual contrast that the ASH card is similar in size to a single subscription"
+  },
+  "objects": [
+    {
+      "label": "left-column stack of subscription cards",
+      "location": "left half of frame, vertical stack",
+      "prominence": "primary visual",
+      "text_content": "NETFLIX $22.99/mo | SPOTIFY $11.99/mo | iPHONE PLAN $85/mo | DISNEY+ $15.99/mo | HULU $17.99/mo | GYM $40/mo | AMAZON PRIME $14.99/mo | TOTAL: $208.95/mo",
+      "visual_attributes": {"color": "stylized cards in each brand's palette but generic enough to avoid trademark", "material": "clean rectangular subscription cards"},
+      "micro_details": [
+        "seven subscription cards arranged in a clean vertical stack",
+        "each card shows the service name and monthly price clearly",
+        "stylized generic-but-recognizable design (red for Netflix-style, green for Spotify-style, etc) without using actual logos in detail",
+        "below the stack: TOTAL: $208.95/mo in bold"
+      ]
+    },
+    {
+      "label": "right-column single ASH card",
+      "location": "right half of frame, single centered card",
+      "prominence": "primary visual focal",
+      "text_content": "ASH COOLING & HEATING | NEW AC INSTALL | $250/mo | 0% APR | PRICE MATCH",
+      "visual_attributes": {"color": "clean white card with bold black typography and a small red ASH accent"},
+      "micro_details": [
+        "single clean card, similar dimensions to one subscription card on the left",
+        "ASH COOLING & HEATING header",
+        "NEW AC INSTALL service line",
+        "$250/mo prominent",
+        "0% APR and PRICE MATCH visible",
+        "the visual punch: the ASH card is JUST ONE MORE line in your monthly budget, and it costs less than the stacked subscriptions"
+      ]
+    },
+    {
+      "label": "center separator",
+      "location": "vertical center axis between the two columns",
+      "prominence": "structural",
+      "visual_attributes": {"color": "thin grey hairline"}
+    },
+    {
+      "label": "top headline",
+      "location": "top 10% of frame, full width",
+      "prominence": "primary text",
+      "text_content": "YOUR NEW AC COSTS LESS THAN YOUR SUBSCRIPTIONS.",
+      "visual_attributes": {"color": "bold black sans-serif on light background"}
+    },
+    {
+      "label": "bottom caption",
+      "location": "bottom 8% of frame, centered",
+      "prominence": "secondary text",
+      "text_content": "New AC install. $250/mo. 0% APR. Price match. Done in a day.",
+      "visual_attributes": {"color": "small italic dark grey"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["YOUR NEW AC COSTS LESS THAN YOUR SUBSCRIPTIONS.", "NETFLIX", "$22.99/mo", "SPOTIFY", "$11.99/mo", "iPHONE PLAN", "$85/mo", "DISNEY+", "$15.99/mo", "HULU", "$17.99/mo", "GYM", "$40/mo", "AMAZON PRIME", "$14.99/mo", "TOTAL: $208.95/mo", "ASH COOLING & HEATING", "NEW AC INSTALL", "$250/mo", "0% APR", "PRICE MATCH", "New AC install. $250/mo. 0% APR. Price match. Done in a day."]}
+}

@@ -1,0 +1,70 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic outdoor scene of an old, weathered residential outdoor air conditioning condenser unit in the side yard of a Phoenix-style stucco home. The aging AC unit is the dominant subject, framed at slightly low angle so it feels imposing. The unit shows clear signs of years of Arizona sun: faded paint on the metal cabinet, light surface rust on the corner panels, dust caked into the protective grille fins, sun-bleached factory stickers, slightly bent fan guard wire. The unit sits on a small concrete pad with weeds growing through cracks. Behind the unit, a tan stucco wall and a stretch of empty pale Phoenix sky. To one side, the silhouette of a saguaro cactus and palo verde branches in soft focus. The light is warm late-afternoon golden hour, raking from the right, casting long soft shadows behind the unit. Heat shimmer in the air. Mood: this thing has been working harder than it should for too many summers. Photorealistic, shot on a 50mm lens, slight grain.",
+    "time_of_day": "late afternoon, golden hour Phoenix",
+    "weather_atmosphere": "warm, dry, dust hanging in air",
+    "lighting": {
+      "source": "low golden sun from camera-right",
+      "direction": "from right, raking, casting long shadows",
+      "quality": "warm, soft, low-angle",
+      "color_temp": "warm golden"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4A56A", "#E8C586", "#8B7355", "#A8967D", "#3A3A3A"],
+    "accent_colors": ["#5A5A5A", "#8B6F47"]
+  },
+  "composition": {
+    "camera_angle": "slightly low angle, eye-level with the unit's mid-height, 3/4 view",
+    "framing": "medium, the AC unit fills the central 50% of the frame, environmental context around it",
+    "depth_of_field": "deep, AC unit and stucco wall sharp, distant cactus softly out of focus",
+    "focal_point": "the aged AC condenser unit"
+  },
+  "objects": [
+    {
+      "label": "old residential outdoor AC condenser unit",
+      "location": "center of frame, slightly right",
+      "prominence": "primary focal point",
+      "visual_attributes": {
+        "color": "originally beige or off-white, now sun-faded with patches of rust",
+        "texture": "weathered painted metal, dusty fins, peeling factory stickers",
+        "material": "metal cabinet, protective grille, fan blade visible through top guard"
+      },
+      "micro_details": ["surface rust spots near base corners", "dust caked between condenser fins", "faded factory sticker barely legible", "slightly bent fan guard wire", "small spider web in one corner"]
+    },
+    {
+      "label": "concrete equipment pad with cracks",
+      "location": "ground, beneath the AC unit",
+      "prominence": "supporting",
+      "visual_attributes": {"color": "weathered grey concrete", "texture": "rough, slightly cracked"},
+      "micro_details": ["small weeds growing through cracks", "fine dust at edges"]
+    },
+    {
+      "label": "tan stucco wall of a Phoenix home",
+      "location": "background behind the unit",
+      "prominence": "context",
+      "visual_attributes": {"color": "warm desert beige stucco", "material": "textured stucco"}
+    },
+    {
+      "label": "saguaro cactus and palo verde branches",
+      "location": "left side of frame, partially out of focus",
+      "prominence": "atmospheric Phoenix context",
+      "visual_attributes": {"color": "muted desert green"}
+    },
+    {
+      "label": "pale Phoenix sky",
+      "location": "upper portion of frame",
+      "prominence": "backdrop",
+      "visual_attributes": {"color": "pale washed-out blue with soft haze"}
+    }
+  ],
+  "text_ocr": {
+    "present": false,
+    "content": []
+  },
+  "semantic_relationships": [
+    "the AC unit is the protagonist, aged and worn, sitting in its own quiet patch of Phoenix yard",
+    "warm golden light gives the scene a contemplative tone — not alarming, just honest",
+    "no people, no logos, no text — just the system that's been carrying the household through Phoenix summers"
+  ]
+}

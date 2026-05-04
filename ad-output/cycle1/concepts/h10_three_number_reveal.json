@@ -1,0 +1,55 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial typography poster on a near-black matte backdrop. NO people, NO photographs, NO illustrations of objects. The entire image is bold, theatrical, art-directed typography. At the very top, a clean centered headline in bold uppercase white sans-serif: 'IT'S CHEAPER. FASTER. EASIER.' Below the headline, a small italic subhead in muted grey: 'Three myths Phoenix homeowners keep telling each other.' Below the subhead, a thin horizontal divider rule. Below the rule, a clean two-column comparison table with three rows. Column headers in small grey uppercase letterspaced text: 'WHAT YOU FEAR' on the left, 'WHAT IT ACTUALLY IS' on the right. The three rows: ROW 1 — left column: 'TIME' in small grey label above '2 WEEKS' in large faded grey struck-through bold; right column: 'TIME' label above '1 DAY' in massive bold white. ROW 2 — left column: 'MONEY' label above '$20,000' in large faded grey struck-through; right column: 'MONEY' label above '$250/MO' in massive bold white with a small green accent. ROW 3 — left column: 'HASSLE' label above '5 VISITS' in large faded grey struck-through; right column: 'HASSLE' label above '1 TRUCK' in massive bold white. Each row separated by a thin grey hairline. At the bottom, a single italic line in red accent: 'New AC install. The dread is the lie.' Composition is cinematic editorial poster — think a New York Times graphic, or an Apple keynote slide, but with theatrical contrast lighting and dramatic typography weight. Mood: cold confident mathematical correction. NOT a flat infographic, NOT corporate slide deck — this is editorial poster typography with theatrical depth. The near-black backdrop has subtle vignette falloff at the corners, the central content area is gently lit as if by a single overhead light.",
+    "lighting": {"source": "implied single overhead light", "quality": "subtle vignette to dark corners, central content brightly lit"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#0A0A0A", "#FFFFFF", "#5A5A5A", "#1A1A1A"],
+    "accent_colors": ["#E42F3A", "#22C55E"]
+  },
+  "composition": {
+    "framing": "centered editorial poster typography, full-frame, balanced negative space",
+    "focal_point": "the three large white reality-numbers in the right column"
+  },
+  "objects": [
+    {
+      "label": "main headline",
+      "location": "top 15% of frame, centered",
+      "prominence": "primary text",
+      "text_content": "IT'S CHEAPER. FASTER. EASIER.",
+      "visual_attributes": {"color": "bold white sans-serif on near-black"},
+      "micro_details": ["all caps", "tight letter spacing", "heavy editorial weight"]
+    },
+    {
+      "label": "subhead",
+      "location": "below headline, centered",
+      "prominence": "secondary text",
+      "text_content": "Three myths Phoenix homeowners keep telling each other.",
+      "visual_attributes": {"color": "muted grey italic"},
+      "micro_details": ["smaller italic editorial sans-serif"]
+    },
+    {
+      "label": "comparison table — three rows",
+      "location": "central 60% of frame",
+      "prominence": "primary visual element",
+      "text_content": "WHAT YOU FEAR | WHAT IT ACTUALLY IS | TIME | 2 WEEKS | 1 DAY | MONEY | $20,000 | $250/MO | HASSLE | 5 VISITS | 1 TRUCK",
+      "visual_attributes": {"color": "left column faded grey with strikethrough, right column bold white"},
+      "micro_details": [
+        "small grey letterspaced uppercase column headers: 'WHAT YOU FEAR' left, 'WHAT IT ACTUALLY IS' right",
+        "row 1: TIME label, '2 WEEKS' left in faded grey strikethrough, '1 DAY' right in massive bold white",
+        "row 2: MONEY label, '$20,000' left in faded grey strikethrough, '$250/MO' right in massive bold white",
+        "row 3: HASSLE label, '5 VISITS' left in faded grey strikethrough, '1 TRUCK' right in massive bold white",
+        "thin grey hairline rules between each row",
+        "right-column numbers should feel 2-3x larger and brighter than left-column"
+      ]
+    },
+    {
+      "label": "footer line",
+      "location": "bottom 10% of frame, centered",
+      "prominence": "tertiary text",
+      "text_content": "New AC install. The dread is the lie.",
+      "visual_attributes": {"color": "red accent italic"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["IT'S CHEAPER. FASTER. EASIER.", "Three myths Phoenix homeowners keep telling each other.", "WHAT YOU FEAR", "WHAT IT ACTUALLY IS", "TIME", "2 WEEKS", "1 DAY", "MONEY", "$20,000", "$250/MO", "HASSLE", "5 VISITS", "1 TRUCK", "New AC install. The dread is the lie."]}
+}

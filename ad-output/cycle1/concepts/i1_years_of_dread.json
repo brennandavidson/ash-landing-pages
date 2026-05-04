@@ -1,0 +1,61 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial overhead flat-lay shot on a dark walnut wood surface. Hero subject: a stack of FIVE yearly desk calendars laid out in an overlapping fanned arrangement. Each calendar has a clearly-visible large year label on its cover or top edge: '2022', '2023', '2024', '2025', '2026'. The first four calendars (2022 through 2025) each have a small bright yellow sticky note stuck to them with hand-scrawled black marker text. The sticky notes read in scrawled handwriting: '2022: I'll do it next year', '2023: AC still works', '2024: Maybe after tax season', '2025: One more summer'. The 2026 calendar is the topmost and is OPEN to a specific month page (May), with a single Tuesday date clearly circled in green ink, and next to it a small clean printed receipt or quote from ASH visible showing '$9,500' and 'ONE DAY' and '0% APR'. Single soft theatrical top-light catches the calendars and ASH quote, dramatic shadow falloff to near-black walnut grain at the edges of the frame. Small headline overlaid at the top of the frame in clean bold uppercase white sans-serif: 'FOUR YEARS OF DREAD. ONE DAY OF ACTUAL WORK.' Small italic caption at bottom in white: 'New AC install. $9,500. 0% APR. Price match. Done.' Mood: cold mathematical correction of years of procrastination. Editorial document/object still life with theatrical lighting, NOT documentary photo, NOT cartoon.",
+    "lighting": {"source": "single soft theatrical top-light", "quality": "dramatic falloff to near-black at edges of frame"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#FFFFFF", "#8B6F47", "#3A3A3A"],
+    "accent_colors": ["#FFD93D", "#22C55E", "#E42F3A"]
+  },
+  "composition": {
+    "framing": "near-overhead flat-lay, calendars dominate central 60% of frame, slight 3/4 tilt",
+    "focal_point": "the open 2026 calendar with the green-circled date and ASH quote"
+  },
+  "objects": [
+    {
+      "label": "stack of five yearly calendars",
+      "location": "center of frame in a fanned overlapping arrangement",
+      "prominence": "primary hero",
+      "text_content": "2022 | 2023 | 2024 | 2025 | 2026",
+      "visual_attributes": {"color": "various neutral calendar covers, each with a clearly visible year"},
+      "micro_details": [
+        "five calendars overlapping in a fanned stack, oldest at the bottom",
+        "each calendar has a large clear year label visible: 2022, 2023, 2024, 2025, 2026",
+        "the four older calendars each have a small bright yellow sticky note stuck to them",
+        "sticky notes read in scrawled black marker: '2022: I will do it next year', '2023: AC still works', '2024: Maybe after tax season', '2025: One more summer'",
+        "2026 calendar is on top, OPENED to a May page",
+        "May 2026 page has a single Tuesday date clearly circled in green ink",
+        "next to the circled date, a small clean printed ASH quote receipt is laid showing '$9,500', 'ONE DAY', '0% APR'"
+      ]
+    },
+    {
+      "label": "small ASH quote/receipt next to circled date",
+      "location": "on top of the open 2026 calendar page",
+      "prominence": "secondary visual",
+      "text_content": "ASH | NEW AC INSTALL | $9,500 | ONE DAY | 0% APR",
+      "visual_attributes": {"color": "clean white printed receipt with sharp black sans-serif text"},
+      "micro_details": ["small printed quote/receipt", "ASH branding at top", "key offer points clearly legible"]
+    },
+    {
+      "label": "top headline",
+      "location": "top 10% of frame, centered",
+      "prominence": "primary text",
+      "text_content": "FOUR YEARS OF DREAD. ONE DAY OF ACTUAL WORK.",
+      "visual_attributes": {"color": "bold white sans-serif"}
+    },
+    {
+      "label": "bottom caption",
+      "location": "bottom 8% of frame, centered",
+      "prominence": "secondary text",
+      "text_content": "New AC install. $9,500. 0% APR. Price match. Done.",
+      "visual_attributes": {"color": "small italic white"}
+    },
+    {
+      "label": "dark walnut wood surface",
+      "location": "fills frame around calendars",
+      "prominence": "set",
+      "visual_attributes": {"color": "deep walnut grain fading to near-black at edges"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["FOUR YEARS OF DREAD. ONE DAY OF ACTUAL WORK.", "2022", "2023", "2024", "2025", "2026", "I will do it next year", "AC still works", "Maybe after tax season", "One more summer", "ASH", "NEW AC INSTALL", "$9,500", "ONE DAY", "0% APR", "New AC install. $9,500. 0% APR. Price match. Done."]}
+}

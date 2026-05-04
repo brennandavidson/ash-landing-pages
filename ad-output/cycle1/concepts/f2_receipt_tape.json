@@ -1,0 +1,35 @@
+{
+  "global_context": {
+    "scene_description": "A cinematic editorial still: a long thermal receipt printer tape unfurling vertically down the entire frame, against a clean black background. The tape is the single hero element. The tape has a list of dated AC INSTALL price entries running down its length, in chronological order from top (May) to bottom (late July). Each line entry shows: a date (e.g., MAY 5, MAY 12, MAY 19, JUN 2, JUN 16, JUN 30, JUL 7, JUL 14, JUL 21, JUL 28) followed by a price. The early entries at the top (MAY) are printed in GREEN ink showing prices like '$8,500', '$8,800', '$9,000', '$9,500'. As the tape descends, the prices climb and the ink shifts through yellow ($10,500, $11,500), orange ($12,500, $13,000), and red at the bottom ($13,500, $14,500, $15,500). The tape is slightly curled at the top where it emerges, and trails off the bottom edge of the frame in a soft curl. Subtle theatrical side-lighting catches the texture of the thermal paper. The visual story is the gradient — green at top, red at bottom. NO header, NO context — just the tape and the climbing prices. Mood: clinical, mathematical, the relentless climb of summer demand. Editorial product-shot aesthetic with dramatic lighting, NOT documentary photo, NOT cartoon.",
+    "lighting": {"source": "soft theatrical side-light, slight rim-light", "quality": "editorial, dramatic falloff to black"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#000000", "#1A1A1A", "#F5EDD8", "#FFFFFF"],
+    "accent_colors": ["#22C55E", "#FFD93D", "#FFB048", "#FF6B47", "#E42F3A"]
+  },
+  "composition": {
+    "framing": "vertical tape filling height of frame, centered",
+    "focal_point": "the gradient — green prices at top descending to red prices at bottom"
+  },
+  "objects": [
+    {
+      "label": "long thermal receipt printer tape",
+      "location": "center of frame, vertical, fills full height",
+      "prominence": "primary hero element",
+      "visual_attributes": {
+        "color": "off-white thermal paper with colored ink entries",
+        "texture": "slightly translucent thermal paper with subtle horizontal grain",
+        "material": "thermal printer tape, ~3 inches wide"
+      },
+      "text_content": "AC INSTALL — PHOENIX | MAY 5: $8,500 | MAY 12: $8,800 | MAY 19: $9,000 | MAY 26: $9,500 | JUN 2: $10,500 | JUN 16: $11,500 | JUN 30: $12,500 | JUL 7: $13,000 | JUL 14: $13,500 | JUL 21: $14,500 | JUL 28: $15,500",
+      "micro_details": ["small header at top of tape: 'AC INSTALL — PHOENIX'", "dated entries listed in chronological order, one per line", "each entry has a date and a price", "early MAY entries in GREEN ink, transitioning through yellow (mid May), yellow-orange (early June), orange (mid June), red-orange (late June), bright red (early July), deep crimson (late July)", "tape slightly curled at top where it emerges, softly curling off bottom edge of frame", "subtle creases and natural paper texture"]
+    },
+    {
+      "label": "deep black background",
+      "location": "fills frame around tape",
+      "prominence": "set",
+      "visual_attributes": {"color": "near-black, slight gradient to dark grey at edges"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["AC INSTALL — PHOENIX", "MAY 5", "MAY 12", "MAY 19", "MAY 26", "JUN 2", "JUN 16", "JUN 30", "JUL 7", "JUL 14", "JUL 21", "JUL 28", "$8,500", "$8,800", "$9,000", "$9,500", "$10,500", "$11,500", "$12,500", "$13,000", "$13,500", "$14,500", "$15,500"]}
+}

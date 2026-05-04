@@ -1,0 +1,39 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic close-up of a fake horror-movie-style poster taped to the side of a kitchen refrigerator. The poster has dramatic horror-genre design: dark background with deep red typography, ominous lighting, the title in massive bold blood-red letters reads '$15,000 AC REPLACEMENT'. Below the title, in smaller italicized creepy font: 'A NIGHTMARE EVERY HOMEOWNER FEARS'. There's a stylized graphic of an AC unit looming menacingly. The poster is pinned with magnets at the corners. ACROSS THE POSTER, a bright cheerful kelly-green sticker is stuck diagonally — the sticker reads in bold white type '0% APR. APPROVED.' with a green checkmark. The sticker visually 'cancels' the horror poster — it's an obvious correction laid over a marketing exaggeration. The kitchen background is partially visible — a slice of stainless steel fridge, a casual home setting. Soft natural light. Mood: genre flip — the dread is fictional, the fix is real. Photorealistic, shot on 50mm lens.",
+    "time_of_day": "indoor, ambient day",
+    "lighting": {"source": "ambient indoor", "quality": "soft, neutral"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A0A0A", "#3A1A1A", "#FFFFFF", "#5A5A5A"],
+    "accent_colors": ["#E42F3A", "#22C55E"]
+  },
+  "composition": {
+    "framing": "close-up on the poster, fills 80% of the frame",
+    "focal_point": "the bright green '0% APR. APPROVED.' sticker cutting across the horror poster"
+  },
+  "objects": [
+    {
+      "label": "fake horror movie poster",
+      "location": "center of frame, dominant",
+      "prominence": "primary",
+      "text_content": "$15,000 AC REPLACEMENT — A NIGHTMARE EVERY HOMEOWNER FEARS",
+      "micro_details": ["dark background with deep red ominous lighting", "title '$15,000 AC REPLACEMENT' in massive bold blood-red horror-movie typography (think classic 80s horror film fonts)", "subtitle 'A NIGHTMARE EVERY HOMEOWNER FEARS' in smaller italic creepy font", "stylized graphic of a menacing AC unit looming in shadow", "horror-genre design language overall"]
+    },
+    {
+      "label": "kelly-green '0% APR. APPROVED.' sticker",
+      "location": "diagonal across the center of the poster",
+      "prominence": "primary visual punchline",
+      "text_content": "0% APR. APPROVED.",
+      "visual_attributes": {"color": "bright kelly green sticker with bold white text", "material": "glossy paper sticker"},
+      "micro_details": ["bold white sans-serif text on bright green", "small white checkmark at the end", "stuck at a casual diagonal angle, slightly crinkled at one edge", "visually 'cancels' the horror poster behind"]
+    },
+    {
+      "label": "stainless steel refrigerator side and small magnets",
+      "location": "background and corners of the poster",
+      "prominence": "set context",
+      "micro_details": ["small magnets at the poster corners", "slice of stainless steel and a casual kitchen edge"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["$15,000 AC REPLACEMENT", "A NIGHTMARE EVERY HOMEOWNER FEARS", "0% APR. APPROVED."]}
+}

@@ -1,0 +1,71 @@
+{
+  "global_context": {
+    "scene_description": "A bold editorial cartoon-illustrated 5-panel comic strip composition, single image with five equal panels arranged in a 5-panel grid (could be 5 panels in a single horizontal row, or a 2-3 split, but cleanest is 5 small panels in one row OR a 3+2 grid). Each panel features the SAME homeowner cartoon character in a different emotional state, with a labeled stage. Editorial cartoon illustration style, NOT photorealistic, NOT flat infographic. PANEL 1 - 'DENIAL' (yellow/light background): homeowner standing proudly next to a wheezing old AC unit emitting steam puffs, hands on hips, smile, speech bubble: 'It still works!'. PANEL 2 - 'ANGER' (red background): homeowner clenching fists, red-faced, staring at a $20,000 quote paper in his hand, speech bubble: 'TWENTY GRAND?!'. PANEL 3 - 'BARGAINING' (orange background): homeowner sitting on couch with a fan pointed at his face, sweating, speech bubble: 'Maybe one more summer...'. PANEL 4 - 'DEPRESSION' (blue-grey background): homeowner slumped on couch holding an electric bill, depressed posture, speech bubble: 'Why is it always something?'. PANEL 5 - 'ACCEPTANCE' (warm green background): homeowner standing relaxed, holding a clean ASH quote document showing '$9,500 / 0% APR / PRICE MATCH', smiling content, speech bubble: 'I should have called sooner.' Above the entire image, a clean banner-style headline reads in bold uppercase: 'THE 5 STAGES OF AC DREAD.' At the bottom, small italic caption: 'Skip to Stage 5. Call ASH. $9,500. 0% APR. Price match.' Each panel has a thin black border separating it from the next. Mood: self-aware comedy that lands the angle through humor. Editorial cartoon illustration with theatrical color blocking per panel.",
+    "lighting": {"source": "stylized cartoon lighting per panel", "quality": "each panel has its own emotional color tone"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#FFD93D", "#E42F3A", "#FF8C42", "#3A4A5E", "#22C55E"],
+    "accent_colors": ["#FFFFFF", "#1A1A1A"]
+  },
+  "composition": {
+    "framing": "5-panel comic strip layout, all panels equal size, headline banner across top, caption at bottom",
+    "focal_point": "the contrast between the four anxious/dread panels and the relaxed final acceptance panel with the ASH quote"
+  },
+  "objects": [
+    {
+      "label": "top headline banner",
+      "location": "top 10% of frame, full width",
+      "prominence": "primary text",
+      "text_content": "THE 5 STAGES OF AC DREAD.",
+      "visual_attributes": {"color": "bold black on white background"}
+    },
+    {
+      "label": "panel 1 - DENIAL",
+      "location": "first panel",
+      "prominence": "comic panel",
+      "text_content": "DENIAL | It still works!",
+      "visual_attributes": {"color": "yellow background"},
+      "micro_details": ["homeowner standing next to wheezing old AC unit emitting steam", "hands on hips", "confident smile", "speech bubble: 'It still works!'", "label DENIAL at top of panel"]
+    },
+    {
+      "label": "panel 2 - ANGER",
+      "location": "second panel",
+      "prominence": "comic panel",
+      "text_content": "ANGER | TWENTY GRAND?!",
+      "visual_attributes": {"color": "red background"},
+      "micro_details": ["homeowner clenching fists", "red-faced angry", "staring at a $20,000 quote paper", "speech bubble: 'TWENTY GRAND?!'", "label ANGER at top of panel"]
+    },
+    {
+      "label": "panel 3 - BARGAINING",
+      "location": "third panel",
+      "prominence": "comic panel",
+      "text_content": "BARGAINING | Maybe one more summer...",
+      "visual_attributes": {"color": "orange background"},
+      "micro_details": ["homeowner sitting on couch", "small fan pointed at face", "sweating", "speech bubble: 'Maybe one more summer...'", "label BARGAINING at top of panel"]
+    },
+    {
+      "label": "panel 4 - DEPRESSION",
+      "location": "fourth panel",
+      "prominence": "comic panel",
+      "text_content": "DEPRESSION | Why is it always something?",
+      "visual_attributes": {"color": "blue-grey background"},
+      "micro_details": ["homeowner slumped on couch", "holding an electric bill", "depressed posture", "speech bubble: 'Why is it always something?'", "label DEPRESSION at top of panel"]
+    },
+    {
+      "label": "panel 5 - ACCEPTANCE",
+      "location": "fifth panel",
+      "prominence": "comic panel",
+      "text_content": "ACCEPTANCE | I should have called sooner. | $9,500 | 0% APR | PRICE MATCH",
+      "visual_attributes": {"color": "warm green background"},
+      "micro_details": ["homeowner standing relaxed", "holding a clean ASH quote document with '$9,500 / 0% APR / PRICE MATCH' visible", "smiling content", "speech bubble: 'I should have called sooner.'", "label ACCEPTANCE at top of panel"]
+    },
+    {
+      "label": "bottom caption",
+      "location": "bottom 8% of frame, centered",
+      "prominence": "secondary text",
+      "text_content": "Skip to Stage 5. Call ASH. $9,500. 0% APR. Price match.",
+      "visual_attributes": {"color": "small italic dark grey on white"}
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["THE 5 STAGES OF AC DREAD.", "DENIAL", "It still works!", "ANGER", "TWENTY GRAND?!", "BARGAINING", "Maybe one more summer...", "DEPRESSION", "Why is it always something?", "ACCEPTANCE", "I should have called sooner.", "$9,500", "0% APR", "PRICE MATCH", "Skip to Stage 5. Call ASH. $9,500. 0% APR. Price match."]}
+}

@@ -1,0 +1,37 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic close-up of a man's hands opening a brown leather bifold wallet over a kitchen counter. The wallet is open and visible — instead of being empty or deflated, it's clearly intact: a small stack of $20 bills tucked in the cash slot, several credit cards in their slots, a folded receipt sticking up. The wallet looks NORMAL, not depleted. A thumb is gently lifting the cash slot to peek inside. In the upper-right of the frame, softly out of focus, a brand-new outdoor AC condenser unit is visible through a kitchen window — visibly clean, modern, NOT old. Soft warm morning light from camera-right. The visual story: 'I just paid for a new AC and my wallet is still here.' No text, no logos, no overlay graphics. Photorealistic, shot on 50mm lens.",
+    "time_of_day": "morning, soft natural light",
+    "lighting": {"source": "soft window light from right", "quality": "warm, soft"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#8B6F47", "#D4B896", "#F5EDD8", "#3A3A3A", "#FFFFFF"],
+    "accent_colors": ["#22C55E", "#5A4A3D"]
+  },
+  "composition": {
+    "framing": "close-up on the wallet held open in the hands",
+    "focal_point": "the visible cash and intact contents of the wallet"
+  },
+  "objects": [
+    {
+      "label": "brown leather bifold wallet, open",
+      "location": "center of frame",
+      "prominence": "primary",
+      "visual_attributes": {"color": "warm brown distressed leather", "material": "natural full-grain leather"},
+      "micro_details": ["small stack of crisp $20 bills tucked in the cash slot, partially visible", "credit cards in their slots — generic colors, no readable brands", "a folded white receipt sticking up slightly", "wallet looks lived-in but full"]
+    },
+    {
+      "label": "man's hands opening the wallet",
+      "location": "framing the wallet from below and side",
+      "prominence": "primary",
+      "pose_or_orientation": "thumb gently lifting the cash slot to peek inside, body language is calm and slightly surprised"
+    },
+    {
+      "label": "kitchen counter and softly visible new AC unit through a window",
+      "location": "background, softly out of focus",
+      "prominence": "atmospheric context",
+      "micro_details": ["a slice of warm walnut counter", "through a window in the background, the corner of a clean modern outdoor AC condenser unit is softly visible — clearly NEW, clean white, modern shape"]
+    }
+  ],
+  "text_ocr": {"present": false, "content": []}
+}

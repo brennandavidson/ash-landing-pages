@@ -1,0 +1,74 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic outdoor scene of an old, weathered residential outdoor air conditioning condenser unit on the side of a Phoenix-style stucco home. The aging AC unit dominates the lower-right portion of the frame. The unit shows years of Arizona sun: faded paint, light surface rust at corners, dust caked into protective grille fins, slightly bent fan guard wire. Above and around the unit, intense Phoenix afternoon heat radiates visibly from the metal cabinet — heat shimmer rising off the top of the unit, distorting the air just above it. Behind the unit, a tan stucco wall, and beyond that a slice of pale sun-bleached sky with intense direct sunlight. Long harsh shadows stretch across a concrete equipment pad. Sunlight floods from the upper-right of the frame, creating dramatic glare and lens flare. Heat haze in the air softens the distance. Mood: this thing is about to be cooked. The summer pressure is already starting. Photorealistic, shot on a 50mm lens, slight grain, late afternoon golden light with strong directional sun.",
+    "time_of_day": "late afternoon, peak summer pressure approaching",
+    "weather_atmosphere": "intense Phoenix heat, dry, dusty, heat shimmer in air",
+    "lighting": {
+      "source": "low intense sun from upper-right",
+      "direction": "raking from right, casting long hard shadows",
+      "quality": "harsh, glaring, high-contrast with lens flare",
+      "color_temp": "warm golden, almost amber"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4A56A", "#E8C586", "#A8967D", "#8B7355", "#3A3A3A"],
+    "accent_colors": ["#FFB048", "#5A5A5A"]
+  },
+  "composition": {
+    "camera_angle": "slightly low angle, eye-level with the AC unit's mid-height",
+    "framing": "medium, AC unit anchors lower-right third of frame, sky and sun glare fill upper portion",
+    "depth_of_field": "deep focus, AC unit and stucco wall sharp",
+    "focal_point": "the aged AC unit and the heat shimmer rising off its top"
+  },
+  "objects": [
+    {
+      "label": "old residential outdoor AC condenser unit",
+      "location": "lower-right third of frame",
+      "prominence": "primary focal point",
+      "visual_attributes": {
+        "color": "originally beige or off-white, now sun-faded with patches of rust",
+        "texture": "weathered painted metal, dusty fins, peeling factory stickers",
+        "material": "metal cabinet, protective grille, fan visible through top guard"
+      },
+      "micro_details": ["surface rust at base corners", "dust caked between condenser fins", "faded factory sticker", "slightly bent fan guard wire"]
+    },
+    {
+      "label": "visible heat shimmer rising off the AC unit",
+      "location": "above and around the unit",
+      "prominence": "primary atmosphere",
+      "visual_attributes": {
+        "color": "transparent distortion of background",
+        "texture": "wavy refraction"
+      },
+      "micro_details": ["air visibly distorting just above the metal cabinet", "wavering distortion of the stucco wall behind"]
+    },
+    {
+      "label": "intense Phoenix sun and lens flare",
+      "location": "upper-right of frame",
+      "prominence": "secondary atmospheric element",
+      "visual_attributes": {"color": "blinding white-yellow"},
+      "micro_details": ["sun rays visible as flare", "halo around the sun"]
+    },
+    {
+      "label": "tan stucco wall",
+      "location": "background behind unit",
+      "prominence": "context",
+      "visual_attributes": {"color": "warm desert beige stucco"}
+    },
+    {
+      "label": "concrete equipment pad and dusty ground",
+      "location": "below and beneath the AC unit",
+      "prominence": "supporting",
+      "visual_attributes": {"color": "weathered grey concrete with dust", "texture": "rough"}
+    }
+  ],
+  "text_ocr": {
+    "present": false,
+    "content": []
+  },
+  "semantic_relationships": [
+    "the visible heat shimmer over the unit is the protagonist — it's the visual proof that summer pressure is already on this aging system",
+    "long harsh shadows and lens flare reinforce 'midday Phoenix is brutal'",
+    "no people, no logos, no text — just the system that's about to be tested"
+  ]
+}

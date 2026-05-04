@@ -1,0 +1,62 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic outdoor scene of Ashton, the owner of a Phoenix HVAC company, standing next to and partially turned toward an outdoor residential AC condenser unit at a Phoenix home. He has one hand resting on top of the unit's grille, the other relaxed at his side. He's looking down at the unit thoughtfully, mid-inspection, as if assessing what's wrong. He matches the reference image: fit white male in his mid-30s, short brown hair under a grey ASH trucker-style cap with a tan ASH patch, dark sunglasses, light stubble, sleeve tattoos visible on both arms, wearing a grey heather t-shirt with the small ASH logo on the left chest, dark cargo work pants. The setting is a residential side yard of a Phoenix home, tan stucco wall behind, saguaro and palo verde in middle distance. Late afternoon golden Phoenix light, warm raking from camera-right, soft shadows. The AC unit looks well-used but not extreme. The mood is calm, competent, the moment of an honest tradesman doing his job. Photorealistic, shot on 50mm lens, natural depth of field with Ashton in sharp focus and background slightly soft.",
+    "time_of_day": "late afternoon, golden hour Phoenix",
+    "weather_atmosphere": "warm, dry, calm",
+    "lighting": {
+      "source": "low golden sun from camera-right",
+      "direction": "raking from right, casting soft long shadows",
+      "quality": "warm, soft, flattering",
+      "color_temp": "warm golden"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#D4A56A", "#E8C586", "#8B7355", "#A8A8A8", "#3A3A3A"],
+    "accent_colors": ["#E42F3A", "#2C3590"]
+  },
+  "composition": {
+    "camera_angle": "eye-level, slight 3/4 view, Ashton in profile mostly facing the unit",
+    "framing": "medium, Ashton and the AC unit both visible, three-quarter body shot of Ashton",
+    "depth_of_field": "shallow-medium, Ashton in sharp focus, unit slightly soft, background gently blurred",
+    "focal_point": "Ashton's face and hand on the unit"
+  },
+  "objects": [
+    {
+      "label": "Ashton — Phoenix HVAC owner",
+      "location": "center-left of frame, three-quarter pose",
+      "prominence": "primary subject",
+      "visual_attributes": {
+        "color": "grey heather t-shirt, dark cargo pants, grey trucker cap with tan ASH patch, dark sunglasses",
+        "material": "natural cotton tee, work pants, mesh-back trucker cap"
+      },
+      "pose_or_orientation": "standing, slightly angled toward the AC unit, one hand resting on top of the unit's grille, looking down thoughtfully at it",
+      "micro_details": ["sleeve tattoos visible on both forearms", "light stubble on jaw", "no smile, focused expression", "small ASH logo on left chest of shirt — small red and blue type-mark", "matches the reference image likeness exactly"]
+    },
+    {
+      "label": "outdoor residential AC condenser unit",
+      "location": "right side of frame, beside Ashton",
+      "prominence": "secondary",
+      "visual_attributes": {
+        "color": "off-white aging metal cabinet",
+        "texture": "weathered, dusty fins"
+      },
+      "micro_details": ["working condition but visibly used", "Ashton's hand rests on top of the protective grille"]
+    },
+    {
+      "label": "tan stucco wall and Phoenix landscape",
+      "location": "background, softly out of focus",
+      "prominence": "context",
+      "visual_attributes": {"color": "warm desert beige stucco, muted desert greens"}
+    }
+  ],
+  "text_ocr": {
+    "present": false,
+    "content": []
+  },
+  "semantic_relationships": [
+    "Ashton's hand on the unit creates a physical connection between human and system — he's hands-on, he's looking, he's diagnosing",
+    "his calm, focused expression reads as competence, not salesmanship",
+    "the worn but not catastrophic AC unit is the prospect's own situation made visible — Ashton is the answer to it",
+    "ASH cap and chest logo establish brand subtly, not loudly"
+  ]
+}

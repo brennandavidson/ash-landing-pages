@@ -1,0 +1,87 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic interior scene of a comfortable Phoenix-area family living room in the late afternoon, with the AC clearly working — the room feels cool, calm, lived-in. A parent (woman, mid-30s, casual outfit, cropped at chest level so face is not the focal point) sits on a cream-colored fabric couch with her feet up on a cushioned ottoman, holding a coffee mug, head turned slightly down toward a child. A child of about 5 years old sits on a soft area rug on the floor in the foreground, playing with a small wooden block toy, fully absorbed. The room is decorated in warm Southwestern style — terracotta and cream tones, a woven blanket draped over the couch arm, a low wooden coffee table, indoor potted cactus near a large window. Through the window: a sliver of dry desert landscape and intense Phoenix afternoon sun outside, but the interior light is soft and cool. The room is comfortable, the family is comfortable, the AC is doing its job. A modern white wall thermostat is mounted on the wall in the middle ground, partially visible. Mood: this is what working AC actually feels like — relief, ease, normalcy. Photorealistic, shot on 35mm lens, natural soft indoor light.",
+    "time_of_day": "late afternoon, soft indoor light, intense Phoenix sun outside the window",
+    "weather_atmosphere": "interior cool and calm; exterior visibly hot through window",
+    "lighting": {
+      "source": "soft window light from camera-right + interior ambient",
+      "direction": "soft from right, even fill",
+      "quality": "soft, calm, slightly cool indoor temperature compared to the exterior glare visible through the window",
+      "color_temp": "neutral warm interior, with hot exterior visible through window"
+    }
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#E8DFD0", "#C9A878", "#A87B5A", "#5A4A3D", "#E5D4B8"],
+    "accent_colors": ["#7A6E5C", "#3A3A3A"]
+  },
+  "composition": {
+    "camera_angle": "eye-level, slightly low, observing the room as if from a chair",
+    "framing": "medium-wide, capturing the couch, parent, child, and window",
+    "depth_of_field": "shallow-medium, parent and child in focus, background slightly soft",
+    "focal_point": "the relaxed parent on couch and the absorbed child playing"
+  },
+  "objects": [
+    {
+      "label": "parent on couch",
+      "location": "center-right of frame, mid-ground",
+      "prominence": "primary subject (cropped, face not focal)",
+      "visual_attributes": {
+        "color": "casual neutral outfit — light denim, soft cream sweater",
+        "texture": "comfortable, lived-in clothes"
+      },
+      "pose_or_orientation": "feet up on ottoman, holding a coffee mug, head turned down looking at the child",
+      "micro_details": ["face cropped or angled away — body language is the story", "slightly relaxed posture", "shoes off"]
+    },
+    {
+      "label": "child playing on rug",
+      "location": "foreground, lower-left to center",
+      "prominence": "primary",
+      "visual_attributes": {
+        "color": "casual kid clothes — soft t-shirt, shorts",
+        "material": "natural"
+      },
+      "pose_or_orientation": "sitting cross-legged on floor, absorbed in wooden block toy, calm",
+      "micro_details": ["face slightly turned toward toys, not toward camera", "natural unposed body"]
+    },
+    {
+      "label": "modern white wall thermostat",
+      "location": "wall behind couch, middle ground",
+      "prominence": "subtle scene element",
+      "visual_attributes": {
+        "color": "matte white face with small digital display",
+        "material": "modern smart thermostat (Nest-style)"
+      },
+      "micro_details": ["small numeric display visible but not the focal point", "clean modern shape"]
+    },
+    {
+      "label": "cream fabric couch with woven throw",
+      "location": "right side of frame",
+      "prominence": "supporting set element",
+      "visual_attributes": {"color": "soft cream / off-white fabric with terracotta woven throw"},
+      "micro_details": ["soft worn-in texture", "throw blanket draped casually over arm"]
+    },
+    {
+      "label": "large window with desert view",
+      "location": "background, behind the couch",
+      "prominence": "atmospheric",
+      "visual_attributes": {"color": "bright white exterior light, glimpse of desert plants and dirt"},
+      "micro_details": ["sun visibly intense outside", "interior remains comfortably cool"]
+    },
+    {
+      "label": "low wooden coffee table",
+      "location": "between child and couch",
+      "prominence": "supporting",
+      "visual_attributes": {"color": "warm walnut wood"}
+    }
+  ],
+  "text_ocr": {
+    "present": false,
+    "content": []
+  },
+  "semantic_relationships": [
+    "the family is RELAXED — that's the visual story; AC working = normal life",
+    "the contrast between intense sun outside the window and the calm cool interior reinforces the AC is doing its job",
+    "no chaos, no expense visible, no decision-making moment — just the result of a working system",
+    "Southwestern decor establishes Phoenix without leaning on cliches"
+  ]
+}

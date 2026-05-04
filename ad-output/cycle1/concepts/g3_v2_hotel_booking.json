@@ -1,0 +1,104 @@
+{
+  "global_context": {
+    "scene_description": "A full-frame UI mockup that fills the entire image, designed to look exactly like a Booking.com or Airbnb travel-booking date-search results page, but for AC installation appointments instead of hotel rooms. NO phone, NO real-world environment, NO hand. Just the UI fills the frame edge-to-edge. At the very top: a clean header bar. The header has the text 'AC INSTALL - MESA' as the search title in bold black. In the top-right corner of the header area, sitting cleanly without crowding the title, a small compact circular guarantee badge (medallion style, approximately 90px diameter relative to the frame). The badge is a deep-red or dark-navy circle with thin gold border and reads 'BEAT ANY QUOTE GUARANTEED' in clean small bold uppercase white sans-serif text wrapping inside the circle (could be split across 3 short lines: 'BEAT ANY' / 'QUOTE' / 'GUARANTEED'). A small generic search bar sits below the title, with filter and sort icons on the right. Below the header, a list of available date options stacked vertically as cards, looking exactly like Booking.com hotel result cards. The list shows 5 dates from May through July: (1) FRI MAY 12 - 'Available' green tag, price shown as '$149/mo' in large bold black with a small grey 'financing' subtitle below, BOOK button blue (2) FRI MAY 26 - 'Available' yellow-green tag, $9,800 with $10,000 strikethrough, BOOK button blue (3) WED JUN 14 - 'Limited - 2 left' orange tag, $11,500 with $12,200 strikethrough, BOOK button blue (4) TUE JUL 4 - 'Only 1 left! High demand' bold red tag with fire icon, $14,500 in bold red large text with $16,000 strikethrough, '7 people are looking at this date right now' microcopy, BOOK button red (5) TUE JUL 18 - 'Sold out - waitlist' faded dark red, $15,500 strikethrough, 'JOIN WAITLIST' button. Each row has a small calendar icon on the left showing the month and day, a heart/save icon top-right of each row. Familiar booking-site visual language - small badges, urgency cues, tiny pricing strikethroughs, all the visual machinery of urgency-booking sites. Mood: oh god, the supply is running out and the price is climbing exactly like a hotel during a conference. Pure clean UI mockup edge-to-edge, NOT a phone, NOT a hand.",
+    "lighting": {"source": "screen-light only, flat UI lighting"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#FFFFFF", "#F5F5F5", "#1A1A1A", "#3A3A3A"],
+    "accent_colors": ["#22C55E", "#FFD93D", "#FFB048", "#FF6B47", "#E42F3A", "#0066CC", "#1A2B4A", "#C9A648"]
+  },
+  "composition": {
+    "framing": "full-frame UI mockup, no real-world context, edge-to-edge",
+    "focal_point": "the JULY 4 row with red 'Only 1 left! High demand' urgency callout; the BEAT ANY QUOTE badge in top-right serves as a credibility anchor"
+  },
+  "objects": [
+    {
+      "label": "header bar at top",
+      "location": "top 12% of frame",
+      "prominence": "primary text",
+      "text_content": "AC INSTALL - MESA",
+      "visual_attributes": {"color": "white background, bold black sans-serif title"},
+      "micro_details": ["clean modern booking-app header", "small calendar icon next to title", "thin separator line below header area"]
+    },
+    {
+      "label": "Beat Any Quote Guaranteed badge",
+      "location": "top-right corner of header area",
+      "prominence": "secondary credibility anchor",
+      "text_content": "BEAT ANY QUOTE GUARANTEED",
+      "visual_attributes": {"color": "deep navy or dark red circle with thin gold border, white uppercase sans-serif text inside"},
+      "micro_details": [
+        "small compact circular medallion badge, approximately 90px diameter relative to frame",
+        "deep navy (#1A2B4A) or deep red (#8B1A2A) fill",
+        "thin gold border ring around the circle",
+        "text inside reads 'BEAT ANY QUOTE GUARANTEED' in 3 short stacked lines: 'BEAT ANY' / 'QUOTE' / 'GUARANTEED'",
+        "white uppercase bold sans-serif text",
+        "tiny shield or checkmark icon optional in the center if it fits cleanly",
+        "positioned in the top-right area of the header so it does NOT crowd the title or compete visually",
+        "feels like a standard guarantee seal you would see on a product website"
+      ]
+    },
+    {
+      "label": "search bar below header",
+      "location": "below header title row",
+      "prominence": "tertiary UI",
+      "text_content": "Search dates or AC units",
+      "visual_attributes": {"color": "light grey rounded input"},
+      "micro_details": ["search icon left", "filter and sort icons on the right"]
+    },
+    {
+      "label": "MAY 12 booking row - financing price",
+      "location": "first row in list, upper section",
+      "prominence": "primary featured availability",
+      "text_content": "Fri, May 12 - Available - $149/mo (financing)",
+      "visual_attributes": {"color": "calm green availability tag, white card background"},
+      "micro_details": [
+        "calendar icon on left showing 'MAY 12'",
+        "'Fri, May 12' as date title in bold",
+        "green 'Available' pill tag",
+        "price shown on the right as '$149/mo' in large bold black",
+        "small grey subtitle below the price reading 'financing'",
+        "blue 'BOOK' button on the right edge",
+        "heart/save icon top-right of row"
+      ]
+    },
+    {
+      "label": "MAY 26 booking row",
+      "location": "second row",
+      "prominence": "secondary",
+      "text_content": "Fri, May 26 - Available - $9,800",
+      "visual_attributes": {"color": "yellow-green availability tag"},
+      "micro_details": ["MAY 26 calendar icon", "'Available' tag", "$9,800 price with $10,000 strikethrough", "'Total' label small below price", "blue BOOK button"]
+    },
+    {
+      "label": "JUN 14 booking row",
+      "location": "third row",
+      "prominence": "secondary",
+      "text_content": "Wed, Jun 14 - Limited - 2 left - $11,500",
+      "visual_attributes": {"color": "orange urgency tag"},
+      "micro_details": ["JUN 14 calendar icon", "'Limited - 2 left' label in orange", "$11,500 price with $12,200 strikethrough", "blue BOOK button"]
+    },
+    {
+      "label": "JUL 4 booking row - featured urgency",
+      "location": "fourth row",
+      "prominence": "primary focal element",
+      "text_content": "Tue, Jul 4 - Only 1 left! High demand - $14,500",
+      "visual_attributes": {"color": "bold red urgency tag with fire icon"},
+      "micro_details": [
+        "JUL 4 calendar icon",
+        "'Only 1 left! High demand' label in bold red with fire icon",
+        "$14,500 price in bold red large text with $16,000 strikethrough",
+        "small subline '7 people are looking at this date right now'",
+        "red 'BOOK' button"
+      ]
+    },
+    {
+      "label": "JUL 18 booking row - sold out",
+      "location": "fifth row",
+      "prominence": "secondary",
+      "text_content": "Tue, Jul 18 - Sold out - waitlist - $15,500",
+      "visual_attributes": {"color": "dark red faded, struck-through pricing", "material": "unavailable booking card"},
+      "micro_details": ["JUL 18 calendar icon", "'Sold out - waitlist' label", "$15,500 with strikethrough and faded styling", "'JOIN WAITLIST' button", "Unavailable label"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["AC INSTALL - MESA", "BEAT ANY QUOTE GUARANTEED", "BEAT ANY", "QUOTE", "GUARANTEED", "Search dates or AC units", "Fri, May 12", "Available", "$149/mo", "financing", "BOOK", "Fri, May 26", "$9,800", "$10,000", "Total", "Wed, Jun 14", "Limited - 2 left", "$11,500", "$12,200", "Tue, Jul 4", "Only 1 left! High demand", "$14,500", "$16,000", "7 people are looking at this date right now", "Tue, Jul 18", "Sold out - waitlist", "$15,500", "Unavailable", "JOIN WAITLIST"]}
+}

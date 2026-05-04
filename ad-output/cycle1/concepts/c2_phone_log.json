@@ -1,0 +1,37 @@
+{
+  "global_context": {
+    "scene_description": "A photorealistic close-up of a hand holding a smartphone in a Phoenix home, with the phone screen as the focal point of the frame. The phone screen shows the iOS Recents call log — a vertical list of recent outbound calls. Each entry is an HVAC company name with a status note beside it: 'Desert Air HVAC — BUSY', 'Cool Choice — NO ANSWER', 'AZ Climate Pros — BOOKED 3 DAYS', 'Phoenix Heating Co. — VOICEMAIL', 'Valley HVAC — BUSY', 'Sun State Cooling — NO ANSWER'. All entries from today's date. The screen is bright, slightly glaring. The hand holding the phone is a man's hand, slightly tense, gripping the phone. Background is softly out of focus — a hot Phoenix interior, a window with bright overexposed daylight visible. Sweat on the brow visible at the top edge of the frame. Mood: panic call log, summer emergency, phone tag with every shop in town. Photorealistic, shot on 50mm lens.",
+    "time_of_day": "midday emergency",
+    "lighting": {"source": "harsh daylight from window", "quality": "high-contrast, slightly stressful"}
+  },
+  "color_palette": {
+    "dominant_hex_estimates": ["#1A1A1A", "#FFFFFF", "#E5E5E5", "#3A3A3A"],
+    "accent_colors": ["#E42F3A", "#FF3B30"]
+  },
+  "composition": {
+    "framing": "close-up on phone screen, screen fills 60% of frame",
+    "focal_point": "the call log with all the BUSY/NO ANSWER/BOOKED labels"
+  },
+  "objects": [
+    {
+      "label": "smartphone screen showing call log",
+      "location": "center of frame",
+      "prominence": "primary focal element",
+      "text_content": "Desert Air HVAC — BUSY | Cool Choice — NO ANSWER | AZ Climate Pros — BOOKED 3 DAYS | Phoenix Heating Co. — VOICEMAIL | Valley HVAC — BUSY | Sun State Cooling — NO ANSWER",
+      "micro_details": ["iOS-style Recents view with call icons", "each row shows a generic HVAC company name and a status label in red or grey", "today's date and times next to each entry"]
+    },
+    {
+      "label": "man's hand gripping phone",
+      "location": "lower portion of frame",
+      "prominence": "secondary",
+      "micro_details": ["slight tension in fingers", "natural skin tone"]
+    },
+    {
+      "label": "softly blurred Phoenix interior background",
+      "location": "around the phone",
+      "prominence": "atmospheric",
+      "micro_details": ["overexposed window light visible", "hint of a hot interior — perhaps a fan, a bead of sweat at the brow at very top edge of frame"]
+    }
+  ],
+  "text_ocr": {"present": true, "content": ["BUSY", "NO ANSWER", "BOOKED 3 DAYS", "VOICEMAIL", "Desert Air HVAC", "Cool Choice", "AZ Climate Pros", "Phoenix Heating Co.", "Valley HVAC", "Sun State Cooling"]}
+}
