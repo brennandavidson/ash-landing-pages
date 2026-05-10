@@ -138,8 +138,16 @@ export default async function handler(req, res) {
     if (zip) userData.zp = [sha256(zip)];
     userData.country = [sha256('us')];
 
+    // Stable event_id so Meta dedupes repeat HCP webhooks for the same customer
+    // within the 7-day window (HCP commonly fires multiple updates per record).
+    // Prefer HCP customer id; fall back to a hash of phone+email if missing.
+    const eventName = 'Contact';
+    const idSource = hcpId || sha256(`${normalizePhone(phone) || ''}|${(email || '').toLowerCase().trim()}`)?.slice(0, 24) || `noid-${Date.now()}`;
+    const eventId = `hcp-${eventName.toLowerCase()}-${idSource}`;
+
     const event = {
-      event_name: 'Contact',
+      event_id: eventId,
+      event_name: eventName,
       event_time: Math.floor(Date.now() / 1000),
       action_source: 'physical_store',
       user_data: userData,
@@ -164,6 +172,8 @@ export default async function handler(req, res) {
     // Build audit log entry (unhashed for internal reference only)
     const logEntry = {
       timestamp: new Date().toISOString(),
+      event_id: eventId,
+      event_name: eventName,
       hcp_id: hcpId || null,
       first_name: firstName,
       last_name: lastName,
@@ -183,6 +193,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({
       status: 'sent',
+      event_id: eventId,
       events_received: metaResult.events_received || 0,
       matched_fields: Object.keys(userData),
       audit_log: auditResult,

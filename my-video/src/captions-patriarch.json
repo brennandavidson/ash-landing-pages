@@ -1,0 +1,310 @@
+{
+  "duration": 18.15,
+  "words": [
+    {
+      "word": "If",
+      "start": 0.0,
+      "end": 0.12
+    },
+    {
+      "word": "you're",
+      "start": 0.12,
+      "end": 0.26
+    },
+    {
+      "word": "an",
+      "start": 0.26,
+      "end": 0.34
+    },
+    {
+      "word": "Arizona",
+      "start": 0.34,
+      "end": 0.58
+    },
+    {
+      "word": "homeowner,",
+      "start": 0.58,
+      "end": 1.06
+    },
+    {
+      "word": "you",
+      "start": 1.2,
+      "end": 1.26
+    },
+    {
+      "word": "probably",
+      "start": 1.26,
+      "end": 1.48
+    },
+    {
+      "word": "heard",
+      "start": 1.48,
+      "end": 1.64
+    },
+    {
+      "word": "the",
+      "start": 1.64,
+      "end": 1.78
+    },
+    {
+      "word": "stories",
+      "start": 1.78,
+      "end": 2.06
+    },
+    {
+      "word": "that",
+      "start": 2.06,
+      "end": 2.22
+    },
+    {
+      "word": "it",
+      "start": 2.22,
+      "end": 2.3
+    },
+    {
+      "word": "cost",
+      "start": 2.3,
+      "end": 2.46
+    },
+    {
+      "word": "20K",
+      "start": 2.46,
+      "end": 3.04
+    },
+    {
+      "word": "for",
+      "start": 3.04,
+      "end": 3.26
+    },
+    {
+      "word": "a",
+      "start": 3.26,
+      "end": 3.34
+    },
+    {
+      "word": "new",
+      "start": 3.34,
+      "end": 3.48
+    },
+    {
+      "word": "AC.",
+      "start": 3.48,
+      "end": 3.78
+    },
+    {
+      "word": "Those",
+      "start": 4.44,
+      "end": 4.56
+    },
+    {
+      "word": "stories",
+      "start": 4.56,
+      "end": 4.94
+    },
+    {
+      "word": "are",
+      "start": 4.94,
+      "end": 5.08
+    },
+    {
+      "word": "true,",
+      "start": 5.08,
+      "end": 5.32
+    },
+    {
+      "word": "but",
+      "start": 5.34,
+      "end": 5.46
+    },
+    {
+      "word": "not",
+      "start": 5.46,
+      "end": 5.62
+    },
+    {
+      "word": "with",
+      "start": 5.62,
+      "end": 5.78
+    },
+    {
+      "word": "us.",
+      "start": 5.78,
+      "end": 6.04
+    },
+    {
+      "word": "We",
+      "start": 6.42,
+      "end": 6.56
+    },
+    {
+      "word": "offer",
+      "start": 6.56,
+      "end": 6.68
+    },
+    {
+      "word": "the",
+      "start": 6.68,
+      "end": 6.86
+    },
+    {
+      "word": "best",
+      "start": 6.86,
+      "end": 7.1
+    },
+    {
+      "word": "pricing",
+      "start": 7.1,
+      "end": 7.52
+    },
+    {
+      "word": "on",
+      "start": 7.52,
+      "end": 7.8
+    },
+    {
+      "word": "TRANE",
+      "start": 7.8,
+      "end": 8.06
+    },
+    {
+      "word": "equipment,",
+      "start": 8.06,
+      "end": 8.54
+    },
+    {
+      "word": "free",
+      "start": 9.12,
+      "end": 9.24
+    },
+    {
+      "word": "estimates,",
+      "start": 9.24,
+      "end": 9.68
+    },
+    {
+      "word": "first",
+      "start": 9.98,
+      "end": 10.28
+    },
+    {
+      "word": "responder,",
+      "start": 10.28,
+      "end": 10.86
+    },
+    {
+      "word": "educator,",
+      "start": 11.1,
+      "end": 11.52
+    },
+    {
+      "word": "and",
+      "start": 11.78,
+      "end": 11.84
+    },
+    {
+      "word": "senior",
+      "start": 11.84,
+      "end": 12.16
+    },
+    {
+      "word": "discounts.",
+      "start": 12.16,
+      "end": 12.54
+    },
+    {
+      "word": "Also,",
+      "start": 12.96,
+      "end": 13.3
+    },
+    {
+      "word": "I'll",
+      "start": 13.3,
+      "end": 13.58
+    },
+    {
+      "word": "beat",
+      "start": 13.58,
+      "end": 13.74
+    },
+    {
+      "word": "any",
+      "start": 13.74,
+      "end": 14.04
+    },
+    {
+      "word": "big",
+      "start": 14.04,
+      "end": 14.26
+    },
+    {
+      "word": "name",
+      "start": 14.26,
+      "end": 14.48
+    },
+    {
+      "word": "HVAC",
+      "start": 14.48,
+      "end": 14.96
+    },
+    {
+      "word": "company,",
+      "start": 14.96,
+      "end": 15.28
+    },
+    {
+      "word": "quote,",
+      "start": 15.28,
+      "end": 15.58
+    },
+    {
+      "word": "in",
+      "start": 15.64,
+      "end": 15.82
+    },
+    {
+      "word": "the",
+      "start": 15.82,
+      "end": 15.92
+    },
+    {
+      "word": "valley.",
+      "start": 15.92,
+      "end": 16.26
+    },
+    {
+      "word": "Give",
+      "start": 16.74,
+      "end": 16.82
+    },
+    {
+      "word": "us",
+      "start": 16.82,
+      "end": 16.96
+    },
+    {
+      "word": "a",
+      "start": 16.96,
+      "end": 17.08
+    },
+    {
+      "word": "call",
+      "start": 17.08,
+      "end": 17.22
+    },
+    {
+      "word": "or",
+      "start": 17.22,
+      "end": 17.42
+    },
+    {
+      "word": "click",
+      "start": 17.42,
+      "end": 17.68
+    },
+    {
+      "word": "today.",
+      "start": 17.68,
+      "end": 17.96
+    }
+  ]
+}

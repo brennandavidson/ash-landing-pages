@@ -1,0 +1,480 @@
+{
+  "duration": 29.2,
+  "words": [
+    {
+      "word": "Hey,",
+      "start": 0.0,
+      "end": 0.2
+    },
+    {
+      "word": "if",
+      "start": 0.46,
+      "end": 0.58
+    },
+    {
+      "word": "you're",
+      "start": 0.58,
+      "end": 0.7
+    },
+    {
+      "word": "an",
+      "start": 0.7,
+      "end": 0.8
+    },
+    {
+      "word": "Arizona",
+      "start": 0.8,
+      "end": 1.02
+    },
+    {
+      "word": "homeowner,",
+      "start": 1.02,
+      "end": 1.54
+    },
+    {
+      "word": "you're",
+      "start": 1.66,
+      "end": 1.66
+    },
+    {
+      "word": "probably",
+      "start": 1.66,
+      "end": 1.88
+    },
+    {
+      "word": "dreading",
+      "start": 1.88,
+      "end": 2.38
+    },
+    {
+      "word": "having",
+      "start": 2.38,
+      "end": 2.5
+    },
+    {
+      "word": "to",
+      "start": 2.5,
+      "end": 2.62
+    },
+    {
+      "word": "replace",
+      "start": 2.62,
+      "end": 2.96
+    },
+    {
+      "word": "your",
+      "start": 2.96,
+      "end": 3.2
+    },
+    {
+      "word": "AC.",
+      "start": 3.2,
+      "end": 3.44
+    },
+    {
+      "word": "Waiting",
+      "start": 4.04,
+      "end": 4.22
+    },
+    {
+      "word": "until",
+      "start": 4.22,
+      "end": 4.6
+    },
+    {
+      "word": "it's",
+      "start": 4.6,
+      "end": 4.96
+    },
+    {
+      "word": "115",
+      "start": 4.96,
+      "end": 5.38
+    },
+    {
+      "word": "out",
+      "start": 5.38,
+      "end": 5.74
+    },
+    {
+      "word": "is",
+      "start": 5.74,
+      "end": 5.88
+    },
+    {
+      "word": "probably",
+      "start": 5.88,
+      "end": 6.14
+    },
+    {
+      "word": "not",
+      "start": 6.14,
+      "end": 6.32
+    },
+    {
+      "word": "the",
+      "start": 6.32,
+      "end": 6.48
+    },
+    {
+      "word": "best",
+      "start": 6.48,
+      "end": 6.72
+    },
+    {
+      "word": "time.",
+      "start": 6.72,
+      "end": 6.92
+    },
+    {
+      "word": "By",
+      "start": 7.62,
+      "end": 7.76
+    },
+    {
+      "word": "July,",
+      "start": 7.76,
+      "end": 8.02
+    },
+    {
+      "word": "equipment",
+      "start": 8.28,
+      "end": 8.56
+    },
+    {
+      "word": "gets",
+      "start": 8.56,
+      "end": 8.76
+    },
+    {
+      "word": "scarce,",
+      "start": 8.76,
+      "end": 9.1
+    },
+    {
+      "word": "and",
+      "start": 9.4,
+      "end": 9.72
+    },
+    {
+      "word": "if",
+      "start": 9.72,
+      "end": 9.9
+    },
+    {
+      "word": "you",
+      "start": 9.9,
+      "end": 9.98
+    },
+    {
+      "word": "end",
+      "start": 9.98,
+      "end": 10.1
+    },
+    {
+      "word": "up",
+      "start": 10.1,
+      "end": 10.2
+    },
+    {
+      "word": "calling",
+      "start": 10.2,
+      "end": 10.38
+    },
+    {
+      "word": "the",
+      "start": 10.38,
+      "end": 10.52
+    },
+    {
+      "word": "wrong",
+      "start": 10.52,
+      "end": 10.66
+    },
+    {
+      "word": "contractor,",
+      "start": 10.66,
+      "end": 11.16
+    },
+    {
+      "word": "you'll",
+      "start": 11.18,
+      "end": 11.52
+    },
+    {
+      "word": "overpay",
+      "start": 11.52,
+      "end": 11.92
+    },
+    {
+      "word": "by",
+      "start": 11.92,
+      "end": 12.08
+    },
+    {
+      "word": "thousands.",
+      "start": 12.08,
+      "end": 12.54
+    },
+    {
+      "word": "We",
+      "start": 13.16,
+      "end": 13.34
+    },
+    {
+      "word": "offer",
+      "start": 13.34,
+      "end": 13.5
+    },
+    {
+      "word": "free",
+      "start": 13.5,
+      "end": 13.86
+    },
+    {
+      "word": "estimates,",
+      "start": 13.86,
+      "end": 14.28
+    },
+    {
+      "word": "0%",
+      "start": 14.58,
+      "end": 15.1
+    },
+    {
+      "word": "interest",
+      "start": 15.1,
+      "end": 15.34
+    },
+    {
+      "word": "financing,",
+      "start": 15.34,
+      "end": 15.9
+    },
+    {
+      "word": "a",
+      "start": 16.3,
+      "end": 16.48
+    },
+    {
+      "word": "better",
+      "start": 16.48,
+      "end": 16.66
+    },
+    {
+      "word": "deal",
+      "start": 16.66,
+      "end": 16.88
+    },
+    {
+      "word": "if",
+      "start": 16.88,
+      "end": 17.02
+    },
+    {
+      "word": "you",
+      "start": 17.02,
+      "end": 17.08
+    },
+    {
+      "word": "pay",
+      "start": 17.08,
+      "end": 17.24
+    },
+    {
+      "word": "cash,",
+      "start": 17.24,
+      "end": 17.68
+    },
+    {
+      "word": "and",
+      "start": 18.0,
+      "end": 18.1
+    },
+    {
+      "word": "I'm",
+      "start": 18.1,
+      "end": 18.24
+    },
+    {
+      "word": "a",
+      "start": 18.24,
+      "end": 18.38
+    },
+    {
+      "word": "veteran.",
+      "start": 18.38,
+      "end": 18.64
+    },
+    {
+      "word": "So",
+      "start": 18.82,
+      "end": 18.9
+    },
+    {
+      "word": "we",
+      "start": 18.9,
+      "end": 19.02
+    },
+    {
+      "word": "offer",
+      "start": 19.02,
+      "end": 19.16
+    },
+    {
+      "word": "veteran",
+      "start": 19.16,
+      "end": 19.58
+    },
+    {
+      "word": "and",
+      "start": 19.58,
+      "end": 19.8
+    },
+    {
+      "word": "first",
+      "start": 19.8,
+      "end": 19.98
+    },
+    {
+      "word": "responder",
+      "start": 19.98,
+      "end": 20.42
+    },
+    {
+      "word": "discounts.",
+      "start": 20.42,
+      "end": 20.76
+    },
+    {
+      "word": "Also,",
+      "start": 21.44,
+      "end": 21.88
+    },
+    {
+      "word": "I'll",
+      "start": 22.14,
+      "end": 22.26
+    },
+    {
+      "word": "BEAT",
+      "start": 22.26,
+      "end": 22.42
+    },
+    {
+      "word": "any",
+      "start": 22.42,
+      "end": 22.84
+    },
+    {
+      "word": "big",
+      "start": 22.84,
+      "end": 23.18
+    },
+    {
+      "word": "name",
+      "start": 23.18,
+      "end": 23.42
+    },
+    {
+      "word": "HVAC",
+      "start": 23.42,
+      "end": 23.9
+    },
+    {
+      "word": "company's",
+      "start": 23.9,
+      "end": 24.28
+    },
+    {
+      "word": "quote",
+      "start": 24.36,
+      "end": 24.58
+    },
+    {
+      "word": "out",
+      "start": 24.58,
+      "end": 24.88
+    },
+    {
+      "word": "there.",
+      "start": 24.88,
+      "end": 25.12
+    },
+    {
+      "word": "I'm",
+      "start": 25.64,
+      "end": 25.8
+    },
+    {
+      "word": "here",
+      "start": 25.8,
+      "end": 25.92
+    },
+    {
+      "word": "for",
+      "start": 25.92,
+      "end": 26.1
+    },
+    {
+      "word": "the",
+      "start": 26.1,
+      "end": 26.2
+    },
+    {
+      "word": "little",
+      "start": 26.2,
+      "end": 26.38
+    },
+    {
+      "word": "guy,",
+      "start": 26.38,
+      "end": 26.6
+    },
+    {
+      "word": "because",
+      "start": 26.8,
+      "end": 27.1
+    },
+    {
+      "word": "that's",
+      "start": 27.1,
+      "end": 27.54
+    },
+    {
+      "word": "who",
+      "start": 27.54,
+      "end": 27.64
+    },
+    {
+      "word": "I",
+      "start": 27.64,
+      "end": 27.76
+    },
+    {
+      "word": "am.",
+      "start": 27.76,
+      "end": 28.04
+    },
+    {
+      "word": "Give",
+      "start": 28.5,
+      "end": 28.56
+    },
+    {
+      "word": "us",
+      "start": 28.56,
+      "end": 28.72
+    },
+    {
+      "word": "a",
+      "start": 28.72,
+      "end": 28.8
+    },
+    {
+      "word": "call.",
+      "start": 28.8,
+      "end": 28.94
+    }
+  ]
+}
