@@ -42,10 +42,11 @@ AD_TRACKING_PATH = REPO_DIR / "logs" / "ad-tracking.json"
 # Empty list = no filter at that level. Update when launching/sunsetting.
 # Match is exact on the name string.
 ACTIVE_CAMPAIGNS = [
-    "Beat A Quote - New - 3/26",
+    "Angle Testing Campaign - May 2026",
 ]
 ACTIVE_ADSETS = [
-    "April - Creative Batch",
+    "Patriarch Angle",
+    "Pre-115 Angle",
 ]
 
 
@@ -62,8 +63,9 @@ def is_active_row(row):
     return is_active_campaign(row.get("campaign_name", "")) and is_active_adset(row.get("adset_name", ""))
 
 # The three-test thresholds
-CPL_TARGET = 177
-FREQUENCY_CAP = 3.5
+CPL_TARGET = 100                 # aspirational — what winners look like
+CPL_KILL_THRESHOLD = 170         # kill bar — ads above this get cut
+FREQUENCY_CAP = 2.5
 CTR_HOLD_RATIO = 0.70            # CTR >= 70% of week-1 CTR = "holding up"
 AGE_LEARNING_MAX = 7             # 0-6 days = LEARNING (no verdict)
 MIN_SPEND_FOR_KILL = 50          # Don't kill an ad with barely any spend
@@ -75,7 +77,7 @@ REFRESH_DUE_DAYS = 10
 # Pacing window — anchored to the test/batch launch, not calendar month.
 # Update PACING_LAUNCH_DATE whenever you launch a new test. The window is rolling
 # 30 days from that date, with $8k spend / 45 leads as the targets across the window.
-PACING_LAUNCH_DATE = "2026-04-21"
+PACING_LAUNCH_DATE = "2026-05-09"
 PACING_WINDOW_DAYS = 30
 MONTHLY_LEAD_TARGET = 45      # 45 leads target across PACING_WINDOW_DAYS
 MONTHLY_SPEND_TARGET = 8000   # $8k spend target across PACING_WINDOW_DAYS
@@ -367,13 +369,13 @@ def three_test_verdict(spend, leads, cpl, frequency, ctr, age_days, week1_ctr):
     if age_days is None or age_days < AGE_LEARNING_MAX:
         return "LEARNING", (None, None, None)
 
-    # Test 1: CPL at or below target
+    # Test 1: CPL below kill threshold (not just target — target is aspirational)
     if spend < MIN_SPEND_FOR_KILL and leads == 0:
         cpl_pass = None  # not enough signal yet
     elif leads == 0:
         cpl_pass = False  # meaningful spend, zero leads
     else:
-        cpl_pass = cpl > 0 and cpl <= CPL_TARGET
+        cpl_pass = cpl > 0 and cpl <= CPL_KILL_THRESHOLD
 
     # Test 2: Frequency under cap
     freq_pass = frequency < FREQUENCY_CAP if frequency > 0 else None
@@ -556,7 +558,7 @@ def build_digest(adsets, ads, offline_entries, days, tracking, refresh_info, pac
     # --- Ad decision table ---
     lines.append(f"## Ad Decisions (last {days}d)")
     lines.append("")
-    lines.append("| Ad | Age | Spend | Leads | CPL ≤$177 | Freq <3.5 | CTR vs W1 | Verdict |")
+    lines.append(f"| Ad | Age | Spend | Leads | CPL ≤${CPL_KILL_THRESHOLD} | Freq <{FREQUENCY_CAP} | CTR vs W1 | Verdict |")
     lines.append("|----|-----|-------|-------|-----------|-----------|-----------|---------|")
 
     # Sort: KILL first (most urgent), then KEEP, then LEARNING
