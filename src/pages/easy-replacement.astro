@@ -950,6 +950,17 @@ const phone = '(623) 343-3189';
         Object.assign(data, attr);
       }
 
+      // Fire-and-forget: log this as a website lead so the HCP webhook
+      // can dedupe and skip the offline CAPI fire for this same person.
+      fetch('/api/website-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          phone: data.phone,
+          source_url: window.location.href,
+        }),
+      }).catch(() => {});
+
       try {
         const response = await fetch('https://services.leadconnectorhq.com/hooks/dGHA224kB5WE4OS1KLqw/webhook-trigger/p73y6eiy7FEiHCFtLHY6', {
           method: 'POST',

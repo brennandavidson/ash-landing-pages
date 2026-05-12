@@ -4,6 +4,11 @@ const OFFLINE_DATASET_ID = '1438722024117263';
 const GITHUB_OWNER = 'brennandavidson';
 const GITHUB_REPO = 'ash-landing-pages';
 const LOG_FILE_PATH = 'logs/offline-leads.jsonl';
+const WEBSITE_LEADS_PATH = 'logs/website-leads.jsonl';
+// Window for matching an HCP customer against a recent website lead.
+// GHL → HCP creation usually takes 30-120 seconds. 15 min is conservative
+// to absorb Zap lag, retries, or workflow delays without false matches.
+const WEBSITE_LEAD_MATCH_WINDOW_MIN = 15;
 
 function sha256(value) {
   if (!value) return null;
@@ -15,6 +20,50 @@ function normalizePhone(phone) {
   const digits = phone.replace(/\D/g, '');
   if (digits.length === 11 && digits.startsWith('1')) return digits.slice(1);
   return digits;
+}
+
+/**
+ * Fetch the last N entries from logs/website-leads.jsonl to check
+ * whether this HCP customer was just submitted via the website form.
+ * Returns an array of {timestamp, phone_hash, source_url} entries.
+ */
+async function fetchRecentWebsiteLeads(githubToken) {
+  if (!githubToken) return [];
+
+  try {
+    const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${WEBSITE_LEADS_PATH}`;
+    const res = await fetch(apiUrl, {
+      headers: {
+        'Authorization': `Bearer ${githubToken}`,
+        'Accept': 'application/vnd.github+json',
+        'User-Agent': 'ash-lp-webhook',
+      },
+    });
+    if (!res.ok) return [];
+
+    const fileData = await res.json();
+    const content = Buffer.from(fileData.content, 'base64').toString('utf-8');
+    const lines = content.trim().split('\n').filter(Boolean);
+
+    // Last 100 entries is plenty for a 15-minute window check
+    return lines.slice(-100).map((line) => {
+      try { return JSON.parse(line); } catch { return null; }
+    }).filter(Boolean);
+  } catch (e) {
+    console.warn('Could not fetch website-leads log:', e.message);
+    return [];
+  }
+}
+
+function findWebsiteLeadMatch(phoneHash, websiteLeads, windowMinutes) {
+  if (!phoneHash) return null;
+  const cutoff = Date.now() - windowMinutes * 60 * 1000;
+  for (const lead of websiteLeads) {
+    const t = new Date(lead.timestamp).getTime();
+    if (Number.isNaN(t) || t < cutoff) continue;
+    if (lead.phone_hash === phoneHash) return lead;
+  }
+  return null;
 }
 
 /**
@@ -123,6 +172,37 @@ export default async function handler(req, res) {
 
     if (!phone && !email) {
       return res.status(200).json({ status: 'skipped', reason: 'No phone or email' });
+    }
+
+    // ── Dedup against website leads ──
+    // If this HCP customer matches a recent website-form submission by phone,
+    // skip the CAPI fire — the website Pixel already captured the Lead.
+    // Audit log entry is still written with skip reason for traceability.
+    const phoneNormalized = phone ? normalizePhone(phone) : null;
+    const phoneHash = phoneNormalized ? sha256(phoneNormalized) : null;
+    const websiteLeads = await fetchRecentWebsiteLeads(GITHUB_TOKEN);
+    const websiteMatch = findWebsiteLeadMatch(phoneHash, websiteLeads, WEBSITE_LEAD_MATCH_WINDOW_MIN);
+
+    if (websiteMatch) {
+      const skipEntry = {
+        timestamp: new Date().toISOString(),
+        skipped: true,
+        skip_reason: 'website-lead-match',
+        matched_website_lead_at: websiteMatch.timestamp,
+        matched_source_url: websiteMatch.source_url || null,
+        hcp_id: hcpId || null,
+        first_name: firstName,
+        last_name: lastName,
+        phone: phone,
+        email: email,
+      };
+      const auditResult = await appendToAuditLog(skipEntry, GITHUB_TOKEN);
+      return res.status(200).json({
+        status: 'skipped',
+        reason: 'website-lead-match',
+        matched_at: websiteMatch.timestamp,
+        audit_log: auditResult,
+      });
     }
 
     const userData = {};
