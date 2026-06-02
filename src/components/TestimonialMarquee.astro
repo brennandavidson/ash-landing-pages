@@ -1,0 +1,332 @@
+---
+interface Review {
+  name: string;
+  rating: number;
+  date?: string;
+  text: string;
+  highlight: string;
+  profileUrl?: string;
+}
+
+interface Props {
+  reviews: Review[];
+}
+
+const { reviews } = Astro.props;
+const midpoint = Math.ceil(reviews.length / 2);
+const rows = [reviews.slice(0, midpoint), reviews.slice(midpoint)];
+
+const stars = [1, 2, 3, 4, 5];
+---
+
+<section id="reviews" class="reviews-section">
+  <div class="reviews-inner">
+    <div class="reviews-heading">
+      <div class="google-pill" aria-label="Google reviews, 5.0 stars">
+        <svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path>
+          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path>
+          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"></path>
+          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"></path>
+        </svg>
+        <span>Google Reviews</span>
+        <span class="stars" aria-hidden="true">
+          {stars.map(() => (
+            <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          ))}
+        </span>
+        <strong>5.0</strong>
+      </div>
+      <h2>What Homeowners <span>Are Saying</span></h2>
+      <p>5.0 stars across <strong>110+ reviews</strong> on Google &amp; Facebook</p>
+    </div>
+
+    <div class="reviews-marquees" aria-label="Customer testimonials">
+      {rows.map((row, rowIndex) => (
+        <div class="review-marquee">
+          <div class:list={['review-track', { reverse: rowIndex === 1 }]}>
+            {[0, 1].map((copyIndex) => (
+              <div class="review-set" aria-hidden={copyIndex === 1 ? 'true' : undefined} inert={copyIndex === 1 ? true : undefined}>
+                {row.map((review) => (
+                  <article class="review-card">
+                    <div class="review-stars" aria-label={`${review.rating} star review`}>
+                      {stars.map(() => (
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                      ))}
+                    </div>
+                    <blockquote class="review-highlight">"{review.highlight}"</blockquote>
+                    <details class="review-details">
+                      <summary tabindex={copyIndex === 1 ? '-1' : undefined}>See full review</summary>
+                      <p>{review.text}</p>
+                    </details>
+                    <div class="review-author">
+                      <strong>{review.name}</strong>
+                      {review.date && <span>{review.date}</span>}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .reviews-section {
+    background-color: #f9f9f9;
+    overflow: hidden;
+    padding: 4rem 0;
+  }
+
+  .reviews-inner {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1.5rem;
+  }
+
+  .reviews-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .google-pill {
+    align-items: center;
+    background: #ffffff;
+    border-radius: 999px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    color: #1a1a1a;
+    display: inline-flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+  }
+
+  .google-pill span,
+  .google-pill strong {
+    font-size: 0.875rem;
+  }
+
+  .google-pill span {
+    font-weight: 600;
+  }
+
+  .google-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .stars,
+  .review-stars {
+    display: flex;
+    gap: 1px;
+  }
+
+  .stars svg {
+    color: #fbbf24;
+    fill: currentColor;
+    height: 14px;
+    width: 14px;
+  }
+
+  .reviews-heading h2 {
+    color: #1a1a1a;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .reviews-heading h2 span {
+    color: #E42F3A;
+  }
+
+  .reviews-heading p {
+    color: #666666;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .reviews-heading p strong {
+    color: #1a1a1a;
+  }
+
+  .reviews-marquees {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .review-marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  }
+
+  .review-track {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: review-scroll 95s linear infinite;
+  }
+
+  .review-track.reverse {
+    animation-direction: reverse;
+    animation-duration: 105s;
+  }
+
+  .review-marquee:hover .review-track,
+  .review-marquee:focus-within .review-track {
+    animation-play-state: paused;
+  }
+
+  .review-set {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .review-card {
+    background: #ffffff;
+    border-left: 3px solid #E42F3A;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 254px;
+    padding: 1.25rem;
+    width: 360px;
+  }
+
+  .review-stars {
+    color: #fbbf24;
+    margin-bottom: 0.75rem;
+  }
+
+  .review-stars svg {
+    fill: currentColor;
+    height: 16px;
+    width: 16px;
+  }
+
+  .review-highlight {
+    color: #1a1a1a;
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.28;
+    margin: 0 0 0.75rem;
+  }
+
+  .review-details {
+    color: #444444;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    margin-bottom: 0.9rem;
+    min-height: 4.45rem;
+  }
+
+  .review-details summary {
+    color: #E42F3A;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 800;
+    list-style: none;
+    margin-bottom: 0.35rem;
+  }
+
+  .review-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .review-details summary::after {
+    content: " +";
+  }
+
+  .review-details[open] summary::after {
+    content: " -";
+  }
+
+  .review-details p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .review-details[open] p {
+    -webkit-line-clamp: unset;
+    max-height: 5.25rem;
+    overflow: auto;
+    padding-right: 0.25rem;
+  }
+
+  .review-author {
+    align-items: baseline;
+    color: #1a1a1a;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+  }
+
+  .review-author strong {
+    font-size: 0.875rem;
+  }
+
+  .review-author span {
+    color: #777777;
+    font-size: 0.75rem;
+  }
+
+  @keyframes review-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-50% - 0.5rem));
+    }
+  }
+
+  @media (max-width: 600px) {
+    .reviews-section {
+      padding: 3rem 0;
+    }
+
+    .reviews-inner {
+      padding: 0 1rem;
+    }
+
+    .google-pill {
+      gap: 0.4rem;
+      padding: 0.5rem 0.75rem;
+    }
+
+    .review-card {
+      height: 258px;
+      padding: 1rem;
+      width: 260px;
+    }
+
+    .review-highlight {
+      font-size: 1rem;
+    }
+
+    .review-track,
+    .review-track.reverse {
+      animation-duration: 80s;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .review-track,
+    .review-track.reverse {
+      animation: none;
+    }
+
+    .review-marquee {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+</style>
